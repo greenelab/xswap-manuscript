@@ -1,5 +1,5 @@
 ---
-title: "Manubot Rootstock: Manuscript Title"
+title: "XSwap Manuscript"
 keywords:
   - markdown
   - publishing
@@ -7,21 +7,22 @@ keywords:
 lang: en-US
 author_info:
   -
-    github: johndoe
-    name: John Doe
-    initials: JD
+    github: zietzm
+    name: Michael Zietz
+    initials: MZ
     orcid: XXXX-XXXX-XXXX-XXXX
-    twitter: johndoe
-    email: john.doe@something.com
+    twitter: ZietzMichael
+    email: michael.zietz@gmail.com
     affiliations:
-      - Department of Something, University of Whatever
+      - Department of Physics
+      - Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania
     funders: Grant XXXXXXXX
-  -
-    github: janeroe
-    name: Jane Roe
-    initials: JR
-    orcid: XXXX-XXXX-XXXX-XXXX
-    email: jane.roe@whatever.edu
-    affiliations:
-      - Department of Something, University of Whatever
-      - Department of Whatever, University of Something
+  # -
+  #   github: janeroe
+  #   name: Jane Roe
+  #   initials: JR
+  #   orcid: XXXX-XXXX-XXXX-XXXX
+  #   email: jane.roe@whatever.edu
+  #   affiliations:
+  #     - Department of Something, University of Whatever
+  #     - Department of Whatever, University of Something
