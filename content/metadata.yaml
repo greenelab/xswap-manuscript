@@ -1,5 +1,5 @@
 ---
-title: "XSwap Manuscript"
+title: "XSwap Manuscript: Accounting for node degree in biomedical network link prediction"
 keywords:
   - markdown
   - publishing
@@ -10,11 +10,11 @@ author_info:
     github: zietzm
     name: Michael Zietz
     initials: MZ
-    orcid: XXXX-XXXX-XXXX-XXXX
+    orcid: 0000-0003-0539-630X
     twitter: ZietzMichael
     email: michael.zietz@gmail.com
     affiliations:
-      - Department of Physics
+      - Department of Physics & Astronomy, University of Pennsylvania
       - Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania
     funders: Grant XXXXXXXX
   # -
