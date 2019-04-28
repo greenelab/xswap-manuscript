@@ -16,7 +16,9 @@ author_info:
     affiliations:
       - Department of Physics & Astronomy, University of Pennsylvania
       - Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania
-    funders: Grant XXXXXXXX
+    funders:
+      - Roy and Diana Vagelos Scholars Program in the Molecular Life Sciences
+      - Grant XXXXXXXX
   # -
   #   github: janeroe
   #   name: Jane Roe
