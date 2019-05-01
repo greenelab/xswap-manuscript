@@ -18,5 +18,25 @@
       "family": "Himmelstein"
     }
   ]
+},
+{
+  "type": "thesis",
+  "standard_citation": "raw:inference",
+  "URL": "https://upcommons.upc.edu/handle/2117/95691",
+  "publisher": "Universitat Politècnica de Catalunya",
+  "title": "Link prediction in large directed graphs",
+  "issued": {
+    "date-parts": [
+      [
+        2015
+      ]
+    ]
+  },
+  "author": [
+    {
+      "given": "Dario",
+      "family": "Garcia Gasulla"
+    }
+  ]
 }
 ]
