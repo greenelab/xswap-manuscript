@@ -38,5 +38,73 @@
       "family": "Garcia Gasulla"
     }
   ]
+},
+{
+  "type": "article",
+  "standard_citation": "raw:rwr",
+  "URL": "http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.85.8179&rep=rep1&type=pdf",
+  "publisher": "10th ACM SIGKDD Conference 2004",
+  "title": "Automatic Multimedia Cross-modal Correlation Discovery",
+  "issued": {
+    "date-parts": [
+      [
+        2004
+      ]
+    ]
+  },
+  "author": [
+    {
+      "given": "Jia-Yu",
+      "family": "Pan"
+    },
+    {
+      "given": "Hyung-Jeong",
+      "family": "Yang"
+    },
+    {
+      "given": "Christos",
+      "family": "Faloutsos"
+    },
+    {
+      "given": "Pinar",
+      "family": "Duygulu"
+    }
+  ]
+},
+{
+  "type": "article",
+  "standard_citation": "raw:laplacian",
+  "URL": "https://papers.nips.cc/paper/2506-learning-with-local-and-global-consistency.pdf",
+  "publisher": "NIPS 2003",
+  "title": "Learning with local and global consistency",
+  "issued": {
+    "date-parts": [
+      [
+        2003
+      ]
+    ]
+  },
+  "author": [
+    {
+      "given": "Dengyong",
+      "family": "Zhou"
+    },
+    {
+      "given": "Olivier",
+      "family": "Bousquet"
+    },
+    {
+      "given": "Thomas Navin",
+      "family": "Lal"
+    },
+    {
+      "given": "Jason",
+      "family": "Weston"
+    },
+    {
+      "given": "Bernhard",
+      "family": "Scholkopf"
+    } 
+  ]
 }
 ]
