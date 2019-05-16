@@ -106,5 +106,29 @@
       "family": "Scholkopf"
     } 
   ]
+},
+{
+  "type": "article",
+  "standard_citation": "raw:adamic",
+  "URL": "https://www.sciencedirect.com/science/article/pii/S0378873303000091",
+  "publisher": "Social Networks",
+  "title": "Friends and neighbors on the Web",
+  "issued": {
+    "date-parts": [
+      [
+        2003
+      ]
+    ]
+  },
+  "author": [
+    {
+      "given": "Lada A",
+      "family": "Adamic"
+    },
+    {
+      "given": "Eytan",
+      "family": "Adar"
+    } 
+  ]
 }
 ]
