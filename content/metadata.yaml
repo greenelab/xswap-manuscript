@@ -1,21 +1,29 @@
 ---
-title: "Manubot Rootstock: Manuscript Title"
+title: "The probability of edge existence due to node degree: a baseline for network-based predictions"
 keywords:
-  - markdown
-  - publishing
+  - xswap
+  - permutation
+  - network
+  - hetnets
+  - degree
+  - bioinformatics
+  - python
   - manubot
 lang: en-US
 author_info:
   -
-    github: johndoe
-    name: John Doe
-    initials: JD
-    orcid: XXXX-XXXX-XXXX-XXXX
-    twitter: johndoe
-    email: john.doe@something.com
+    github: zietzm
+    name: Michael Zietz
+    initials: MZ
+    orcid: 0000-0003-0539-630X
+    twitter: ZietzMichael
+    email: michael.zietz@gmail.com
     affiliations:
-      - Department of Something, University of Whatever
-    funders: Grant XXXXXXXX
+      - Department of Physics & Astronomy, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America
+      - Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America
+    funders:
+      - Roy and Diana Vagelos Scholars Program in the Molecular Life Sciences
+      - GBMF4552
   -
     github: dhimmel
     name: Daniel S. Himmelstein
