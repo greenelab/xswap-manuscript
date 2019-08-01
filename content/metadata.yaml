@@ -1,5 +1,5 @@
 ---
-title: "XSwap Manuscript: Network permutation accounts for degree in edge prediction"
+title: "The probability of edge existence due to node degree: a baseline for link prediction"
 keywords:
   - xswap
   - permutation
@@ -23,7 +23,7 @@ author_info:
       - Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America
     funders:
       - Roy and Diana Vagelos Scholars Program in the Molecular Life Sciences
-      - Grant XXXXXXXX
+      - GBMF4552
   -
     github: dhimmel
     name: Daniel S. Himmelstein
