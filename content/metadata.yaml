@@ -1,11 +1,25 @@
 ---
-title: "Manubot Rootstock: Manuscript Title"
+title: "XSwap Manuscript: Network permutation accounts for degree in edge prediction"
 keywords:
-  - markdown
-  - publishing
+  - xswap
+  - permutation
+  - network
   - manubot
 lang: en-US
 author_info:
+  -
+    github: zietzm
+    name: Michael Zietz
+    initials: MZ
+    orcid: 0000-0003-0539-630X
+    twitter: ZietzMichael
+    email: michael.zietz@gmail.com
+    affiliations:
+      - Department of Physics & Astronomy, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America
+      - Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America
+    funders:
+      - Roy and Diana Vagelos Scholars Program in the Molecular Life Sciences
+      - Grant XXXXXXXX
   -
     github: johndoe
     name: John Doe
