@@ -18,9 +18,9 @@ title: 'Manubot Rootstock: Manuscript Title'
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/xswap-manuscript/v/c3fd149c48932e8897e258a086a06209aecfb957/))
+([permalink](https://greenelab.github.io/xswap-manuscript/v/b396a35d45ba534812a06011e3982021d6ef2ca0/))
 was automatically generated
-from [greenelab/xswap-manuscript@c3fd149](https://github.com/greenelab/xswap-manuscript/tree/c3fd149c48932e8897e258a086a06209aecfb957)
+from [greenelab/xswap-manuscript@b396a35](https://github.com/greenelab/xswap-manuscript/tree/b396a35d45ba534812a06011e3982021d6ef2ca0)
 on August 1, 2019.
 </em></small>
 
@@ -66,6 +66,41 @@ After demonstrating that this prior feature shows excellent discrimination and c
 Additionally, we propose methods to incorporate network permutation and the edge prior into other predictive methods.
 Our results highlight the importance of degree for link prediction and provide a way to account for its effects when degree bias may be present.
 We have released a full implementation of our network permutation method and the edge prior as an open-source Python package on GitHub.
+
+
+## Introduction
+
+### Node degree
+
+### Edge prediction
+
+### Feature-degree correlation
+
+
+## Methods
+
+### Network permutation
+
+### XSwap algorithm
+
+### Edge prior
+
+### Edge prior approximation
+
+### Prediction tasks
+
+### Degree-grouping
+
+### Implementation and source code
+
+
+## Results
+
+
+## Discussion
+
+
+## Conclusion
 
 
 ## References {.page_break_before}
