@@ -2,7 +2,7 @@
 author-meta:
 - John Doe
 - Jane Roe
-date-meta: '2018-12-03'
+date-meta: '2019-08-01'
 keywords:
 - markdown
 - publishing
@@ -18,10 +18,10 @@ title: 'Manubot Rootstock: Manuscript Title'
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/xswap-manuscript/v/e34c9422e1af8f80f10f141d8986cb50ea5da5f1/))
+([permalink](https://greenelab.github.io/xswap-manuscript/v/a70622c7b0a992ce65e61a21923d75456394196d/))
 was automatically generated
-from [greenelab/xswap-manuscript@e34c942](https://github.com/greenelab/xswap-manuscript/tree/e34c9422e1af8f80f10f141d8986cb50ea5da5f1)
-on December 3, 2018.
+from [greenelab/xswap-manuscript@a70622c](https://github.com/greenelab/xswap-manuscript/tree/a70622c7b0a992ce65e61a21923d75456394196d)
+on August 1, 2019.
 </em></small>
 
 ## Authors
@@ -53,7 +53,16 @@ on December 3, 2018.
 
 ## Abstract {.page_break_before}
 
-
+Networks of biomedical data rarely consist of all true relationships.
+Instead, networks contain spurious relationships while omitting actual relationships.
+How a network deviates from the real set of relationships is often biased according to node degree, resulting from processes such as inspection bias and experimental methods.
+While degree is subject to potentially substantial biases, link prediction methods can be strongly affected by degree.
+In the present work, we introduce a network permutation framework to quantify the effect of node degree on network-based methods and prediction tasks.
+We introduce the "edge prior" to quantify the probability that two nodes are connected based only on their degree.
+After demonstrating that this prior feature shows excellent discrimination and calibration performance for 20 different biomedical networks (16 bipartite, 3 undirected, 1 directed), we conclude that our prior feature represents a suitable baseline for network link prediction tasks, as performance exceeding the baseline is attributable to factors other than degree alone.
+Additionally, we propose methods to incorporate network permutation and the edge prior into other predictive methods.
+Our results highlight the importance of degree for link prediction and provide a way to account for its effects when degree bias may be present.
+We have released a full implementation of our network permutation method and the edge prior as an open-source Python package on GitHub.
 
 
 ## References {.page_break_before}
