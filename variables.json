@@ -2,18 +2,23 @@
   "date": "August 1, 2019",
   "authors": [
     {
-      "github": "johndoe",
-      "name": "John Doe",
-      "initials": "JD",
-      "orcid": "XXXX-XXXX-XXXX-XXXX",
-      "twitter": "johndoe",
-      "email": "john.doe@something.com",
+      "github": "zietzm",
+      "name": "Michael Zietz",
+      "initials": "MZ",
+      "orcid": "0000-0003-0539-630X",
+      "twitter": "ZietzMichael",
+      "email": "michael.zietz@gmail.com",
       "affiliations": [
-        "Department of Something, University of Whatever"
+        "Department of Physics & Astronomy, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America",
+        "Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America"
       ],
-      "funders": "Grant XXXXXXXX",
+      "funders": [
+        "Roy and Diana Vagelos Scholars Program in the Molecular Life Sciences",
+        "GBMF4552"
+      ],
       "affiliation_numbers": [
-        1
+        1,
+        2
       ]
     },
     {
@@ -34,7 +39,7 @@
   ],
   "affiliations": [
     {
-      "affiliation": "Department of Something, University of Whatever",
+      "affiliation": "Department of Physics & Astronomy, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America",
       "affiliation_number": 1
     },
     {
@@ -46,7 +51,7 @@
     "repo_slug": "greenelab/xswap-manuscript",
     "repo_owner": "greenelab",
     "repo_name": "xswap-manuscript",
-    "commit": "b396a35d45ba534812a06011e3982021d6ef2ca0"
+    "commit": "04dba03f45f0c5152a603291199a34f8e31fedf4"
   },
   "manuscript_stats": {
     "reference_counts": {

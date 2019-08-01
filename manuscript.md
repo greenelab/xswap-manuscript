@@ -1,14 +1,20 @@
 ---
 author-meta:
-- John Doe
+- Michael Zietz
 - Daniel S. Himmelstein
 date-meta: '2019-08-01'
 keywords:
-- markdown
-- publishing
+- xswap
+- permutation
+- network
+- hetnets
+- degree
+- bioinformatics
+- python
 - manubot
 lang: en-US
-title: 'Manubot Rootstock: Manuscript Title'
+title: 'The probability of edge existence due to node degree: a baseline for network-based
+  predictions'
 ...
 
 
@@ -18,9 +24,9 @@ title: 'Manubot Rootstock: Manuscript Title'
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/xswap-manuscript/v/b396a35d45ba534812a06011e3982021d6ef2ca0/))
+([permalink](https://greenelab.github.io/xswap-manuscript/v/04dba03f45f0c5152a603291199a34f8e31fedf4/))
 was automatically generated
-from [greenelab/xswap-manuscript@b396a35](https://github.com/greenelab/xswap-manuscript/tree/b396a35d45ba534812a06011e3982021d6ef2ca0)
+from [greenelab/xswap-manuscript@04dba03](https://github.com/greenelab/xswap-manuscript/tree/04dba03f45f0c5152a603291199a34f8e31fedf4)
 on August 1, 2019.
 </em></small>
 
@@ -28,16 +34,16 @@ on August 1, 2019.
 
 
 
-+ **John Doe**<br>
++ **Michael Zietz**<br>
     ![ORCID icon](images/orcid.svg){height="13px" width="13px"}
-    [XXXX-XXXX-XXXX-XXXX](https://orcid.org/XXXX-XXXX-XXXX-XXXX)
+    [0000-0003-0539-630X](https://orcid.org/0000-0003-0539-630X)
     · ![GitHub icon](images/github.svg){height="13px" width="13px"}
-    [johndoe](https://github.com/johndoe)
+    [zietzm](https://github.com/zietzm)
     · ![Twitter icon](images/twitter.svg){height="13px" width="13px"}
-    [johndoe](https://twitter.com/johndoe)<br>
+    [ZietzMichael](https://twitter.com/ZietzMichael)<br>
   <small>
-     Department of Something, University of Whatever
-     · Funded by Grant XXXXXXXX
+     Department of Physics & Astronomy, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America; Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America
+     · Funded by ['Roy and Diana Vagelos Scholars Program in the Molecular Life Sciences', 'GBMF4552']
   </small>
 
 + **Daniel S. Himmelstein**<br>
