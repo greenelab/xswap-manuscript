@@ -17,17 +17,17 @@
       ]
     },
     {
-      "github": "janeroe",
-      "name": "Jane Roe",
-      "initials": "JR",
-      "orcid": "XXXX-XXXX-XXXX-XXXX",
-      "email": "jane.roe@whatever.edu",
+      "github": "dhimmel",
+      "name": "Daniel S. Himmelstein",
+      "initials": "DSH",
+      "orcid": "0000-0002-3012-7446",
+      "twitter": "dhimmel",
+      "email": "daniel.himmelstein@gmail.com",
       "affiliations": [
-        "Department of Something, University of Whatever",
-        "Department of Whatever, University of Something"
+        "Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America"
       ],
+      "funders": "Pfizer Worldwide Research and Development; GBMF4552",
       "affiliation_numbers": [
-        1,
         2
       ]
     }
@@ -38,7 +38,7 @@
       "affiliation_number": 1
     },
     {
-      "affiliation": "Department of Whatever, University of Something",
+      "affiliation": "Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America",
       "affiliation_number": 2
     }
   ],
@@ -46,7 +46,7 @@
     "repo_slug": "greenelab/xswap-manuscript",
     "repo_owner": "greenelab",
     "repo_name": "xswap-manuscript",
-    "commit": "a70622c7b0a992ce65e61a21923d75456394196d"
+    "commit": "c3fd149c48932e8897e258a086a06209aecfb957"
   },
   "manuscript_stats": {
     "reference_counts": {

@@ -1,7 +1,7 @@
 ---
 author-meta:
 - John Doe
-- Jane Roe
+- Daniel S. Himmelstein
 date-meta: '2019-08-01'
 keywords:
 - markdown
@@ -18,9 +18,9 @@ title: 'Manubot Rootstock: Manuscript Title'
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/xswap-manuscript/v/a70622c7b0a992ce65e61a21923d75456394196d/))
+([permalink](https://greenelab.github.io/xswap-manuscript/v/c3fd149c48932e8897e258a086a06209aecfb957/))
 was automatically generated
-from [greenelab/xswap-manuscript@a70622c](https://github.com/greenelab/xswap-manuscript/tree/a70622c7b0a992ce65e61a21923d75456394196d)
+from [greenelab/xswap-manuscript@c3fd149](https://github.com/greenelab/xswap-manuscript/tree/c3fd149c48932e8897e258a086a06209aecfb957)
 on August 1, 2019.
 </em></small>
 
@@ -40,13 +40,16 @@ on August 1, 2019.
      · Funded by Grant XXXXXXXX
   </small>
 
-+ **Jane Roe**<br>
++ **Daniel S. Himmelstein**<br>
     ![ORCID icon](images/orcid.svg){height="13px" width="13px"}
-    [XXXX-XXXX-XXXX-XXXX](https://orcid.org/XXXX-XXXX-XXXX-XXXX)
+    [0000-0002-3012-7446](https://orcid.org/0000-0002-3012-7446)
     · ![GitHub icon](images/github.svg){height="13px" width="13px"}
-    [janeroe](https://github.com/janeroe)<br>
+    [dhimmel](https://github.com/dhimmel)
+    · ![Twitter icon](images/twitter.svg){height="13px" width="13px"}
+    [dhimmel](https://twitter.com/dhimmel)<br>
   <small>
-     Department of Something, University of Whatever; Department of Whatever, University of Something
+     Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America
+     · Funded by Pfizer Worldwide Research and Development; GBMF4552
   </small>
 
 
