@@ -23,7 +23,7 @@ author_info:
       - Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America
     funders:
       - Roy and Diana Vagelos Scholars Program in the Molecular Life Sciences
-      - GBMF4552
+      - the Gordon and Betty Moore Foundation (GBMF4552)
   -
     github: dhimmel
     name: Daniel S. Himmelstein
@@ -33,4 +33,17 @@ author_info:
     email: daniel.himmelstein@gmail.com
     affiliations:
       - Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America
-    funders: Pfizer Worldwide Research and Development; GBMF4552
+    funders: Pfizer Worldwide Research and Development; the Gordon and Betty Moore Foundation (GBMF4552)
+  -
+    github: cgreene
+    name: Casey S. Greene
+    initials: CSG
+    orcid: 0000-0001-8713-9213
+    twitter: greenescientist
+    email: greenescientist@gmail.com
+    affiliations:
+      - Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America
+    funders:
+      - Pfizer Worldwide Research and Development
+      - the Gordon and Betty Moore Foundation (GBMF4552)
+      - the National Institutes of Health (R01 HG010067)
