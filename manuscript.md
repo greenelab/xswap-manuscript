@@ -2,7 +2,7 @@
 author-meta:
 - Michael Zietz
 - Daniel S. Himmelstein
-date-meta: '2019-08-01'
+date-meta: '2019-08-02'
 keywords:
 - xswap
 - permutation
@@ -24,10 +24,10 @@ title: 'The probability of edge existence due to node degree: a baseline for net
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/xswap-manuscript/v/04dba03f45f0c5152a603291199a34f8e31fedf4/))
+([permalink](https://greenelab.github.io/xswap-manuscript/v/b04d8d2c6d9e26093e0c413b9b4cd0ce9d08ba33/))
 was automatically generated
-from [greenelab/xswap-manuscript@04dba03](https://github.com/greenelab/xswap-manuscript/tree/04dba03f45f0c5152a603291199a34f8e31fedf4)
-on August 1, 2019.
+from [greenelab/xswap-manuscript@b04d8d2](https://github.com/greenelab/xswap-manuscript/tree/b04d8d2c6d9e26093e0c413b9b4cd0ce9d08ba33)
+on August 2, 2019.
 </em></small>
 
 ## Authors
@@ -35,11 +35,11 @@ on August 1, 2019.
 
 
 + **Michael Zietz**<br>
-    ![ORCID icon](images/orcid.svg){height="13px" width="13px"}
+    ![ORCID icon](images/orcid.svg){.inline_icon}
     [0000-0003-0539-630X](https://orcid.org/0000-0003-0539-630X)
-    · ![GitHub icon](images/github.svg){height="13px" width="13px"}
+    · ![GitHub icon](images/github.svg){.inline_icon}
     [zietzm](https://github.com/zietzm)
-    · ![Twitter icon](images/twitter.svg){height="13px" width="13px"}
+    · ![Twitter icon](images/twitter.svg){.inline_icon}
     [ZietzMichael](https://twitter.com/ZietzMichael)<br>
   <small>
      Department of Physics & Astronomy, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America; Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America
@@ -47,11 +47,11 @@ on August 1, 2019.
   </small>
 
 + **Daniel S. Himmelstein**<br>
-    ![ORCID icon](images/orcid.svg){height="13px" width="13px"}
+    ![ORCID icon](images/orcid.svg){.inline_icon}
     [0000-0002-3012-7446](https://orcid.org/0000-0002-3012-7446)
-    · ![GitHub icon](images/github.svg){height="13px" width="13px"}
+    · ![GitHub icon](images/github.svg){.inline_icon}
     [dhimmel](https://github.com/dhimmel)
-    · ![Twitter icon](images/twitter.svg){height="13px" width="13px"}
+    · ![Twitter icon](images/twitter.svg){.inline_icon}
     [dhimmel](https://twitter.com/dhimmel)<br>
   <small>
      Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America
