@@ -2,6 +2,7 @@
 author-meta:
 - Michael Zietz
 - Daniel S. Himmelstein
+- Casey S. Greene
 date-meta: '2019-08-02'
 keywords:
 - xswap
@@ -24,9 +25,9 @@ title: 'The probability of edge existence due to node degree: a baseline for net
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/xswap-manuscript/v/b04d8d2c6d9e26093e0c413b9b4cd0ce9d08ba33/))
+([permalink](https://greenelab.github.io/xswap-manuscript/v/3fe2a1de02b5e58ab2a7c18a8290a921e70edfd6/))
 was automatically generated
-from [greenelab/xswap-manuscript@b04d8d2](https://github.com/greenelab/xswap-manuscript/tree/b04d8d2c6d9e26093e0c413b9b4cd0ce9d08ba33)
+from [greenelab/xswap-manuscript@3fe2a1d](https://github.com/greenelab/xswap-manuscript/tree/3fe2a1de02b5e58ab2a7c18a8290a921e70edfd6)
 on August 2, 2019.
 </em></small>
 
@@ -43,7 +44,7 @@ on August 2, 2019.
     [ZietzMichael](https://twitter.com/ZietzMichael)<br>
   <small>
      Department of Physics & Astronomy, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America; Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America
-     · Funded by ['Roy and Diana Vagelos Scholars Program in the Molecular Life Sciences', 'GBMF4552']
+     · Funded by ['Roy and Diana Vagelos Scholars Program in the Molecular Life Sciences', 'the Gordon and Betty Moore Foundation (GBMF4552)']
   </small>
 
 + **Daniel S. Himmelstein**<br>
@@ -55,7 +56,19 @@ on August 2, 2019.
     [dhimmel](https://twitter.com/dhimmel)<br>
   <small>
      Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America
-     · Funded by Pfizer Worldwide Research and Development; GBMF4552
+     · Funded by Pfizer Worldwide Research and Development; the Gordon and Betty Moore Foundation (GBMF4552)
+  </small>
+
++ **Casey S. Greene**<br>
+    ![ORCID icon](images/orcid.svg){.inline_icon}
+    [0000-0001-8713-9213](https://orcid.org/0000-0001-8713-9213)
+    · ![GitHub icon](images/github.svg){.inline_icon}
+    [cgreene](https://github.com/cgreene)
+    · ![Twitter icon](images/twitter.svg){.inline_icon}
+    [greenescientist](https://twitter.com/greenescientist)<br>
+  <small>
+     Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America
+     · Funded by ['Pfizer Worldwide Research and Development', 'the Gordon and Betty Moore Foundation (GBMF4552)', 'the National Institutes of Health (R01 HG010067)']
   </small>
 
 
