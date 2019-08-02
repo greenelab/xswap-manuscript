@@ -1,9 +1,10 @@
-# Cloning manubot-rootstock to create a new manuscript
+# Cloning the manubot/rootstock repository to create a new manuscript
 
 The process to create a new Manubot manuscript is a bit challenging, because it requires a few steps that are difficult to automate.
 However, you will only have to perform these steps once for each manuscript.
-These steps should be performed in a terminal, starting in the directory where you want the manuscript folder be created.
-Setup is supported on Linux and macOS, but [**not on Windows**](https://github.com/greenelab/manubot-rootstock/issues/91).
+These steps should be performed in a command-line shell (terminal), starting in the directory where you want the manuscript folder be created.
+Setup is supported on Linux, macOS, and Windows.
+Windows setup requires [Git Bash](https://gitforwindows.org/) or [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/faq).
 
 ## Configuration
 
@@ -14,10 +15,10 @@ In general, assume that all commands in this setup are case-sensitive.
 **Edit the following commands with your manuscript's information:**
 
 ```sh
-# GitHub username (change from greenelab)
-OWNER=greenelab
-# Repository name (change from manubot-rootstock)
-REPO=manubot-rootstock
+# GitHub username (change from manubot)
+OWNER=manubot
+# Repository name (change from rootstock)
+REPO=rootstock
 ```
 
 ## Create repository
@@ -25,15 +26,15 @@ REPO=manubot-rootstock
 **Execute the remaining commands verbatim.**
 They do not need to be edited (if the setup works as intended).
 
-Next you must clone `greenelab/manubot-rootstock` and configure its branches and remotes:
+Next you must clone `manubot/rootstock` and configure its branches and remotes:
 
 ```sh
-# Clone greenelab/manubot-rootstock
-git clone https://github.com/greenelab/manubot-rootstock.git $REPO
+# Clone manubot/rootstock
+git clone https://github.com/manubot/rootstock.git $REPO
 cd $REPO
 
 # Configure remotes and branches
-git remote add rootstock https://github.com/greenelab/manubot-rootstock.git
+git remote add rootstock https://github.com/manubot/rootstock.git
 git checkout --orphan gh-pages
 git rm -r --force .
 git commit --allow-empty \
@@ -48,7 +49,7 @@ git remote set-url origin https://github.com/$OWNER/$REPO.git
 git remote set-url origin git@github.com:$OWNER/$REPO.git
 ```
 
-Next, you must manually create an empty GitHub repository at https://github.com/new.
+Next, you must manually create an empty GitHub repository at <https://github.com/new>.
 Make sure to use the same "Owner" and "Repository name" specified above.
 Do not initialize the repository, other than optionally adding a Description.
 Next, push your cloned manuscript:
@@ -61,7 +62,7 @@ git push --set-upstream origin output
 
 ## Continuous integration
 
-Now you must manually enable Travis CI for the new repository at https://travis-ci.org.
+Now you must manually enable Travis CI for the new repository at <https://travis-ci.com>.
 Click the `+` sign to "Add New Repository".
 If you don't see your repository listed, push the "Sync account" button.
 Finally, flick the repository's switch to enable CI.
@@ -71,67 +72,66 @@ Finally, flick the repository's switch to enable CI.
 Generate a deploy key so Travis CI can write to the repository.
 
 ```sh
+# IMPORTANT: change working directory to ci
 cd ci
+
+# Generate deploy.key.pub (public) and deploy.key (private)
 ssh-keygen \
-  -t rsa \
-  -b 4096 \
-  -C "travis@travis-ci.com" \
-  -N "" \
+  -t rsa -b 4096 -N "" \
+  -C "deploy@travis-ci.com" \
   -f deploy.key
 
-# For convenience, print the URL to add the public key to GitHub
-echo https://github.com/$OWNER/$REPO/settings/keys
+# Encode deploy.key to remove newlines, writing encoded text to deploy.key.txt.
+# This is required for entry into the Travis settings.
+openssl base64 -A -in deploy.key > deploy.key.txt
 ```
 
-Manually add the text of `deploy.key.pub` (with write access) to GitHub under the repository's deploy key settings (the URL echoed above).
-Give the key a descriptive title, such as "Travis CI Manubot".
-
-For the next step, you need the [Travis command line client](https://github.com/travis-ci/travis.rb) installed.
-This program is a Ruby gem:
-install it with `gem install travis` (not `apt install travis`, which is a different program).
-After the install, you will need to provide your credentials to login to travis with `travis login --org`.
+#### Add the public key to GitHub
 
 ```sh
-travis encrypt-file \
-  --repo=$OWNER/$REPO \
-  --force \
-  deploy.key > travis-encrypt-file.log
+# Print the URL for adding the public key to GitHub
+echo "https://github.com/$OWNER/$REPO/settings/keys/new"
+
+# Print the public key for copy-pasting to GitHub
+cat deploy.key.pub
 ```
 
-`ci/travis-encrypt-file.log` will contain a line such as:
+Go to the GitHub settings URL echoed above in a browser, and click "Add deploy key".
+For "Title", add a description like "Manubot Travis Deploy Key".
+Copy-paste the contents of the `deploy.key.pub` text file (printed above by `cat`) into the "Key" text box.
+Check the "Allow write access" box below.
+Finally, click "Add key".
 
-```
-openssl aes-256-cbc -K $encrypted_8cc93e35fb85_key -iv $encrypted_8cc93e35fb85_iv -in test.key.enc -out test.key -d
-```
-
-`ci/deploy.sh` must be updated with the random string from this line (i.e. `8cc93e35fb85`).
-The following command automates this substitution.
+#### Add the private key to Travis CI
 
 ```sh
-# Edit ci/deploy.sh with travis secure env variables generated by travis encrypt-file
-TRAVIS_ENCRYPT_ID=`python -c "import re; \
-  text = open('travis-encrypt-file.log').read(); \
-  print(re.search('encrypted_([a-f0-9]+)_key', text).group(1))"`
-sed "s/f2f00aaf6402/$TRAVIS_ENCRYPT_ID/g" deploy.sh > tmp && mv -f tmp deploy.sh
+# Print the URL for adding the private key to Travis CI
+echo "https://travis-ci.com/$OWNER/$REPO/settings"
+
+# Print the encoded private key for copy-pasting to Travis CI
+cat deploy.key.txt && echo
 ```
 
-Next, limit [concurrent](https://blog.travis-ci.com/2014-07-18-per-repository-concurrency-setting/) Travis CI jobs to ensure previous builds deploy before subsequent ones begin:
+Next, go to the Travis CI repository settings page (URL echoed above).
+Add a new record in the "Environment Variables" section.
+For "NAME", enter `MANUBOT_SSH_PRIVATE_KEY`.
+Next, copy-paste the content of `deploy.key.txt` into "VALUE"
+(printed above by `cat`, including any trailing `=` characters if present).
+Make sure "Display value in build logs" remains toggled off (the default).
 
-```sh
-travis settings \
-  --repo=$OWNER/$REPO \
-  maximum_number_of_builds --set 1
-```
+While in the Travis CI settings, activate the [limit concurrent jobs](https://blog.travis-ci.com/2014-07-18-per-repository-concurrency-setting/) toggle and enter `1` in the value field.
+This ensures previous Manubot builds deploy before subsequent ones begin.
+
+### CI clean up
 
 The continuous integration configuration is now complete.
 Clean up:
 
 ```sh
 # Optionally remove untracked files
-rm deploy.key
-rm travis-encrypt-file.log
+rm deploy.key*
 
-# CRITICAL: navigate back to the repository's root directory
+# IMPORTANT: return to the repository's root directory
 cd ..
 ```
 
@@ -141,8 +141,8 @@ Now update `README.md` files to reference the new repository:
 
 ```sh
 # Perform substitutions
-sed "s/greenelab/$OWNER/g" README.md > tmp && mv -f tmp README.md
-sed "s/manubot-rootstock/$REPO/g" README.md > tmp && mv -f tmp README.md
+sed "s/manubot\/rootstock/$OWNER\/$REPO/g" README.md > tmp && mv -f tmp README.md
+sed "s/manubot\.github\.io\/rootstock/$OWNER\.github\.io\/$REPO/g" README.md > tmp && mv -f tmp README.md
 
 # Remove deletable content file
 git rm content/02.delete-me.md
@@ -153,9 +153,6 @@ git rm content/02.delete-me.md
 Run `git status` or `git diff --color-words` to check that the following files have unstaged changes:
 
 + `README.md`
-+ `ci/deploy.key.enc`
-+ `ci/deploy.key.pub`
-+ `ci/deploy.sh`
 
 If the changes look okay, commit and push:
 
@@ -168,9 +165,9 @@ git push origin master
 You should be good to go now.
 A good first step is to modify `content/metadata.yaml` with the relevant information for your manuscript.
 
-# Merging upstream manubot-rootstock changes
+# Merging upstream rootstock changes
 
-This section will describe how to incorporate changes to manubot-rootstock that occurred since initializing your manuscript.
+This section will describe how to incorporate changes to rootstock that occurred since initializing your manuscript.
 You will want to do this if there are new enhancements or bugfixes that you want to incorporate.
 This process can be difficult, especially if conflicts have arisen, and is recommended only for advanced git users.
 
@@ -179,10 +176,10 @@ First, checkout a new branch to use as the pull request head branch:
 
 ```sh
 # This command names the branch using the current date, i.e. rootstock-2018-11-16
-git checkout -b rootstock-`date '+%Y-%m-%d'`
+git checkout -b rootstock-$(date '+%Y-%m-%d')
 ```
 
-Second, pull the new commits from manubot-rootstock, but do not automerge:
+Second, pull the new commits from rootstock, but do not automerge:
 
 ```sh
 git pull --no-ff --no-commit rootstock master
