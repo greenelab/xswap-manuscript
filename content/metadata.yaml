@@ -35,6 +35,13 @@ author_info:
       - Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America
     funders: Pfizer Worldwide Research, Development, and Medical; the Gordon and Betty Moore Foundation (GBMF4552)
   -
+    github: chrsunwil
+    name: Christopher Williams
+    initials: CW
+    email: chrwill@sas.upenn.edu
+    affiliations:
+      - Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America
+  -
     github: naglem
     name: Michael W. Nagle
     initials: MWN
