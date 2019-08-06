@@ -37,6 +37,18 @@
       ]
     },
     {
+      "github": "chrsunwil",
+      "name": "Christopher Williams",
+      "initials": "CW",
+      "email": "chrwill@sas.upenn.edu",
+      "affiliations": [
+        "Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America"
+      ],
+      "affiliation_numbers": [
+        2
+      ]
+    },
+    {
       "github": "naglem",
       "name": "Michael W. Nagle",
       "initials": "MWN",
@@ -88,7 +100,7 @@
     "repo_slug": "greenelab/xswap-manuscript",
     "repo_owner": "greenelab",
     "repo_name": "xswap-manuscript",
-    "commit": "d76dc26de33a5fc3446a109585b733c6ed836115"
+    "commit": "75620da4cad1686945786981dc018d7873036967"
   },
   "manuscript_stats": {
     "reference_counts": {

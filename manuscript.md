@@ -2,6 +2,7 @@
 author-meta:
 - Michael Zietz
 - Daniel S. Himmelstein
+- Christopher Williams
 - Michael W. Nagle
 - Casey S. Greene
 date-meta: '2019-08-06'
@@ -26,9 +27,9 @@ title: 'The probability of edge existence due to node degree: a baseline for net
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/xswap-manuscript/v/d76dc26de33a5fc3446a109585b733c6ed836115/))
+([permalink](https://greenelab.github.io/xswap-manuscript/v/75620da4cad1686945786981dc018d7873036967/))
 was automatically generated
-from [greenelab/xswap-manuscript@d76dc26](https://github.com/greenelab/xswap-manuscript/tree/d76dc26de33a5fc3446a109585b733c6ed836115)
+from [greenelab/xswap-manuscript@75620da](https://github.com/greenelab/xswap-manuscript/tree/75620da4cad1686945786981dc018d7873036967)
 on August 6, 2019.
 </em></small>
 
@@ -58,6 +59,13 @@ on August 6, 2019.
   <small>
      Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America
      · Funded by Pfizer Worldwide Research, Development, and Medical; the Gordon and Betty Moore Foundation (GBMF4552)
+  </small>
+
++ **Christopher Williams**<br>
+    · ![GitHub icon](images/github.svg){.inline_icon}
+    [chrsunwil](https://github.com/chrsunwil)<br>
+  <small>
+     Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America
   </small>
 
 + **Michael W. Nagle**<br>
