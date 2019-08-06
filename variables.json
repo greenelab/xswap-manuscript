@@ -1,5 +1,5 @@
 {
-  "date": "August 2, 2019",
+  "date": "August 6, 2019",
   "authors": [
     {
       "github": "zietzm",
@@ -31,9 +31,23 @@
       "affiliations": [
         "Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America"
       ],
-      "funders": "Pfizer Worldwide Research and Development; the Gordon and Betty Moore Foundation (GBMF4552)",
+      "funders": "Pfizer Worldwide Research, Development, and Medical; the Gordon and Betty Moore Foundation (GBMF4552)",
       "affiliation_numbers": [
         2
+      ]
+    },
+    {
+      "github": "naglem",
+      "name": "Michael W. Nagle",
+      "initials": "MWN",
+      "orcid": "0000-0002-4677-7582",
+      "twitter": "MikeNagle84",
+      "email": "michael.nagle@pfizer.com",
+      "affiliations": [
+        "Internal Medicine Research Unit, Pfizer Worldwide Research, Development, and Medical"
+      ],
+      "affiliation_numbers": [
+        3
       ]
     },
     {
@@ -47,7 +61,7 @@
         "Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America"
       ],
       "funders": [
-        "Pfizer Worldwide Research and Development",
+        "Pfizer Worldwide Research, Development, and Medical",
         "the Gordon and Betty Moore Foundation (GBMF4552)",
         "the National Institutes of Health (R01 HG010067)"
       ],
@@ -64,13 +78,17 @@
     {
       "affiliation": "Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America",
       "affiliation_number": 2
+    },
+    {
+      "affiliation": "Internal Medicine Research Unit, Pfizer Worldwide Research, Development, and Medical",
+      "affiliation_number": 3
     }
   ],
   "ci_source": {
     "repo_slug": "greenelab/xswap-manuscript",
     "repo_owner": "greenelab",
     "repo_name": "xswap-manuscript",
-    "commit": "3fe2a1de02b5e58ab2a7c18a8290a921e70edfd6"
+    "commit": "d76dc26de33a5fc3446a109585b733c6ed836115"
   },
   "manuscript_stats": {
     "reference_counts": {

@@ -2,8 +2,9 @@
 author-meta:
 - Michael Zietz
 - Daniel S. Himmelstein
+- Michael W. Nagle
 - Casey S. Greene
-date-meta: '2019-08-02'
+date-meta: '2019-08-06'
 keywords:
 - xswap
 - permutation
@@ -25,10 +26,10 @@ title: 'The probability of edge existence due to node degree: a baseline for net
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/xswap-manuscript/v/3fe2a1de02b5e58ab2a7c18a8290a921e70edfd6/))
+([permalink](https://greenelab.github.io/xswap-manuscript/v/d76dc26de33a5fc3446a109585b733c6ed836115/))
 was automatically generated
-from [greenelab/xswap-manuscript@3fe2a1d](https://github.com/greenelab/xswap-manuscript/tree/3fe2a1de02b5e58ab2a7c18a8290a921e70edfd6)
-on August 2, 2019.
+from [greenelab/xswap-manuscript@d76dc26](https://github.com/greenelab/xswap-manuscript/tree/d76dc26de33a5fc3446a109585b733c6ed836115)
+on August 6, 2019.
 </em></small>
 
 ## Authors
@@ -56,7 +57,18 @@ on August 2, 2019.
     [dhimmel](https://twitter.com/dhimmel)<br>
   <small>
      Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America
-     · Funded by Pfizer Worldwide Research and Development; the Gordon and Betty Moore Foundation (GBMF4552)
+     · Funded by Pfizer Worldwide Research, Development, and Medical; the Gordon and Betty Moore Foundation (GBMF4552)
+  </small>
+
++ **Michael W. Nagle**<br>
+    ![ORCID icon](images/orcid.svg){.inline_icon}
+    [0000-0002-4677-7582](https://orcid.org/0000-0002-4677-7582)
+    · ![GitHub icon](images/github.svg){.inline_icon}
+    [naglem](https://github.com/naglem)
+    · ![Twitter icon](images/twitter.svg){.inline_icon}
+    [MikeNagle84](https://twitter.com/MikeNagle84)<br>
+  <small>
+     Internal Medicine Research Unit, Pfizer Worldwide Research, Development, and Medical
   </small>
 
 + **Casey S. Greene**<br>
@@ -68,7 +80,7 @@ on August 2, 2019.
     [greenescientist](https://twitter.com/greenescientist)<br>
   <small>
      Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America
-     · Funded by ['Pfizer Worldwide Research and Development', 'the Gordon and Betty Moore Foundation (GBMF4552)', 'the National Institutes of Health (R01 HG010067)']
+     · Funded by ['Pfizer Worldwide Research, Development, and Medical', 'the Gordon and Betty Moore Foundation (GBMF4552)', 'the National Institutes of Health (R01 HG010067)']
   </small>
 
 
