@@ -33,7 +33,16 @@ author_info:
     email: daniel.himmelstein@gmail.com
     affiliations:
       - Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America
-    funders: Pfizer Worldwide Research and Development; the Gordon and Betty Moore Foundation (GBMF4552)
+    funders: Pfizer Worldwide Research, Development, and Medical; the Gordon and Betty Moore Foundation (GBMF4552)
+  -
+    github: naglem
+    name: Michael W. Nagle
+    initials: MWN
+    orcid: 0000-0002-4677-7582
+    twitter: MikeNagle84
+    email: michael.nagle@pfizer.com
+    affiliations:
+      - Internal Medicine Research Unit, Pfizer Worldwide Research, Development, and Medical
   -
     github: cgreene
     name: Casey S. Greene
@@ -44,6 +53,6 @@ author_info:
     affiliations:
       - Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America
     funders:
-      - Pfizer Worldwide Research and Development
+      - Pfizer Worldwide Research, Development, and Medical
       - the Gordon and Betty Moore Foundation (GBMF4552)
       - the National Institutes of Health (R01 HG010067)
