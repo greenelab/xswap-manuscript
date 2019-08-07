@@ -5,7 +5,7 @@ author-meta:
 - Christopher Williams
 - Michael W. Nagle
 - Casey S. Greene
-date-meta: '2019-08-06'
+date-meta: '2019-08-07'
 keywords:
 - xswap
 - permutation
@@ -27,10 +27,10 @@ title: 'The probability of edge existence due to node degree: a baseline for net
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/xswap-manuscript/v/75620da4cad1686945786981dc018d7873036967/))
+([permalink](https://greenelab.github.io/xswap-manuscript/v/2b069f98c0118229874b2e265ab51f160e9dff3f/))
 was automatically generated
-from [greenelab/xswap-manuscript@75620da](https://github.com/greenelab/xswap-manuscript/tree/75620da4cad1686945786981dc018d7873036967)
-on August 6, 2019.
+from [greenelab/xswap-manuscript@2b069f9](https://github.com/greenelab/xswap-manuscript/tree/2b069f98c0118229874b2e265ab51f160e9dff3f)
+on August 7, 2019.
 </em></small>
 
 ## Authors
@@ -111,6 +111,8 @@ We have released a full implementation of our network permutation method and the
 
 ### Node degree
 
+![Degree figure](){#fig:degree width="100%"}
+
 ### Edge prediction
 
 ### Feature-degree correlation
@@ -135,6 +137,9 @@ We have released a full implementation of our network permutation method and the
 
 ## Results
 
+![Discrimination figure](){#fig:discrimination width="100%"}
+
+![Calibration figure](){#fig:calibration width="100%"}
 
 ## Discussion
 
