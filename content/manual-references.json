@@ -41,38 +41,6 @@
 },
 {
   "type": "article",
-  "standard_citation": "raw:rwr",
-  "URL": "http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.85.8179&rep=rep1&type=pdf",
-  "publisher": "10th ACM SIGKDD Conference 2004",
-  "title": "Automatic Multimedia Cross-modal Correlation Discovery",
-  "issued": {
-    "date-parts": [
-      [
-        2004
-      ]
-    ]
-  },
-  "author": [
-    {
-      "given": "Jia-Yu",
-      "family": "Pan"
-    },
-    {
-      "given": "Hyung-Jeong",
-      "family": "Yang"
-    },
-    {
-      "given": "Christos",
-      "family": "Faloutsos"
-    },
-    {
-      "given": "Pinar",
-      "family": "Duygulu"
-    }
-  ]
-},
-{
-  "type": "article",
   "standard_citation": "raw:laplacian",
   "URL": "https://papers.nips.cc/paper/2506-learning-with-local-and-global-consistency.pdf",
   "publisher": "NIPS 2003",
@@ -104,30 +72,6 @@
     {
       "given": "Bernhard",
       "family": "Scholkopf"
-    }
-  ]
-},
-{
-  "type": "article",
-  "standard_citation": "raw:adamic",
-  "URL": "https://www.sciencedirect.com/science/article/pii/S0378873303000091",
-  "publisher": "Social Networks",
-  "title": "Friends and neighbors on the Web",
-  "issued": {
-    "date-parts": [
-      [
-        2003
-      ]
-    ]
-  },
-  "author": [
-    {
-      "given": "Lada A",
-      "family": "Adamic"
-    },
-    {
-      "given": "Eytan",
-      "family": "Adar"
     }
   ]
 }
