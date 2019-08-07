@@ -9,7 +9,7 @@
   <meta name="author" content="Christopher Williams" />
   <meta name="author" content="Michael W. Nagle" />
   <meta name="author" content="Casey S. Greene" />
-  <meta name="dcterms.date" content="2019-08-06" />
+  <meta name="dcterms.date" content="2019-08-07" />
   <meta name="keywords" content="xswap, permutation, network, hetnets, degree, bioinformatics, python, manubot" />
   <title>The probability of edge existence due to node degree: a baseline for network-based predictions</title>
   <style>
@@ -26,7 +26,7 @@
 <header id="title-block-header">
 <h1 class="title">The probability of edge existence due to node degree: a baseline for network-based predictions</h1>
 </header>
-<p><small><em> This manuscript (<a href="https://greenelab.github.io/xswap-manuscript/v/75620da4cad1686945786981dc018d7873036967/">permalink</a>) was automatically generated from <a href="https://github.com/greenelab/xswap-manuscript/tree/75620da4cad1686945786981dc018d7873036967">greenelab/xswap-manuscript@75620da</a> on August 6, 2019. </em></small></p>
+<p><small><em> This manuscript (<a href="https://greenelab.github.io/xswap-manuscript/v/2b069f98c0118229874b2e265ab51f160e9dff3f/">permalink</a>) was automatically generated from <a href="https://github.com/greenelab/xswap-manuscript/tree/2b069f98c0118229874b2e265ab51f160e9dff3f">greenelab/xswap-manuscript@2b069f9</a> on August 7, 2019. </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
 <li><p><strong>Michael Zietz</strong><br> <img src="images/orcid.svg" alt="ORCID icon" class="inline_icon" /> <a href="https://orcid.org/0000-0003-0539-630X">0000-0003-0539-630X</a> · <img src="images/github.svg" alt="GitHub icon" class="inline_icon" /> <a href="https://github.com/zietzm">zietzm</a> · <img src="images/twitter.svg" alt="Twitter icon" class="inline_icon" /> <a href="https://twitter.com/ZietzMichael">ZietzMichael</a><br> <small> Department of Physics &amp; Astronomy, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America; Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America · Funded by [‘Roy and Diana Vagelos Scholars Program in the Molecular Life Sciences’, ‘the Gordon and Betty Moore Foundation (GBMF4552)’] </small></p></li>
@@ -39,6 +39,9 @@
 <p>Networks of biomedical data rarely consist of all true relationships. Instead, networks contain spurious relationships while omitting actual relationships. How a network deviates from the real set of relationships is often biased according to node degree, resulting from processes such as inspection bias and experimental methods. While degree is subject to potentially substantial biases, link prediction methods can be strongly affected by degree. In the present work, we introduce a network permutation framework to quantify the effect of node degree on network-based methods and prediction tasks. We introduce the “edge prior” to quantify the probability that two nodes are connected based only on their degree. After demonstrating that this prior feature shows excellent discrimination and calibration performance for 20 different biomedical networks (16 bipartite, 3 undirected, 1 directed), we conclude that our prior feature represents a suitable baseline for network link prediction tasks, as performance exceeding the baseline is attributable to factors other than degree alone. Additionally, we propose methods to incorporate network permutation and the edge prior into other predictive methods. Our results highlight the importance of degree for link prediction and provide a way to account for its effects when degree bias may be present. We have released a full implementation of our network permutation method and the edge prior as an open-source Python package on GitHub.</p>
 <h2 id="introduction">Introduction</h2>
 <h3 id="node-degree">Node degree</h3>
+<figure>
+<img src="" alt="Figure 1: Degree figure" id="fig:degree" style="width:100.0%" /><figcaption><span>Figure 1:</span> Degree figure</figcaption>
+</figure>
 <h3 id="edge-prediction">Edge prediction</h3>
 <h3 id="feature-degree-correlation">Feature-degree correlation</h3>
 <h2 id="methods">Methods</h2>
@@ -50,6 +53,12 @@
 <h3 id="degree-grouping">Degree-grouping</h3>
 <h3 id="implementation-and-source-code">Implementation and source code</h3>
 <h2 id="results">Results</h2>
+<figure>
+<img src="" alt="Figure 2: Discrimination figure" id="fig:discrimination" style="width:100.0%" /><figcaption><span>Figure 2:</span> Discrimination figure</figcaption>
+</figure>
+<figure>
+<img src="" alt="Figure 3: Calibration figure" id="fig:calibration" style="width:100.0%" /><figcaption><span>Figure 3:</span> Calibration figure</figcaption>
+</figure>
 <h2 id="discussion">Discussion</h2>
 <h2 id="conclusion">Conclusion</h2>
 <h2 id="references" class="page_break_before">References</h2>
