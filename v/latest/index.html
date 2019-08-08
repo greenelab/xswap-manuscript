@@ -9,7 +9,7 @@
   <meta name="author" content="Christopher Williams" />
   <meta name="author" content="Michael W. Nagle" />
   <meta name="author" content="Casey S. Greene" />
-  <meta name="dcterms.date" content="2019-08-07" />
+  <meta name="dcterms.date" content="2019-08-08" />
   <meta name="keywords" content="xswap, permutation, network, hetnets, degree, bioinformatics, python, manubot" />
   <title>The probability of edge existence due to node degree: a baseline for network-based predictions</title>
   <style>
@@ -26,7 +26,7 @@
 <header id="title-block-header">
 <h1 class="title">The probability of edge existence due to node degree: a baseline for network-based predictions</h1>
 </header>
-<p><small><em> This manuscript (<a href="https://greenelab.github.io/xswap-manuscript/v/2b069f98c0118229874b2e265ab51f160e9dff3f/">permalink</a>) was automatically generated from <a href="https://github.com/greenelab/xswap-manuscript/tree/2b069f98c0118229874b2e265ab51f160e9dff3f">greenelab/xswap-manuscript@2b069f9</a> on August 7, 2019. </em></small></p>
+<p><small><em> This manuscript (<a href="https://greenelab.github.io/xswap-manuscript/v/5c230114e43be89c5328aacd45bd584da37ee5f0/">permalink</a>) was automatically generated from <a href="https://github.com/greenelab/xswap-manuscript/tree/5c230114e43be89c5328aacd45bd584da37ee5f0">greenelab/xswap-manuscript@5c23011</a> on August 8, 2019. </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
 <li><p><strong>Michael Zietz</strong><br> <img src="images/orcid.svg" alt="ORCID icon" class="inline_icon" /> <a href="https://orcid.org/0000-0003-0539-630X">0000-0003-0539-630X</a> · <img src="images/github.svg" alt="GitHub icon" class="inline_icon" /> <a href="https://github.com/zietzm">zietzm</a> · <img src="images/twitter.svg" alt="Twitter icon" class="inline_icon" /> <a href="https://twitter.com/ZietzMichael">ZietzMichael</a><br> <small> Department of Physics &amp; Astronomy, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America; Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America · Funded by [‘Roy and Diana Vagelos Scholars Program in the Molecular Life Sciences’, ‘the Gordon and Betty Moore Foundation (GBMF4552)’] </small></p></li>
@@ -48,7 +48,13 @@
 <h3 id="network-permutation">Network permutation</h3>
 <h3 id="xswap-algorithm">XSwap algorithm</h3>
 <h3 id="edge-prior">Edge prior</h3>
+<p>We introduce the “edge prior” to quantify the probability that two nodes are connected based only on their degree. The edge prior can be estimated using the maximum likelihood estimate for the binomial distribution success probability–the fraction of permuted networks in which a given edge exists. Based only on permuted networks, the edge prior does not contain any information about the true edges in the (unpermuted) network. The edge prior is a numerical feature that can be computed for each node pair in a network, and we compared its ability to predict edges in three tasks, discussed below.</p>
 <h3 id="edge-prior-approximation">Edge prior approximation</h3>
+<p>We also considered the possibility that the probability of an edge existing across permuted networks could be written as a closed form equation involving the node pair’s degree. We were unable to find a closed-form solution giving the edge prior without assuming independent node pairs, which we believe is incorrect for XSwap. Nonetheless, we discovered a good approximation to the edge prior for networks with many nodes and relatively low edge density.</p>
+<p>Let <span class="math inline">\(m\)</span> be the total number of edge in the network, and <span class="math inline">\(d(u_i)\)</span>, <span class="math inline">\(d(v_j)\)</span> be the source and target degrees of a node pair, respectively. A good approximation of the edge prior is given by the following: <span class="math display">\[\begin{equation}
+    P_{i,j} = \frac{d(u_i) d(v_j)}{\sqrt{(d(u_i) d(v_j))^2 + (m - d(u_i) - d(v_j) + 1)^2}}
+\end{equation}\]</span></p>
+<p>Further discussion of this approximate edge prior and an derivation are available in <a href="#approx-prior-supp">the supplement</a>.</p>
 <h3 id="prediction-tasks">Prediction tasks</h3>
 <h3 id="degree-grouping">Degree-grouping</h3>
 <h3 id="implementation-and-source-code">Implementation and source code</h3>
@@ -66,6 +72,36 @@
 <div id="refs" role="doc-bibliography">
 
 </div>
+<h2 id="supplemental-information">Supplemental information</h2>
+<h3 id="approx-prior-supp">Approximate edge prior</h3>
+<p>To approximate the edge prior, we began by making two simplifications. First, we assumed independence between node pairs. This assumption does not actually hold for the XSwap algorithm, though it is a reasonable simplification for large, sparse networks. Second, we assumed that the XSwap process is stationary. This assumption also does not actually hold, but it was made because it significantly simplifies the problem. A single node pair has two possible states, “edge” and “no edge”. These states are not transient, and they are not periodic so long as more than one possible swap exists in the network. In almost all cases, then, our simplified model of the algorithm gives the state of a node pair as an ergodic process, independent of other node pairs.</p>
+<p>Let <span class="math inline">\(A_{i,j}\)</span> represent the existence of edge <span class="math inline">\((i, j)\)</span> For a given node pair, <span class="math inline">\((i, j)\)</span>, then, let <span class="math inline">\(q_{i,j}\)</span> represent the transition probability from the “no edge” state to the “edge” state in one successful iteration of the XSwap algorithm. Let <span class="math inline">\(r_{i,j}\)</span> represent the probability of the opposite transition (“edge” to “no edge”) in one successful iteration. With “no edge” represented as <span class="math inline">\([1, 0]^T\)</span> and “edge” represented as <span class="math inline">\([0, 1]^T\)</span>, the transition matrix, <span class="math inline">\(P\)</span>, is given by the following:</p>
+<p><span class="math display">\[\begin{align*}
+    P^T &amp;= \begin{bmatrix}
+       1-q &amp; r \\
+       q &amp; 1-r
+     \end{bmatrix}
+\end{align*}\]</span></p>
+<p>The stationary distribution of this system should correspond to the distribution when the number of swaps goes to infinity. It can be found by computing the eigenvectors of the system, as we know that the stationary distribution vector, <span class="math inline">\(\mathbf{v}\)</span> satisfies <span class="math inline">\(P^T \mathbf{v} = \mathbf{v}\)</span>. The normalized eigenvector <span class="math inline">\(\mathbf{v}\)</span> is given by</p>
+<p><span class="math display">\[\begin{align*}
+    \mathbf{v} = \frac{1}{r/q + 1} \begin{bmatrix}
+        r/q \\
+        1
+    \end{bmatrix}
+\end{align*}\]</span></p>
+<p>The asymptotic edge probability is therefore</p>
+<p><span class="math display">\[\frac{1}{r/q + 1}.\]</span></p>
+<p>Since node pairs are being treated as independent, the probability of an edge being created in one successful iteration, given that the edge does not currently exist, is the ratio of the number of edge choices involving nodes <span class="math inline">\(i\)</span> and <span class="math inline">\(j\)</span> to the total number of possible swaps, <span class="math inline">\(S\)</span>. Let <span class="math inline">\(d(u_i)\)</span> represent the degree of source node <span class="math inline">\(i\)</span> and <span class="math inline">\(d(v_j)\)</span> represent the degree of target node <span class="math inline">\(j\)</span>.</p>
+<p><span class="math display">\[q_{i,j} = \frac{d(u_i)d(v_j)}{S}\]</span></p>
+<p>Similarly, the probability of an edge being eliminated in one iteration is the ratio of the number of edge choices involving <span class="math inline">\((i,j)\)</span> and any other valid edge to the total number of possible swaps. Let <span class="math inline">\(m\)</span> be the total number of edges in the network.</p>
+<p><span class="math display">\[r_{i,j} = \frac{m - d(u_i) - d(v_j) + 1}{S}\]</span></p>
+<p>The approximate edge prior is, therefore,</p>
+<p><span class="math display">\[\frac{d(u_i)d(v_j)}{m - d(u_i) - d(v_j) + 1 + d(u_i)d(v_j)}.\]</span></p>
+<p>Unfortunately, we found that the above edge prior approximation is a poor approximation in many cases. We found that the following modified form (introduced in Methods) affords a superior approximation:</p>
+<p><span class="math display">\[\begin{equation}
+    P_{i,j} = \frac{d(u_i) d(v_j)}{\sqrt{(d(u_i) d(v_j))^2 + (m - d(u_i) - d(v_j) + 1)^2}}
+\end{equation}\]</span></p>
+<p>Because the modified form of the approximation offers a much superior fit to the data, we chose to include only the modified version in the Python package released, and we used only the modified form throughout our analysis.</p>
 <!-- default theme -->
 
 <style>
