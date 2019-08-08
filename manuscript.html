@@ -26,7 +26,7 @@
 <header id="title-block-header">
 <h1 class="title">The probability of edge existence due to node degree: a baseline for network-based predictions</h1>
 </header>
-<p><small><em> This manuscript (<a href="https://greenelab.github.io/xswap-manuscript/v/5c230114e43be89c5328aacd45bd584da37ee5f0/">permalink</a>) was automatically generated from <a href="https://github.com/greenelab/xswap-manuscript/tree/5c230114e43be89c5328aacd45bd584da37ee5f0">greenelab/xswap-manuscript@5c23011</a> on August 8, 2019. </em></small></p>
+<p><small><em> This manuscript (<a href="https://greenelab.github.io/xswap-manuscript/v/d51b609a5d82563c1ed1710eb6987ce1147a3e96/">permalink</a>) was automatically generated from <a href="https://github.com/greenelab/xswap-manuscript/tree/d51b609a5d82563c1ed1710eb6987ce1147a3e96">greenelab/xswap-manuscript@d51b609</a> on August 8, 2019. </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
 <li><p><strong>Michael Zietz</strong><br> <img src="images/orcid.svg" alt="ORCID icon" class="inline_icon" /> <a href="https://orcid.org/0000-0003-0539-630X">0000-0003-0539-630X</a> · <img src="images/github.svg" alt="GitHub icon" class="inline_icon" /> <a href="https://github.com/zietzm">zietzm</a> · <img src="images/twitter.svg" alt="Twitter icon" class="inline_icon" /> <a href="https://twitter.com/ZietzMichael">ZietzMichael</a><br> <small> Department of Physics &amp; Astronomy, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America; Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America · Funded by [‘Roy and Diana Vagelos Scholars Program in the Molecular Life Sciences’, ‘the Gordon and Betty Moore Foundation (GBMF4552)’] </small></p></li>
@@ -47,6 +47,14 @@
 <h2 id="methods">Methods</h2>
 <h3 id="network-permutation">Network permutation</h3>
 <h3 id="xswap-algorithm">XSwap algorithm</h3>
+<p>Hanhijärvi, et al. presented XSwap <span class="citation" data-cites="iKOIEzQ9">[<a href="#ref-iKOIEzQ9" role="doc-biblioref">1</a>]</span>, an algorithm for the randomization (“permutation”) of unweighted networks (Figure <a href="#fig:algo">3</a>A). The algorithm picks two existing edges at random, and if the edges constitute a valid swap, exchanges the targets between the edges (Figure <a href="#fig:xswap">2</a>).</p>
+<figure>
+<img src="images/xswap_figure.png" alt="Figure 2: Graphical representation of the XSwap algorithm applied to two edges. The algorithm preserves both the source- and target-degree for all nodes." id="fig:xswap" style="width:50.0%" /><figcaption><span>Figure 2:</span> Graphical representation of the XSwap algorithm applied to two edges. The algorithm preserves both the source- and target-degree for all nodes.</figcaption>
+</figure>
+<p>To allow greater flexibility, we modified the algorithm by adding two parameters, “<code>allow_self_loops</code>”, and “<code>allow_antiparallel</code>” that allow a greater variety of network types to be permuted (Figure <a href="#fig:algo">3</a>B). Specifically, two chosen edges constitute a valid swap if they preserve degree for all four involved nodes and do not violate the above condition options. The motivation for these generalizations is to make the permutation method applicable both to directed and undirected graphs, as well as to networks with different types of nodes, variously called multipartite, heterogeneous, or multimodal networks. We provide documentation for parameter choices depending on the type of network being permuted in the GitHub repository (https://github.com/hetio/xswap). The original algorithm and our proposed modification are given in Figure <a href="#fig:algo">3</a>.</p>
+<figure>
+<img src="images/xswap_algos.png" alt="Figure 3: A. XSwap algorithm due to Hanhijärvi, et al. [1]. B. Proposed modification to XSwap algorithm" id="fig:algo" style="width:100.0%" /><figcaption><span>Figure 3:</span> <strong>A.</strong> XSwap algorithm due to Hanhijärvi, et al. <span class="citation" data-cites="iKOIEzQ9">[<a href="#ref-iKOIEzQ9" role="doc-biblioref">1</a>]</span>. <strong>B.</strong> Proposed modification to XSwap algorithm</figcaption>
+</figure>
 <h3 id="edge-prior">Edge prior</h3>
 <p>We introduce the “edge prior” to quantify the probability that two nodes are connected based only on their degree. The edge prior can be estimated using the maximum likelihood estimate for the binomial distribution success probability–the fraction of permuted networks in which a given edge exists. Based only on permuted networks, the edge prior does not contain any information about the true edges in the (unpermuted) network. The edge prior is a numerical feature that can be computed for each node pair in a network, and we compared its ability to predict edges in three tasks, discussed below.</p>
 <h3 id="edge-prior-approximation">Edge prior approximation</h3>
@@ -60,17 +68,22 @@
 <h3 id="implementation-and-source-code">Implementation and source code</h3>
 <h2 id="results">Results</h2>
 <figure>
-<img src="" alt="Figure 2: Discrimination figure" id="fig:discrimination" style="width:100.0%" /><figcaption><span>Figure 2:</span> Discrimination figure</figcaption>
+<img src="" alt="Figure 4: Discrimination figure" id="fig:discrimination" style="width:100.0%" /><figcaption><span>Figure 4:</span> Discrimination figure</figcaption>
 </figure>
 <figure>
-<img src="" alt="Figure 3: Calibration figure" id="fig:calibration" style="width:100.0%" /><figcaption><span>Figure 3:</span> Calibration figure</figcaption>
+<img src="" alt="Figure 5: Calibration figure" id="fig:calibration" style="width:100.0%" /><figcaption><span>Figure 5:</span> Calibration figure</figcaption>
 </figure>
 <h2 id="discussion">Discussion</h2>
 <h2 id="conclusion">Conclusion</h2>
 <h2 id="references" class="page_break_before">References</h2>
 <!-- Explicitly insert bibliography here -->
 <div id="refs" role="doc-bibliography">
-
+<div id="ref-iKOIEzQ9">
+<p>1. <strong>Randomization Techniques for Graphs</strong><br />
+Sami Hanhijärvi, Gemma C. Garriga, Kai Puolamäki<br />
+<em>Proceedings of the 2009 SIAM International Conference on Data Mining</em> (2009-04-30) <a href="https://doi.org/f3mn58">https://doi.org/f3mn58</a><br />
+DOI: <a href="https://doi.org/10.1137/1.9781611972795.67">10.1137/1.9781611972795.67</a></p>
+</div>
 </div>
 <h2 id="supplemental-information">Supplemental information</h2>
 <h3 id="approx-prior-supp">Approximate edge prior</h3>

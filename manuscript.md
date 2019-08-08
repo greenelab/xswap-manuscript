@@ -27,9 +27,9 @@ title: 'The probability of edge existence due to node degree: a baseline for net
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/xswap-manuscript/v/5c230114e43be89c5328aacd45bd584da37ee5f0/))
+([permalink](https://greenelab.github.io/xswap-manuscript/v/d51b609a5d82563c1ed1710eb6987ce1147a3e96/))
 was automatically generated
-from [greenelab/xswap-manuscript@5c23011](https://github.com/greenelab/xswap-manuscript/tree/5c230114e43be89c5328aacd45bd584da37ee5f0)
+from [greenelab/xswap-manuscript@d51b609](https://github.com/greenelab/xswap-manuscript/tree/d51b609a5d82563c1ed1710eb6987ce1147a3e96)
 on August 8, 2019.
 </em></small>
 
@@ -123,6 +123,22 @@ We have released a full implementation of our network permutation method and the
 ### Network permutation
 
 ### XSwap algorithm
+
+Hanhijärvi, et al. presented XSwap [@iKOIEzQ9], an algorithm for the randomization ("permutation") of unweighted networks (Figure {@fig:algo}A).
+The algorithm picks two existing edges at random, and if the edges constitute a valid swap, exchanges the targets between the edges (Figure {@fig:xswap}).
+
+![Graphical representation of the XSwap algorithm applied to two edges.
+The algorithm preserves both the source- and target-degree for all nodes.](images/xswap_figure.png){#fig:xswap width="50%"}
+
+To allow greater flexibility, we modified the algorithm by adding two parameters, "`allow_self_loops`", and "`allow_antiparallel`" that allow a greater variety of network types to be permuted (Figure {@fig:algo}B).
+Specifically, two chosen edges constitute a valid swap if they preserve degree for all four involved nodes and do not violate the above condition options.
+The motivation for these generalizations is to make the permutation method applicable both to directed and undirected graphs, as well as to networks with different types of nodes, variously called multipartite, heterogeneous, or multimodal networks.
+We provide documentation for parameter choices depending on the type of network being permuted in the GitHub repository (https://github.com/hetio/xswap).
+The original algorithm and our proposed modification are given in Figure {@fig:algo}.
+
+![
+  **A.** XSwap algorithm due to Hanhijärvi, et al. [@iKOIEzQ9].
+  **B.** Proposed modification to XSwap algorithm](images/xswap_algos.png){#fig:algo width="100%"}
 
 ### Edge prior
 
