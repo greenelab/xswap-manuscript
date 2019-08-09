@@ -5,7 +5,7 @@ author-meta:
 - Christopher Williams
 - Michael W. Nagle
 - Casey S. Greene
-date-meta: '2019-08-08'
+date-meta: '2019-08-09'
 keywords:
 - xswap
 - permutation
@@ -27,10 +27,10 @@ title: 'The probability of edge existence due to node degree: a baseline for net
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/xswap-manuscript/v/d51b609a5d82563c1ed1710eb6987ce1147a3e96/))
+([permalink](https://greenelab.github.io/xswap-manuscript/v/e6a8e5ab6d3124a488ea9285b3655b9de9b6ef80/))
 was automatically generated
-from [greenelab/xswap-manuscript@d51b609](https://github.com/greenelab/xswap-manuscript/tree/d51b609a5d82563c1ed1710eb6987ce1147a3e96)
-on August 8, 2019.
+from [greenelab/xswap-manuscript@e6a8e5a](https://github.com/greenelab/xswap-manuscript/tree/e6a8e5ab6d3124a488ea9285b3655b9de9b6ef80)
+on August 9, 2019.
 </em></small>
 
 ## Authors
@@ -121,6 +121,16 @@ We have released a full implementation of our network permutation method and the
 ## Methods
 
 ### Network permutation
+
+Network permutation is a way to produce new networks by randomizing the connections of an existing network.
+Specialized permutation strategies can be devised that permute networks while retaining chosen features.
+Comparing between permuted and unpermuted networks gives insight to the effects of the retained network features.
+For example, an edge prediction method that has superior reconstruction performance on a network compared to its permutations likely relies on information that is eliminated in permutation.
+Conversely, identical predictive performance on true and permuted networks indicates that a method relies on information that is preserved during permutation.
+Network permutation is a flexible framework for analyzing other methods, because it generates networks with identical formats to the original network.
+We propose using network permutation to isolate degree and determine its effects in different contexts.
+Degree-preserving network permutation obscures true connections and higher-order connectivity information while retaining node degree, and thereby, the network's degree sequence.
+Thanks to the flexibility of permutation, our framework can quantify the effect of degree on any network edge prediction method.
 
 ### XSwap algorithm
 
