@@ -9,7 +9,7 @@
   <meta name="author" content="Christopher Williams" />
   <meta name="author" content="Michael W. Nagle" />
   <meta name="author" content="Casey S. Greene" />
-  <meta name="dcterms.date" content="2019-08-08" />
+  <meta name="dcterms.date" content="2019-08-09" />
   <meta name="keywords" content="xswap, permutation, network, hetnets, degree, bioinformatics, python, manubot" />
   <title>The probability of edge existence due to node degree: a baseline for network-based predictions</title>
   <style>
@@ -26,7 +26,7 @@
 <header id="title-block-header">
 <h1 class="title">The probability of edge existence due to node degree: a baseline for network-based predictions</h1>
 </header>
-<p><small><em> This manuscript (<a href="https://greenelab.github.io/xswap-manuscript/v/d51b609a5d82563c1ed1710eb6987ce1147a3e96/">permalink</a>) was automatically generated from <a href="https://github.com/greenelab/xswap-manuscript/tree/d51b609a5d82563c1ed1710eb6987ce1147a3e96">greenelab/xswap-manuscript@d51b609</a> on August 8, 2019. </em></small></p>
+<p><small><em> This manuscript (<a href="https://greenelab.github.io/xswap-manuscript/v/e6a8e5ab6d3124a488ea9285b3655b9de9b6ef80/">permalink</a>) was automatically generated from <a href="https://github.com/greenelab/xswap-manuscript/tree/e6a8e5ab6d3124a488ea9285b3655b9de9b6ef80">greenelab/xswap-manuscript@e6a8e5a</a> on August 9, 2019. </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
 <li><p><strong>Michael Zietz</strong><br> <img src="images/orcid.svg" alt="ORCID icon" class="inline_icon" /> <a href="https://orcid.org/0000-0003-0539-630X">0000-0003-0539-630X</a> · <img src="images/github.svg" alt="GitHub icon" class="inline_icon" /> <a href="https://github.com/zietzm">zietzm</a> · <img src="images/twitter.svg" alt="Twitter icon" class="inline_icon" /> <a href="https://twitter.com/ZietzMichael">ZietzMichael</a><br> <small> Department of Physics &amp; Astronomy, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America; Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America · Funded by [‘Roy and Diana Vagelos Scholars Program in the Molecular Life Sciences’, ‘the Gordon and Betty Moore Foundation (GBMF4552)’] </small></p></li>
@@ -46,6 +46,7 @@
 <h3 id="feature-degree-correlation">Feature-degree correlation</h3>
 <h2 id="methods">Methods</h2>
 <h3 id="network-permutation">Network permutation</h3>
+<p>Network permutation is a way to produce new networks by randomizing the connections of an existing network. Specialized permutation strategies can be devised that permute networks while retaining chosen features. Comparing between permuted and unpermuted networks gives insight to the effects of the retained network features. For example, an edge prediction method that has superior reconstruction performance on a network compared to its permutations likely relies on information that is eliminated in permutation. Conversely, identical predictive performance on true and permuted networks indicates that a method relies on information that is preserved during permutation. Network permutation is a flexible framework for analyzing other methods, because it generates networks with identical formats to the original network. We propose using network permutation to isolate degree and determine its effects in different contexts. Degree-preserving network permutation obscures true connections and higher-order connectivity information while retaining node degree, and thereby, the network’s degree sequence. Thanks to the flexibility of permutation, our framework can quantify the effect of degree on any network edge prediction method.</p>
 <h3 id="xswap-algorithm">XSwap algorithm</h3>
 <p>Hanhijärvi, et al. presented XSwap <span class="citation" data-cites="iKOIEzQ9">[<a href="#ref-iKOIEzQ9" role="doc-biblioref">1</a>]</span>, an algorithm for the randomization (“permutation”) of unweighted networks (Figure <a href="#fig:algo">3</a>A). The algorithm picks two existing edges at random, and if the edges constitute a valid swap, exchanges the targets between the edges (Figure <a href="#fig:xswap">2</a>).</p>
 <figure>
