@@ -5,7 +5,7 @@ author-meta:
 - Christopher Williams
 - Michael W. Nagle
 - Casey S. Greene
-date-meta: '2019-08-09'
+date-meta: '2019-08-12'
 keywords:
 - xswap
 - permutation
@@ -27,10 +27,10 @@ title: 'The probability of edge existence due to node degree: a baseline for net
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/xswap-manuscript/v/e6a8e5ab6d3124a488ea9285b3655b9de9b6ef80/))
+([permalink](https://greenelab.github.io/xswap-manuscript/v/bd787f72b62f29c45c022fcec2c79de326c48524/))
 was automatically generated
-from [greenelab/xswap-manuscript@e6a8e5a](https://github.com/greenelab/xswap-manuscript/tree/e6a8e5ab6d3124a488ea9285b3655b9de9b6ef80)
-on August 9, 2019.
+from [greenelab/xswap-manuscript@bd787f7](https://github.com/greenelab/xswap-manuscript/tree/bd787f72b62f29c45c022fcec2c79de326c48524)
+on August 12, 2019.
 </em></small>
 
 ## Authors
@@ -177,6 +177,10 @@ Further discussion of this approximate edge prior and an derivation are availabl
 
 ### Implementation and source code
 
+We implemented the modified XSwap algorithm as a Python package, with the actual edge swap mechanism implemented in C++ for greater speed.
+In addition to functions that permute networks (represented as edge lists), the package contains utilities for computing the edge prior, converting a network between adjacency matrix and edge list formats, and for assigning unique identifiers to nodes.
+The Python package is available on the Python Packaging Index under the name "xswap".
+The full source code for our method of degree-preserving network permutation has also been made freely available ([https://github.com/hetio/xswap](https://github.com/hetio/xswap)), as has the code for the analysis, figure generation ([https://github.com/greenelab/xswap-analysis](https://github.com/greenelab/xswap-analysis)), and manuscript ([https://github.com/greenelab/xswap-manuscript](https://github.com/greenelab/xswap-manuscript)).
 
 ## Results
 

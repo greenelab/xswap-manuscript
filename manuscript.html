@@ -9,7 +9,7 @@
   <meta name="author" content="Christopher Williams" />
   <meta name="author" content="Michael W. Nagle" />
   <meta name="author" content="Casey S. Greene" />
-  <meta name="dcterms.date" content="2019-08-09" />
+  <meta name="dcterms.date" content="2019-08-12" />
   <meta name="keywords" content="xswap, permutation, network, hetnets, degree, bioinformatics, python, manubot" />
   <title>The probability of edge existence due to node degree: a baseline for network-based predictions</title>
   <style>
@@ -26,7 +26,7 @@
 <header id="title-block-header">
 <h1 class="title">The probability of edge existence due to node degree: a baseline for network-based predictions</h1>
 </header>
-<p><small><em> This manuscript (<a href="https://greenelab.github.io/xswap-manuscript/v/e6a8e5ab6d3124a488ea9285b3655b9de9b6ef80/">permalink</a>) was automatically generated from <a href="https://github.com/greenelab/xswap-manuscript/tree/e6a8e5ab6d3124a488ea9285b3655b9de9b6ef80">greenelab/xswap-manuscript@e6a8e5a</a> on August 9, 2019. </em></small></p>
+<p><small><em> This manuscript (<a href="https://greenelab.github.io/xswap-manuscript/v/bd787f72b62f29c45c022fcec2c79de326c48524/">permalink</a>) was automatically generated from <a href="https://github.com/greenelab/xswap-manuscript/tree/bd787f72b62f29c45c022fcec2c79de326c48524">greenelab/xswap-manuscript@bd787f7</a> on August 12, 2019. </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
 <li><p><strong>Michael Zietz</strong><br> <img src="images/orcid.svg" alt="ORCID icon" class="inline_icon" /> <a href="https://orcid.org/0000-0003-0539-630X">0000-0003-0539-630X</a> · <img src="images/github.svg" alt="GitHub icon" class="inline_icon" /> <a href="https://github.com/zietzm">zietzm</a> · <img src="images/twitter.svg" alt="Twitter icon" class="inline_icon" /> <a href="https://twitter.com/ZietzMichael">ZietzMichael</a><br> <small> Department of Physics &amp; Astronomy, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America; Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America · Funded by [‘Roy and Diana Vagelos Scholars Program in the Molecular Life Sciences’, ‘the Gordon and Betty Moore Foundation (GBMF4552)’] </small></p></li>
@@ -67,6 +67,7 @@
 <h3 id="prediction-tasks">Prediction tasks</h3>
 <h3 id="degree-grouping">Degree-grouping</h3>
 <h3 id="implementation-and-source-code">Implementation and source code</h3>
+<p>We implemented the modified XSwap algorithm as a Python package, with the actual edge swap mechanism implemented in C++ for greater speed. In addition to functions that permute networks (represented as edge lists), the package contains utilities for computing the edge prior, converting a network between adjacency matrix and edge list formats, and for assigning unique identifiers to nodes. The Python package is available on the Python Packaging Index under the name “xswap”. The full source code for our method of degree-preserving network permutation has also been made freely available (<a href="https://github.com/hetio/xswap">https://github.com/hetio/xswap</a>), as has the code for the analysis, figure generation (<a href="https://github.com/greenelab/xswap-analysis">https://github.com/greenelab/xswap-analysis</a>), and manuscript (<a href="https://github.com/greenelab/xswap-manuscript">https://github.com/greenelab/xswap-manuscript</a>).</p>
 <h2 id="results">Results</h2>
 <figure>
 <img src="" alt="Figure 4: Discrimination figure" id="fig:discrimination" style="width:100.0%" /><figcaption><span>Figure 4:</span> Discrimination figure</figcaption>

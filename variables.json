@@ -1,5 +1,5 @@
 {
-  "date": "August 9, 2019",
+  "date": "August 12, 2019",
   "authors": [
     {
       "github": "zietzm",
@@ -100,13 +100,13 @@
     "repo_slug": "greenelab/xswap-manuscript",
     "repo_owner": "greenelab",
     "repo_name": "xswap-manuscript",
-    "commit": "e6a8e5ab6d3124a488ea9285b3655b9de9b6ef80"
+    "commit": "bd787f72b62f29c45c022fcec2c79de326c48524"
   },
   "manuscript_stats": {
     "reference_counts": {
       "doi": 1,
       "total": 1
     },
-    "word_count": 1627
+    "word_count": 1731
   }
 }
