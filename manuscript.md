@@ -27,9 +27,9 @@ title: 'The probability of edge existence due to node degree: a baseline for net
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/xswap-manuscript/v/e198478ed9882f653422698c020a5d6920aa675a/))
+([permalink](https://greenelab.github.io/xswap-manuscript/v/d0ae07217b0f3632b5aa6157ac6f070f8dfc9fcc/))
 was automatically generated
-from [greenelab/xswap-manuscript@e198478](https://github.com/greenelab/xswap-manuscript/tree/e198478ed9882f653422698c020a5d6920aa675a)
+from [greenelab/xswap-manuscript@d0ae072](https://github.com/greenelab/xswap-manuscript/tree/d0ae07217b0f3632b5aa6157ac6f070f8dfc9fcc)
 on August 13, 2019.
 </em></small>
 
@@ -244,6 +244,15 @@ The full source code for our method of degree-preserving network permutation has
 ![Discrimination figure](){#fig:discrimination width="100%"}
 
 ![Calibration figure](){#fig:calibration width="100%"}
+
+The second prediction task mirrored the first task, but it involved reconstructing networks based on subsampled networks with only 70% of the original edges.
+Because edges were sampled uniformly without replacement, the subsampled networks share similar degree distributions to the original networks (see Figure {@fig:degree}B).
+Unlike in the first task, edges that were present in the sampled network were not tested and therefore are not included in the performance metrics.
+The results of the second prediction task further demonstrate a high level of performance for degree-sequence-based node pair features (Figure {@fig:discrimination}).
+The edge prior was able to reconstruct the unsampled network with an AUROC of greater than 0.9 in 14 of 20 networks.
+As was observed in the first task, node pair features computed in second prediction task were highly rank-correlated, meaning the AUROC values for different features were similar.
+While performance was slightly lower in the second task than the first, we found that many networks were still well reconstructed.
+The edge prior was the best calibrated feature for both tasks.
 
 ## Discussion
 
