@@ -27,9 +27,9 @@ title: 'The probability of edge existence due to node degree: a baseline for net
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/xswap-manuscript/v/e9073b35601ebe40839e2cca7085964d78d64e92/))
+([permalink](https://greenelab.github.io/xswap-manuscript/v/e198478ed9882f653422698c020a5d6920aa675a/))
 was automatically generated
-from [greenelab/xswap-manuscript@e9073b3](https://github.com/greenelab/xswap-manuscript/tree/e9073b35601ebe40839e2cca7085964d78d64e92)
+from [greenelab/xswap-manuscript@e198478](https://github.com/greenelab/xswap-manuscript/tree/e198478ed9882f653422698c020a5d6920aa675a)
 on August 13, 2019.
 </em></small>
 
@@ -109,14 +109,52 @@ We have released a full implementation of our network permutation method and the
 
 ## Introduction
 
-### Node degree
+Networks contain information about relationships between entities ("edges between nodes").
+A node's degree is the number of relationships it has in the network.
+Networks contain many nodes, whose degrees can be aggregated to form the network's degree distribution.
+Because different nodes can have very different degrees, real networks have highly variable degree distributions (Figure {@fig:hetionet}).
 
-![Degree figure](){#fig:degree width="100%"}
+![Degree distribution can vary greatly between networks, even between the source and target degree distributions within the same (directed or bipartite) network.
+  Shown are seven degree distributions for six edge type subnetworks of Hetionet [@O21tn8vf].
+  (The final two are the source and target distributions of the gene-regulates-gene directed edge type.)
+](https://github.com/greenelab/xswap-analysis/raw/5a257c9d28e0a4c3cc8f2fd8493f27ff4652f2c6/img/hetionet_degrees.png){#fig:hetionet width="100%"}
 
-### Edge prediction
+Degree is an important metric for differentiating between nodes, and it appears in many common edge prediction features [@ohIv6zMA].
+However, reliance on degree can pose problems for edge prediction.
+Firstly, bias in the data can distort node degree so that degree differences between two nodes may not be meaningful.
+Secondly, reliance on degree can lead edge prediction methods to make nonspecific or trivial predictions and fail to identify novel or insightful relationships.
 
-### Feature-degree correlation
+Most biomedical data networks are imperfect representations of the true set of relationships.
+Real networks often mistakenly include edges that do not exist and exclude edges that do exist.
+How well a network represents the true relationships it attempts to represent depends on a number of factors, especially the methods used to generate the data in the network [@bo2VEmIz; @yJZSr6c6; @C4FHCVCz].
+We define "degree bias" as the type of misrepresentation that occurs when the fraction of incorrectly existent/nonexistent relationships depends on the number of connections that nodes make (their "degrees").
+Depending on the type of data being represented, degree biases can arise due to experimental methods, inspection bias, or other factors [@bo2VEmIz].
 
+Inspection bias indicates that entities are not uniformly studied [@lnDqu0oW], and it is likely to cause degree bias when networks are constructed using hypothesis-driven findings extracted from the literature, as newly-discovered relationships are not randomly sampled from the set of all true relationships.
+For example, the number of publications mentioning a gene has little correlation with its degree in a systematically-derived protein interaction network [Figure 6A in @LCyCrr7W].
+Therefore, the high correlation between number of publications and degree in low-throughput interaction networks is almost entirely the result of inspection bias.
+This evidence suggests that many poorly studied genes have similar numbers of interactions as the genes scientists have preferentially examined.
+The consequence of degree bias is that a difference in degree between two nodes may not reflect a difference in the number of true edges.
+Reliance on degree may be unfavorable depending on the prediction/analysis task being conducted and the magnitude of possible degree bias in the data.
+
+Another reason why a method's reliance on degree can be unfavorable is that degree imbalance can lead to prediction nonspecificity.
+Nonspecific predictions are made on the basis of generic characteristics rather than the specific connectivity information contained in a network.
+For example, Gillis et al. [@zB6RQrIj] examined the concept of prediction specificity in the context of gene function prediction and found that many predictions appear to rely primarily on multifunctionality and could be "potentially misleading with respect to causality."
+Real networks have a variety of degree distributions (Figure {@fig:hetionet}), and they commonly exhibit degree imbalance [@GFS9MouO; @hbOjmCsZ; @1mIOnArF].
+Degree imbalance leads high-degree nodes to dominate in the predictions made by degree-associated methods [@g059lh8v], which are effective predictors of connections in some biological networks [@1736TBtF6].
+
+Consequently, degree-based predictions are more likely nonspecific, meaning the same set of predictions performs well for different tasks.
+However, depending on the prediction task, edge predictions between very high degree nodes may be undesired, uninsightful, or nonspecific.
+Model evaluation is challenging in this context, as nonspecific or trivial predictions need not be incorrect, even if they are not the desired outputs of the predictive model.
+For example, predicting that the highest degree node in a network shares edges with the remaining nodes to which it is not connected will often lead to many correct predictions, despite the predictions being generic to all nodes in the network.
+Degree-based features should often be included in the interpretation of predictions to disentangle desired from non-desired effects and to effectively evaluate and compare predictive models.
+
+Degree is important in edge prediction, but it can cause undesired effects.
+We sought to understand the effect of node degree on edge prediction methods.
+We introduce a permutation-based framework to find edge existence probabilities due to node degree and to quantify the contribution of degree to edge prediction methods.
+This method allows edge predictions to be evaluated in the context of degree and its effects on the prediction task.
+Our results demonstrate that degree-associated methods are very effective for reconstructing a network using a subsampled holdout but ineffective for predicting edges between distinct degree distributions.
+Using a number of different networks, we provide evidence that degree has a strong effect on the probability of edge existence and that our "edge prior" feature best quantifies this probability.
 
 ## Methods
 
