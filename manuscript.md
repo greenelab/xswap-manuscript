@@ -5,7 +5,7 @@ author-meta:
 - Christopher Williams
 - Michael W. Nagle
 - Casey S. Greene
-date-meta: '2019-08-12'
+date-meta: '2019-08-13'
 keywords:
 - xswap
 - permutation
@@ -27,10 +27,10 @@ title: 'The probability of edge existence due to node degree: a baseline for net
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/xswap-manuscript/v/bd787f72b62f29c45c022fcec2c79de326c48524/))
+([permalink](https://greenelab.github.io/xswap-manuscript/v/854a11b39e8d6957fb44b2c39d75c396105a416c/))
 was automatically generated
-from [greenelab/xswap-manuscript@bd787f7](https://github.com/greenelab/xswap-manuscript/tree/bd787f72b62f29c45c022fcec2c79de326c48524)
-on August 12, 2019.
+from [greenelab/xswap-manuscript@854a11b](https://github.com/greenelab/xswap-manuscript/tree/854a11b39e8d6957fb44b2c39d75c396105a416c)
+on August 13, 2019.
 </em></small>
 
 ## Authors
@@ -174,6 +174,12 @@ Further discussion of this approximate edge prior and an derivation are availabl
 ### Prediction tasks
 
 ### Degree-grouping
+
+Our method for degree-preserving permutation produces randomized networks that share few of their edges with the original network.
+The feature values for two node pairs with the same source and target degree are drawn from the same distribution in permuted networks, so nodes with equal degree can be grouped when summarizing features.
+We used this to augment each node pair's feature values in permuted networks, which allowed these pairs to have more permuted feature values than permuted networks.
+Degree grouping greatly increased the effective number of permutations for nodes with frequently observed degrees [@DwbABa00].
+We used degree grouping throughout our analyses.
 
 ### Implementation and source code
 

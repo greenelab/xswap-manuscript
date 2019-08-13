@@ -9,7 +9,7 @@
   <meta name="author" content="Christopher Williams" />
   <meta name="author" content="Michael W. Nagle" />
   <meta name="author" content="Casey S. Greene" />
-  <meta name="dcterms.date" content="2019-08-12" />
+  <meta name="dcterms.date" content="2019-08-13" />
   <meta name="keywords" content="xswap, permutation, network, hetnets, degree, bioinformatics, python, manubot" />
   <title>The probability of edge existence due to node degree: a baseline for network-based predictions</title>
   <style>
@@ -26,7 +26,7 @@
 <header id="title-block-header">
 <h1 class="title">The probability of edge existence due to node degree: a baseline for network-based predictions</h1>
 </header>
-<p><small><em> This manuscript (<a href="https://greenelab.github.io/xswap-manuscript/v/bd787f72b62f29c45c022fcec2c79de326c48524/">permalink</a>) was automatically generated from <a href="https://github.com/greenelab/xswap-manuscript/tree/bd787f72b62f29c45c022fcec2c79de326c48524">greenelab/xswap-manuscript@bd787f7</a> on August 12, 2019. </em></small></p>
+<p><small><em> This manuscript (<a href="https://greenelab.github.io/xswap-manuscript/v/854a11b39e8d6957fb44b2c39d75c396105a416c/">permalink</a>) was automatically generated from <a href="https://github.com/greenelab/xswap-manuscript/tree/854a11b39e8d6957fb44b2c39d75c396105a416c">greenelab/xswap-manuscript@854a11b</a> on August 13, 2019. </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
 <li><p><strong>Michael Zietz</strong><br> <img src="images/orcid.svg" alt="ORCID icon" class="inline_icon" /> <a href="https://orcid.org/0000-0003-0539-630X">0000-0003-0539-630X</a> · <img src="images/github.svg" alt="GitHub icon" class="inline_icon" /> <a href="https://github.com/zietzm">zietzm</a> · <img src="images/twitter.svg" alt="Twitter icon" class="inline_icon" /> <a href="https://twitter.com/ZietzMichael">ZietzMichael</a><br> <small> Department of Physics &amp; Astronomy, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America; Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America · Funded by [‘Roy and Diana Vagelos Scholars Program in the Molecular Life Sciences’, ‘the Gordon and Betty Moore Foundation (GBMF4552)’] </small></p></li>
@@ -66,6 +66,7 @@
 <p>Further discussion of this approximate edge prior and an derivation are available in <a href="#approx-prior-supp">the supplement</a>.</p>
 <h3 id="prediction-tasks">Prediction tasks</h3>
 <h3 id="degree-grouping">Degree-grouping</h3>
+<p>Our method for degree-preserving permutation produces randomized networks that share few of their edges with the original network. The feature values for two node pairs with the same source and target degree are drawn from the same distribution in permuted networks, so nodes with equal degree can be grouped when summarizing features. We used this to augment each node pair’s feature values in permuted networks, which allowed these pairs to have more permuted feature values than permuted networks. Degree grouping greatly increased the effective number of permutations for nodes with frequently observed degrees <span class="citation" data-cites="DwbABa00">[<a href="#ref-DwbABa00" role="doc-biblioref">2</a>]</span>. We used degree grouping throughout our analyses.</p>
 <h3 id="implementation-and-source-code">Implementation and source code</h3>
 <p>We implemented the modified XSwap algorithm as a Python package, with the actual edge swap mechanism implemented in C++ for greater speed. In addition to functions that permute networks (represented as edge lists), the package contains utilities for computing the edge prior, converting a network between adjacency matrix and edge list formats, and for assigning unique identifiers to nodes. The Python package is available on the Python Packaging Index under the name “xswap”. The full source code for our method of degree-preserving network permutation has also been made freely available (<a href="https://github.com/hetio/xswap">https://github.com/hetio/xswap</a>), as has the code for the analysis, figure generation (<a href="https://github.com/greenelab/xswap-analysis">https://github.com/greenelab/xswap-analysis</a>), and manuscript (<a href="https://github.com/greenelab/xswap-manuscript">https://github.com/greenelab/xswap-manuscript</a>).</p>
 <h2 id="results">Results</h2>
@@ -85,6 +86,11 @@
 Sami Hanhijärvi, Gemma C. Garriga, Kai Puolamäki<br />
 <em>Proceedings of the 2009 SIAM International Conference on Data Mining</em> (2009-04-30) <a href="https://doi.org/f3mn58">https://doi.org/f3mn58</a><br />
 DOI: <a href="https://doi.org/10.1137/1.9781611972795.67">10.1137/1.9781611972795.67</a></p>
+</div>
+<div id="ref-DwbABa00">
+<p>2. <strong>Degree-grouped permtuations by zietzm · Pull Request #96 · greenelab/hetmech</strong><br />
+GitHub<br />
+<a href="https://github.com/greenelab/hetmech/pull/96">https://github.com/greenelab/hetmech/pull/96</a></p>
 </div>
 </div>
 <h2 id="supplemental-information">Supplemental information</h2>
