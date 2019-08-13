@@ -26,7 +26,7 @@
 <header id="title-block-header">
 <h1 class="title">The probability of edge existence due to node degree: a baseline for network-based predictions</h1>
 </header>
-<p><small><em> This manuscript (<a href="https://greenelab.github.io/xswap-manuscript/v/854a11b39e8d6957fb44b2c39d75c396105a416c/">permalink</a>) was automatically generated from <a href="https://github.com/greenelab/xswap-manuscript/tree/854a11b39e8d6957fb44b2c39d75c396105a416c">greenelab/xswap-manuscript@854a11b</a> on August 13, 2019. </em></small></p>
+<p><small><em> This manuscript (<a href="https://greenelab.github.io/xswap-manuscript/v/e9073b35601ebe40839e2cca7085964d78d64e92/">permalink</a>) was automatically generated from <a href="https://github.com/greenelab/xswap-manuscript/tree/e9073b35601ebe40839e2cca7085964d78d64e92">greenelab/xswap-manuscript@e9073b3</a> on August 13, 2019. </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
 <li><p><strong>Michael Zietz</strong><br> <img src="images/orcid.svg" alt="ORCID icon" class="inline_icon" /> <a href="https://orcid.org/0000-0003-0539-630X">0000-0003-0539-630X</a> · <img src="images/github.svg" alt="GitHub icon" class="inline_icon" /> <a href="https://github.com/zietzm">zietzm</a> · <img src="images/twitter.svg" alt="Twitter icon" class="inline_icon" /> <a href="https://twitter.com/ZietzMichael">ZietzMichael</a><br> <small> Department of Physics &amp; Astronomy, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America; Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America · Funded by [‘Roy and Diana Vagelos Scholars Program in the Molecular Life Sciences’, ‘the Gordon and Betty Moore Foundation (GBMF4552)’] </small></p></li>
@@ -46,21 +46,55 @@
 <h3 id="feature-degree-correlation">Feature-degree correlation</h3>
 <h2 id="methods">Methods</h2>
 <h3 id="network-permutation">Network permutation</h3>
-<p>Network permutation is a way to produce new networks by randomizing the connections of an existing network. Specialized permutation strategies can be devised that permute networks while retaining chosen features. Comparing between permuted and unpermuted networks gives insight to the effects of the retained network features. For example, an edge prediction method that has superior reconstruction performance on a network compared to its permutations likely relies on information that is eliminated in permutation. Conversely, identical predictive performance on true and permuted networks indicates that a method relies on information that is preserved during permutation. Network permutation is a flexible framework for analyzing other methods, because it generates networks with identical formats to the original network. We propose using network permutation to isolate degree and determine its effects in different contexts. Degree-preserving network permutation obscures true connections and higher-order connectivity information while retaining node degree, and thereby, the network’s degree sequence. Thanks to the flexibility of permutation, our framework can quantify the effect of degree on any network edge prediction method.</p>
+<p>Network permutation is a way to produce new networks by randomizing the connections of an existing network. Specialized permutation strategies can be devised that randomize some aspects of networks while retaining other features. Comparing between permuted and unpermuted networks gives insight to the effects of the retained network features. For example, an edge prediction method that has superior reconstruction performance on a network compared to its permutations likely relies on information that is eliminated by permutation. Conversely, identical predictive performance on true and permuted networks indicates that a method relies on information that is preserved during permutation. Network permutation is a flexible framework for analyzing other methods, because it generates networks with identical formats to the original network. We propose using network permutation to isolate degree and determine its effects in different contexts. Degree-preserving network permutation obscures true connections and higher-order connectivity information while retaining node degree, and thereby, the network’s degree sequence. Thanks to the flexibility of permutation, our framework can quantify the effect of degree on any network edge prediction method.</p>
 <h3 id="xswap-algorithm">XSwap algorithm</h3>
-<p>Hanhijärvi, et al. presented XSwap <span class="citation" data-cites="iKOIEzQ9">[<a href="#ref-iKOIEzQ9" role="doc-biblioref">1</a>]</span>, an algorithm for the randomization (“permutation”) of unweighted networks (Figure <a href="#fig:algo">3</a>A). The algorithm picks two existing edges at random, and if the edges constitute a valid swap, exchanges the targets between the edges (Figure <a href="#fig:xswap">2</a>).</p>
+<p>Hanhijärvi, et al. presented XSwap <span class="citation" data-cites="iKOIEzQ9">[<a href="#ref-iKOIEzQ9" role="doc-biblioref">1</a>]</span>, an algorithm for the randomization (“permutation”) of unweighted networks (Figure <a href="#fig:algo">2</a>A). The algorithm picks two existing edges at random, and if the edges constitute a valid swap, exchanges the targets between the edges (Figure <a href="#tbl:xswap">1</a>). This process is repeated many times until the maximum number of steps has been reached. In general, the maximum number of steps should be chosen to be sufficiently large that the fraction of original edges retained in the permuted network is near its asymptotic value for a large number of steps.</p>
+<p>To allow greater flexibility, we modified the algorithm by adding two parameters, “<code>allow_loops</code>”, and “<code>allow_antiparallel</code>” that allow a greater variety of network types to be permuted (Figure <a href="#fig:algo">2</a>B). Specifically, two chosen edges constitute a valid swap if they preserve degree for all four involved nodes and do not violate the above condition options. The motivation for these generalizations is to make the permutation method applicable both to directed and undirected graphs, as well as to networks with different types of nodes, variously called multipartite, heterogeneous, or multimodal networks.</p>
+<p>When permuting bipartite networks, our method ensures that each nodes class membership and with-class degree is preserved. Similarly, heterogeneous networks should be permuted by considering each edge type as a separate network. This way, each node retains its within-edge-type degree for all edge types. We provide documentation for parameter choices depending on the type of network being permuted in the GitHub repository (https://github.com/hetio/xswap). The original algorithm and our proposed modification are given in Figure <a href="#fig:algo">2</a>.</p>
 <figure>
-<img src="images/xswap_figure.png" alt="Figure 2: Graphical representation of the XSwap algorithm applied to two edges. The algorithm preserves both the source- and target-degree for all nodes." id="fig:xswap" style="width:50.0%" /><figcaption><span>Figure 2:</span> Graphical representation of the XSwap algorithm applied to two edges. The algorithm preserves both the source- and target-degree for all nodes.</figcaption>
+<img src="images/xswap_algorithms_combined_labels.png" alt="Figure 2: A. XSwap algorithm due to Hanhijärvi, et al. [1]. B. Proposed modification to XSwap algorithm" id="fig:algo" style="width:85.0%" /><figcaption><span>Figure 2:</span> <strong>A.</strong> XSwap algorithm due to Hanhijärvi, et al. <span class="citation" data-cites="iKOIEzQ9">[<a href="#ref-iKOIEzQ9" role="doc-biblioref">1</a>]</span>. <strong>B.</strong> Proposed modification to XSwap algorithm</figcaption>
 </figure>
-<p>To allow greater flexibility, we modified the algorithm by adding two parameters, “<code>allow_self_loops</code>”, and “<code>allow_antiparallel</code>” that allow a greater variety of network types to be permuted (Figure <a href="#fig:algo">3</a>B). Specifically, two chosen edges constitute a valid swap if they preserve degree for all four involved nodes and do not violate the above condition options. The motivation for these generalizations is to make the permutation method applicable both to directed and undirected graphs, as well as to networks with different types of nodes, variously called multipartite, heterogeneous, or multimodal networks. We provide documentation for parameter choices depending on the type of network being permuted in the GitHub repository (https://github.com/hetio/xswap). The original algorithm and our proposed modification are given in Figure <a href="#fig:algo">3</a>.</p>
-<figure>
-<img src="images/xswap_algos.png" alt="Figure 3: A. XSwap algorithm due to Hanhijärvi, et al. [1]. B. Proposed modification to XSwap algorithm" id="fig:algo" style="width:100.0%" /><figcaption><span>Figure 3:</span> <strong>A.</strong> XSwap algorithm due to Hanhijärvi, et al. <span class="citation" data-cites="iKOIEzQ9">[<a href="#ref-iKOIEzQ9" role="doc-biblioref">1</a>]</span>. <strong>B.</strong> Proposed modification to XSwap algorithm</figcaption>
-</figure>
+<a name="tbl:xswap"></a>
+<table>
+<caption><span>Table 1:</span> Applications of the modified XSwap algorithm to various network types with appropriate parameter choices. For simple networks, each node’s degree is preserved. For bipartite networks, each node’s number of connections to the other part is preserved, and overall node class memberships are preserved. For directed networks, each nodes’ in- and out-degrees are preserved, though parameter choices depend on the network being permuted. Some directed networks can include antiparallel edges or loops while others do not. </caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Network type</th>
+<th style="text-align: left;">Degree preserved</th>
+<th style="text-align: left;">Figure</th>
+<th style="text-align: left;"><code>allow_antiparallel</code></th>
+<th style="text-align: left;"><code>allow_loops</code></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">simple</td>
+<td style="text-align: left;">all</td>
+<td style="text-align: left;"><img src="images/xswap_simple.png" title="fig:" height="85" /></td>
+<td style="text-align: left;">False</td>
+<td style="text-align: left;">False</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">bipartite</td>
+<td style="text-align: left;">in/out</td>
+<td style="text-align: left;"><img src="images/xswap_bipartite.png" title="fig:" height="85" /></td>
+<td style="text-align: left;">True</td>
+<td style="text-align: left;">True</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">directed</td>
+<td style="text-align: left;">in/out</td>
+<td style="text-align: left;"><img src="images/xswap_directed.png" title="fig:" height="85" /></td>
+<td style="text-align: left;">?</td>
+<td style="text-align: left;">?</td>
+</tr>
+</tbody>
+</table>
 <h3 id="edge-prior">Edge prior</h3>
-<p>We introduce the “edge prior” to quantify the probability that two nodes are connected based only on their degree. The edge prior can be estimated using the maximum likelihood estimate for the binomial distribution success probability–the fraction of permuted networks in which a given edge exists. Based only on permuted networks, the edge prior does not contain any information about the true edges in the (unpermuted) network. The edge prior is a numerical feature that can be computed for each node pair in a network, and we compared its ability to predict edges in three tasks, discussed below.</p>
-<h3 id="edge-prior-approximation">Edge prior approximation</h3>
-<p>We also considered the possibility that the probability of an edge existing across permuted networks could be written as a closed form equation involving the node pair’s degree. We were unable to find a closed-form solution giving the edge prior without assuming independent node pairs, which we believe is incorrect for XSwap. Nonetheless, we discovered a good approximation to the edge prior for networks with many nodes and relatively low edge density.</p>
-<p>Let <span class="math inline">\(m\)</span> be the total number of edge in the network, and <span class="math inline">\(d(u_i)\)</span>, <span class="math inline">\(d(v_j)\)</span> be the source and target degrees of a node pair, respectively. A good approximation of the edge prior is given by the following: <span class="math display">\[\begin{equation}
+<p>We introduce the “edge prior” to quantify the probability that two nodes are connected based only on their degree. The edge prior can be estimated using the fraction of permuted networks in which a given edge exists—the maximum likelihood estimate for the binomial distribution success probability. Based only on permuted networks, the edge prior does not contain any information about the true edges in the (unpermuted) network. The edge prior is a numerical feature that can be computed for every pair of nodes that could potentially share an edge, and we compared its ability to predict edges in three tasks, discussed below.</p>
+<h3 id="edge-prior-analytical-approximation">Edge prior analytical approximation</h3>
+<p>We also considered the possibility that the probability of an edge existing across permuted networks could be written as a closed form equation involving the node pair’s degree. A major simplification is the assumption that the probability of an edge existing is independent of all other potential edges. We were unable to find a closed-form solution giving the edge prior without assuming independence in this way, which we believe is incorrect for XSwap. Nonetheless, we discovered a good analytical approximation to the edge prior for networks with many nodes and relatively low edge density.</p>
+<p>Let <span class="math inline">\(m\)</span> be the total number of edges in the network, and <span class="math inline">\(d(u_i)\)</span>, <span class="math inline">\(d(v_j)\)</span> be the source and target degrees of a node pair, respectively. A good approximation of the edge prior is given by the following: <span class="math display">\[\begin{equation}
     P_{i,j} = \frac{d(u_i) d(v_j)}{\sqrt{(d(u_i) d(v_j))^2 + (m - d(u_i) - d(v_j) + 1)^2}}
 \end{equation}\]</span></p>
 <p>Further discussion of this approximate edge prior and an derivation are available in <a href="#approx-prior-supp">the supplement</a>.</p>
@@ -71,10 +105,10 @@
 <p>We implemented the modified XSwap algorithm as a Python package, with the actual edge swap mechanism implemented in C++ for greater speed. In addition to functions that permute networks (represented as edge lists), the package contains utilities for computing the edge prior, converting a network between adjacency matrix and edge list formats, and for assigning unique identifiers to nodes. The Python package is available on the Python Packaging Index under the name “xswap”. The full source code for our method of degree-preserving network permutation has also been made freely available (<a href="https://github.com/hetio/xswap">https://github.com/hetio/xswap</a>), as has the code for the analysis, figure generation (<a href="https://github.com/greenelab/xswap-analysis">https://github.com/greenelab/xswap-analysis</a>), and manuscript (<a href="https://github.com/greenelab/xswap-manuscript">https://github.com/greenelab/xswap-manuscript</a>).</p>
 <h2 id="results">Results</h2>
 <figure>
-<img src="" alt="Figure 4: Discrimination figure" id="fig:discrimination" style="width:100.0%" /><figcaption><span>Figure 4:</span> Discrimination figure</figcaption>
+<img src="" alt="Figure 3: Discrimination figure" id="fig:discrimination" style="width:100.0%" /><figcaption><span>Figure 3:</span> Discrimination figure</figcaption>
 </figure>
 <figure>
-<img src="" alt="Figure 5: Calibration figure" id="fig:calibration" style="width:100.0%" /><figcaption><span>Figure 5:</span> Calibration figure</figcaption>
+<img src="" alt="Figure 4: Calibration figure" id="fig:calibration" style="width:100.0%" /><figcaption><span>Figure 4:</span> Calibration figure</figcaption>
 </figure>
 <h2 id="discussion">Discussion</h2>
 <h2 id="conclusion">Conclusion</h2>

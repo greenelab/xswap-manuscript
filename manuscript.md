@@ -27,9 +27,9 @@ title: 'The probability of edge existence due to node degree: a baseline for net
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/xswap-manuscript/v/854a11b39e8d6957fb44b2c39d75c396105a416c/))
+([permalink](https://greenelab.github.io/xswap-manuscript/v/e9073b35601ebe40839e2cca7085964d78d64e92/))
 was automatically generated
-from [greenelab/xswap-manuscript@854a11b](https://github.com/greenelab/xswap-manuscript/tree/854a11b39e8d6957fb44b2c39d75c396105a416c)
+from [greenelab/xswap-manuscript@e9073b3](https://github.com/greenelab/xswap-manuscript/tree/e9073b35601ebe40839e2cca7085964d78d64e92)
 on August 13, 2019.
 </em></small>
 
@@ -123,9 +123,9 @@ We have released a full implementation of our network permutation method and the
 ### Network permutation
 
 Network permutation is a way to produce new networks by randomizing the connections of an existing network.
-Specialized permutation strategies can be devised that permute networks while retaining chosen features.
+Specialized permutation strategies can be devised that randomize some aspects of networks while retaining other features.
 Comparing between permuted and unpermuted networks gives insight to the effects of the retained network features.
-For example, an edge prediction method that has superior reconstruction performance on a network compared to its permutations likely relies on information that is eliminated in permutation.
+For example, an edge prediction method that has superior reconstruction performance on a network compared to its permutations likely relies on information that is eliminated by permutation.
 Conversely, identical predictive performance on true and permuted networks indicates that a method relies on information that is preserved during permutation.
 Network permutation is a flexible framework for analyzing other methods, because it generates networks with identical formats to the original network.
 We propose using network permutation to isolate degree and determine its effects in different contexts.
@@ -135,35 +135,48 @@ Thanks to the flexibility of permutation, our framework can quantify the effect 
 ### XSwap algorithm
 
 Hanhijärvi, et al. presented XSwap [@iKOIEzQ9], an algorithm for the randomization ("permutation") of unweighted networks (Figure {@fig:algo}A).
-The algorithm picks two existing edges at random, and if the edges constitute a valid swap, exchanges the targets between the edges (Figure {@fig:xswap}).
+The algorithm picks two existing edges at random, and if the edges constitute a valid swap, exchanges the targets between the edges (Figure {@tbl:xswap}).
+This process is repeated many times until the maximum number of steps has been reached.
+In general, the maximum number of steps should be chosen to be sufficiently large that the fraction of original edges retained in the permuted network is near its asymptotic value for a large number of steps.
 
-![Graphical representation of the XSwap algorithm applied to two edges.
-The algorithm preserves both the source- and target-degree for all nodes.](images/xswap_figure.png){#fig:xswap width="50%"}
-
-To allow greater flexibility, we modified the algorithm by adding two parameters, "`allow_self_loops`", and "`allow_antiparallel`" that allow a greater variety of network types to be permuted (Figure {@fig:algo}B).
+To allow greater flexibility, we modified the algorithm by adding two parameters, "`allow_loops`", and "`allow_antiparallel`" that allow a greater variety of network types to be permuted (Figure {@fig:algo}B).
 Specifically, two chosen edges constitute a valid swap if they preserve degree for all four involved nodes and do not violate the above condition options.
 The motivation for these generalizations is to make the permutation method applicable both to directed and undirected graphs, as well as to networks with different types of nodes, variously called multipartite, heterogeneous, or multimodal networks.
+
+When permuting bipartite networks, our method ensures that each nodes class membership and with-class degree is preserved.
+Similarly, heterogeneous networks should be permuted by considering each edge type as a separate network.
+This way, each node retains its within-edge-type degree for all edge types.
 We provide documentation for parameter choices depending on the type of network being permuted in the GitHub repository (https://github.com/hetio/xswap).
 The original algorithm and our proposed modification are given in Figure {@fig:algo}.
 
 ![
   **A.** XSwap algorithm due to Hanhijärvi, et al. [@iKOIEzQ9].
-  **B.** Proposed modification to XSwap algorithm](images/xswap_algos.png){#fig:algo width="100%"}
+  **B.** Proposed modification to XSwap algorithm](images/xswap_algorithms_combined_labels.png){#fig:algo width="85%"}
+
+| Network type | Degree preserved | Figure | `allow_antiparallel` | `allow_loops` |
+| :----------- | :--------------- | :----- | :------------------- | :----------------- |
+| simple | all | ![](images/xswap_simple.png){height="85px"} | False | False |
+| bipartite | in/out | ![](images/xswap_bipartite.png){height="85px"} | True | True |
+| directed | in/out | ![](images/xswap_directed.png){height="85px"} | ? | ? |
+
+Table: Applications of the modified XSwap algorithm to various network types with appropriate parameter choices.
+For simple networks, each node's degree is preserved. For bipartite networks, each node's number of connections to the other part is preserved, and overall node class memberships are preserved. For directed networks, each nodes' in- and out-degrees are preserved, though parameter choices depend on the network being permuted. Some directed networks can include antiparallel edges or loops while others do not. {#tbl:xswap}
 
 ### Edge prior
 
 We introduce the "edge prior" to quantify the probability that two nodes are connected based only on their degree.
-The edge prior can be estimated using the maximum likelihood estimate for the binomial distribution success probability--the fraction of permuted networks in which a given edge exists.
+The edge prior can be estimated using the fraction of permuted networks in which a given edge exists---the maximum likelihood estimate for the binomial distribution success probability.
 Based only on permuted networks, the edge prior does not contain any information about the true edges in the (unpermuted) network.
-The edge prior is a numerical feature that can be computed for each node pair in a network, and we compared its ability to predict edges in three tasks, discussed below.
+The edge prior is a numerical feature that can be computed for every pair of nodes that could potentially share an edge, and we compared its ability to predict edges in three tasks, discussed below.
 
-### Edge prior approximation
+### Edge prior analytical approximation
 
 We also considered the possibility that the probability of an edge existing across permuted networks could be written as a closed form equation involving the node pair's degree.
-We were unable to find a closed-form solution giving the edge prior without assuming independent node pairs, which we believe is incorrect for XSwap.
-Nonetheless, we discovered a good approximation to the edge prior for networks with many nodes and relatively low edge density.
+A major simplification is the assumption that the probability of an edge existing is independent of all other potential edges.
+We were unable to find a closed-form solution giving the edge prior without assuming independence in this way, which we believe is incorrect for XSwap.
+Nonetheless, we discovered a good analytical approximation to the edge prior for networks with many nodes and relatively low edge density.
 
-Let $m$ be the total number of edge in the network, and $d(u_i)$, $d(v_j)$ be the source and target degrees of a node pair, respectively.
+Let $m$ be the total number of edges in the network, and $d(u_i)$, $d(v_j)$ be the source and target degrees of a node pair, respectively.
 A good approximation of the edge prior is given by the following:
 \begin{equation}
     P_{i,j} = \frac{d(u_i) d(v_j)}{\sqrt{(d(u_i) d(v_j))^2 + (m - d(u_i) - d(v_j) + 1)^2}}
