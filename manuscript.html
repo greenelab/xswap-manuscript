@@ -9,7 +9,7 @@
   <meta name="author" content="Christopher Williams" />
   <meta name="author" content="Michael W. Nagle" />
   <meta name="author" content="Casey S. Greene" />
-  <meta name="dcterms.date" content="2019-08-14" />
+  <meta name="dcterms.date" content="2019-08-15" />
   <meta name="keywords" content="xswap, permutation, network, hetnets, degree, bioinformatics, python, manubot" />
   <title>The probability of edge existence due to node degree: a baseline for network-based predictions</title>
   <style>
@@ -26,7 +26,7 @@
 <header id="title-block-header">
 <h1 class="title">The probability of edge existence due to node degree: a baseline for network-based predictions</h1>
 </header>
-<p><small><em> This manuscript (<a href="https://greenelab.github.io/xswap-manuscript/v/eaa40777e737d2d1be01abaef75c2f59b804e908/">permalink</a>) was automatically generated from <a href="https://github.com/greenelab/xswap-manuscript/tree/eaa40777e737d2d1be01abaef75c2f59b804e908">greenelab/xswap-manuscript@eaa4077</a> on August 14, 2019. </em></small></p>
+<p><small><em> This manuscript (<a href="https://greenelab.github.io/xswap-manuscript/v/f1f0250752f63c2aea2ee81ab729af4d5c6f6da8/">permalink</a>) was automatically generated from <a href="https://github.com/greenelab/xswap-manuscript/tree/f1f0250752f63c2aea2ee81ab729af4d5c6f6da8">greenelab/xswap-manuscript@f1f0250</a> on August 15, 2019. </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
 <li><p><strong>Michael Zietz</strong><br> <img src="images/orcid.svg" alt="ORCID icon" class="inline_icon" /> <a href="https://orcid.org/0000-0003-0539-630X">0000-0003-0539-630X</a> · <img src="images/github.svg" alt="GitHub icon" class="inline_icon" /> <a href="https://github.com/zietzm">zietzm</a> · <img src="images/twitter.svg" alt="Twitter icon" class="inline_icon" /> <a href="https://twitter.com/ZietzMichael">ZietzMichael</a><br> <small> Department of Physics &amp; Astronomy, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America; Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America · Funded by [‘Roy and Diana Vagelos Scholars Program in the Molecular Life Sciences’, ‘the Gordon and Betty Moore Foundation (GBMF4552)’] </small></p></li>
@@ -122,6 +122,10 @@
 </figure>
 <p>The second prediction task mirrored the first task, but it involved reconstructing networks based on subsampled networks with only 70% of the original edges. Because edges were sampled uniformly without replacement, the subsampled networks share similar degree distributions to the original networks (see Figure {<span class="citation" data-cites="fig:degree">[<span class="citeproc-not-found" data-reference-id="fig:degree"><strong>???</strong></span>]</span>}B). Unlike in the first task, edges that were present in the sampled network were not tested and therefore are not included in the performance metrics. The results of the second prediction task further demonstrate a high level of performance for degree-sequence-based node pair features (Figure <a href="#fig:discrimination">3</a>). The edge prior was able to reconstruct the unsampled network with an AUROC of greater than 0.9 in 14 of 20 networks. As was observed in the first task, node pair features computed in second prediction task were highly rank-correlated, meaning the AUROC values for different features were similar. While performance was slightly lower in the second task than the first, we found that many networks were still well reconstructed. The edge prior was the best calibrated feature for both tasks.</p>
 <h2 id="discussion">Discussion</h2>
+<h3 id="prediction-performance-and-the-edge-prior">Prediction performance and the edge prior</h3>
+<p>We focus on edge prediction in biomedical networks. Our overall goal is to predict new edges with specificity, so that predictions reflect particular connectivity rather than generic node characteristics. Our permutation framework is designed to capture the predictive performance attributable to degree to provide a baseline expectation for edge pairs. We expect that degree-based non-specificity is not a unique property of biomedical networks. For example, if node A connects to nearly all other nodes in a network, predicting that all remaining nodes share an edge with node A will likely result in many correct–though nonspecific–predictions, regardless of the type of data contained in the network. Node degree should be accounted for to make correct predictions while being able to distinguish specific from nonspecific predictions.</p>
+<p>Prediction without reliance on node degree is challenging because many effective methods for edge prediction are correlated with degree (Figure {<span class="citation" data-cites="fig:feature-degree">[<span class="citeproc-not-found" data-reference-id="fig:feature-degree"><strong>???</strong></span>]</span>}). The effects of node degree are obvious when edge prediction features are functions of degree. For example, the resource allocation index is the sum of inverse degree of common neighbors between source and target nodes (in the symmetric case), while preferential attachment is the product of source and target degree <span class="citation" data-cites="1F96bsjSm suzIn5oo">[<a href="#ref-1F96bsjSm" role="doc-biblioref">21</a>,<a href="#ref-suzIn5oo" role="doc-biblioref">22</a>]</span>. However, because many other edge prediction methods are not explicitly degree-based, it is important to have a general method for comparing the effects of node degree on edge prediction methods.</p>
+<p>We developed a permutation framework to quantify the edge probability due to degree. We term this probability the “edge prior”, and we have identified two applications. First, a probability associated with every node pair can be treated as a classification score. Ordering these scores provides an assessment of performance based solely on degree, which can be used as a baseline for other classifiers. Second, node pair probabilities can be used to adjust edge prediction features depending on the task. If degree is a desired feature, then the edge prior can be treated like a Bayesian prior probability. Alternatively, if degree is not a desired feature, then the edge prior can be used to calibrate features and thus potentially enhance predictive specificity.</p>
 <h2 id="conclusion">Conclusion</h2>
 <h2 id="references" class="page_break_before">References</h2>
 <!-- Explicitly insert bibliography here -->
@@ -244,6 +248,18 @@ DOI: <a href="https://doi.org/10.5281/zenodo.2566421">10.5281/zenodo.2566421</a>
 <p>20. <strong>Degree-grouped permtuations by zietzm · Pull Request #96 · greenelab/hetmech</strong><br />
 GitHub<br />
 <a href="https://github.com/greenelab/hetmech/pull/96">https://github.com/greenelab/hetmech/pull/96</a></p>
+</div>
+<div id="ref-1F96bsjSm">
+<p>21. <strong>Predicting missing links via local information</strong><br />
+Tao Zhou, Linyuan Lü, Yi-Cheng Zhang<br />
+<em>The European Physical Journal B</em> (2009-10) <a href="https://doi.org/dd55vr">https://doi.org/dd55vr</a><br />
+DOI: <a href="https://doi.org/10.1140/epjb/e2009-00335-8">10.1140/epjb/e2009-00335-8</a></p>
+</div>
+<div id="ref-suzIn5oo">
+<p>22. <strong>Link prediction approach to collaborative filtering</strong><br />
+Zan Huang, Xin Li, Hsinchun Chen<br />
+<em>Proceedings of the 5th ACM/IEEE-CS joint conference on Digital libraries - JCDL ’05</em> (2005) <a href="https://doi.org/fn39g8">https://doi.org/fn39g8</a><br />
+DOI: <a href="https://doi.org/10.1145/1065385.1065415">10.1145/1065385.1065415</a></p>
 </div>
 </div>
 <h2 id="supplemental-information">Supplemental information</h2>

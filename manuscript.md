@@ -5,7 +5,7 @@ author-meta:
 - Christopher Williams
 - Michael W. Nagle
 - Casey S. Greene
-date-meta: '2019-08-14'
+date-meta: '2019-08-15'
 keywords:
 - xswap
 - permutation
@@ -27,10 +27,10 @@ title: 'The probability of edge existence due to node degree: a baseline for net
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/xswap-manuscript/v/eaa40777e737d2d1be01abaef75c2f59b804e908/))
+([permalink](https://greenelab.github.io/xswap-manuscript/v/f1f0250752f63c2aea2ee81ab729af4d5c6f6da8/))
 was automatically generated
-from [greenelab/xswap-manuscript@eaa4077](https://github.com/greenelab/xswap-manuscript/tree/eaa40777e737d2d1be01abaef75c2f59b804e908)
-on August 14, 2019.
+from [greenelab/xswap-manuscript@f1f0250](https://github.com/greenelab/xswap-manuscript/tree/f1f0250752f63c2aea2ee81ab729af4d5c6f6da8)
+on August 15, 2019.
 </em></small>
 
 ## Authors
@@ -155,6 +155,7 @@ We introduce a permutation-based framework to find edge existence probabilities 
 This method allows edge predictions to be evaluated in the context of degree and its effects on the prediction task.
 Our results demonstrate that degree-associated methods are very effective for reconstructing a network using a subsampled holdout but ineffective for predicting edges between distinct degree distributions.
 Using a number of different networks, we provide evidence that degree has a strong effect on the probability of edge existence and that our "edge prior" feature best quantifies this probability.
+
 
 ## Methods
 
@@ -303,6 +304,28 @@ While performance was slightly lower in the second task than the first, we found
 The edge prior was the best calibrated feature for both tasks.
 
 ## Discussion
+
+### Prediction performance and the edge prior
+
+We focus on edge prediction in biomedical networks.
+Our overall goal is to predict new edges with specificity, so that predictions reflect particular connectivity rather than generic node characteristics.
+Our permutation framework is designed to capture the predictive performance attributable to degree to provide a baseline expectation for edge pairs.
+We expect that degree-based non-specificity is not a unique property of biomedical networks.
+For example, if node A connects to nearly all other nodes in a network, predicting that all remaining nodes share an edge with node A will likely result in many correct--though nonspecific--predictions, regardless of the type of data contained in the network.
+Node degree should be accounted for to make correct predictions while being able to distinguish specific from nonspecific predictions.
+
+Prediction without reliance on node degree is challenging because many effective methods for edge prediction are correlated with degree (Figure {@fig:feature-degree}).
+The effects of node degree are obvious when edge prediction features are functions of degree.
+For example, the resource allocation index is the sum of inverse degree of common neighbors between source and target nodes (in the symmetric case), while preferential attachment is the product of source and target degree [@1F96bsjSm; @suzIn5oo].
+However, because many other edge prediction methods are not explicitly degree-based, it is important to have a general method for comparing the effects of node degree on edge prediction methods.
+
+We developed a permutation framework to quantify the edge probability due to degree.
+We term this probability the "edge prior", and we have identified two applications.
+First, a probability associated with every node pair can be treated as a classification score.
+Ordering these scores provides an assessment of performance based solely on degree, which can be used as a baseline for other classifiers.
+Second, node pair probabilities can be used to adjust edge prediction features depending on the task.
+If degree is a desired feature, then the edge prior can be treated like a Bayesian prior probability.
+Alternatively, if degree is not a desired feature, then the edge prior can be used to calibrate features and thus potentially enhance predictive specificity.
 
 
 ## Conclusion
