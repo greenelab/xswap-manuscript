@@ -27,9 +27,9 @@ title: 'The probability of edge existence due to node degree: a baseline for net
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/xswap-manuscript/v/22172437377d53147b9df8fe0b8e65dc168924b9/))
+([permalink](https://greenelab.github.io/xswap-manuscript/v/ad83b79ba98b797a826280ebb060afeaf03f84dd/))
 was automatically generated
-from [greenelab/xswap-manuscript@2217243](https://github.com/greenelab/xswap-manuscript/tree/22172437377d53147b9df8fe0b8e65dc168924b9)
+from [greenelab/xswap-manuscript@ad83b79](https://github.com/greenelab/xswap-manuscript/tree/ad83b79ba98b797a826280ebb060afeaf03f84dd)
 on August 16, 2019.
 </em></small>
 
@@ -295,7 +295,7 @@ As the edge prior was not based on the networks' true edges, these results indic
 
 
 The second prediction task mirrored the first task, but it involved reconstructing networks based on subsampled networks with only 70% of the original edges.
-Because edges were sampled uniformly without replacement, the subsampled networks share similar degree distributions to the original networks (see Figure {@fig:degree}B).
+Because edges were sampled uniformly without replacement, the subsampled networks share similar degree distributions to the original networks (see Figure {@fig:degree-bias}B).
 Unlike in the first task, edges that were present in the sampled network were not tested and therefore are not included in the performance metrics.
 The results of the second prediction task further demonstrate a high level of performance for degree-sequence-based node pair features (Figure {@fig:discrimination}).
 The edge prior was able to reconstruct the unsampled network with an AUROC of greater than 0.9 in 14 of 20 networks.
@@ -328,7 +328,7 @@ We expect that degree-based non-specificity is not a unique property of biomedic
 For example, if node A connects to nearly all other nodes in a network, predicting that all remaining nodes share an edge with node A will likely result in many correct--though nonspecific--predictions, regardless of the type of data contained in the network.
 Node degree should be accounted for to make correct predictions while being able to distinguish specific from nonspecific predictions.
 
-Prediction without reliance on node degree is challenging because many effective methods for edge prediction are correlated with degree (Figure {@fig:feature-degree}).
+Prediction without reliance on node degree is challenging because many effective methods for edge prediction are correlated with degree (eg Figure {@fig:feature-degree}).
 The effects of node degree are obvious when edge prediction features are functions of degree.
 For example, the resource allocation index is the sum of inverse degree of common neighbors between source and target nodes (in the symmetric case), while preferential attachment is the product of source and target degree [@1F96bsjSm; @suzIn5oo].
 However, because many other edge prediction methods are not explicitly degree-based, it is important to have a general method for comparing the effects of node degree on edge prediction methods.
