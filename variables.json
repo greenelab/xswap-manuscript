@@ -100,7 +100,7 @@
     "repo_slug": "greenelab/xswap-manuscript",
     "repo_owner": "greenelab",
     "repo_name": "xswap-manuscript",
-    "commit": "ad83b79ba98b797a826280ebb060afeaf03f84dd"
+    "commit": "259e17490aa4ccb4ccc19165b9c2319fbd370b4b"
   },
   "manuscript_stats": {
     "reference_counts": {
@@ -108,6 +108,6 @@
       "url": 1,
       "total": 22
     },
-    "word_count": 4936
+    "word_count": 5261
   }
 }

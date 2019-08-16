@@ -27,9 +27,9 @@ title: 'The probability of edge existence due to node degree: a baseline for net
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/xswap-manuscript/v/ad83b79ba98b797a826280ebb060afeaf03f84dd/))
+([permalink](https://greenelab.github.io/xswap-manuscript/v/259e17490aa4ccb4ccc19165b9c2319fbd370b4b/))
 was automatically generated
-from [greenelab/xswap-manuscript@ad83b79](https://github.com/greenelab/xswap-manuscript/tree/ad83b79ba98b797a826280ebb060afeaf03f84dd)
+from [greenelab/xswap-manuscript@259e174](https://github.com/greenelab/xswap-manuscript/tree/259e17490aa4ccb4ccc19165b9c2319fbd370b4b)
 on August 16, 2019.
 </em></small>
 
@@ -264,6 +264,28 @@ The Python package is available on the Python Packaging Index under the name "xs
 The full source code for our method of degree-preserving network permutation has also been made freely available ([https://github.com/hetio/xswap](https://github.com/hetio/xswap)), as has the code for the analysis, figure generation ([https://github.com/greenelab/xswap-analysis](https://github.com/greenelab/xswap-analysis)), and manuscript ([https://github.com/greenelab/xswap-manuscript](https://github.com/greenelab/xswap-manuscript)).
 
 ## Results
+
+### Node degree bias
+
+We found examples of node degree bias in the PPI and TF-TG networks we investigated.
+Figure {@fig:degree-bias} shows node degree in separate networks for the same type of data.
+For the PPI networks, the literature-derived network has a larger mean degree and a longer tail than the systematic network, while in the TF-TG networks this relationship is reversed.
+Because the TF-TG network contained far more transcription factors than target genes (144 and 1406, respectively), the distributions of target degrees were far more compact than those of source degrees.
+Unlike the PPI and TF-TG networks, the co-authorship networks, which were split by date of first co-authorship, did not exhibit a great difference in their degree distributions.
+All three types of networks (PPI, TF-TG, and co-authorship) exhibit degree imbalance to varying extents.
+These results indicate that, depending on the methods by which the represented data were generated, networks of the same type of data may have overall degree distributions that differ greatly (Figure {@fig:degree-bias}A), and they may even assign very different degree to the same nodes (Figure {@fig:degree-bias}B).
+
+A prediction task that uses only one type of network is challenging because degree distributions vary greatly within a single domain.
+Predicting systematic edges using a literature-curated network is particularly challenging, because the degree distribution of systematic edges may be skewed toward higher or lower degree relative to the literature network.
+
+![**A.** Degree distributions of networks with and without degree bias can be very different.
+  Data on PPI and TF-TG were split between literature-derived and systematically-derived networks.
+  In both cases, the networks exhibit large differences in degree distribution.
+  Co-authorship relationship networks split by date of first co-authorship roughly share their degree distributions.
+  **B.** Systematically-derived networks are not uniformly sampled sampled from literature-derived networks or vice versa.
+  Uniform random sampling produces linearly-correlated node degree, while non-random sampling produces non-correlated degree.
+  70% of literature edges were sampled with uniform probability for the "Subsampled holdout" network.
+](https://github.com/greenelab/xswap-analysis/raw/d7181e64a5c90f9720ab453334892aba164651e7/img/degree_bias.png){#fig:degree-bias width="100%"}
 
 ### Edge prior
 
