@@ -5,7 +5,7 @@ author-meta:
 - Christopher Williams
 - Michael W. Nagle
 - Casey S. Greene
-date-meta: '2019-08-15'
+date-meta: '2019-08-16'
 keywords:
 - xswap
 - permutation
@@ -27,10 +27,10 @@ title: 'The probability of edge existence due to node degree: a baseline for net
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/xswap-manuscript/v/f1f0250752f63c2aea2ee81ab729af4d5c6f6da8/))
+([permalink](https://greenelab.github.io/xswap-manuscript/v/22172437377d53147b9df8fe0b8e65dc168924b9/))
 was automatically generated
-from [greenelab/xswap-manuscript@f1f0250](https://github.com/greenelab/xswap-manuscript/tree/f1f0250752f63c2aea2ee81ab729af4d5c6f6da8)
-on August 15, 2019.
+from [greenelab/xswap-manuscript@2217243](https://github.com/greenelab/xswap-manuscript/tree/22172437377d53147b9df8fe0b8e65dc168924b9)
+on August 16, 2019.
 </em></small>
 
 ## Authors
@@ -302,6 +302,20 @@ The edge prior was able to reconstruct the unsampled network with an AUROC of gr
 As was observed in the first task, node pair features computed in second prediction task were highly rank-correlated, meaning the AUROC values for different features were similar.
 While performance was slightly lower in the second task than the first, we found that many networks were still well reconstructed.
 The edge prior was the best calibrated feature for both tasks.
+
+In the third prediction task, we computed the three edge prediction features for paired networks representing data from PPI, TF-TG, and bioRxiv bioinformatics pre-print co-authorship.
+The goal of the task was to compare predictive performance across different degree distributions for the same type of data.
+We find that the task of predicting systematically-derived edges using a network with degree bias is significantly more challenging than network reconstruction, and we find consistently lower performance compared to the other tasks (Figure {@fig:discrimination}).
+The edge prior was not able to predict the separate PPI network better than by random guessing (AUROC of roughly 0.5).
+Only slightly better was its performance in predicting the separate TF-TG network, at an AUROC of 0.59.
+We find superior performance in predicting the co-authorship relationships (AUROC 0.75), which was expected as the network being predicted shared roughly the same degree distribution as the network on which the edge prior was computed.
+The results of the third prediction task show that a difference in degree distribution between the network on which features are computed and the network to be predicted can make prediction significantly more challenging.
+
+Since the edge prior is based only on degree, it is unsurprising that it exhibits weak performance in predicting a network with a different degree distribution.
+We have considered the edge prior as a baseline edge predictor, whose performance indicates the utility of degree for a specific prediction task.
+The edge prior's low performance in the third task indicates that degree is less helpful for edge prediction tasks in which training and testing networks do not share their degree distributions.
+Moreover, we believe such between-distribution prediction may be a relatively common task, with examples given by the networks in Figure {@fig:degree-bias}.
+
 
 ## Discussion
 
