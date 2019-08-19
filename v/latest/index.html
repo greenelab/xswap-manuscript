@@ -26,7 +26,7 @@
 <header id="title-block-header">
 <h1 class="title">The probability of edge existence due to node degree: a baseline for network-based predictions</h1>
 </header>
-<p><small><em> This manuscript (<a href="https://greenelab.github.io/xswap-manuscript/v/42f9b9248ba1143b60c39d9eb792dc15034e14d7/">permalink</a>) was automatically generated from <a href="https://github.com/greenelab/xswap-manuscript/tree/42f9b9248ba1143b60c39d9eb792dc15034e14d7">greenelab/xswap-manuscript@42f9b92</a> on August 19, 2019. </em></small></p>
+<p><small><em> This manuscript (<a href="https://greenelab.github.io/xswap-manuscript/v/8b8dbabe1c8f1b29b9af09a2808bdf8ed386fed0/">permalink</a>) was automatically generated from <a href="https://github.com/greenelab/xswap-manuscript/tree/8b8dbabe1c8f1b29b9af09a2808bdf8ed386fed0">greenelab/xswap-manuscript@8b8dbab</a> on August 19, 2019. </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
 <li><p><strong>Michael Zietz</strong><br> <img src="images/orcid.svg" alt="ORCID icon" class="inline_icon" /> <a href="https://orcid.org/0000-0003-0539-630X">0000-0003-0539-630X</a> · <img src="images/github.svg" alt="GitHub icon" class="inline_icon" /> <a href="https://github.com/zietzm">zietzm</a> · <img src="images/twitter.svg" alt="Twitter icon" class="inline_icon" /> <a href="https://twitter.com/ZietzMichael">ZietzMichael</a><br> <small> Department of Physics &amp; Astronomy, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America; Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America · Funded by [‘Roy and Diana Vagelos Scholars Program in the Molecular Life Sciences’, ‘the Gordon and Betty Moore Foundation (GBMF4552)’] </small></p></li>
@@ -109,7 +109,8 @@
 <h3 id="degree-grouping">Degree-grouping</h3>
 <p>Our method for degree-preserving permutation produces randomized networks that share few of their edges with the original network. The feature values for two node pairs with the same source and target degree are drawn from the same distribution in permuted networks, so nodes with equal degree can be grouped when summarizing features. We used this to augment each node pair’s feature values in permuted networks, which allowed these pairs to have more permuted feature values than permuted networks. Degree grouping greatly increased the effective number of permutations for nodes with frequently observed degrees <span class="citation" data-cites="DwbABa00">[<a href="#ref-DwbABa00" role="doc-biblioref">20</a>]</span>. We used degree grouping throughout our analyses.</p>
 <h3 id="implementation-and-source-code">Implementation and source code</h3>
-<p>We implemented the modified XSwap algorithm as a Python package, with the actual edge swap mechanism implemented in C++ for greater speed. In addition to functions that permute networks (represented as edge lists), the package contains utilities for computing the edge prior, converting a network between adjacency matrix and edge list formats, and for assigning unique identifiers to nodes. The Python package is available on the Python Packaging Index under the name “xswap”. The full source code for our method of degree-preserving network permutation has also been made freely available (<a href="https://github.com/hetio/xswap">https://github.com/hetio/xswap</a>), as has the code for the analysis, figure generation (<a href="https://github.com/greenelab/xswap-analysis">https://github.com/greenelab/xswap-analysis</a>), and manuscript (<a href="https://github.com/greenelab/xswap-manuscript">https://github.com/greenelab/xswap-manuscript</a>).</p>
+<p>We implemented our modified XSwap algorithm as a Python package. The edge swap mechanism—implemented in C++ for greater speed—uses a bitset to avoid producing edges which violate the conditions for a swap to be considered valid. While the full bitset implementation is faster for smaller networks, our package uses a compressed bitset <span class="citation" data-cites="jNEBDktj">[<a href="#ref-jNEBDktj" role="doc-biblioref">21</a>]</span> when a network would occupy memory above a user-adjustable threshold. In addition to the validity conditions already described, our package allows specific edges to be excluded from permutation, and every network permutation returns both a permuted network and summary information about the numbers of swaps attempted, performed, and the reasons why invalid swaps were rejected.</p>
+<p>In addition to functions that permute networks (represented as edge lists), the package contains utilities for computing the edge prior, converting a network between adjacency matrix and edge list formats, and for assigning unique identifiers to nodes. The Python package is available on the Python Packaging Index under the name “xswap”. The full source code for our method of degree-preserving network permutation has also been made freely available (<a href="https://github.com/hetio/xswap">https://github.com/hetio/xswap</a>), as has the code for the analysis, figure generation (<a href="https://github.com/greenelab/xswap-analysis">https://github.com/greenelab/xswap-analysis</a>), and manuscript (<a href="https://github.com/greenelab/xswap-manuscript">https://github.com/greenelab/xswap-manuscript</a>).</p>
 <h2 id="results">Results</h2>
 <h3 id="node-degree-bias">Node degree bias</h3>
 <p>We found examples of node degree bias in the PPI and TF-TG networks we investigated. Figure <a href="#fig:degree-bias">3</a> shows node degree in separate networks for the same type of data. For the PPI networks, the literature-derived network has a larger mean degree and a longer tail than the systematic network, while in the TF-TG networks this relationship is reversed. Because the TF-TG network contained far more transcription factors than target genes (144 and 1406, respectively), the distributions of target degrees were far more compact than those of source degrees. Unlike the PPI and TF-TG networks, the co-authorship networks, which were split by date of first co-authorship, did not exhibit a great difference in their degree distributions. All three types of networks (PPI, TF-TG, and co-authorship) exhibit degree imbalance to varying extents. These results indicate that, depending on the methods by which the represented data were generated, networks of the same type of data may have overall degree distributions that differ greatly (Figure <a href="#fig:degree-bias">3</a>A), and they may even assign very different degree to the same nodes (Figure <a href="#fig:degree-bias">3</a>B).</p>
@@ -143,7 +144,7 @@
 <p>Features can also capture information beyond degree, and our method can quantify this performance. For example, RWR captured more than degree because it reached all of a node’s neighbors in one step after each restart. These results aligned with the definitions of each feature and validated that xswap accurately assessed reliance on degree.</p>
 <h2 id="discussion">Discussion</h2>
 <p>We focus on edge prediction in biomedical networks. Our overall goal is to predict new edges with specificity, so that predictions reflect particular connectivity rather than generic node characteristics. Our permutation framework is designed to capture the predictive performance attributable to degree to provide a baseline expectation for edge pairs. We expect that degree-based non-specificity is not a unique property of biomedical networks. For example, if node A connects to nearly all other nodes in a network, predicting that all remaining nodes share an edge with node A will likely result in many correct–though nonspecific–predictions, regardless of the type of data contained in the network. Node degree should be accounted for to make correct predictions while being able to distinguish specific from nonspecific predictions.</p>
-<p>Prediction without reliance on node degree is challenging because many effective methods for edge prediction are correlated with degree (eg Figure <a href="#fig:feature-degree">6</a>). The effects of node degree are obvious when edge prediction features are functions of degree. For example, the resource allocation index is the sum of inverse degree of common neighbors between source and target nodes (in the symmetric case), while preferential attachment is the product of source and target degree <span class="citation" data-cites="1F96bsjSm suzIn5oo">[<a href="#ref-1F96bsjSm" role="doc-biblioref">21</a>,<a href="#ref-suzIn5oo" role="doc-biblioref">22</a>]</span>. However, because many other edge prediction methods are not explicitly degree-based, it is important to have a general method for comparing the effects of node degree on edge prediction methods.</p>
+<p>Prediction without reliance on node degree is challenging because many effective methods for edge prediction are correlated with degree (eg Figure <a href="#fig:feature-degree">6</a>). The effects of node degree are obvious when edge prediction features are functions of degree. For example, the resource allocation index is the sum of inverse degree of common neighbors between source and target nodes (in the symmetric case), while preferential attachment is the product of source and target degree <span class="citation" data-cites="1F96bsjSm suzIn5oo">[<a href="#ref-1F96bsjSm" role="doc-biblioref">22</a>,<a href="#ref-suzIn5oo" role="doc-biblioref">23</a>]</span>. However, because many other edge prediction methods are not explicitly degree-based, it is important to have a general method for comparing the effects of node degree on edge prediction methods.</p>
 <p>We developed a permutation framework to quantify the edge probability due to degree. We term this probability the “edge prior”, and we have identified two applications. First, a probability associated with every node pair can be treated as a classification score. Ordering these scores provides an assessment of performance based solely on degree, which can be used as a baseline for other classifiers. Second, node pair probabilities can be used to adjust edge prediction features depending on the task. If degree is a desired feature, then the edge prior can be treated like a Bayesian prior probability. Alternatively, if degree is not a desired feature, then the edge prior can be used to calibrate features and thus potentially enhance predictive specificity.</p>
 <p>Figure <a href="#fig:feature-auroc">7</a> illustrates the utility of the edge prior and permutation framework for two purposes. First, it contextualizes feature performances relative to the baseline of nonspecific, degree-based predictions, quantified by the edge prior. Degree has varying utility for different edge prediction tasks. The edge prior’s performance on a task quantifies the utility of degree toward the task. This comparison is useful because specific predictions (based on more than degree alone) are more valuable for some applications than nonspecific ones and because degree can be an expression of bias in many real-world networks.</p>
 <p>Second, Figure <a href="#fig:feature-auroc">7</a> compares five edge prediction features computed on and unpermuted networks. This comparison identified the fraction of each feature’s performance attributable to degree. Some features, such as the preferential attachment index, perfectly and exclusively capture degree. In the comparison, this feature had identical performance regardless of the network used for training. Similarly, we can see that the Adamic/Adar index incorporated degree almost completely because its performances from permuted networks are nearly at the performance of the edge prior. However, the Adamic/Adar index had much higher performance when computed on the unpermuted network, indicating that it also extracts higher-order information in addition to degree. This analysis allowed specific features to be evaluated for a specific prediction task in terms of reliance on degree and performance beyond the degree-based, nonspecific baseline. Moreover, this comparison would not have been possible without network permutation as the comparison required features to be computed on permuted networks.</p>
@@ -270,43 +271,49 @@ DOI: <a href="https://doi.org/10.5281/zenodo.2566421">10.5281/zenodo.2566421</a>
 GitHub<br />
 <a href="https://github.com/greenelab/hetmech/pull/96">https://github.com/greenelab/hetmech/pull/96</a></p>
 </div>
+<div id="ref-jNEBDktj">
+<p>21. <strong>Roaring Bitmaps: Implementation of an Optimized Software Library</strong><br />
+Daniel Lemire, Owen Kaser, Nathan Kurz, Luca Deri, Chris O’Hara, François Saint-Jacques, Gregory Ssi-Yan-Kai<br />
+<em>arXiv</em> (2017-09-22) <a href="https://arxiv.org/abs/1709.07821v3">https://arxiv.org/abs/1709.07821v3</a><br />
+DOI: <a href="https://doi.org/10.1002/spe.2560">10.1002/spe.2560</a></p>
+</div>
 <div id="ref-1F96bsjSm">
-<p>21. <strong>Predicting missing links via local information</strong><br />
+<p>22. <strong>Predicting missing links via local information</strong><br />
 Tao Zhou, Linyuan Lü, Yi-Cheng Zhang<br />
 <em>The European Physical Journal B</em> (2009-10) <a href="https://doi.org/dd55vr">https://doi.org/dd55vr</a><br />
 DOI: <a href="https://doi.org/10.1140/epjb/e2009-00335-8">10.1140/epjb/e2009-00335-8</a></p>
 </div>
 <div id="ref-suzIn5oo">
-<p>22. <strong>Link prediction approach to collaborative filtering</strong><br />
+<p>23. <strong>Link prediction approach to collaborative filtering</strong><br />
 Zan Huang, Xin Li, Hsinchun Chen<br />
 <em>Proceedings of the 5th ACM/IEEE-CS joint conference on Digital libraries - JCDL ’05</em> (2005) <a href="https://doi.org/fn39g8">https://doi.org/fn39g8</a><br />
 DOI: <a href="https://doi.org/10.1145/1065385.1065415">10.1145/1065385.1065415</a></p>
 </div>
 <div id="ref-EfWvuSjX">
-<p>23. <strong>The link-prediction problem for social networks</strong><br />
+<p>24. <strong>The link-prediction problem for social networks</strong><br />
 David Liben-Nowell, Jon Kleinberg<br />
 <em>Journal of the American Society for Information Science and Technology</em> (2007) <a href="https://doi.org/c56765">https://doi.org/c56765</a><br />
 DOI: <a href="https://doi.org/10.1002/asi.20591">10.1002/asi.20591</a></p>
 </div>
 <div id="ref-9dBDcARP">
-<p>24. <strong>Friends and neighbors on the Web</strong><br />
+<p>25. <strong>Friends and neighbors on the Web</strong><br />
 Lada A Adamic, Eytan Adar<br />
 <em>Social Networks</em> (2003-07) <a href="https://doi.org/br5zd3">https://doi.org/br5zd3</a><br />
 DOI: <a href="https://doi.org/10.1016/s0378-8733(03)00009-1">10.1016/s0378-8733(03)00009-1</a></p>
 </div>
 <div id="ref-HSmvOV9E">
-<p>25. <strong>Automatic multimedia cross-modal correlation discovery</strong><br />
+<p>26. <strong>Automatic multimedia cross-modal correlation discovery</strong><br />
 Jia-Yu Pan, Hyung-Jeong Yang, Christos Faloutsos, Pinar Duygulu<br />
 <em>Proceedings of the 2004 ACM SIGKDD international conference on Knowledge discovery and data mining - KDD ’04</em> (2004) <a href="https://doi.org/bmhgw4">https://doi.org/bmhgw4</a><br />
 DOI: <a href="https://doi.org/10.1145/1014052.1014135">10.1145/1014052.1014135</a></p>
 </div>
 <div id="ref-1E6tdJtDz">
-<p>26. <strong>Learning with local and global consistency</strong><br />
+<p>27. <strong>Learning with local and global consistency</strong><br />
 Dengyong Zhou, Olivier Bousquet, Thomas Navin Lal, Jason Weston, Bernhard Scholkopf<br />
 <em>NIPS 2003</em> (2003) <a href="https://papers.nips.cc/paper/2506-learning-with-local-and-global-consistency.pdf">https://papers.nips.cc/paper/2506-learning-with-local-and-global-consistency.pdf</a></p>
 </div>
 <div id="ref-1EgqwD4S1">
-<p>27. <strong>Link prediction in large directed graphs</strong><br />
+<p>28. <strong>Link prediction in large directed graphs</strong><br />
 Dario Garcia Gasulla<br />
 <em>Universitat Politècnica de Catalunya</em> (2015) <a href="https://upcommons.upc.edu/handle/2117/95691">https://upcommons.upc.edu/handle/2117/95691</a></p>
 </div>
@@ -719,32 +726,32 @@ Source: 144, Target: 1417
 <tr class="odd">
 <td>Jaccard index</td>
 <td><span class="math inline">\(\frac{|k(u) \cap k(v)|}{|k(u) \cup k(v)|}\)</span></td>
-<td><span class="citation" data-cites="EfWvuSjX">[<a href="#ref-EfWvuSjX" role="doc-biblioref">23</a>]</span></td>
+<td><span class="citation" data-cites="EfWvuSjX">[<a href="#ref-EfWvuSjX" role="doc-biblioref">24</a>]</span></td>
 </tr>
 <tr class="even">
 <td>Preferential attachment score</td>
 <td><span class="math inline">\(|k(u)||k(v)|\)</span></td>
-<td><span class="citation" data-cites="EfWvuSjX">[<a href="#ref-EfWvuSjX" role="doc-biblioref">23</a>]</span></td>
+<td><span class="citation" data-cites="EfWvuSjX">[<a href="#ref-EfWvuSjX" role="doc-biblioref">24</a>]</span></td>
 </tr>
 <tr class="odd">
 <td>Resource allocation index</td>
 <td><span class="math inline">\(\sum_{w \in k(u) \cap k(v)} \frac{1}{|k(w)|}\)</span></td>
-<td><span class="citation" data-cites="1F96bsjSm">[<a href="#ref-1F96bsjSm" role="doc-biblioref">21</a>]</span></td>
+<td><span class="citation" data-cites="1F96bsjSm">[<a href="#ref-1F96bsjSm" role="doc-biblioref">22</a>]</span></td>
 </tr>
 <tr class="even">
 <td>Adamic/Adar index</td>
 <td><span class="math inline">\(\sum_{w \in k(u) \cap k(v)} \frac{1}{log|k(w)|}\)</span></td>
-<td><span class="citation" data-cites="9dBDcARP">[<a href="#ref-9dBDcARP" role="doc-biblioref">24</a>]</span></td>
+<td><span class="citation" data-cites="9dBDcARP">[<a href="#ref-9dBDcARP" role="doc-biblioref">25</a>]</span></td>
 </tr>
 <tr class="odd">
 <td>Random walk with restart score</td>
 <td><span class="math inline">\(c \bigg[ \bigg( \mathbb{I} - (1-c) \mathbf{A}\bigg)^{-1} \mathbf{y}_u \bigg]_v\)</span></td>
-<td><span class="citation" data-cites="HSmvOV9E 1E6tdJtDz">[<a href="#ref-HSmvOV9E" role="doc-biblioref">25</a>,<a href="#ref-1E6tdJtDz" role="doc-biblioref">26</a>]</span></td>
+<td><span class="citation" data-cites="HSmvOV9E 1E6tdJtDz">[<a href="#ref-HSmvOV9E" role="doc-biblioref">26</a>,<a href="#ref-1E6tdJtDz" role="doc-biblioref">27</a>]</span></td>
 </tr>
 <tr class="even">
 <td>Inference score</td>
 <td><span class="math inline">\(\frac{|A(u) \cap D(v)|}{|A(u)|} + \frac{|D(u) \cap D(v)|}{|D(u)|}\)</span></td>
-<td><span class="citation" data-cites="1EgqwD4S1">[<a href="#ref-1EgqwD4S1" role="doc-biblioref">27</a>]</span></td>
+<td><span class="citation" data-cites="1EgqwD4S1">[<a href="#ref-1EgqwD4S1" role="doc-biblioref">28</a>]</span></td>
 </tr>
 </tbody>
 </table>
