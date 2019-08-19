@@ -27,9 +27,9 @@ title: 'The probability of edge existence due to node degree: a baseline for net
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/xswap-manuscript/v/42f9b9248ba1143b60c39d9eb792dc15034e14d7/))
+([permalink](https://greenelab.github.io/xswap-manuscript/v/8b8dbabe1c8f1b29b9af09a2808bdf8ed386fed0/))
 was automatically generated
-from [greenelab/xswap-manuscript@42f9b92](https://github.com/greenelab/xswap-manuscript/tree/42f9b9248ba1143b60c39d9eb792dc15034e14d7)
+from [greenelab/xswap-manuscript@8b8dbab](https://github.com/greenelab/xswap-manuscript/tree/8b8dbabe1c8f1b29b9af09a2808bdf8ed386fed0)
 on August 19, 2019.
 </em></small>
 
@@ -258,7 +258,11 @@ We used degree grouping throughout our analyses.
 
 ### Implementation and source code
 
-We implemented the modified XSwap algorithm as a Python package, with the actual edge swap mechanism implemented in C++ for greater speed.
+We implemented our modified XSwap algorithm as a Python package.
+The edge swap mechanism---implemented in C++ for greater speed---uses a bitset to avoid producing edges which violate the conditions for a swap to be considered valid.
+While the full bitset implementation is faster for smaller networks, our package uses a compressed bitset [@jNEBDktj] when a network would occupy memory above a user-adjustable threshold.
+In addition to the validity conditions already described, our package allows specific edges to be excluded from permutation, and every network permutation returns both a permuted network and summary information about the numbers of swaps attempted, performed, and the reasons why invalid swaps were rejected.
+
 In addition to functions that permute networks (represented as edge lists), the package contains utilities for computing the edge prior, converting a network between adjacency matrix and edge list formats, and for assigning unique identifiers to nodes.
 The Python package is available on the Python Packaging Index under the name "xswap".
 The full source code for our method of degree-preserving network permutation has also been made freely available ([https://github.com/hetio/xswap](https://github.com/hetio/xswap)), as has the code for the analysis, figure generation ([https://github.com/greenelab/xswap-analysis](https://github.com/greenelab/xswap-analysis)), and manuscript ([https://github.com/greenelab/xswap-manuscript](https://github.com/greenelab/xswap-manuscript)).
