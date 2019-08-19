@@ -27,9 +27,9 @@ title: 'The probability of edge existence due to node degree: a baseline for net
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/xswap-manuscript/v/8b8dbabe1c8f1b29b9af09a2808bdf8ed386fed0/))
+([permalink](https://greenelab.github.io/xswap-manuscript/v/9fa2992c83491d3da5cfe63e1d9d4f48460508a4/))
 was automatically generated
-from [greenelab/xswap-manuscript@8b8dbab](https://github.com/greenelab/xswap-manuscript/tree/8b8dbabe1c8f1b29b9af09a2808bdf8ed386fed0)
+from [greenelab/xswap-manuscript@9fa2992](https://github.com/greenelab/xswap-manuscript/tree/9fa2992c83491d3da5cfe63e1d9d4f48460508a4)
 on August 19, 2019.
 </em></small>
 
@@ -422,6 +422,13 @@ This analysis allowed specific features to be evaluated for a specific predictio
 Moreover, this comparison would not have been possible without network permutation as the comparison required features to be computed on permuted networks.
 
 ## Conclusion
+
+We developed a network permutation framework and open source software implementation that quantifies the probability of edge existence due to degree and can assess the fraction of feature performance attributable to degree.
+We demonstrated the superiority of the edge prior over other degree-based features for quantifying the effect of degree on the probability of edge existence.
+The XSwap methods and software provide a context for evaluating edge prediction methods and specific predictions for reliance on degree and, therefore, nonspecificity.
+Network edge prediction is a common task in biological and biomedical research, and it can be greatly influenced by degree.
+Degree should be considered directly in prediction approaches to avoid making nonspecific or trivial predictions due to degree imbalance or bias.
+A careful accounting of degree's effects enables contextualized model evaluation and can help to quantify nonspecificity in biomedical network edge prediction.
 
 
 ## References {.page_break_before}
