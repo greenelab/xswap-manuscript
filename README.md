@@ -1,7 +1,7 @@
 # Output directory containing the formatted manuscript
 
 The [`gh-pages`](https://github.com/greenelab/xswap-manuscript/tree/gh-pages) branch hosts the contents of this directory at https://greenelab.github.io/xswap-manuscript/.
-The permalink for this webpage version is https://greenelab.github.io/xswap-manuscript/v/8b8dbabe1c8f1b29b9af09a2808bdf8ed386fed0/.
+The permalink for this webpage version is https://greenelab.github.io/xswap-manuscript/v/9fa2992c83491d3da5cfe63e1d9d4f48460508a4/.
 To redirect to the permalink for the latest manuscript version at anytime, use the link https://greenelab.github.io/xswap-manuscript/v/freeze/.
 
 ## Files
@@ -36,4 +36,4 @@ Verifying timestamps with the `ots verify` command requires running a local bitc
 ## Source
 
 The manuscripts in this directory were built from
-[`8b8dbabe1c8f1b29b9af09a2808bdf8ed386fed0`](https://github.com/greenelab/xswap-manuscript/commit/8b8dbabe1c8f1b29b9af09a2808bdf8ed386fed0).
+[`9fa2992c83491d3da5cfe63e1d9d4f48460508a4`](https://github.com/greenelab/xswap-manuscript/commit/9fa2992c83491d3da5cfe63e1d9d4f48460508a4).
