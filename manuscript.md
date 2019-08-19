@@ -4,6 +4,7 @@ author-meta:
 - Daniel S. Himmelstein
 - Christopher Williams
 - Michael W. Nagle
+- Kyle Kloster
 - Casey S. Greene
 date-meta: '2019-08-19'
 keywords:
@@ -27,9 +28,9 @@ title: 'The probability of edge existence due to node degree: a baseline for net
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/xswap-manuscript/v/d32dac30bbf7b2924d3c82cc07fda5a95612939e/))
+([permalink](https://greenelab.github.io/xswap-manuscript/v/5f34181ba718cb436bef68ed03a174a008b499a7/))
 was automatically generated
-from [greenelab/xswap-manuscript@d32dac3](https://github.com/greenelab/xswap-manuscript/tree/d32dac30bbf7b2924d3c82cc07fda5a95612939e)
+from [greenelab/xswap-manuscript@5f34181](https://github.com/greenelab/xswap-manuscript/tree/5f34181ba718cb436bef68ed03a174a008b499a7)
 on August 19, 2019.
 </em></small>
 
@@ -77,6 +78,18 @@ on August 19, 2019.
     [MikeNagle84](https://twitter.com/MikeNagle84)<br>
   <small>
      Internal Medicine Research Unit, Pfizer Worldwide Research, Development, and Medical
+  </small>
+
++ **Kyle Kloster**<br>
+    ![ORCID icon](images/orcid.svg){.inline_icon}
+    [0000-0001-5678-7197](https://orcid.org/0000-0001-5678-7197)
+    · ![GitHub icon](images/github.svg){.inline_icon}
+    [kkloste](https://github.com/kkloste)
+    · ![Twitter icon](images/twitter.svg){.inline_icon}
+    [kylekloster](https://twitter.com/kylekloster)<br>
+  <small>
+     Department of Computer Science, North Carolina State University, Raleigh, North Carolina, United States of America
+     · Funded by the Gordon and Betty Moore Foundation (GBMF4560)
   </small>
 
 + **Casey S. Greene**<br>
