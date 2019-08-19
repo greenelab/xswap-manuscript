@@ -9,7 +9,7 @@
   <meta name="author" content="Christopher Williams" />
   <meta name="author" content="Michael W. Nagle" />
   <meta name="author" content="Casey S. Greene" />
-  <meta name="dcterms.date" content="2019-08-16" />
+  <meta name="dcterms.date" content="2019-08-19" />
   <meta name="keywords" content="xswap, permutation, network, hetnets, degree, bioinformatics, python, manubot" />
   <title>The probability of edge existence due to node degree: a baseline for network-based predictions</title>
   <style>
@@ -26,7 +26,7 @@
 <header id="title-block-header">
 <h1 class="title">The probability of edge existence due to node degree: a baseline for network-based predictions</h1>
 </header>
-<p><small><em> This manuscript (<a href="https://greenelab.github.io/xswap-manuscript/v/259e17490aa4ccb4ccc19165b9c2319fbd370b4b/">permalink</a>) was automatically generated from <a href="https://github.com/greenelab/xswap-manuscript/tree/259e17490aa4ccb4ccc19165b9c2319fbd370b4b">greenelab/xswap-manuscript@259e174</a> on August 16, 2019. </em></small></p>
+<p><small><em> This manuscript (<a href="https://greenelab.github.io/xswap-manuscript/v/797c29d3f933b596b14e1ff933c6f1bfe8b3550b/">permalink</a>) was automatically generated from <a href="https://github.com/greenelab/xswap-manuscript/tree/797c29d3f933b596b14e1ff933c6f1bfe8b3550b">greenelab/xswap-manuscript@797c29d</a> on August 19, 2019. </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
 <li><p><strong>Michael Zietz</strong><br> <img src="images/orcid.svg" alt="ORCID icon" class="inline_icon" /> <a href="https://orcid.org/0000-0003-0539-630X">0000-0003-0539-630X</a> · <img src="images/github.svg" alt="GitHub icon" class="inline_icon" /> <a href="https://github.com/zietzm">zietzm</a> · <img src="images/twitter.svg" alt="Twitter icon" class="inline_icon" /> <a href="https://twitter.com/ZietzMichael">ZietzMichael</a><br> <small> Department of Physics &amp; Astronomy, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America; Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America · Funded by [‘Roy and Diana Vagelos Scholars Program in the Molecular Life Sciences’, ‘the Gordon and Betty Moore Foundation (GBMF4552)’] </small></p></li>
@@ -129,10 +129,22 @@
 <p>The second prediction task mirrored the first task, but it involved reconstructing networks based on subsampled networks with only 70% of the original edges. Because edges were sampled uniformly without replacement, the subsampled networks share similar degree distributions to the original networks (see Figure <a href="#fig:degree-bias">3</a>B). Unlike in the first task, edges that were present in the sampled network were not tested and therefore are not included in the performance metrics. The results of the second prediction task further demonstrate a high level of performance for degree-sequence-based node pair features (Figure <a href="#fig:discrimination">4</a>). The edge prior was able to reconstruct the unsampled network with an AUROC of greater than 0.9 in 14 of 20 networks. As was observed in the first task, node pair features computed in second prediction task were highly rank-correlated, meaning the AUROC values for different features were similar. While performance was slightly lower in the second task than the first, we found that many networks were still well reconstructed. The edge prior was the best calibrated feature for both tasks.</p>
 <p>In the third prediction task, we computed the three edge prediction features for paired networks representing data from PPI, TF-TG, and bioRxiv bioinformatics pre-print co-authorship. The goal of the task was to compare predictive performance across different degree distributions for the same type of data. We find that the task of predicting systematically-derived edges using a network with degree bias is significantly more challenging than network reconstruction, and we find consistently lower performance compared to the other tasks (Figure <a href="#fig:discrimination">4</a>). The edge prior was not able to predict the separate PPI network better than by random guessing (AUROC of roughly 0.5). Only slightly better was its performance in predicting the separate TF-TG network, at an AUROC of 0.59. We find superior performance in predicting the co-authorship relationships (AUROC 0.75), which was expected as the network being predicted shared roughly the same degree distribution as the network on which the edge prior was computed. The results of the third prediction task show that a difference in degree distribution between the network on which features are computed and the network to be predicted can make prediction significantly more challenging.</p>
 <p>Since the edge prior is based only on degree, it is unsurprising that it exhibits weak performance in predicting a network with a different degree distribution. We have considered the edge prior as a baseline edge predictor, whose performance indicates the utility of degree for a specific prediction task. The edge prior’s low performance in the third task indicates that degree is less helpful for edge prediction tasks in which training and testing networks do not share their degree distributions. Moreover, we believe such between-distribution prediction may be a relatively common task, with examples given by the networks in Figure <a href="#fig:degree-bias">3</a>.</p>
+<h3 id="assessing-feature-performance">Assessing feature performance</h3>
+<p>We conducted a further edge prediction task as an example application of the edge prior and the permutation framework. To begin, we chose the STRING PPI network for the comparison and computed five edge prediction features (Supplemental table <a href="#tbl:edge-prediction">2</a>). The goal of the task was to reconstruct the network on which the features were computed. All five features were correlated with degree (Figure <a href="#fig:feature-degree">6</a>), which we quantified for a node pair using the product of source and target degrees. We expected features based on degree to show strong performance for a network reconstruction task without holdout, as found in the first prediction task.</p>
+<figure>
+<img src="https://github.com/greenelab/xswap-analysis/raw/f8dce1983243fd4056108c7c8bdcba895f6dfbaf/img/feature-degree.png" alt="Figure 6: Five common edge-prediction features (Supplemental table 2) are correlated with node degree on the STRING PPI network [15]. All five features show a positive relationship with degree, though the magnitude of this correlation is highly variable. The preferential attachment index is understandably perfectly correlated because it is equal to the product of source and target degree." id="fig:feature-degree" style="width:100.0%" /><figcaption><span>Figure 6:</span> Five common edge-prediction features (Supplemental table <a href="#tbl:edge-prediction">2</a>) are correlated with node degree on the STRING PPI network <span class="citation" data-cites="fkKIuC7X">[<a href="#ref-fkKIuC7X" role="doc-biblioref">15</a>]</span>. All five features show a positive relationship with degree, though the magnitude of this correlation is highly variable. The preferential attachment index is understandably perfectly correlated because it is equal to the product of source and target degree.</figcaption>
+</figure>
+<p>We used two permutation-derived null values to evaluate reconstruction and contextualize performance. First, the performance of the edge prior was compared to determine the performance attributable to the degree sequence of the PPI network. The first comparison gave insight into the ability of the PPI network to be reconstructed by degree. Second, the five edge prediction features were computed on 100 permuted networks and used to reconstruct the unpermuted network. Each permuted network corresponded to AUROC values quantifying the performances of features computed on it. The second comparison gave insight into the performance of each feature if the feature was only picking up on degree.</p>
+<figure>
+<img src="https://github.com/greenelab/xswap-analysis/raw/4d9137f43a16fbe6c6a02865adceaa9a3195fe2d/img/feature-auroc.png" alt="Figure 7: Network reconstruction performances by five edge prediction features. Dotted red line indicates performance of the edge prior. Each feature was computed on the unpermuted and 100 permutations of the STRING PPI network." id="fig:feature-auroc" style="width:85.0%" /><figcaption><span>Figure 7:</span> Network reconstruction performances by five edge prediction features. Dotted red line indicates performance of the edge prior. Each feature was computed on the unpermuted and 100 permutations of the STRING PPI network.</figcaption>
+</figure>
+<p>The edge prior was able to reconstruct the PPI network with an AUROC of 0.797 (dotted red line in Figure <a href="#fig:feature-auroc">7</a>). Since the edge prior captures the performance of degree, this result indicated that nonspecific predictions alone showed this level of reconstruction performance. In the second comparison, edge prediction features computed on permuted networks showed performance equal or lower to their performances on the unpermuted networks. This indicated that four out of five edge prediction features picked up on more than node degree for the prediction task. The preferential attachment index is the product of source and target degree, and we found that its performance did not differ from the edge prior or the feature’s performance when computed on permuted networks. The four remaining features showed far higher reconstruction performance than the edge prior or feature values computed on permuted networks.</p>
+<p>This comparison quantified the performance of degree toward the prediction task and assessed degree’s effect on five edge prediction features. The edge prior provided the baseline level of performance attributable to degree alone. Comparing the performances on permuted networks to the performance of the edge prior reveals the extent to which a feature captures degree. Features whose performances on permuted networks were below that of the edge prior only imperfectly captured degree (eg: Jaccard index), whereas features whose performances equaled the edge prior completely captured degree (eg: preferential attachment index).</p>
+<p>Features can also capture information beyond degree, and our method can quantify this performance. For example, RWR captured more than degree because it reached all of a node’s neighbors in one step after each restart. These results aligned with the definitions of each feature and validated that xswap accurately assessed reliance on degree.</p>
 <h2 id="discussion">Discussion</h2>
 <h3 id="prediction-performance-and-the-edge-prior">Prediction performance and the edge prior</h3>
 <p>We focus on edge prediction in biomedical networks. Our overall goal is to predict new edges with specificity, so that predictions reflect particular connectivity rather than generic node characteristics. Our permutation framework is designed to capture the predictive performance attributable to degree to provide a baseline expectation for edge pairs. We expect that degree-based non-specificity is not a unique property of biomedical networks. For example, if node A connects to nearly all other nodes in a network, predicting that all remaining nodes share an edge with node A will likely result in many correct–though nonspecific–predictions, regardless of the type of data contained in the network. Node degree should be accounted for to make correct predictions while being able to distinguish specific from nonspecific predictions.</p>
-<p>Prediction without reliance on node degree is challenging because many effective methods for edge prediction are correlated with degree (eg Figure {<span class="citation" data-cites="fig:feature-degree">[<span class="citeproc-not-found" data-reference-id="fig:feature-degree"><strong>???</strong></span>]</span>}). The effects of node degree are obvious when edge prediction features are functions of degree. For example, the resource allocation index is the sum of inverse degree of common neighbors between source and target nodes (in the symmetric case), while preferential attachment is the product of source and target degree <span class="citation" data-cites="1F96bsjSm suzIn5oo">[<a href="#ref-1F96bsjSm" role="doc-biblioref">21</a>,<a href="#ref-suzIn5oo" role="doc-biblioref">22</a>]</span>. However, because many other edge prediction methods are not explicitly degree-based, it is important to have a general method for comparing the effects of node degree on edge prediction methods.</p>
+<p>Prediction without reliance on node degree is challenging because many effective methods for edge prediction are correlated with degree (eg Figure <a href="#fig:feature-degree">6</a>). The effects of node degree are obvious when edge prediction features are functions of degree. For example, the resource allocation index is the sum of inverse degree of common neighbors between source and target nodes (in the symmetric case), while preferential attachment is the product of source and target degree <span class="citation" data-cites="1F96bsjSm suzIn5oo">[<a href="#ref-1F96bsjSm" role="doc-biblioref">21</a>,<a href="#ref-suzIn5oo" role="doc-biblioref">22</a>]</span>. However, because many other edge prediction methods are not explicitly degree-based, it is important to have a general method for comparing the effects of node degree on edge prediction methods.</p>
 <p>We developed a permutation framework to quantify the edge probability due to degree. We term this probability the “edge prior”, and we have identified two applications. First, a probability associated with every node pair can be treated as a classification score. Ordering these scores provides an assessment of performance based solely on degree, which can be used as a baseline for other classifiers. Second, node pair probabilities can be used to adjust edge prediction features depending on the task. If degree is a desired feature, then the edge prior can be treated like a Bayesian prior probability. Alternatively, if degree is not a desired feature, then the edge prior can be used to calibrate features and thus potentially enhance predictive specificity.</p>
 <h2 id="conclusion">Conclusion</h2>
 <h2 id="references" class="page_break_before">References</h2>
@@ -268,6 +280,34 @@ DOI: <a href="https://doi.org/10.1140/epjb/e2009-00335-8">10.1140/epjb/e2009-003
 Zan Huang, Xin Li, Hsinchun Chen<br />
 <em>Proceedings of the 5th ACM/IEEE-CS joint conference on Digital libraries - JCDL ’05</em> (2005) <a href="https://doi.org/fn39g8">https://doi.org/fn39g8</a><br />
 DOI: <a href="https://doi.org/10.1145/1065385.1065415">10.1145/1065385.1065415</a></p>
+</div>
+<div id="ref-EfWvuSjX">
+<p>23. <strong>The link-prediction problem for social networks</strong><br />
+David Liben-Nowell, Jon Kleinberg<br />
+<em>Journal of the American Society for Information Science and Technology</em> (2007) <a href="https://doi.org/c56765">https://doi.org/c56765</a><br />
+DOI: <a href="https://doi.org/10.1002/asi.20591">10.1002/asi.20591</a></p>
+</div>
+<div id="ref-9dBDcARP">
+<p>24. <strong>Friends and neighbors on the Web</strong><br />
+Lada A Adamic, Eytan Adar<br />
+<em>Social Networks</em> (2003-07) <a href="https://doi.org/br5zd3">https://doi.org/br5zd3</a><br />
+DOI: <a href="https://doi.org/10.1016/s0378-8733(03)00009-1">10.1016/s0378-8733(03)00009-1</a></p>
+</div>
+<div id="ref-HSmvOV9E">
+<p>25. <strong>Automatic multimedia cross-modal correlation discovery</strong><br />
+Jia-Yu Pan, Hyung-Jeong Yang, Christos Faloutsos, Pinar Duygulu<br />
+<em>Proceedings of the 2004 ACM SIGKDD international conference on Knowledge discovery and data mining - KDD ’04</em> (2004) <a href="https://doi.org/bmhgw4">https://doi.org/bmhgw4</a><br />
+DOI: <a href="https://doi.org/10.1145/1014052.1014135">10.1145/1014052.1014135</a></p>
+</div>
+<div id="ref-1E6tdJtDz">
+<p>26. <strong>Learning with local and global consistency</strong><br />
+Dengyong Zhou, Olivier Bousquet, Thomas Navin Lal, Jason Weston, Bernhard Scholkopf<br />
+<em>NIPS 2003</em> (2003) <a href="https://papers.nips.cc/paper/2506-learning-with-local-and-global-consistency.pdf">https://papers.nips.cc/paper/2506-learning-with-local-and-global-consistency.pdf</a></p>
+</div>
+<div id="ref-1EgqwD4S1">
+<p>27. <strong>Link prediction in large directed graphs</strong><br />
+Dario Garcia Gasulla<br />
+<em>Universitat Politècnica de Catalunya</em> (2015) <a href="https://upcommons.upc.edu/handle/2117/95691">https://upcommons.upc.edu/handle/2117/95691</a></p>
 </div>
 </div>
 <h2 id="supplemental-information">Supplemental information</h2>
@@ -656,6 +696,56 @@ Source: 144, Target: 1417
 29177
 </td>
 </tr>
+</table>
+<h3 id="edge-prediction-features">Edge prediction features</h3>
+<p>In the table that follows, let <span class="math inline">\(k(u)\)</span> denote the set of neighbors of node <span class="math inline">\(u\)</span>. Let <span class="math inline">\(\mathbf{A}\)</span> represent the normalized Laplacian adjacency matrix, and let <span class="math inline">\(y_u\)</span> be a vector with all ones except for a one in the <span class="math inline">\(u\)</span>-th position. <span class="math inline">\(x\)</span> For a directed graph, let <span class="math inline">\(A(u)\)</span> denote the set of nodes that node <span class="math inline">\(u\)</span> points to and <span class="math inline">\(D(u)\)</span> the set of nodes that point to <span class="math inline">\(u\)</span>. All definitions that follow are the score between nodes <span class="math inline">\(u\)</span> and <span class="math inline">\(v\)</span>.</p>
+<a name="tbl:edge-prediction"></a>
+<table style="width:100%;">
+<caption><span>Table 2:</span> Edge prediction features. </caption>
+<colgroup>
+<col style="width: 47%" />
+<col style="width: 41%" />
+<col style="width: 10%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Feature</th>
+<th>Definition</th>
+<th>Citation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Jaccard index</td>
+<td><span class="math inline">\(\frac{|k(u) \cap k(v)|}{|k(u) \cup k(v)|}\)</span></td>
+<td><span class="citation" data-cites="EfWvuSjX">[<a href="#ref-EfWvuSjX" role="doc-biblioref">23</a>]</span></td>
+</tr>
+<tr class="even">
+<td>Preferential attachment score</td>
+<td><span class="math inline">\(|k(u)||k(v)|\)</span></td>
+<td><span class="citation" data-cites="EfWvuSjX">[<a href="#ref-EfWvuSjX" role="doc-biblioref">23</a>]</span></td>
+</tr>
+<tr class="odd">
+<td>Resource allocation index</td>
+<td><span class="math inline">\(\sum_{w \in k(u) \cap k(v)} \frac{1}{|k(w)|}\)</span></td>
+<td><span class="citation" data-cites="1F96bsjSm">[<a href="#ref-1F96bsjSm" role="doc-biblioref">21</a>]</span></td>
+</tr>
+<tr class="even">
+<td>Adamic/Adar index</td>
+<td><span class="math inline">\(\sum_{w \in k(u) \cap k(v)} \frac{1}{log|k(w)|}\)</span></td>
+<td><span class="citation" data-cites="9dBDcARP">[<a href="#ref-9dBDcARP" role="doc-biblioref">24</a>]</span></td>
+</tr>
+<tr class="odd">
+<td>Random walk with restart score</td>
+<td><span class="math inline">\(c \bigg[ \bigg( \mathbb{I} - (1-c) \mathbf{A}\bigg)^{-1} \mathbf{y}_u \bigg]_v\)</span></td>
+<td><span class="citation" data-cites="HSmvOV9E 1E6tdJtDz">[<a href="#ref-HSmvOV9E" role="doc-biblioref">25</a>,<a href="#ref-1E6tdJtDz" role="doc-biblioref">26</a>]</span></td>
+</tr>
+<tr class="even">
+<td>Inference score</td>
+<td><span class="math inline">\(\frac{|A(u) \cap D(v)|}{|A(u)|} + \frac{|D(u) \cap D(v)|}{|D(u)|}\)</span></td>
+<td><span class="citation" data-cites="1EgqwD4S1">[<a href="#ref-1EgqwD4S1" role="doc-biblioref">27</a>]</span></td>
+</tr>
+</tbody>
 </table>
 <!-- default theme -->
 

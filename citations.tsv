@@ -1,7 +1,9 @@
 manuscript_id	detagged_id	standard_id	short_id
+doi:10.1002/asi.20591	doi:10.1002/asi.20591	doi:10.1002/asi.20591	EfWvuSjX
 doi:10.1007/978-1-61779-361-5_13	doi:10.1007/978-1-61779-361-5_13	doi:10.1007/978-1-61779-361-5_13	hbOjmCsZ
 doi:10.1016/j.cell.2014.10.050	doi:10.1016/j.cell.2014.10.050	doi:10.1016/j.cell.2014.10.050	LCyCrr7W
 doi:10.1016/j.jprot.2014.01.020	doi:10.1016/j.jprot.2014.01.020	doi:10.1016/j.jprot.2014.01.020	bo2VEmIz
+doi:10/br5zd3	doi:10/br5zd3	doi:10.1016/s0378-8733(03)00009-1	9dBDcARP
 doi:10.1038/nature04209	doi:10.1038/nature04209	doi:10.1038/nature04209	lnDqu0oW
 doi:10.1038/nbt1116	doi:10.1038/nbt1116	doi:10.1038/nbt1116	C4FHCVCz
 doi:10.1038/s41467-019-08746-5	doi:10.1038/s41467-019-08746-5	doi:10.1038/s41467-019-08746-5	1mIOnArF
@@ -12,6 +14,7 @@ doi:10.1093/nar/gky1131	doi:10.1093/nar/gky1131	doi:10.1093/nar/gky1131	fkKIuC7X
 doi:10.1101/515643	doi:10.1101/515643	doi:10.1101/515643	IYwQbTVz
 doi:10.1137/1.9781611972795.67	doi:10.1137/1.9781611972795.67	doi:10.1137/1.9781611972795.67	iKOIEzQ9
 doi:10.1140/epjb/e2009-00335-8	doi:10.1140/epjb/e2009-00335-8	doi:10.1140/epjb/e2009-00335-8	1F96bsjSm
+doi:10.1145/1014052.1014135	doi:10.1145/1014052.1014135	doi:10.1145/1014052.1014135	HSmvOV9E
 doi:10.1145/1065385.1065415	doi:10.1145/1065385.1065415	doi:10.1145/1065385.1065415	suzIn5oo
 doi:10.1155/2015/172879	doi:10.1155/2015/172879	doi:10.1155/2015/172879	ohIv6zMA
 doi:10.1186/1752-0509-2-11	doi:10.1186/1752-0509-2-11	doi:10.1186/1752-0509-2-11	1736TBtF6
@@ -20,4 +23,6 @@ doi:10.1371/journal.pone.0017645	doi:10.1371/journal.pone.0017645	doi:10.1371/jo
 doi:10.3389/fgene.2015.00260	doi:10.3389/fgene.2015.00260	doi:10.3389/fgene.2015.00260	yJZSr6c6
 doi:10.5281/zenodo.2566421	doi:10.5281/zenodo.2566421	doi:10.5281/zenodo.2566421	7668E40A
 doi:10.7554/eLife.26726	doi:10.7554/eLife.26726	doi:10.7554/elife.26726	O21tn8vf
+raw:inference	raw:inference	raw:inference	1EgqwD4S1
+raw:laplacian	raw:laplacian	raw:laplacian	1E6tdJtDz
 url:https://github.com/greenelab/hetmech/pull/96	url:https://github.com/greenelab/hetmech/pull/96	url:https://github.com/greenelab/hetmech/pull/96	DwbABa00

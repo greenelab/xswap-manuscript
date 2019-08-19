@@ -5,7 +5,7 @@ author-meta:
 - Christopher Williams
 - Michael W. Nagle
 - Casey S. Greene
-date-meta: '2019-08-16'
+date-meta: '2019-08-19'
 keywords:
 - xswap
 - permutation
@@ -27,10 +27,10 @@ title: 'The probability of edge existence due to node degree: a baseline for net
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/xswap-manuscript/v/259e17490aa4ccb4ccc19165b9c2319fbd370b4b/))
+([permalink](https://greenelab.github.io/xswap-manuscript/v/797c29d3f933b596b14e1ff933c6f1bfe8b3550b/))
 was automatically generated
-from [greenelab/xswap-manuscript@259e174](https://github.com/greenelab/xswap-manuscript/tree/259e17490aa4ccb4ccc19165b9c2319fbd370b4b)
-on August 16, 2019.
+from [greenelab/xswap-manuscript@797c29d](https://github.com/greenelab/xswap-manuscript/tree/797c29d3f933b596b14e1ff933c6f1bfe8b3550b)
+on August 19, 2019.
 </em></small>
 
 ## Authors
@@ -338,6 +338,47 @@ We have considered the edge prior as a baseline edge predictor, whose performanc
 The edge prior's low performance in the third task indicates that degree is less helpful for edge prediction tasks in which training and testing networks do not share their degree distributions.
 Moreover, we believe such between-distribution prediction may be a relatively common task, with examples given by the networks in Figure {@fig:degree-bias}.
 
+### Assessing feature performance
+
+We conducted a further edge prediction task as an example application of the edge prior and the permutation framework.
+To begin, we chose the STRING PPI network for the comparison and computed five edge prediction features (Supplemental table {@tbl:edge-prediction}).
+The goal of the task was to reconstruct the network on which the features were computed.
+All five features were correlated with degree (Figure {@fig:feature-degree}), which we quantified for a node pair using the product of source and target degrees.
+We expected features based on degree to show strong performance for a network reconstruction task without holdout, as found in the first prediction task.
+
+![Five common edge-prediction features (Supplemental table {@tbl:edge-prediction}) are correlated with node degree on the STRING PPI network [@fkKIuC7X].
+  All five features show a positive relationship with degree, though the magnitude of this correlation is highly variable.
+  The preferential attachment index is understandably perfectly correlated because it is equal to the product of source and target degree.
+](https://github.com/greenelab/xswap-analysis/raw/f8dce1983243fd4056108c7c8bdcba895f6dfbaf/img/feature-degree.png){#fig:feature-degree width="100%"}
+
+We used two permutation-derived null values to evaluate reconstruction and contextualize performance.
+First, the performance of the edge prior was compared to determine the performance attributable to the degree sequence of the PPI network.
+The first comparison gave insight into the ability of the PPI network to be reconstructed by degree.
+Second, the five edge prediction features were computed on 100 permuted networks and used to reconstruct the unpermuted network.
+Each permuted network corresponded to AUROC values quantifying the performances of features computed on it.
+The second comparison gave insight into the performance of each feature if the feature was only picking up on degree.
+
+![Network reconstruction performances by five edge prediction features.
+  Dotted red line indicates performance of the edge prior.
+  Each feature was computed on the unpermuted and 100 permutations of the STRING PPI network.
+  ](https://github.com/greenelab/xswap-analysis/raw/4d9137f43a16fbe6c6a02865adceaa9a3195fe2d/img/feature-auroc.png){#fig:feature-auroc width="85%"}
+
+The edge prior was able to reconstruct the PPI network with an AUROC of 0.797 (dotted red line in Figure {@fig:feature-auroc}).
+Since the edge prior captures the performance of degree, this result indicated that nonspecific predictions alone showed this level of reconstruction performance.
+In the second comparison, edge prediction features computed on permuted networks showed performance equal or lower to their performances on the unpermuted networks.
+This indicated that four out of five edge prediction features picked up on more than node degree for the prediction task.
+The preferential attachment index is the product of source and target degree, and we found that its performance did not differ from the edge prior or the feature's performance when computed on permuted networks.
+The four remaining features showed far higher reconstruction performance than the edge prior or feature values computed on permuted networks.
+
+This comparison quantified the performance of degree toward the prediction task and assessed degree's effect on five edge prediction features.
+The edge prior provided the baseline level of performance attributable to degree alone.
+Comparing the performances on permuted networks to the performance of the edge prior reveals the extent to which a feature captures degree.
+Features whose performances on permuted networks were below that of the edge prior only imperfectly captured degree (eg: Jaccard index), whereas features whose performances equaled the edge prior completely captured degree (eg: preferential attachment index).
+
+Features can also capture information beyond degree, and our method can quantify this performance.
+For example, RWR captured more than degree because it reached all of a node's neighbors in one step after each restart.
+These results aligned with the definitions of each feature and validated that xswap accurately assessed reliance on degree.
+
 
 ## Discussion
 
@@ -603,3 +644,22 @@ Because the modified form of the approximation offers a much superior fit to the
     <td class="tg-buh4">29177</td>
   </tr>
 </table>
+
+### Edge prediction features
+
+In the table that follows, let $k(u)$ denote the set of neighbors of node $u$.
+Let $\mathbf{A}$ represent the normalized Laplacian adjacency matrix, and let $y_u$ be a vector with all ones except for a one in the $u$-th position.
+$x$
+For a directed graph, let $A(u)$ denote the set of nodes that node $u$ points to and $D(u)$ the set of nodes that point to $u$.
+All definitions that follow are the score between nodes $u$ and $v$.
+
+| Feature | Definition | Citation |
+|--------------------------------|----------------------------|-------|
+| Jaccard index | $\frac{|k(u) \cap k(v)|}{|k(u) \cup k(v)|}$ | [@EfWvuSjX] |
+| Preferential attachment score | $|k(u)||k(v)|$ | [@EfWvuSjX] |
+| Resource allocation index | $\sum_{w \in k(u) \cap k(v)} \frac{1}{|k(w)|}$ | [@1F96bsjSm] |
+| Adamic/Adar index | $\sum_{w \in k(u) \cap k(v)} \frac{1}{log|k(w)|}$ | [@9dBDcARP] |
+| Random walk with restart score | $c \bigg[ \bigg( \mathbb{I} - (1-c) \mathbf{A}\bigg)^{-1} \mathbf{y}_u \bigg]_v$ | [@HSmvOV9E;@1E6tdJtDz] |
+| Inference score | $\frac{|A(u) \cap D(v)|}{|A(u)|} + \frac{|D(u) \cap D(v)|}{|D(u)|}$ | [@1EgqwD4S1] |
+
+Table: Edge prediction features. {#tbl:edge-prediction}
