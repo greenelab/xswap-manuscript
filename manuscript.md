@@ -28,9 +28,9 @@ title: 'The probability of edge existence due to node degree: a baseline for net
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/xswap-manuscript/v/e6a8b16c0a9fc7cd035379f82f1fe796d5d0f989/))
+([permalink](https://greenelab.github.io/xswap-manuscript/v/137af91cc8e5512acf1499821787478a0b89706e/))
 was automatically generated
-from [greenelab/xswap-manuscript@e6a8b16](https://github.com/greenelab/xswap-manuscript/tree/e6a8b16c0a9fc7cd035379f82f1fe796d5d0f989)
+from [greenelab/xswap-manuscript@137af91](https://github.com/greenelab/xswap-manuscript/tree/137af91cc8e5512acf1499821787478a0b89706e)
 on August 20, 2019.
 </em></small>
 
@@ -349,10 +349,14 @@ Only slightly better was its performance in predicting the separate TF-TG networ
 We find superior performance in predicting the co-authorship relationships (AUROC 0.75), which was expected as the network being predicted shared roughly the same degree distribution as the network on which the edge prior was computed.
 The results of the third prediction task show that a difference in degree distribution between the network on which features are computed and the network to be predicted can make prediction significantly more challenging.
 
-Since the edge prior is based only on degree, it is unsurprising that it exhibits weak performance in predicting a network with a different degree distribution.
-We have considered the edge prior as a baseline edge predictor, whose performance indicates the utility of degree for a specific prediction task.
+The edge prior can be considered a baseline edge predictor that accurately captures degree's contribution to the probability of an edge existing.
 The edge prior's low performance in the third task indicates that degree is less helpful for edge prediction tasks in which training and testing networks do not share their degree distributions.
-Moreover, we believe such between-distribution prediction may be a relatively common task, with examples given by the networks in Figure {@fig:degree-bias}.
+Many biomedical prediction tasks can be framed as edge prediction tasks between different degree distributions.
+In drug repurposing, for example, existing compound-disease treatment relationships are unlikely to be randomly sampled from all true treatment relationships.
+However, all treatment relationships between existing compounds and diseases are desirable outputs in prediction.
+Edge predictions can be based on both underlying biological properties and network degree distributions.
+However, predictions based on biological properties may be more consistent and generalizable than those based on degree.
+Degree's influence on edge prediction accuracy measures can reveal the relative contributions of these two factors.
 
 ### Assessing feature performance
 
