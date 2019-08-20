@@ -1,10 +1,13 @@
-# Automated scholarly manuscripts on GitHub
+# XSwap Manuscript Source
 
 <!-- usage note: edit the H1 title above to personalize the manuscript -->
 
 [![HTML Manuscript](https://img.shields.io/badge/manuscript-HTML-blue.svg)](https://greenelab.github.io/xswap-manuscript/)
 [![PDF Manuscript](https://img.shields.io/badge/manuscript-PDF-blue.svg)](https://greenelab.github.io/xswap-manuscript/manuscript.pdf)
 [![Build Status](https://travis-ci.com/greenelab/xswap-manuscript.svg?branch=master)](https://travis-ci.com/greenelab/xswap-manuscript)
+
+This repository contains the manuscript for the XSwap project.
+The working title for this manuscript is **The probability of edge existence due to node degree: a baseline for network-based predictions**.
 
 ## Manuscript description
 
