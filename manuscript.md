@@ -6,7 +6,7 @@ author-meta:
 - Michael W. Nagle
 - Kyle Kloster
 - Casey S. Greene
-date-meta: '2019-08-19'
+date-meta: '2019-08-20'
 keywords:
 - xswap
 - permutation
@@ -28,10 +28,10 @@ title: 'The probability of edge existence due to node degree: a baseline for net
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/xswap-manuscript/v/5f34181ba718cb436bef68ed03a174a008b499a7/))
+([permalink](https://greenelab.github.io/xswap-manuscript/v/9c6a1c2b3eb0aefb6bc416bca40bcc1a1dde1d89/))
 was automatically generated
-from [greenelab/xswap-manuscript@5f34181](https://github.com/greenelab/xswap-manuscript/tree/5f34181ba718cb436bef68ed03a174a008b499a7)
-on August 19, 2019.
+from [greenelab/xswap-manuscript@9c6a1c2](https://github.com/greenelab/xswap-manuscript/tree/9c6a1c2b3eb0aefb6bc416bca40bcc1a1dde1d89)
+on August 20, 2019.
 </em></small>
 
 ## Authors
@@ -108,14 +108,14 @@ on August 19, 2019.
 
 ## Abstract {.page_break_before}
 
-Network edge prediction is an important task in biology and biomedicine.
-Degree is an influential factor in edge prediction, but degree biases and degree imbalance can lead to nonspecific predictions.
-In the present work, we introduce a network permutation framework to quantify the effect of node degree on network-based methods and prediction tasks.
-We introduce the "edge prior" to quantify the probability that two nodes are connected based only on their degree.
+Important tasks in biology and biomedicine such as predicting gene functions, gene-disease associations, and drug repurposing opportunities are often framed as network edge prediction.
+Degree strongly influences edge prediction, and degree biases and degree imbalance can lead to nonspecific predictions.
+We introduce a network permutation framework to quantify the effect of node degree on network-based methods and prediction tasks.
+As part of this we define an edge prior to quantify the probability that two nodes are connected based only on their degree.
 After demonstrating that this prior feature shows excellent discrimination and calibration performance for 20 different biomedical networks (16 bipartite, 3 undirected, 1 directed), we conclude that our prior feature represents a suitable baseline for network link prediction tasks, as performance exceeding the baseline is attributable to factors other than degree alone.
 Additionally, we propose methods to incorporate network permutation and the edge prior into other predictive methods.
-Our results highlight the importance of degree for link prediction and provide a way to account for its effects when degree bias may be present.
-We have released a full implementation of our network permutation method and the edge prior as an open-source Python package on GitHub.
+Our results highlight the importance of degree for link prediction and provide software to account for its effects when degree bias may be present.
+We have released a full implementation of our network permutation method and the edge prior as an open-source Python package on GitHub and the Python Package Index.
 
 
 ## Introduction
@@ -132,40 +132,39 @@ Because different nodes can have very different degrees, real networks have high
 
 Degree is an important metric for differentiating between nodes, and it appears in many common edge prediction features [@ohIv6zMA].
 However, reliance on degree can pose problems for edge prediction.
-Firstly, bias in the data can distort node degree so that degree differences between two nodes may not be meaningful.
+Firstly, bias in networks can distort node degree so that degree differences between two nodes may not be meaningful.
 Secondly, reliance on degree can lead edge prediction methods to make nonspecific or trivial predictions and fail to identify novel or insightful relationships.
 
-Most biomedical data networks are imperfect representations of the true set of relationships.
+Most biomedical networks are imperfect representations of the true set of relationships.
 Real networks often mistakenly include edges that do not exist and exclude edges that do exist.
 How well a network represents the true relationships it attempts to represent depends on a number of factors, especially the methods used to generate the data in the network [@bo2VEmIz; @yJZSr6c6; @C4FHCVCz].
 We define "degree bias" as the type of misrepresentation that occurs when the fraction of incorrectly existent/nonexistent relationships depends on node degree.
 Depending on the type of data being represented, degree biases can arise due to experimental methods, inspection bias, or other factors [@bo2VEmIz].
 
 Inspection bias indicates that entities are not uniformly studied [@lnDqu0oW], and it is likely to cause degree bias when networks are constructed using hypothesis-driven findings extracted from the literature, as newly-discovered relationships are not randomly sampled from the set of all true relationships.
-For example, the number of publications mentioning a gene has little correlation with its degree in a systematically-derived protein interaction network [Figure 6A in @LCyCrr7W].
-Therefore, the high correlation between number of publications and degree in low-throughput interaction networks is almost entirely the result of inspection bias.
-This evidence suggests that many poorly studied genes have similar numbers of interactions as the genes scientists have preferentially examined.
-The consequence of degree bias is that a difference in degree between two nodes may not reflect a difference in the number of true edges.
-Reliance on degree may be unfavorable depending on the prediction/analysis task being conducted and the magnitude of possible degree bias in the data.
+Though there is a high correlation between the number of publications mentioning a gene and its degree in low-throughput interaction networks, the number of publications mentioning a gene has little correlation with its degree in a systematically-derived protein interaction network [Figure 6A in @LCyCrr7W].
+This evidence suggests that many poorly studied genes have similar numbers of interactions as those scientists have preferentially examined and that these edges are missed due to inspection bias.
+For networks with strong inspection bias, reliance on degree can lead to predictions that have a good metrics when assessed by cross validation but little ability to generalize.
 
 Another reason why a method's reliance on degree can be unfavorable is that degree imbalance can lead to prediction nonspecificity.
 Nonspecific predictions are made on the basis of generic characteristics rather than the specific connectivity information contained in a network.
 For example, Gillis et al. [@zB6RQrIj] examined the concept of prediction specificity in the context of gene function prediction and found that many predictions appear to rely primarily on multifunctionality and could be "potentially misleading with respect to causality."
 Real networks have a variety of degree distributions (Figure {@fig:hetionet}), and they commonly exhibit degree imbalance [@GFS9MouO; @hbOjmCsZ; @1mIOnArF].
 Degree imbalance leads high-degree nodes to dominate in the predictions made by degree-associated methods [@g059lh8v], which are effective predictors of connections in some biological networks [@1736TBtF6].
-
 Consequently, degree-based predictions are more likely nonspecific, meaning the same set of predictions performs well for different tasks.
-However, depending on the prediction task, edge predictions between very high degree nodes may be undesired, uninsightful, or nonspecific.
-Model evaluation is challenging in this context, as nonspecific or trivial predictions need not be incorrect, even if they are not the desired outputs of the predictive model.
-For example, predicting that the highest degree node in a network shares edges with the remaining nodes to which it is not connected will often lead to many correct predictions, despite the predictions being generic to all nodes in the network.
-Degree-based features should often be included in the interpretation of predictions to disentangle desired from non-desired effects and to effectively evaluate and compare predictive models.
+
+Depending on the prediction task, edge predictions between very high degree nodes may be undesired, uninsightful, or nonspecific.
+Model evaluation is challenging in this context: nonspecific or trivial predictions can dominate performance evaluations and may actually be correct, even if they are not the desired outputs of the predictive model.
+For example, predicting that the highest degree node in a network shares edges with the remaining nodes to which it is not connected will often lead to many correct predictions, despite this prediction being generic to all other nodes in the network.
 
 Degree is important in edge prediction, but it can cause undesired effects.
-We sought to understand the effect of node degree on edge prediction methods.
-We introduce a permutation-based framework to find edge existence probabilities due to node degree and to quantify the contribution of degree to edge prediction methods.
+Degree-based features should often be included in the interpretation of predictions to disentangle desired from non-desired effects and to effectively evaluate and compare predictive models.
+We sought to directly measure the effect of node degree on edge prediction methods.
+We introduce a permutation-based framework and software implementation to find edge existence probabilities due to node degree and to quantify the contribution of degree to edge prediction methods.
 This method allows edge predictions to be evaluated in the context of degree and its effects on the prediction task.
-Our results demonstrate that degree-associated methods are very effective for reconstructing a network using a subsampled holdout but ineffective for predicting edges between distinct degree distributions.
-Using a number of different networks, we provide evidence that degree has a strong effect on the probability of edge existence and that our "edge prior" feature best quantifies this probability.
+Our results demonstrate that degree-associated methods are very effective for reconstructing a network using a subsampled holdout.
+However, these methods are ineffective for predicting edges between networks measuring the same biological processes in targeted and systematic ways because such networks have distinct degree distributions.
+Using multiple different networks, we provide evidence that degree has a strong effect on the probability of edge existence and that our permutation-based edge prior feature best quantifies this probability.
 
 
 ## Methods
@@ -179,7 +178,7 @@ For example, an edge prediction method that has superior reconstruction performa
 Conversely, identical predictive performance on true and permuted networks indicates that a method relies on information that is preserved during permutation.
 
 Network permutation is a flexible framework for analyzing other methods, because it generates networks with identical formats to the original network.
-We propose using network permutation to isolate degree and determine its effects in different contexts.
+We use network permutation to isolate degree and determine its effects in different contexts.
 Degree-preserving network permutation obscures true connections and higher-order connectivity information while retaining node degree, and thereby, the network's degree sequence.
 Thanks to the flexibility of permutation, our framework can quantify the effect of degree on any network edge prediction method.
 
@@ -195,7 +194,7 @@ To allow greater flexibility, we modified the original algorithm by adding two p
 Specifically, two chosen edges constitute a valid swap if they preserve degree for all four involved nodes and do not violate the above condition options.
 The motivation for these generalizations is to make the permutation method applicable both to directed and undirected graphs, as well as to networks with different types of nodes, variously called multipartite, heterogeneous, or multimodal networks.
 
-When permuting bipartite networks, our method ensures that each nodes class membership and with-class degree is preserved.
+When permuting bipartite networks, our method ensures that each node's class membership and with-class degree is preserved.
 Similarly, heterogeneous networks should be permuted by considering each edge type as a separate network.
 This way, each node retains its within-edge-type degree for all edge types.
 We provide documentation for parameter choices depending on the type of network being permuted in the GitHub repository (https://github.com/hetio/xswap).
@@ -209,19 +208,19 @@ The original algorithm and our proposed modification are given in Figure {@fig:a
 | :----------- | :--------------- | :----- | :------------------- | :----------------- |
 | simple | all | ![](images/xswap_simple.png){height="85px"} | False | False |
 | bipartite | in/out | ![](images/xswap_bipartite.png){height="85px"} | True | True |
-| directed | in/out | ![](images/xswap_directed.png){height="85px"} | ? | ? |
+| directed | in/out | ![](images/xswap_directed.png){height="85px"} | Depends on networks | Depends on networks |
 
 Table: Applications of the modified XSwap algorithm to various network types with appropriate parameter choices.
 For simple networks, each node's degree is preserved. For bipartite networks, each node's number of connections to the other part is preserved, and overall node class memberships are preserved. For directed networks, each nodes' in- and out-degrees are preserved, though parameter choices depend on the network being permuted. Some directed networks can include antiparallel edges or loops while others do not. {#tbl:xswap}
 
 ### Edge prior
 
-We introduce the "edge prior" to quantify the probability that two nodes are connected based only on their degree.
+We introduce the edge prior to quantify the probability that two nodes are connected based only on their degree.
 The edge prior can be estimated using the fraction of permuted networks in which a given edge exists---the maximum likelihood estimate for the binomial distribution success probability.
 Based only on permuted networks, the edge prior does not contain any information about the true edges in the (unpermuted) network.
 The edge prior is a numerical feature that can be computed for every pair of nodes that could potentially share an edge, and we compared its ability to predict edges in three tasks, discussed below.
 
-### Edge prior analytical approximation
+### Analytical approximation of the edge prior
 
 We also considered whether the probability of an edge existing across permuted networks could be written as a closed form equation involving the node pair's degree.
 A major simplification is the assumption that the probability of an edge existing is independent of all other potential edges.
@@ -242,9 +241,9 @@ We performed three prediction tasks to assess the performance of the edge prior.
 We compared the permutation-based prior with two additional features: a scaled product of source and target degree (scaled to the range [0, 1]) and our analytical approximation of the edge prior.
 We used 20 biomedical networks from the Hetionet heterogeneous network [@O21tn8vf] that had at least 2000 edges for the first two tasks.
 In the first task, we computed the degree-based prediction features (edge prior, scaled degree product, and analytical prior approximation), and predicted the original edges in the network.
-We used node pairs that lacked edge in the original network as negative examples and those with an edge as positive examples.
+We used node pairs that lacked an edge in the original network as negative examples and those with an edge as positive examples.
 To assess the methods' predictive performances, we computed the area under the receiver operating characteristic (AUROC) curve for all three features.
-In the second task, we sampled 70% of edges from each of the networks, computed features on the sampled network, then attempted to predict held-out edges.
+In the second task, we sampled 70% of edges from each of the networks, computed features on the sampled network, then predicted held-out edges.
 For this task, negative examples were node pairs in which an edge did not exist in either original or sampled network, while positive samples were those node pairs without an edge in the sampled network but with an edge in the original network.
 
 The third task evaluated the ability of the edge prior to generalize to new degree distributions.
@@ -256,7 +255,7 @@ The pairs of networks for PPI and TF-TG data sources are ideal because in one we
 
 As a further basis of comparison, we added a time-resolved co-authorship network, which we partitioned by time to create two separate networks.
 We created the co-authorship network of bioRxiv bioinformatics preprints using the Rxivist [@IYwQbTVz; @7668E40A] database, which was generated by crawling the bioRxiv server.
-Unlike the other two, the co-authorship network does not have degree bias, as the network faithfully represents all true co-author relationships.
+Unlike the other two networks, co-authorship does not have degree bias, as the network faithfully represents all true co-author relationships.
 We include this network to offer a comparative prediction task in which the degree distributions between training (posted before 2018) and testing (posted during or after 2018) do not differ (Figure {@fig:degree-bias}A).
 The goal of the third prediction task is to determine feature generalizability for network reconstruction between different degree distributions, especially predicting a network without degree bias using features from a degree-biased network.
 Further information about the networks used can be found in [the supplement](#networks).
@@ -321,7 +320,7 @@ The three features that we compared were highly rank correlated (median > 0.9999
 The three features also had very similar AUROC reconstruction performance values for the first, second, and third prediction tasks (max difference < 0.027) because AUROC is rank-based.
 The edge prior was slightly better than the approximations in 12 of 20 networks.
 However, while the AUROC results were similar, the features were very different in their levels of calibration---the ability of the model to correctly estimate class membership probabilities.
-We found that the edge prior was very well calibrated for all networks in the first and second tasks, and it provided the best calibration of the three features for each of the prediction tasks (Figure {@fig:calibration}A).
+The edge prior was very well calibrated for all networks in the first and second tasks, and it provided the best calibration of the three features for each of the prediction tasks (Figure {@fig:calibration}A).
 As the edge prior was not based on the networks' true edges, these results indicated that degree sequence alone was highly informative and that permutation was the only approach that provided a well-calibrated model.
 
 ![**A.** Calibration curves for full network reconstruction of 20 networks from Hetionet.
@@ -339,7 +338,7 @@ Unlike in the first task, edges that were present in the sampled network were no
 The results of the second prediction task further demonstrate a high level of performance for degree-sequence-based node pair features (Figure {@fig:discrimination}).
 The edge prior was able to reconstruct the unsampled network with an AUROC of greater than 0.9 in 14 of 20 networks.
 As was observed in the first task, node pair features computed in second prediction task were highly rank-correlated, meaning the AUROC values for different features were similar.
-While performance was slightly lower in the second task than the first, we found that many networks were still well-reconstructed.
+While performance was slightly lower in the second task than the first, many networks were still well-reconstructed.
 The edge prior was the best calibrated feature for both tasks.
 
 In the third prediction task, we computed the three edge prediction features for paired networks representing data from PPI, TF-TG, and bioRxiv bioinformatics pre-print co-authorship.
@@ -381,15 +380,15 @@ The second comparison gave insight into the performance of each feature if the f
   ](https://github.com/greenelab/xswap-analysis/raw/4d9137f43a16fbe6c6a02865adceaa9a3195fe2d/img/feature-auroc.png){#fig:feature-auroc width="85%"}
 
 The edge prior encapsulates nonspecific predictions due to degree, and it reconstructed the PPI network with an AUROC of 0.797 (dotted red line in Figure {@fig:feature-auroc}).
-In the second comparison, edge prediction features computed on permuted networks showed performance equal or lower to their performances on the unpermuted networks.
+In the second comparison, edge prediction features computed on permuted networks had performance equal or lower to their performances on the unpermuted networks.
 This indicated that four out of five edge prediction features discern more than node degree for the prediction task.
-The preferential attachment index is the product of source and target degree, and we found that its performance did not differ from the edge prior or the feature's performance when computed on permuted networks.
-The four remaining features showed far higher reconstruction performance than the edge prior or feature values computed on permuted networks.
+The preferential attachment index is the product of source and target degree, and its performance did not differ from the edge prior or the feature's performance when computed on permuted networks.
+The four remaining features had higher reconstruction performance than the edge prior or feature values computed on permuted networks.
 
 This comparison quantified the performance of degree toward the prediction task and assessed degree's effect on five edge prediction features.
 The edge prior provided the baseline level of performance attributable to degree alone.
-Comparing the performances on permuted networks to the performance of the edge prior reveals the extent to which a feature captures degree.
-Features whose performances on permuted networks were below that of the edge prior only imperfectly captured degree (eg: Jaccard index), whereas features whose performances equaled the edge prior completely captured degree (eg: preferential attachment index).
+Comparing the performances on permuted networks to the performance of the edge prior reveals the extent to which a feature measures degree.
+Features whose performances on permuted networks were below that of the edge prior only imperfectly measured degree (eg: Jaccard index), whereas features whose performances equaled the edge prior completely captured degree (eg: preferential attachment index).
 
 Features can also capture information beyond degree, and our method can quantify this performance.
 For example, the superior performance on unpermuted networks relative to permuted networks indicated that RWR, resource allocation, Jaccard, and Adamic/Adar indices captured more than degree in this prediction task.
@@ -400,12 +399,12 @@ These results aligned with the definitions of each feature and validated that ou
 
 We focus on edge prediction in biomedical networks.
 Our overall goal is to predict new edges with specificity, so that predictions reflect particular connectivity rather than generic node characteristics.
-Our permutation framework is designed to capture the predictive performance attributable to degree to provide a baseline expectation for edge pairs.
+Our permutation framework measures the predictive performance attributable to degree to provide a baseline expectation for edge pairs.
 We expect that non-specificity due to degree is not a unique property of biomedical networks.
 For example, if node A connects to nearly all other nodes in a network, predicting that all remaining nodes share an edge with node A will likely result in many correct---though nonspecific---predictions, regardless of the type of data contained in the network.
 Node degree should be accounted for to make correct predictions while being able to distinguish specific from nonspecific predictions.
+Prediction without reliance on node degree is challenging because many effective methods for edge prediction are correlated with degree (Figure {@fig:feature-degree}).
 
-Prediction without reliance on node degree is challenging because many effective methods for edge prediction are correlated with degree (eg Figure {@fig:feature-degree}).
 The effects of node degree are obvious when edge prediction features are functions of degree.
 For example, the resource allocation index is the sum of inverse degree of common neighbors between source and target nodes (in the symmetric case), while preferential attachment is the product of source and target degree [@1F96bsjSm; @suzIn5oo].
 However, because many other edge prediction methods are not explicitly degree-based, it is important to have a general method for comparing the effects of node degree on edge prediction methods.
@@ -426,12 +425,10 @@ This comparison is useful because specific predictions (based on more than degre
 
 Second, Figure {@fig:feature-auroc} compares five edge prediction features computed on and unpermuted networks.
 This comparison identified the fraction of each feature's performance attributable to degree.
-Some features, such as the preferential attachment index, perfectly and exclusively capture degree.
-In the comparison, this feature had identical performance regardless of the network used for training.
-Similarly, we can see that the Adamic/Adar index incorporated degree almost completely because its performances from permuted networks are nearly at the performance of the edge prior.
-However, the Adamic/Adar index had much higher performance when computed on the unpermuted network, indicating that it also extracts higher-order information in addition to degree.
-This analysis allowed specific features to be evaluated for a specific prediction task in terms of reliance on degree and performance beyond the degree-based, nonspecific baseline.
-Moreover, this comparison would not have been possible without network permutation as the comparison required features to be computed on permuted networks.
+Some features, such as the preferential attachment index, perfectly and exclusively measure degree.
+The Adamic/Adar index also incorporates degree almost completely because its performances from permuted networks are nearly at the performance of the edge prior.
+However, the Adamic/Adar index had much higher performance when computed on the unpermuted network, indicating that it also extracts higher-order information.
+This analysis, enabled by network permutation, measured the extent to which features rely on degree for a specific prediction task by assessing performance beyond the degree-based, nonspecific baseline.
 
 ## Conclusion
 
@@ -515,7 +512,7 @@ We found that the following modified form (introduced in Methods) affords a supe
     P_{i,j} = \frac{d(u_i) d(v_j)}{\sqrt{(d(u_i) d(v_j))^2 + (m - d(u_i) - d(v_j) + 1)^2}}
 \end{equation}
 
-Because the modified form of the approximation offers a much superior fit to the data, we chose to include only the modified version in the Python package released, and we used only the modified form throughout our analysis.
+Because the modified form of the approximation offers a much superior fit to the data, we chose to include only the modified version in the Python package released, and we used the modified form throughout our analysis.
 
 ### Networks used for comparison {#networks}
 
