@@ -28,9 +28,9 @@ title: 'The probability of edge existence due to node degree: a baseline for net
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/xswap-manuscript/v/9c6a1c2b3eb0aefb6bc416bca40bcc1a1dde1d89/))
+([permalink](https://greenelab.github.io/xswap-manuscript/v/43844089f31d1ffa5f9a97eb72586ec842c21cae/))
 was automatically generated
-from [greenelab/xswap-manuscript@9c6a1c2](https://github.com/greenelab/xswap-manuscript/tree/9c6a1c2b3eb0aefb6bc416bca40bcc1a1dde1d89)
+from [greenelab/xswap-manuscript@4384408](https://github.com/greenelab/xswap-manuscript/tree/43844089f31d1ffa5f9a97eb72586ec842c21cae)
 on August 20, 2019.
 </em></small>
 
