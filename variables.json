@@ -37,6 +37,21 @@
       ]
     },
     {
+      "github": "kkloste",
+      "name": "Kyle Kloster",
+      "initials": "KAK",
+      "orcid": "0000-0001-5678-7197",
+      "twitter": "kylekloster",
+      "email": "kyle.kloster@gmail.com",
+      "affiliations": [
+        "Department of Computer Science, North Carolina State University, Raleigh, North Carolina, United States of America"
+      ],
+      "funders": "the Gordon and Betty Moore Foundation (GBMF4560)",
+      "affiliation_numbers": [
+        3
+      ]
+    },
+    {
       "github": "chrsunwil",
       "name": "Christopher Williams",
       "initials": "CW",
@@ -58,21 +73,6 @@
       "affiliations": [
         "Internal Medicine Research Unit, Pfizer Worldwide Research, Development, and Medical"
       ],
-      "affiliation_numbers": [
-        3
-      ]
-    },
-    {
-      "github": "kkloste",
-      "name": "Kyle Kloster",
-      "initials": "KAK",
-      "orcid": "0000-0001-5678-7197",
-      "twitter": "kylekloster",
-      "email": "kyle.kloster@gmail.com",
-      "affiliations": [
-        "Department of Computer Science, North Carolina State University, Raleigh, North Carolina, United States of America"
-      ],
-      "funders": "the Gordon and Betty Moore Foundation (GBMF4560)",
       "affiliation_numbers": [
         4
       ]
@@ -107,11 +107,11 @@
       "affiliation_number": 2
     },
     {
-      "affiliation": "Internal Medicine Research Unit, Pfizer Worldwide Research, Development, and Medical",
+      "affiliation": "Department of Computer Science, North Carolina State University, Raleigh, North Carolina, United States of America",
       "affiliation_number": 3
     },
     {
-      "affiliation": "Department of Computer Science, North Carolina State University, Raleigh, North Carolina, United States of America",
+      "affiliation": "Internal Medicine Research Unit, Pfizer Worldwide Research, Development, and Medical",
       "affiliation_number": 4
     }
   ],
@@ -119,7 +119,7 @@
     "repo_slug": "greenelab/xswap-manuscript",
     "repo_owner": "greenelab",
     "repo_name": "xswap-manuscript",
-    "commit": "137af91cc8e5512acf1499821787478a0b89706e"
+    "commit": "5003bf0d94b6cff0b08691c42c240add87c4d554"
   },
   "manuscript_stats": {
     "reference_counts": {

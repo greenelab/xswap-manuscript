@@ -2,9 +2,9 @@
 author-meta:
 - Michael Zietz
 - Daniel S. Himmelstein
+- Kyle Kloster
 - Christopher Williams
 - Michael W. Nagle
-- Kyle Kloster
 - Casey S. Greene
 date-meta: '2019-08-20'
 keywords:
@@ -28,9 +28,9 @@ title: 'The probability of edge existence due to node degree: a baseline for net
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/xswap-manuscript/v/137af91cc8e5512acf1499821787478a0b89706e/))
+([permalink](https://greenelab.github.io/xswap-manuscript/v/5003bf0d94b6cff0b08691c42c240add87c4d554/))
 was automatically generated
-from [greenelab/xswap-manuscript@137af91](https://github.com/greenelab/xswap-manuscript/tree/137af91cc8e5512acf1499821787478a0b89706e)
+from [greenelab/xswap-manuscript@5003bf0](https://github.com/greenelab/xswap-manuscript/tree/5003bf0d94b6cff0b08691c42c240add87c4d554)
 on August 20, 2019.
 </em></small>
 
@@ -62,6 +62,18 @@ on August 20, 2019.
      · Funded by Pfizer Worldwide Research, Development, and Medical; the Gordon and Betty Moore Foundation (GBMF4552)
   </small>
 
++ **Kyle Kloster**<br>
+    ![ORCID icon](images/orcid.svg){.inline_icon}
+    [0000-0001-5678-7197](https://orcid.org/0000-0001-5678-7197)
+    · ![GitHub icon](images/github.svg){.inline_icon}
+    [kkloste](https://github.com/kkloste)
+    · ![Twitter icon](images/twitter.svg){.inline_icon}
+    [kylekloster](https://twitter.com/kylekloster)<br>
+  <small>
+     Department of Computer Science, North Carolina State University, Raleigh, North Carolina, United States of America
+     · Funded by the Gordon and Betty Moore Foundation (GBMF4560)
+  </small>
+
 + **Christopher Williams**<br>
     · ![GitHub icon](images/github.svg){.inline_icon}
     [chrsunwil](https://github.com/chrsunwil)<br>
@@ -78,18 +90,6 @@ on August 20, 2019.
     [MikeNagle84](https://twitter.com/MikeNagle84)<br>
   <small>
      Internal Medicine Research Unit, Pfizer Worldwide Research, Development, and Medical
-  </small>
-
-+ **Kyle Kloster**<br>
-    ![ORCID icon](images/orcid.svg){.inline_icon}
-    [0000-0001-5678-7197](https://orcid.org/0000-0001-5678-7197)
-    · ![GitHub icon](images/github.svg){.inline_icon}
-    [kkloste](https://github.com/kkloste)
-    · ![Twitter icon](images/twitter.svg){.inline_icon}
-    [kylekloster](https://twitter.com/kylekloster)<br>
-  <small>
-     Department of Computer Science, North Carolina State University, Raleigh, North Carolina, United States of America
-     · Funded by the Gordon and Betty Moore Foundation (GBMF4560)
   </small>
 
 + **Casey S. Greene**<br>
