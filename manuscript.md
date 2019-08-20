@@ -28,9 +28,9 @@ title: 'The probability of edge existence due to node degree: a baseline for net
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/xswap-manuscript/v/43844089f31d1ffa5f9a97eb72586ec842c21cae/))
+([permalink](https://greenelab.github.io/xswap-manuscript/v/e6a8b16c0a9fc7cd035379f82f1fe796d5d0f989/))
 was automatically generated
-from [greenelab/xswap-manuscript@4384408](https://github.com/greenelab/xswap-manuscript/tree/43844089f31d1ffa5f9a97eb72586ec842c21cae)
+from [greenelab/xswap-manuscript@e6a8b16](https://github.com/greenelab/xswap-manuscript/tree/e6a8b16c0a9fc7cd035379f82f1fe796d5d0f989)
 on August 20, 2019.
 </em></small>
 
@@ -449,8 +449,13 @@ A careful accounting of degree's effects enables contextualized model evaluation
 
 ### Performance of the XSwap algorithm
 
-![Fraction of edges swapped as a function of swap attempts and network density.
-  Higher density networks have lower asymptotic fractions of edges swapped and take more attempts to reach these values.
+The performance of the XSwap algorithm depends on a number of network properties.
+We define network density to be the number of edges divided by the number of potential edges.
+Increasing network density lowers the asymptotic fraction of edges changed, as greater density prevents the algorithm from removing certain edges.
+Scale-free random graphs (via Barabási–Albert) can have a lower fraction of their edges swapped, asymptotically, as compared to basic random graphs (via Erdős–Rényi).
+
+![Higher density networks have lower asymptotic fractions of edges swapped and take more attempts to reach these values.
+  The Barabási–Albert model produces scale-free random graphs, while Erdős–Rényi generates random graphs where all edges are equally likely.
   ](https://github.com/greenelab/xswap-analysis/raw/47f67f85b1a5df2714d564c274515f1fdeb882ba/img/6_xswap_percent_swapped_iterations/lines_continuous.png){#fig:swap-percent width="100%"}
 
 ### Approximate edge prior {#approx-prior-supp}
