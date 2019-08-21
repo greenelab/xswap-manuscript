@@ -28,9 +28,9 @@ title: 'The probability of edge existence due to node degree: a baseline for net
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/xswap-manuscript/v/98acb6b3222bbbeced46f369a7e4e559556deb8a/))
+([permalink](https://greenelab.github.io/xswap-manuscript/v/a33bf58448f55254b4ef8d4891f2f0f68cddb462/))
 was automatically generated
-from [greenelab/xswap-manuscript@98acb6b](https://github.com/greenelab/xswap-manuscript/tree/98acb6b3222bbbeced46f369a7e4e559556deb8a)
+from [greenelab/xswap-manuscript@a33bf58](https://github.com/greenelab/xswap-manuscript/tree/a33bf58448f55254b4ef8d4891f2f0f68cddb462)
 on August 21, 2019.
 </em></small>
 
@@ -285,7 +285,7 @@ The full source code for our method of degree-preserving network permutation has
 
 ## Results
 
-### Node degree bias
+### Node degree bias is prevalent
 
 We found examples of node degree bias in the PPI and TF-TG networks we investigated.
 Figure {@fig:degree-bias} shows node degree in separate networks for the same type of data.
@@ -307,7 +307,7 @@ Predicting systematic edges using a literature-curated network is particularly c
   70% of literature edges were sampled with uniform probability for the "Subsampled holdout" network.
 ](https://github.com/greenelab/xswap-analysis/raw/d7181e64a5c90f9720ab453334892aba164651e7/img/degree_bias.png){#fig:degree-bias width="100%"}
 
-### Edge prior
+### The edge prior encapsulates degree
 
 In the first prediction task, we computed three features---the XSwap edge prior, an analytical approximation to the edge prior, and the (scaled) product of source and target node degree---on networks from Hetionet.
 We then evaluated the extent to which these features could reconstruct the 20 networks.
@@ -362,7 +362,7 @@ Edge predictions can be based on both underlying biological properties and netwo
 However, predictions based on biological properties may be more consistent and generalizable than those based on degree.
 Degree's influence on edge prediction accuracy measures can reveal the relative contributions of these two factors.
 
-### Assessing feature performance
+### Degree can underly a large fraction of performance
 
 We conducted a further edge prediction task as an example application of the edge prior and our permutation framework.
 To begin, we chose the STRING PPI network for the comparison and computed five edge prediction features (Supplemental table {@tbl:edge-prediction}).
