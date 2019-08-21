@@ -28,9 +28,9 @@ title: 'The probability of edge existence due to node degree: a baseline for net
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/xswap-manuscript/v/dd8f0bc01768feef91c98a36389ae2114d0002d7/))
+([permalink](https://greenelab.github.io/xswap-manuscript/v/dd57e778d16f4e1ca214ee37852eb596debaa16c/))
 was automatically generated
-from [greenelab/xswap-manuscript@dd8f0bc](https://github.com/greenelab/xswap-manuscript/tree/dd8f0bc01768feef91c98a36389ae2114d0002d7)
+from [greenelab/xswap-manuscript@dd57e77](https://github.com/greenelab/xswap-manuscript/tree/dd57e778d16f4e1ca214ee37852eb596debaa16c)
 on August 21, 2019.
 </em></small>
 
@@ -113,12 +113,11 @@ The number of edges connecting to a node, termed degree, can vary greatly across
 If degree strongly influences edge prediction, then imbalance or bias in the distribution of degrees could lead to nonspecific or misleading predictions.
 We introduce a network permutation framework to quantify the effects of node degree on edge prediction.
 Our framework decomposes performance into the proportions attributable to degree and the network's specific connections.
-Additionally, our permutation-derived edge prior quantifies the probability that an edge exists based only on node degree.
+We discover that performance attributable to factors other than degree is often only a small portion of overall performance.
+Degree's predictive performance diminishes when the networks used for training and testing---despite measuring the same biological relationships---were generated using distinct techniques and hence have large differences in degree distribution.
+We introduce the permutation-derived edge prior as the probability that an edge exists based only on degree.
 The edge prior shows excellent discrimination and calibration for 20 biomedical networks (16 bipartite, 3 undirected, 1 directed), with AUROCs frequently exceeding 0.85.
-Feature performance exceeding the edge prior is attributable to factors other than degree, and we find that it is often only a small portion of overall performance.
-Degree's predictive performance diminishes when the networks used for training and testing, despite measuring the same biological relationships, were generated using distinct techniques and hence have large differences in degree distribution.
-Researchers seeking to predict new or missing edges in biological networks should use the edge prior as a baseline.
-Degree preserving permutation allows researchers to directly investigate which features used for prediction capture degree and which also capture additional information.
+Researchers seeking to predict new or missing edges in biological networks should use the edge prior as a baseline to identify the fraction of performance that is nonspecific because of degree.
 We released our methods as an open-source Python package (https://github.com/hetio/xswap/).
 
 
