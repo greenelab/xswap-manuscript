@@ -28,9 +28,9 @@ title: 'The probability of edge existence due to node degree: a baseline for net
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/xswap-manuscript/v/a33bf58448f55254b4ef8d4891f2f0f68cddb462/))
+([permalink](https://greenelab.github.io/xswap-manuscript/v/8638a955f06416a0d7754aac7558763352900155/))
 was automatically generated
-from [greenelab/xswap-manuscript@a33bf58](https://github.com/greenelab/xswap-manuscript/tree/a33bf58448f55254b4ef8d4891f2f0f68cddb462)
+from [greenelab/xswap-manuscript@8638a95](https://github.com/greenelab/xswap-manuscript/tree/8638a955f06416a0d7754aac7558763352900155)
 on August 21, 2019.
 </em></small>
 
@@ -124,15 +124,23 @@ We released our methods as an open-source Python package (https://github.com/het
 
 ## Introduction
 
-Networks contain information about relationships between entities ("edges between nodes").
-A node's degree is the number of relationships it has in the network.
+Networks contain information about relationships between entities (referred to here as "edges" between "nodes").
+A node's degree is the number of edges it has in the network.
 Networks contain many nodes, whose degrees can be aggregated to form the network's degree distribution.
-Because different nodes can have very different degrees, real networks have highly variable degree distributions (Figure {@fig:hetionet}).
+Because different nodes can have very different degrees, real networks generally have highly variable degree distributions [@rly3gDig; @1mIOnArF; @GFS9MouO].
+This is especially true for networks encoding biomedical knowledge or assays, where natural forces such as preferential attachment inherent to the problem domain combine with observation-based influences such as study methodology to create non-uniform degree distributions (Figure {@fig:hetionet}).
 
-![Degree distribution can vary greatly between networks, even between the source and target degree distributions within the same (directed or bipartite) network.
-  Shown are seven degree distributions for six edge type subnetworks of Hetionet [@O21tn8vf].
-  (The final two are the source and target distributions of the gene-regulates-gene directed edge type.)
-](https://github.com/greenelab/xswap-analysis/raw/5a257c9d28e0a4c3cc8f2fd8493f27ff4652f2c6/img/hetionet_degrees.png){#fig:hetionet width="100%"}
+![
+**Biomedical networks are characterized by non-uniform degree distributions.**
+Eight degree distributions are plotted for six edge types Hetionet v1.0 [@O21tn8vf].
+Hetionet integrates subnetworks for 24 different edge types, the degree distributions of which are analyzed separately.
+Furthermore, bipartite (e.g. Anatomy→expresses→Gene) and directed (e.g. Gene→regulates→Gene) edge types have both source and target degrees that must be assessed separately.
+Undirected edge types (e.g Compound–resembles–Compound) have only a single degree distribution.
+Degree distributions are non-uniform and vary greatly between different networks.
+The y-axis is log~10~-scaled to accomodate the common occurrence where most nodes have low degree while a small portion of nodes have high degree.
+Several distributions have node degree ceilings corresponding to a node being connected to all other possible nodes.
+Zero-degree nodes are not displayed, since methodological limitations often result in edge data only existing for a subset of nodes.
+](https://github.com/greenelab/xswap-analysis/raw/b0db22c82b2e58bf1ef5ae78317167982016e26b/img/hetionet_degrees.png){#fig:hetionet width="100%"}
 
 Degree is an important metric for differentiating between nodes, and it appears in many common edge prediction features [@ohIv6zMA].
 However, reliance on degree can pose problems for edge prediction.
@@ -153,7 +161,7 @@ For networks with strong inspection bias, reliance on degree can lead to predict
 Another reason why a method's reliance on degree can be unfavorable is that degree imbalance can lead to prediction nonspecificity.
 Nonspecific predictions are made on the basis of generic characteristics rather than the specific connectivity information contained in a network.
 For example, Gillis et al. [@zB6RQrIj] examined the concept of prediction specificity in the context of gene function prediction and found that many predictions appear to rely primarily on multifunctionality and could be "potentially misleading with respect to causality."
-Real networks have a variety of degree distributions (Figure {@fig:hetionet}), and they commonly exhibit degree imbalance [@GFS9MouO; @hbOjmCsZ; @1mIOnArF].
+Real networks have a variety of degree distributions (Figure {@fig:hetionet}), and they commonly exhibit degree imbalance [@GFS9MouO; @hbOjmCsZ; @1mIOnArF; @rly3gDig].
 Degree imbalance leads high-degree nodes to dominate in the predictions made by degree-associated methods [@g059lh8v], which are effective predictors of connections in some biological networks [@1736TBtF6].
 Consequently, degree-based predictions are more likely nonspecific, meaning the same set of predictions performs well for different tasks.
 

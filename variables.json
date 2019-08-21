@@ -119,16 +119,16 @@
     "repo_slug": "greenelab/xswap-manuscript",
     "repo_owner": "greenelab",
     "repo_name": "xswap-manuscript",
-    "commit": "a33bf58448f55254b4ef8d4891f2f0f68cddb462"
+    "commit": "8638a955f06416a0d7754aac7558763352900155"
   },
   "manuscript_stats": {
     "reference_counts": {
       "arxiv": 1,
-      "doi": 24,
+      "doi": 25,
       "raw": 2,
       "url": 1,
-      "total": 28
+      "total": 29
     },
-    "word_count": 6671
+    "word_count": 6806
   }
 }
