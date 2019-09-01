@@ -6,7 +6,7 @@ author-meta:
 - Christopher Williams
 - Michael W. Nagle
 - Casey S. Greene
-date-meta: '2019-08-23'
+date-meta: '2019-09-01'
 keywords:
 - xswap
 - permutation
@@ -28,10 +28,10 @@ title: 'The probability of edge existence due to node degree: a baseline for net
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/xswap-manuscript/v/24446094d59b9933d50d54e26e2cafbb7bf11fb6/))
+([permalink](https://greenelab.github.io/xswap-manuscript/v/a4c68575721d24fc5fcd7c93351a58c07597d429/))
 was automatically generated
-from [greenelab/xswap-manuscript@2444609](https://github.com/greenelab/xswap-manuscript/tree/24446094d59b9933d50d54e26e2cafbb7bf11fb6)
-on August 23, 2019.
+from [greenelab/xswap-manuscript@a4c6857](https://github.com/greenelab/xswap-manuscript/tree/a4c68575721d24fc5fcd7c93351a58c07597d429)
+on September 1, 2019.
 </em></small>
 
 ## Authors
@@ -521,18 +521,18 @@ With "no edge" represented as $[1, 0]^T$ and "edge" represented as $[0, 1]^T$, t
 
 The stationary distribution of this system should correspond to the distribution when the number of swaps goes to infinity.
 It can be found by computing the eigenvectors of the system, as we know that the stationary distribution vector, $\mathbf{v}$ satisfies $P^T \mathbf{v} = \mathbf{v}$.
-The normalized eigenvector $\mathbf{v}$ is given by
+The eigenvector $\mathbf{v}$, normalized to sum to 1 as a probability vector, is given by
 
 \begin{align*}
-    \mathbf{v} = \frac{1}{r/q + 1} \begin{bmatrix}
-        r/q \\
-        1
+    \mathbf{v} = \frac{1}{r + q} \begin{bmatrix}
+        r \\
+        q
     \end{bmatrix}
 \end{align*}
 
 The asymptotic edge probability is therefore
 
-$$\frac{1}{r/q + 1}.$$
+$$\frac{q}{r + q}.$$
 
 Since node pairs are being treated as independent, the probability of an edge being created in one successful iteration, given that the edge does not currently exist, is the ratio of the number of edge choices involving nodes $i$ and $j$ to the total number of possible swaps, $S$.
 Let $d(u_i)$ represent the degree of source node $i$ and $d(v_j)$ represent the degree of target node $j$.
@@ -555,6 +555,7 @@ We found that the following modified form (introduced in Methods) affords a supe
     P_{i,j} = \frac{d(u_i) d(v_j)}{\sqrt{(d(u_i) d(v_j))^2 + (m - d(u_i) - d(v_j) + 1)^2}}
 \end{equation}
 
+Interestingly, this expression can be derived by normalizing the eigenvector $\mathbf{v}$ to be a unit vector in the 2-norm instead of the 1-norm; that is, we use the value $q / \sqrt{r^2 + q^2}$ instead of $q/(r+q)$.
 Because the modified form of the approximation offers a much superior fit to the data, we chose to include only the modified version in the Python package released, and we used the modified form throughout our analysis.
 
 ### Networks used for comparison {#networks}
