@@ -10,7 +10,7 @@
   <meta name="author" content="Christopher Williams" />
   <meta name="author" content="Michael W. Nagle" />
   <meta name="author" content="Casey S. Greene" />
-  <meta name="dcterms.date" content="2019-08-23" />
+  <meta name="dcterms.date" content="2019-09-01" />
   <meta name="keywords" content="xswap, permutation, network, hetnets, degree, bioinformatics, python, manubot" />
   <title>The probability of edge existence due to node degree: a baseline for network-based predictions</title>
   <style>
@@ -27,7 +27,7 @@
 <header id="title-block-header">
 <h1 class="title">The probability of edge existence due to node degree: a baseline for network-based predictions</h1>
 </header>
-<p><small><em> This manuscript (<a href="https://greenelab.github.io/xswap-manuscript/v/24446094d59b9933d50d54e26e2cafbb7bf11fb6/">permalink</a>) was automatically generated from <a href="https://github.com/greenelab/xswap-manuscript/tree/24446094d59b9933d50d54e26e2cafbb7bf11fb6">greenelab/xswap-manuscript@2444609</a> on August 23, 2019. </em></small></p>
+<p><small><em> This manuscript (<a href="https://greenelab.github.io/xswap-manuscript/v/a4c68575721d24fc5fcd7c93351a58c07597d429/">permalink</a>) was automatically generated from <a href="https://github.com/greenelab/xswap-manuscript/tree/a4c68575721d24fc5fcd7c93351a58c07597d429">greenelab/xswap-manuscript@a4c6857</a> on September 1, 2019. </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
 <li><p><strong>Michael Zietz</strong><br> <img src="images/orcid.svg" alt="ORCID icon" class="inline_icon" /> <a href="https://orcid.org/0000-0003-0539-630X">0000-0003-0539-630X</a> · <img src="images/github.svg" alt="GitHub icon" class="inline_icon" /> <a href="https://github.com/zietzm">zietzm</a> · <img src="images/twitter.svg" alt="Twitter icon" class="inline_icon" /> <a href="https://twitter.com/ZietzMichael">ZietzMichael</a><br> <small> Department of Physics &amp; Astronomy, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America; Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America · Funded by [‘Roy and Diana Vagelos Scholars Program in the Molecular Life Sciences’, ‘the Gordon and Betty Moore Foundation (GBMF4552)’] </small></p></li>
@@ -366,15 +366,15 @@ Dario Garcia Gasulla<br />
        q &amp; 1-r
      \end{bmatrix}
 \end{align*}\]</span></p>
-<p>The stationary distribution of this system should correspond to the distribution when the number of swaps goes to infinity. It can be found by computing the eigenvectors of the system, as we know that the stationary distribution vector, <span class="math inline">\(\mathbf{v}\)</span> satisfies <span class="math inline">\(P^T \mathbf{v} = \mathbf{v}\)</span>. The normalized eigenvector <span class="math inline">\(\mathbf{v}\)</span> is given by</p>
+<p>The stationary distribution of this system should correspond to the distribution when the number of swaps goes to infinity. It can be found by computing the eigenvectors of the system, as we know that the stationary distribution vector, <span class="math inline">\(\mathbf{v}\)</span> satisfies <span class="math inline">\(P^T \mathbf{v} = \mathbf{v}\)</span>. The eigenvector <span class="math inline">\(\mathbf{v}\)</span>, normalized to sum to 1 as a probability vector, is given by</p>
 <p><span class="math display">\[\begin{align*}
-    \mathbf{v} = \frac{1}{r/q + 1} \begin{bmatrix}
-        r/q \\
-        1
+    \mathbf{v} = \frac{1}{r + q} \begin{bmatrix}
+        r \\
+        q
     \end{bmatrix}
 \end{align*}\]</span></p>
 <p>The asymptotic edge probability is therefore</p>
-<p><span class="math display">\[\frac{1}{r/q + 1}.\]</span></p>
+<p><span class="math display">\[\frac{q}{r + q}.\]</span></p>
 <p>Since node pairs are being treated as independent, the probability of an edge being created in one successful iteration, given that the edge does not currently exist, is the ratio of the number of edge choices involving nodes <span class="math inline">\(i\)</span> and <span class="math inline">\(j\)</span> to the total number of possible swaps, <span class="math inline">\(S\)</span>. Let <span class="math inline">\(d(u_i)\)</span> represent the degree of source node <span class="math inline">\(i\)</span> and <span class="math inline">\(d(v_j)\)</span> represent the degree of target node <span class="math inline">\(j\)</span>.</p>
 <p><span class="math display">\[q_{i,j} = \frac{d(u_i)d(v_j)}{S}\]</span></p>
 <p>Similarly, the probability of an edge being eliminated in one iteration is the ratio of the number of edge choices involving <span class="math inline">\((i,j)\)</span> and any other valid edge to the total number of possible swaps. Let <span class="math inline">\(m\)</span> be the total number of edges in the network.</p>
@@ -385,7 +385,7 @@ Dario Garcia Gasulla<br />
 <p><span class="math display">\[\begin{equation}
     P_{i,j} = \frac{d(u_i) d(v_j)}{\sqrt{(d(u_i) d(v_j))^2 + (m - d(u_i) - d(v_j) + 1)^2}}
 \end{equation}\]</span></p>
-<p>Because the modified form of the approximation offers a much superior fit to the data, we chose to include only the modified version in the Python package released, and we used the modified form throughout our analysis.</p>
+<p>Interestingly, this expression can be derived by normalizing the eigenvector <span class="math inline">\(\mathbf{v}\)</span> to be a unit vector in the 2-norm instead of the 1-norm; that is, we use the value <span class="math inline">\(q / \sqrt{r^2 + q^2}\)</span> instead of <span class="math inline">\(q/(r+q)\)</span>. Because the modified form of the approximation offers a much superior fit to the data, we chose to include only the modified version in the Python package released, and we used the modified form throughout our analysis.</p>
 <h3 id="networks">Networks used for comparison</h3>
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;border-width:1px;border-style:solid;border-color:#ccc;}
