@@ -10,7 +10,7 @@
   <meta name="author" content="Christopher Williams" />
   <meta name="author" content="Michael W. Nagle" />
   <meta name="author" content="Casey S. Greene" />
-  <meta name="dcterms.date" content="2019-09-01" />
+  <meta name="dcterms.date" content="2019-09-03" />
   <meta name="keywords" content="xswap, permutation, network, hetnets, degree, bioinformatics, python, manubot" />
   <title>The probability of edge existence due to node degree: a baseline for network-based predictions</title>
   <style>
@@ -27,7 +27,7 @@
 <header id="title-block-header">
 <h1 class="title">The probability of edge existence due to node degree: a baseline for network-based predictions</h1>
 </header>
-<p><small><em> This manuscript (<a href="https://greenelab.github.io/xswap-manuscript/v/a4c68575721d24fc5fcd7c93351a58c07597d429/">permalink</a>) was automatically generated from <a href="https://github.com/greenelab/xswap-manuscript/tree/a4c68575721d24fc5fcd7c93351a58c07597d429">greenelab/xswap-manuscript@a4c6857</a> on September 1, 2019. </em></small></p>
+<p><small><em> This manuscript (<a href="https://greenelab.github.io/xswap-manuscript/v/d53c6a39669e2688f82fa95579473c804740f5ea/">permalink</a>) was automatically generated from <a href="https://github.com/greenelab/xswap-manuscript/tree/d53c6a39669e2688f82fa95579473c804740f5ea">greenelab/xswap-manuscript@d53c6a3</a> on September 3, 2019. </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
 <li><p><strong>Michael Zietz</strong><br> <img src="images/orcid.svg" alt="ORCID icon" class="inline_icon" /> <a href="https://orcid.org/0000-0003-0539-630X">0000-0003-0539-630X</a> · <img src="images/github.svg" alt="GitHub icon" class="inline_icon" /> <a href="https://github.com/zietzm">zietzm</a> · <img src="images/twitter.svg" alt="Twitter icon" class="inline_icon" /> <a href="https://twitter.com/ZietzMichael">ZietzMichael</a><br> <small> Department of Physics &amp; Astronomy, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America; Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America · Funded by [‘Roy and Diana Vagelos Scholars Program in the Molecular Life Sciences’, ‘the Gordon and Betty Moore Foundation (GBMF4552)’] </small></p></li>
@@ -100,7 +100,7 @@
 <h3 id="edge-prior">Edge prior</h3>
 <p>We introduce the edge prior to quantify the probability that two nodes are connected based only on their degree. The edge prior can be estimated using the fraction of permuted networks in which a given edge exists—the maximum likelihood estimate for the binomial distribution success probability. Based only on permuted networks, the edge prior does not contain any information about the true edges in the (unpermuted) network. The edge prior is a numerical feature that can be computed for every pair of nodes that could potentially share an edge, and we compared its ability to predict edges in three tasks, discussed below.</p>
 <h3 id="analytical-approximation-of-the-edge-prior">Analytical approximation of the edge prior</h3>
-<p>We also considered whether the probability of an edge existing across permuted networks could be written as a closed form equation involving the node pair’s degree. A major simplification is the assumption that the probability of an edge existing is independent of all other potential edges. We were unable to find a closed-form solution giving the edge prior without assuming independence in this way, which we believe is incorrect for XSwap. Nonetheless, we discovered a good analytical approximation to the edge prior for networks with many nodes and relatively low edge density (Figure <a href="#fig:approx-quality">3</a>).</p>
+<p>We also considered whether the probability of an edge existing across permuted networks has a simple closed-form expression. To derive such an expression, we first make the simplifying assumption that the probability of any given edge existing is independent of all other potential edges. We were unable to find a closed-form solution giving the edge prior without assuming independence in this way, which we believe is incorrect for XSwap. Nonetheless, we discovered a good analytical approximation to the edge prior for networks with many nodes and relatively low edge density (Figure <a href="#fig:approx-quality">3</a>).</p>
 <figure>
 <img src="https://github.com/greenelab/xswap-analysis/raw/b0db22c82b2e58bf1ef5ae78317167982016e26b/img/prior_exact_vs_approx.png" alt="Figure 3: The XSwap-derived edge prior can be analytically approximated. The analytical approximation is plotted against the XSwap-derived edge prior for three edge types from Hetionet. The strong correlation suggests that the approximation will be suitable for applications where computation time is a limiting factor." id="fig:approx-quality" style="width:100.0%" /><figcaption><span>Figure 3:</span> <strong>The XSwap-derived edge prior can be analytically approximated.</strong> The analytical approximation is plotted against the XSwap-derived edge prior for three edge types from Hetionet. The strong correlation suggests that the approximation will be suitable for applications where computation time is a limiting factor.</figcaption>
 </figure>
