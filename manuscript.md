@@ -6,7 +6,7 @@ author-meta:
 - Christopher Williams
 - Michael W. Nagle
 - Casey S. Greene
-date-meta: '2019-09-01'
+date-meta: '2019-09-03'
 keywords:
 - xswap
 - permutation
@@ -28,10 +28,10 @@ title: 'The probability of edge existence due to node degree: a baseline for net
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/xswap-manuscript/v/a4c68575721d24fc5fcd7c93351a58c07597d429/))
+([permalink](https://greenelab.github.io/xswap-manuscript/v/d53c6a39669e2688f82fa95579473c804740f5ea/))
 was automatically generated
-from [greenelab/xswap-manuscript@a4c6857](https://github.com/greenelab/xswap-manuscript/tree/a4c68575721d24fc5fcd7c93351a58c07597d429)
-on September 1, 2019.
+from [greenelab/xswap-manuscript@d53c6a3](https://github.com/greenelab/xswap-manuscript/tree/d53c6a39669e2688f82fa95579473c804740f5ea)
+on September 3, 2019.
 </em></small>
 
 ## Authors
@@ -238,8 +238,8 @@ The edge prior is a numerical feature that can be computed for every pair of nod
 
 ### Analytical approximation of the edge prior
 
-We also considered whether the probability of an edge existing across permuted networks could be written as a closed form equation involving the node pair's degree.
-A major simplification is the assumption that the probability of an edge existing is independent of all other potential edges.
+We also considered whether the probability of an edge existing across permuted networks has a simple closed-form expression.
+To derive such an expression, we first make the simplifying assumption that the probability of any given edge existing is independent of all other potential edges.
 We were unable to find a closed-form solution giving the edge prior without assuming independence in this way, which we believe is incorrect for XSwap.
 Nonetheless, we discovered a good analytical approximation to the edge prior for networks with many nodes and relatively low edge density (Figure {@fig:approx-quality}).
 
