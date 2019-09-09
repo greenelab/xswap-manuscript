@@ -5,8 +5,9 @@ author-meta:
 - Kyle Kloster
 - Christopher Williams
 - Michael W. Nagle
+- Blair D. Sullivan
 - Casey S. Greene
-date-meta: '2019-09-06'
+date-meta: '2019-09-09'
 keywords:
 - xswap
 - permutation
@@ -28,10 +29,10 @@ title: 'The probability of edge existence due to node degree: a baseline for net
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/xswap-manuscript/v/87cc425477e225986f00149dcaccdf47a5af78dd/))
+([permalink](https://greenelab.github.io/xswap-manuscript/v/76374a3ca76070b1951cfe00c63a88a437cc16c2/))
 was automatically generated
-from [greenelab/xswap-manuscript@87cc425](https://github.com/greenelab/xswap-manuscript/tree/87cc425477e225986f00149dcaccdf47a5af78dd)
-on September 6, 2019.
+from [greenelab/xswap-manuscript@76374a3](https://github.com/greenelab/xswap-manuscript/tree/76374a3ca76070b1951cfe00c63a88a437cc16c2)
+on September 9, 2019.
 </em></small>
 
 ## Authors
@@ -90,6 +91,18 @@ on September 6, 2019.
     [MikeNagle84](https://twitter.com/MikeNagle84)<br>
   <small>
      Internal Medicine Research Unit, Pfizer Worldwide Research, Development, and Medical
+  </small>
+
++ **Blair D. Sullivan**<br>
+    ![ORCID icon](images/orcid.svg){.inline_icon}
+    [0000-0001-7720-6208](https://orcid.org/0000-0001-7720-6208)
+    · ![GitHub icon](images/github.svg){.inline_icon}
+    [bdsullivan](https://github.com/bdsullivan)
+    · ![Twitter icon](images/twitter.svg){.inline_icon}
+    [BlairDSullivan](https://twitter.com/BlairDSullivan)<br>
+  <small>
+     School of Computing, University of Utah, Salt Lake City, Utah, United States of America
+     · Funded by ['the Gordon and Betty Moore Foundation (GBMF4560)']
   </small>
 
 + **Casey S. Greene**<br>

@@ -1,5 +1,5 @@
 {
-  "date": "September 6, 2019",
+  "date": "September 9, 2019",
   "authors": [
     {
       "github": "zietzm",
@@ -78,6 +78,23 @@
       ]
     },
     {
+      "github": "bdsullivan",
+      "name": "Blair D. Sullivan",
+      "initials": "BDS",
+      "orcid": "0000-0001-7720-6208",
+      "twitter": "BlairDSullivan",
+      "email": "sullivan@cs.utah.edu",
+      "affiliations": [
+        "School of Computing, University of Utah, Salt Lake City, Utah, United States of America"
+      ],
+      "funders": [
+        "the Gordon and Betty Moore Foundation (GBMF4560)"
+      ],
+      "affiliation_numbers": [
+        5
+      ]
+    },
+    {
       "github": "cgreene",
       "name": "Casey S. Greene",
       "initials": "CSG",
@@ -113,13 +130,17 @@
     {
       "affiliation": "Internal Medicine Research Unit, Pfizer Worldwide Research, Development, and Medical",
       "affiliation_number": 4
+    },
+    {
+      "affiliation": "School of Computing, University of Utah, Salt Lake City, Utah, United States of America",
+      "affiliation_number": 5
     }
   ],
   "ci_source": {
     "repo_slug": "greenelab/xswap-manuscript",
     "repo_owner": "greenelab",
     "repo_name": "xswap-manuscript",
-    "commit": "87cc425477e225986f00149dcaccdf47a5af78dd"
+    "commit": "76374a3ca76070b1951cfe00c63a88a437cc16c2"
   },
   "manuscript_stats": {
     "reference_counts": {
