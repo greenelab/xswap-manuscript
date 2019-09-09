@@ -61,6 +61,17 @@ author_info:
     affiliations:
       - Internal Medicine Research Unit, Pfizer Worldwide Research, Development, and Medical
   -
+    github: bdsullivan
+    name: Blair D. Sullivan
+    initials: BDS
+    orcid: 0000-0001-7720-6208
+    twitter: BlairDSullivan
+    email: sullivan@cs.utah.edu
+    affiliations:
+      - School of Computing, University of Utah, Salt Lake City, Utah, United States of America
+    funders:
+      - the Gordon and Betty Moore Foundation (GBMF4560)
+  -
     github: cgreene
     name: Casey S. Greene
     initials: CSG
