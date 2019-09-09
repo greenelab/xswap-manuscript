@@ -9,8 +9,9 @@
   <meta name="author" content="Kyle Kloster" />
   <meta name="author" content="Christopher Williams" />
   <meta name="author" content="Michael W. Nagle" />
+  <meta name="author" content="Blair D. Sullivan" />
   <meta name="author" content="Casey S. Greene" />
-  <meta name="dcterms.date" content="2019-09-06" />
+  <meta name="dcterms.date" content="2019-09-09" />
   <meta name="keywords" content="xswap, permutation, network, hetnets, degree, bioinformatics, python, manubot" />
   <title>The probability of edge existence due to node degree: a baseline for network-based predictions</title>
   <style>
@@ -27,7 +28,7 @@
 <header id="title-block-header">
 <h1 class="title">The probability of edge existence due to node degree: a baseline for network-based predictions</h1>
 </header>
-<p><small><em> This manuscript (<a href="https://greenelab.github.io/xswap-manuscript/v/87cc425477e225986f00149dcaccdf47a5af78dd/">permalink</a>) was automatically generated from <a href="https://github.com/greenelab/xswap-manuscript/tree/87cc425477e225986f00149dcaccdf47a5af78dd">greenelab/xswap-manuscript@87cc425</a> on September 6, 2019. </em></small></p>
+<p><small><em> This manuscript (<a href="https://greenelab.github.io/xswap-manuscript/v/76374a3ca76070b1951cfe00c63a88a437cc16c2/">permalink</a>) was automatically generated from <a href="https://github.com/greenelab/xswap-manuscript/tree/76374a3ca76070b1951cfe00c63a88a437cc16c2">greenelab/xswap-manuscript@76374a3</a> on September 9, 2019. </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
 <li><p><strong>Michael Zietz</strong><br> <img src="images/orcid.svg" alt="ORCID icon" class="inline_icon" /> <a href="https://orcid.org/0000-0003-0539-630X">0000-0003-0539-630X</a> · <img src="images/github.svg" alt="GitHub icon" class="inline_icon" /> <a href="https://github.com/zietzm">zietzm</a> · <img src="images/twitter.svg" alt="Twitter icon" class="inline_icon" /> <a href="https://twitter.com/ZietzMichael">ZietzMichael</a><br> <small> Department of Physics &amp; Astronomy, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America; Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America · Funded by [‘Roy and Diana Vagelos Scholars Program in the Molecular Life Sciences’, ‘the Gordon and Betty Moore Foundation (GBMF4552)’] </small></p></li>
@@ -35,6 +36,7 @@
 <li><p><strong>Kyle Kloster</strong><br> <img src="images/orcid.svg" alt="ORCID icon" class="inline_icon" /> <a href="https://orcid.org/0000-0001-5678-7197">0000-0001-5678-7197</a> · <img src="images/github.svg" alt="GitHub icon" class="inline_icon" /> <a href="https://github.com/kkloste">kkloste</a> · <img src="images/twitter.svg" alt="Twitter icon" class="inline_icon" /> <a href="https://twitter.com/kylekloster">kylekloster</a><br> <small> Department of Computer Science, North Carolina State University, Raleigh, North Carolina, United States of America · Funded by the Gordon and Betty Moore Foundation (GBMF4560) </small></p></li>
 <li><p><strong>Christopher Williams</strong><br> · <img src="images/github.svg" alt="GitHub icon" class="inline_icon" /> <a href="https://github.com/chrsunwil">chrsunwil</a><br> <small> Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America </small></p></li>
 <li><p><strong>Michael W. Nagle</strong><br> <img src="images/orcid.svg" alt="ORCID icon" class="inline_icon" /> <a href="https://orcid.org/0000-0002-4677-7582">0000-0002-4677-7582</a> · <img src="images/github.svg" alt="GitHub icon" class="inline_icon" /> <a href="https://github.com/naglem">naglem</a> · <img src="images/twitter.svg" alt="Twitter icon" class="inline_icon" /> <a href="https://twitter.com/MikeNagle84">MikeNagle84</a><br> <small> Internal Medicine Research Unit, Pfizer Worldwide Research, Development, and Medical </small></p></li>
+<li><p><strong>Blair D. Sullivan</strong><br> <img src="images/orcid.svg" alt="ORCID icon" class="inline_icon" /> <a href="https://orcid.org/0000-0001-7720-6208">0000-0001-7720-6208</a> · <img src="images/github.svg" alt="GitHub icon" class="inline_icon" /> <a href="https://github.com/bdsullivan">bdsullivan</a> · <img src="images/twitter.svg" alt="Twitter icon" class="inline_icon" /> <a href="https://twitter.com/BlairDSullivan">BlairDSullivan</a><br> <small> School of Computing, University of Utah, Salt Lake City, Utah, United States of America · Funded by [‘the Gordon and Betty Moore Foundation (GBMF4560)’] </small></p></li>
 <li><p><strong>Casey S. Greene</strong><br> <img src="images/orcid.svg" alt="ORCID icon" class="inline_icon" /> <a href="https://orcid.org/0000-0001-8713-9213">0000-0001-8713-9213</a> · <img src="images/github.svg" alt="GitHub icon" class="inline_icon" /> <a href="https://github.com/cgreene">cgreene</a> · <img src="images/twitter.svg" alt="Twitter icon" class="inline_icon" /> <a href="https://twitter.com/greenescientist">greenescientist</a><br> <small> Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America · Funded by [‘Pfizer Worldwide Research, Development, and Medical’, ‘the Gordon and Betty Moore Foundation (GBMF4552)’, ‘the National Institutes of Health (R01 HG010067)’] </small></p></li>
 </ul>
 <h2 id="abstract" class="page_break_before">Abstract</h2>
