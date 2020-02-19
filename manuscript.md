@@ -7,7 +7,7 @@ author-meta:
 - Michael W. Nagle
 - Blair D. Sullivan
 - Casey S. Greene
-date-meta: '2019-09-10'
+date-meta: '2020-02-19'
 keywords:
 - xswap
 - permutation
@@ -29,10 +29,10 @@ title: 'The probability of edge existence due to node degree: a baseline for net
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/xswap-manuscript/v/3d636da3a8f52a4d44c78cdf600f1fa9fbb1dbd9/))
+([permalink](https://greenelab.github.io/xswap-manuscript/v/3258105363a55c3995d9ebdf000e1b8f3f454728/))
 was automatically generated
-from [greenelab/xswap-manuscript@3d636da](https://github.com/greenelab/xswap-manuscript/tree/3d636da3a8f52a4d44c78cdf600f1fa9fbb1dbd9)
-on September 10, 2019.
+from [greenelab/xswap-manuscript@3258105](https://github.com/greenelab/xswap-manuscript/tree/3258105363a55c3995d9ebdf000e1b8f3f454728)
+on February 19, 2020.
 </em></small>
 
 ## Authors

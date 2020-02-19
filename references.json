@@ -675,7 +675,7 @@
     "id": "lnDqu0oW"
   },
   {
-    "publisher": "Springer Nature",
+    "publisher": "Springer Science and Business Media LLC",
     "issue": "7",
     "DOI": "10.1038/nbt1116",
     "type": "article-journal",
@@ -722,7 +722,7 @@
     "id": "C4FHCVCz"
   },
   {
-    "publisher": "Springer Nature",
+    "publisher": "Springer Science and Business Media LLC",
     "issue": "1",
     "DOI": "10.1038/s41467-019-08746-5",
     "type": "article-journal",
@@ -1293,7 +1293,7 @@
     "id": "ohIv6zMA"
   },
   {
-    "publisher": "Springer Nature",
+    "publisher": "Springer Science and Business Media LLC",
     "issue": "1",
     "DOI": "10.1186/1752-0509-2-11",
     "type": "article-journal",
@@ -1611,7 +1611,7 @@
       ]
     },
     "abstract": "rxivist.org allows readers to sort and filter the tens of thousands of preprints posted to bioRxiv. Rxivist uses a custom web crawler to index all papers on biorxiv.org; this is a snapshot of Rxivist the production database. The version number indicates the date on which the snapshot was taken. See the included \"README.md\" file for instructions on how to use the \"rxivist.backup\" file to import data into a PostgreSQL database server.\n\nPlease note this is a different repository than the one used for the Rxivist manuscript—that is in a separate Zenodo repository. You're welcome (and encouraged!) to use this data in your research, but <strong>please cite our paper, available on bioRxiv.</strong>\n\nGoing forward, this information will also be available pre-loaded into Docker images, available at blekhmanlab/rxivist_data.\n\n<strong>Version notes:</strong>\n\n\n\t<strong>2019-03-21</strong>\n\n\t\n\t\tThe license for this dataset has been changed to CC-BY, which allows use for any purpose and requires only attribution.\n\t\tA new table, \"publication_dates,\" has been added and will be continually updated. This table will include an entry for each preprint that has been published externally for which we can determine a date of publication, based on data from Crossref. (This table was previously included in the \"paper\" schema but was not updated after early December 2018.)\n\t\tForeign key constraints have been added to almost every table in the database. This should not impact any read behavior, but anyone writing to these tables will encounter constraints on existing fields that refer to other tables. Most frequently, this means the \"article\" field in a table will need to refer to an ID that actually exists in the \"articles\" table.\n\t\tThe \"author_translations\" table has been removed. This was used to redirect incoming requests for outdated author profile pages and was likely not of any functional use to others.\n\t\tThe \"README.md\" file has been renamed \"1README.md\" because Zenodo only displays a preview for the file that appears first in the list alphabetically.\n\t\tThe \"article_ranks\" and \"article_ranks_working\" tables have been removed as well; they were unused.\n\t\n\t\n\t<strong>2019-02-13.1</strong>\n\t\n\t\tAfter consultation with bioRxiv, the \"fulltext\" table will not be included in further snapshots until (and if) concerns about licensing and copyright can be resolved.\n\t\tThe \"docker-compose.yml\" file was added, with corresponding instructions in the README to streamline deployment of a local copy of this database.\n\t\n\t\n\t<strong>2019-02-13</strong>\n\t\n\t\tThe redundant \"paper\" schema has been removed.\n\t\tBioRxiv has begun making the full text of preprints available online. Beginning with this version, a new table (\"fulltext\") is available that contains the text of preprints that have been processed already. <strong>The format in which this information is stored may change in the future</strong>; any digression will be noted here.\n\t\tThis is the first version that has a corresponding Docker image.",
-    "DOI": "10.5281/zenodo.2566421",
+    "DOI": "10.5281/ZENODO.2566421",
     "publisher": "Zenodo",
     "title": "Complete Rxivist dataset of scraped bioRxiv data",
     "URL": "https://doi.org/gfz3fm",
@@ -1749,9 +1749,9 @@
     "accessed": {
       "date-parts": [
         [
-          "2019",
-          9,
-          10
+          "2020",
+          2,
+          19
         ]
       ]
     },
