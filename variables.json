@@ -1,155 +1,193 @@
 {
-  "date": "February 19, 2020",
-  "authors": [
-    {
-      "github": "zietzm",
-      "name": "Michael Zietz",
-      "initials": "MZ",
-      "orcid": "0000-0003-0539-630X",
-      "twitter": "ZietzMichael",
-      "email": "michael.zietz@gmail.com",
-      "affiliations": [
-        "Department of Physics & Astronomy, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America",
-        "Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America"
-      ],
-      "funders": [
-        "Roy and Diana Vagelos Scholars Program in the Molecular Life Sciences",
-        "the Gordon and Betty Moore Foundation (GBMF4552)"
-      ],
-      "affiliation_numbers": [
-        1,
-        2
-      ]
-    },
-    {
-      "github": "dhimmel",
-      "name": "Daniel S. Himmelstein",
-      "initials": "DSH",
-      "orcid": "0000-0002-3012-7446",
-      "twitter": "dhimmel",
-      "email": "daniel.himmelstein@gmail.com",
-      "affiliations": [
-        "Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America"
-      ],
-      "funders": "Pfizer Worldwide Research, Development, and Medical; the Gordon and Betty Moore Foundation (GBMF4552)",
-      "affiliation_numbers": [
-        2
-      ]
-    },
-    {
-      "github": "kkloste",
-      "name": "Kyle Kloster",
-      "initials": "KAK",
-      "orcid": "0000-0001-5678-7197",
-      "twitter": "kylekloster",
-      "email": "kyle.kloster@gmail.com",
-      "affiliations": [
-        "Department of Computer Science, North Carolina State University, Raleigh, North Carolina, United States of America"
-      ],
-      "funders": "the Gordon and Betty Moore Foundation (GBMF4560)",
-      "affiliation_numbers": [
-        3
-      ]
-    },
-    {
-      "github": "chrsunwil",
-      "name": "Christopher Williams",
-      "initials": "CW",
-      "email": "chrwill@sas.upenn.edu",
-      "affiliations": [
-        "Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America"
-      ],
-      "affiliation_numbers": [
-        2
-      ]
-    },
-    {
-      "github": "naglem",
-      "name": "Michael W. Nagle",
-      "initials": "MWN",
-      "orcid": "0000-0002-4677-7582",
-      "twitter": "MikeNagle84",
-      "email": "michael.nagle@pfizer.com",
-      "affiliations": [
-        "Internal Medicine Research Unit, Pfizer Worldwide Research, Development, and Medical"
-      ],
-      "affiliation_numbers": [
-        4
-      ]
-    },
-    {
-      "github": "bdsullivan",
-      "name": "Blair D. Sullivan",
-      "initials": "BDS",
-      "orcid": "0000-0001-7720-6208",
-      "twitter": "BlairDSullivan",
-      "email": "sullivan@cs.utah.edu",
-      "affiliations": [
-        "School of Computing, University of Utah, Salt Lake City, Utah, United States of America"
-      ],
-      "funders": [
-        "the Gordon and Betty Moore Foundation (GBMF4560)"
-      ],
-      "affiliation_numbers": [
-        5
-      ]
-    },
-    {
-      "github": "cgreene",
-      "name": "Casey S. Greene",
-      "initials": "CSG",
-      "orcid": "0000-0001-8713-9213",
-      "twitter": "greenescientist",
-      "email": "greenescientist@gmail.com",
-      "affiliations": [
-        "Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America"
-      ],
-      "funders": [
-        "Pfizer Worldwide Research, Development, and Medical",
-        "the Gordon and Betty Moore Foundation (GBMF4552)",
-        "the National Institutes of Health (R01 HG010067)"
-      ],
-      "affiliation_numbers": [
-        2
-      ]
-    }
-  ],
-  "affiliations": [
-    {
-      "affiliation": "Department of Physics & Astronomy, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America",
-      "affiliation_number": 1
-    },
-    {
-      "affiliation": "Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America",
-      "affiliation_number": 2
-    },
-    {
-      "affiliation": "Department of Computer Science, North Carolina State University, Raleigh, North Carolina, United States of America",
-      "affiliation_number": 3
-    },
-    {
-      "affiliation": "Internal Medicine Research Unit, Pfizer Worldwide Research, Development, and Medical",
-      "affiliation_number": 4
-    },
-    {
-      "affiliation": "School of Computing, University of Utah, Salt Lake City, Utah, United States of America",
-      "affiliation_number": 5
-    }
-  ],
-  "ci_source": {
-    "repo_slug": "greenelab/xswap-manuscript",
-    "repo_owner": "greenelab",
-    "repo_name": "xswap-manuscript",
-    "commit": "3258105363a55c3995d9ebdf000e1b8f3f454728"
+  "pandoc": {
+    "title": "The probability of edge existence due to node degree: a baseline for network-based predictions",
+    "keywords": [
+      "xswap",
+      "permutation",
+      "network",
+      "hetnets",
+      "degree",
+      "bioinformatics",
+      "python",
+      "manubot"
+    ],
+    "lang": "en-US",
+    "date-meta": "2020-03-05",
+    "author-meta": [
+      "Michael Zietz",
+      "Daniel S. Himmelstein",
+      "Kyle Kloster",
+      "Christopher Williams",
+      "Michael W. Nagle",
+      "Blair D. Sullivan",
+      "Casey S. Greene"
+    ],
+    "header-includes": "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/master/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta name=\"dc.title\" content=\"The probability of edge existence due to node degree: a baseline for network-based predictions\" />\n<meta name=\"citation_title\" content=\"The probability of edge existence due to node degree: a baseline for network-based predictions\" />\n<meta property=\"og:title\" content=\"The probability of edge existence due to node degree: a baseline for network-based predictions\" />\n<meta property=\"twitter:title\" content=\"The probability of edge existence due to node degree: a baseline for network-based predictions\" />\n<meta name=\"dc.date\" content=\"2020-03-05\" />\n<meta name=\"citation_publication_date\" content=\"2020-03-05\" />\n<meta name=\"dc.language\" content=\"en-US\" />\n<meta name=\"citation_language\" content=\"en-US\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"Michael Zietz\" />\n<meta name=\"citation_author_institution\" content=\"Department of Physics &amp; Astronomy, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America\" />\n<meta name=\"citation_author_institution\" content=\"Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0003-0539-630X\" />\n<meta name=\"twitter:creator\" content=\"@ZietzMichael\" />\n<meta name=\"citation_author\" content=\"Daniel S. Himmelstein\" />\n<meta name=\"citation_author_institution\" content=\"Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-3012-7446\" />\n<meta name=\"twitter:creator\" content=\"@dhimmel\" />\n<meta name=\"citation_author\" content=\"Kyle Kloster\" />\n<meta name=\"citation_author_institution\" content=\"Department of Computer Science, North Carolina State University, Raleigh, North Carolina, United States of America\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-5678-7197\" />\n<meta name=\"twitter:creator\" content=\"@kylekloster\" />\n<meta name=\"citation_author\" content=\"Christopher Williams\" />\n<meta name=\"citation_author_institution\" content=\"Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America\" />\n<meta name=\"citation_author\" content=\"Michael W. Nagle\" />\n<meta name=\"citation_author_institution\" content=\"Internal Medicine Research Unit, Pfizer Worldwide Research, Development, and Medical\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0002-4677-7582\" />\n<meta name=\"twitter:creator\" content=\"@MikeNagle84\" />\n<meta name=\"citation_author\" content=\"Blair D. Sullivan\" />\n<meta name=\"citation_author_institution\" content=\"School of Computing, University of Utah, Salt Lake City, Utah, United States of America\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-7720-6208\" />\n<meta name=\"twitter:creator\" content=\"@BlairDSullivan\" />\n<meta name=\"citation_author\" content=\"Casey S. Greene\" />\n<meta name=\"citation_author_institution\" content=\"Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America\" />\n<meta name=\"citation_author_orcid\" content=\"0000-0001-8713-9213\" />\n<meta name=\"twitter:creator\" content=\"@greenescientist\" />\n<link rel=\"canonical\" href=\"https://greenelab.github.io/xswap-manuscript/\" />\n<meta property=\"og:url\" content=\"https://greenelab.github.io/xswap-manuscript/\" />\n<meta property=\"twitter:url\" content=\"https://greenelab.github.io/xswap-manuscript/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://greenelab.github.io/xswap-manuscript/\" />\n<meta name=\"citation_pdf_url\" content=\"https://greenelab.github.io/xswap-manuscript/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://greenelab.github.io/xswap-manuscript/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://greenelab.github.io/xswap-manuscript/v/e862a09b7207d50286247aeb3a331b9156c920ce/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://greenelab.github.io/xswap-manuscript/v/e862a09b7207d50286247aeb3a331b9156c920ce/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://greenelab.github.io/xswap-manuscript/v/e862a09b7207d50286247aeb3a331b9156c920ce/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<meta property=\"og:image\" content=\"https://github.com/greenelab/xswap-manuscript/raw/e862a09b7207d50286247aeb3a331b9156c920ce/thumbnail.png\" />\n<meta property=\"twitter:image\" content=\"https://github.com/greenelab/xswap-manuscript/raw/e862a09b7207d50286247aeb3a331b9156c920ce/thumbnail.png\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->",
+    "bibliography": [
+      "content/manual-references.json"
+    ],
+    "manubot-output-bibliography": "output/references.json",
+    "manubot-output-citekeys": "output/citations.tsv",
+    "manubot-requests-cache-path": "ci/cache/requests-cache",
+    "manubot-clear-requests-cache": false
   },
-  "manuscript_stats": {
-    "reference_counts": {
-      "arxiv": 1,
-      "doi": 28,
-      "raw": 2,
-      "url": 1,
-      "total": 32
+  "manubot": {
+    "date": "March 5, 2020",
+    "authors": [
+      {
+        "github": "zietzm",
+        "name": "Michael Zietz",
+        "initials": "MZ",
+        "orcid": "0000-0003-0539-630X",
+        "twitter": "ZietzMichael",
+        "email": "michael.zietz@gmail.com",
+        "affiliations": [
+          "Department of Physics & Astronomy, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America",
+          "Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America"
+        ],
+        "funders": [
+          "Roy and Diana Vagelos Scholars Program in the Molecular Life Sciences",
+          "the Gordon and Betty Moore Foundation (GBMF4552)"
+        ],
+        "affiliation_numbers": [
+          1,
+          2
+        ]
+      },
+      {
+        "github": "dhimmel",
+        "name": "Daniel S. Himmelstein",
+        "initials": "DSH",
+        "orcid": "0000-0002-3012-7446",
+        "twitter": "dhimmel",
+        "email": "daniel.himmelstein@gmail.com",
+        "affiliations": [
+          "Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America"
+        ],
+        "funders": "Pfizer Worldwide Research, Development, and Medical; the Gordon and Betty Moore Foundation (GBMF4552)",
+        "affiliation_numbers": [
+          2
+        ]
+      },
+      {
+        "github": "kkloste",
+        "name": "Kyle Kloster",
+        "initials": "KAK",
+        "orcid": "0000-0001-5678-7197",
+        "twitter": "kylekloster",
+        "email": "kyle.kloster@gmail.com",
+        "affiliations": [
+          "Department of Computer Science, North Carolina State University, Raleigh, North Carolina, United States of America"
+        ],
+        "funders": "the Gordon and Betty Moore Foundation (GBMF4560)",
+        "affiliation_numbers": [
+          3
+        ]
+      },
+      {
+        "github": "chrsunwil",
+        "name": "Christopher Williams",
+        "initials": "CW",
+        "email": "chrwill@sas.upenn.edu",
+        "affiliations": [
+          "Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America"
+        ],
+        "affiliation_numbers": [
+          2
+        ]
+      },
+      {
+        "github": "naglem",
+        "name": "Michael W. Nagle",
+        "initials": "MWN",
+        "orcid": "0000-0002-4677-7582",
+        "twitter": "MikeNagle84",
+        "email": "michael.nagle@pfizer.com",
+        "affiliations": [
+          "Internal Medicine Research Unit, Pfizer Worldwide Research, Development, and Medical"
+        ],
+        "affiliation_numbers": [
+          4
+        ]
+      },
+      {
+        "github": "bdsullivan",
+        "name": "Blair D. Sullivan",
+        "initials": "BDS",
+        "orcid": "0000-0001-7720-6208",
+        "twitter": "BlairDSullivan",
+        "email": "sullivan@cs.utah.edu",
+        "affiliations": [
+          "School of Computing, University of Utah, Salt Lake City, Utah, United States of America"
+        ],
+        "funders": [
+          "the Gordon and Betty Moore Foundation (GBMF4560)"
+        ],
+        "affiliation_numbers": [
+          5
+        ]
+      },
+      {
+        "github": "cgreene",
+        "name": "Casey S. Greene",
+        "initials": "CSG",
+        "orcid": "0000-0001-8713-9213",
+        "twitter": "greenescientist",
+        "email": "greenescientist@gmail.com",
+        "affiliations": [
+          "Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America"
+        ],
+        "funders": [
+          "Pfizer Worldwide Research, Development, and Medical",
+          "the Gordon and Betty Moore Foundation (GBMF4552)",
+          "the National Institutes of Health (R01 HG010067)"
+        ],
+        "affiliation_numbers": [
+          2
+        ]
+      }
+    ],
+    "affiliations": [
+      {
+        "affiliation": "Department of Physics & Astronomy, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America",
+        "affiliation_number": 1
+      },
+      {
+        "affiliation": "Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America",
+        "affiliation_number": 2
+      },
+      {
+        "affiliation": "Department of Computer Science, North Carolina State University, Raleigh, North Carolina, United States of America",
+        "affiliation_number": 3
+      },
+      {
+        "affiliation": "Internal Medicine Research Unit, Pfizer Worldwide Research, Development, and Medical",
+        "affiliation_number": 4
+      },
+      {
+        "affiliation": "School of Computing, University of Utah, Salt Lake City, Utah, United States of America",
+        "affiliation_number": 5
+      }
+    ],
+    "ci_source": {
+      "provider": "github",
+      "repo_slug": "greenelab/xswap-manuscript",
+      "repo_owner": "greenelab",
+      "repo_name": "xswap-manuscript",
+      "commit": "e862a09b7207d50286247aeb3a331b9156c920ce",
+      "triggering_commit": "e862a09b7207d50286247aeb3a331b9156c920ce",
+      "build_url": "https://github.com/greenelab/xswap-manuscript/commit/e862a09b7207d50286247aeb3a331b9156c920ce/checks",
+      "job_url": "https://github.com/greenelab/xswap-manuscript/runs/run2"
     },
-    "word_count": 7035
+    "html_url": "https://greenelab.github.io/xswap-manuscript/",
+    "pdf_url": "https://greenelab.github.io/xswap-manuscript/manuscript.pdf",
+    "html_url_versioned": "https://greenelab.github.io/xswap-manuscript/v/e862a09b7207d50286247aeb3a331b9156c920ce/",
+    "pdf_url_versioned": "https://greenelab.github.io/xswap-manuscript/v/e862a09b7207d50286247aeb3a331b9156c920ce/manuscript.pdf",
+    "manubot_version": "0.3.1",
+    "rootstock_commit": "1780fac0ac6bba1260a9da3886061730fa5d2765",
+    "thumbnail_url": "https://github.com/greenelab/xswap-manuscript/raw/e862a09b7207d50286247aeb3a331b9156c920ce/thumbnail.png",
+    "manuscript_stats": {
+      "word_count": 7046
+    }
   }
 }
