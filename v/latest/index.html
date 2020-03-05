@@ -11,61 +11,267 @@
   <meta name="author" content="Michael W. Nagle" />
   <meta name="author" content="Blair D. Sullivan" />
   <meta name="author" content="Casey S. Greene" />
-  <meta name="dcterms.date" content="2020-02-19" />
+  <meta name="dcterms.date" content="2020-03-05" />
   <meta name="keywords" content="xswap, permutation, network, hetnets, degree, bioinformatics, python, manubot" />
   <title>The probability of edge existence due to node degree: a baseline for network-based predictions</title>
   <style>
-      code{white-space: pre-wrap;}
-      span.smallcaps{font-variant: small-caps;}
-      span.underline{text-decoration: underline;}
-      div.column{display: inline-block; vertical-align: top; width: 50%;}
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
   </style>
   <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
   <![endif]-->
+  <!--
+  Manubot generated metadata rendered from header-includes-template.html.
+  Suggest improvements at https://github.com/manubot/manubot/blob/master/manubot/process/header-includes-template.html
+  -->
+  <meta name="dc.format" content="text/html" />
+  <meta name="dc.title" content="The probability of edge existence due to node degree: a baseline for network-based predictions" />
+  <meta name="citation_title" content="The probability of edge existence due to node degree: a baseline for network-based predictions" />
+  <meta property="og:title" content="The probability of edge existence due to node degree: a baseline for network-based predictions" />
+  <meta property="twitter:title" content="The probability of edge existence due to node degree: a baseline for network-based predictions" />
+  <meta name="dc.date" content="2020-03-05" />
+  <meta name="citation_publication_date" content="2020-03-05" />
+  <meta name="dc.language" content="en-US" />
+  <meta name="citation_language" content="en-US" />
+  <meta name="dc.relation.ispartof" content="Manubot" />
+  <meta name="dc.publisher" content="Manubot" />
+  <meta name="citation_journal_title" content="Manubot" />
+  <meta name="citation_technical_report_institution" content="Manubot" />
+  <meta name="citation_author" content="Michael Zietz" />
+  <meta name="citation_author_institution" content="Department of Physics &amp; Astronomy, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America" />
+  <meta name="citation_author_institution" content="Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America" />
+  <meta name="citation_author_orcid" content="0000-0003-0539-630X" />
+  <meta name="twitter:creator" content="@ZietzMichael" />
+  <meta name="citation_author" content="Daniel S. Himmelstein" />
+  <meta name="citation_author_institution" content="Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America" />
+  <meta name="citation_author_orcid" content="0000-0002-3012-7446" />
+  <meta name="twitter:creator" content="@dhimmel" />
+  <meta name="citation_author" content="Kyle Kloster" />
+  <meta name="citation_author_institution" content="Department of Computer Science, North Carolina State University, Raleigh, North Carolina, United States of America" />
+  <meta name="citation_author_orcid" content="0000-0001-5678-7197" />
+  <meta name="twitter:creator" content="@kylekloster" />
+  <meta name="citation_author" content="Christopher Williams" />
+  <meta name="citation_author_institution" content="Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America" />
+  <meta name="citation_author" content="Michael W. Nagle" />
+  <meta name="citation_author_institution" content="Internal Medicine Research Unit, Pfizer Worldwide Research, Development, and Medical" />
+  <meta name="citation_author_orcid" content="0000-0002-4677-7582" />
+  <meta name="twitter:creator" content="@MikeNagle84" />
+  <meta name="citation_author" content="Blair D. Sullivan" />
+  <meta name="citation_author_institution" content="School of Computing, University of Utah, Salt Lake City, Utah, United States of America" />
+  <meta name="citation_author_orcid" content="0000-0001-7720-6208" />
+  <meta name="twitter:creator" content="@BlairDSullivan" />
+  <meta name="citation_author" content="Casey S. Greene" />
+  <meta name="citation_author_institution" content="Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America" />
+  <meta name="citation_author_orcid" content="0000-0001-8713-9213" />
+  <meta name="twitter:creator" content="@greenescientist" />
+  <link rel="canonical" href="https://greenelab.github.io/xswap-manuscript/" />
+  <meta property="og:url" content="https://greenelab.github.io/xswap-manuscript/" />
+  <meta property="twitter:url" content="https://greenelab.github.io/xswap-manuscript/" />
+  <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/xswap-manuscript/" />
+  <meta name="citation_pdf_url" content="https://greenelab.github.io/xswap-manuscript/manuscript.pdf" />
+  <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/xswap-manuscript/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/xswap-manuscript/v/e862a09b7207d50286247aeb3a331b9156c920ce/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/xswap-manuscript/v/e862a09b7207d50286247aeb3a331b9156c920ce/" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/xswap-manuscript/v/e862a09b7207d50286247aeb3a331b9156c920ce/manuscript.pdf" />
+  <meta property="og:type" content="article" />
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="og:image" content="https://github.com/greenelab/xswap-manuscript/raw/e862a09b7207d50286247aeb3a331b9156c920ce/thumbnail.png" />
+  <meta property="twitter:image" content="https://github.com/greenelab/xswap-manuscript/raw/e862a09b7207d50286247aeb3a331b9156c920ce/thumbnail.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
+  <link rel="mask-icon" href="https://manubot.org/safari-pinned-tab.svg" color="#ad1457" />
+  <meta name="theme-color" content="#ad1457" />
+  <!-- end Manubot generated metadata -->
 </head>
 <body>
 <header id="title-block-header">
 <h1 class="title">The probability of edge existence due to node degree: a baseline for network-based predictions</h1>
 </header>
-<p><small><em> This manuscript (<a href="https://greenelab.github.io/xswap-manuscript/v/3258105363a55c3995d9ebdf000e1b8f3f454728/">permalink</a>) was automatically generated from <a href="https://github.com/greenelab/xswap-manuscript/tree/3258105363a55c3995d9ebdf000e1b8f3f454728">greenelab/xswap-manuscript@3258105</a> on February 19, 2020. </em></small></p>
+<p><small><em>
+This manuscript
+(<a href="https://greenelab.github.io/xswap-manuscript/v/e862a09b7207d50286247aeb3a331b9156c920ce/">permalink</a>)
+was automatically generated
+from <a href="https://github.com/greenelab/xswap-manuscript/tree/e862a09b7207d50286247aeb3a331b9156c920ce">greenelab/xswap-manuscript@e862a09</a>
+on March 5, 2020.
+</em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
-<li><p><strong>Michael Zietz</strong><br> <img src="images/orcid.svg" alt="ORCID icon" class="inline_icon" /> <a href="https://orcid.org/0000-0003-0539-630X">0000-0003-0539-630X</a> · <img src="images/github.svg" alt="GitHub icon" class="inline_icon" /> <a href="https://github.com/zietzm">zietzm</a> · <img src="images/twitter.svg" alt="Twitter icon" class="inline_icon" /> <a href="https://twitter.com/ZietzMichael">ZietzMichael</a><br> <small> Department of Physics &amp; Astronomy, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America; Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America · Funded by [‘Roy and Diana Vagelos Scholars Program in the Molecular Life Sciences’, ‘the Gordon and Betty Moore Foundation (GBMF4552)’] </small></p></li>
-<li><p><strong>Daniel S. Himmelstein</strong><br> <img src="images/orcid.svg" alt="ORCID icon" class="inline_icon" /> <a href="https://orcid.org/0000-0002-3012-7446">0000-0002-3012-7446</a> · <img src="images/github.svg" alt="GitHub icon" class="inline_icon" /> <a href="https://github.com/dhimmel">dhimmel</a> · <img src="images/twitter.svg" alt="Twitter icon" class="inline_icon" /> <a href="https://twitter.com/dhimmel">dhimmel</a><br> <small> Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America · Funded by Pfizer Worldwide Research, Development, and Medical; the Gordon and Betty Moore Foundation (GBMF4552) </small></p></li>
-<li><p><strong>Kyle Kloster</strong><br> <img src="images/orcid.svg" alt="ORCID icon" class="inline_icon" /> <a href="https://orcid.org/0000-0001-5678-7197">0000-0001-5678-7197</a> · <img src="images/github.svg" alt="GitHub icon" class="inline_icon" /> <a href="https://github.com/kkloste">kkloste</a> · <img src="images/twitter.svg" alt="Twitter icon" class="inline_icon" /> <a href="https://twitter.com/kylekloster">kylekloster</a><br> <small> Department of Computer Science, North Carolina State University, Raleigh, North Carolina, United States of America · Funded by the Gordon and Betty Moore Foundation (GBMF4560) </small></p></li>
-<li><p><strong>Christopher Williams</strong><br> · <img src="images/github.svg" alt="GitHub icon" class="inline_icon" /> <a href="https://github.com/chrsunwil">chrsunwil</a><br> <small> Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America </small></p></li>
-<li><p><strong>Michael W. Nagle</strong><br> <img src="images/orcid.svg" alt="ORCID icon" class="inline_icon" /> <a href="https://orcid.org/0000-0002-4677-7582">0000-0002-4677-7582</a> · <img src="images/github.svg" alt="GitHub icon" class="inline_icon" /> <a href="https://github.com/naglem">naglem</a> · <img src="images/twitter.svg" alt="Twitter icon" class="inline_icon" /> <a href="https://twitter.com/MikeNagle84">MikeNagle84</a><br> <small> Internal Medicine Research Unit, Pfizer Worldwide Research, Development, and Medical </small></p></li>
-<li><p><strong>Blair D. Sullivan</strong><br> <img src="images/orcid.svg" alt="ORCID icon" class="inline_icon" /> <a href="https://orcid.org/0000-0001-7720-6208">0000-0001-7720-6208</a> · <img src="images/github.svg" alt="GitHub icon" class="inline_icon" /> <a href="https://github.com/bdsullivan">bdsullivan</a> · <img src="images/twitter.svg" alt="Twitter icon" class="inline_icon" /> <a href="https://twitter.com/BlairDSullivan">BlairDSullivan</a><br> <small> School of Computing, University of Utah, Salt Lake City, Utah, United States of America · Funded by [‘the Gordon and Betty Moore Foundation (GBMF4560)’] </small></p></li>
-<li><p><strong>Casey S. Greene</strong><br> <img src="images/orcid.svg" alt="ORCID icon" class="inline_icon" /> <a href="https://orcid.org/0000-0001-8713-9213">0000-0001-8713-9213</a> · <img src="images/github.svg" alt="GitHub icon" class="inline_icon" /> <a href="https://github.com/cgreene">cgreene</a> · <img src="images/twitter.svg" alt="Twitter icon" class="inline_icon" /> <a href="https://twitter.com/greenescientist">greenescientist</a><br> <small> Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America · Funded by [‘Pfizer Worldwide Research, Development, and Medical’, ‘the Gordon and Betty Moore Foundation (GBMF4552)’, ‘the National Institutes of Health (R01 HG010067)’] </small></p></li>
+<li><p><strong>Michael Zietz</strong><br>
+<img src="images/orcid.svg" class="inline_icon" alt="ORCID icon" />
+<a href="https://orcid.org/0000-0003-0539-630X">0000-0003-0539-630X</a>
+· <img src="images/github.svg" class="inline_icon" alt="GitHub icon" />
+<a href="https://github.com/zietzm">zietzm</a>
+· <img src="images/twitter.svg" class="inline_icon" alt="Twitter icon" />
+<a href="https://twitter.com/ZietzMichael">ZietzMichael</a><br>
+<small>
+Department of Physics &amp; Astronomy, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America; Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America
+· Funded by [‘Roy and Diana Vagelos Scholars Program in the Molecular Life Sciences’, ‘the Gordon and Betty Moore Foundation (GBMF4552)’]
+</small></p></li>
+<li><p><strong>Daniel S. Himmelstein</strong><br>
+<img src="images/orcid.svg" class="inline_icon" alt="ORCID icon" />
+<a href="https://orcid.org/0000-0002-3012-7446">0000-0002-3012-7446</a>
+· <img src="images/github.svg" class="inline_icon" alt="GitHub icon" />
+<a href="https://github.com/dhimmel">dhimmel</a>
+· <img src="images/twitter.svg" class="inline_icon" alt="Twitter icon" />
+<a href="https://twitter.com/dhimmel">dhimmel</a><br>
+<small>
+Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America
+· Funded by Pfizer Worldwide Research, Development, and Medical; the Gordon and Betty Moore Foundation (GBMF4552)
+</small></p></li>
+<li><p><strong>Kyle Kloster</strong><br>
+<img src="images/orcid.svg" class="inline_icon" alt="ORCID icon" />
+<a href="https://orcid.org/0000-0001-5678-7197">0000-0001-5678-7197</a>
+· <img src="images/github.svg" class="inline_icon" alt="GitHub icon" />
+<a href="https://github.com/kkloste">kkloste</a>
+· <img src="images/twitter.svg" class="inline_icon" alt="Twitter icon" />
+<a href="https://twitter.com/kylekloster">kylekloster</a><br>
+<small>
+Department of Computer Science, North Carolina State University, Raleigh, North Carolina, United States of America
+· Funded by the Gordon and Betty Moore Foundation (GBMF4560)
+</small></p></li>
+<li><p><strong>Christopher Williams</strong><br>
+· <img src="images/github.svg" class="inline_icon" alt="GitHub icon" />
+<a href="https://github.com/chrsunwil">chrsunwil</a><br>
+<small>
+Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America
+</small></p></li>
+<li><p><strong>Michael W. Nagle</strong><br>
+<img src="images/orcid.svg" class="inline_icon" alt="ORCID icon" />
+<a href="https://orcid.org/0000-0002-4677-7582">0000-0002-4677-7582</a>
+· <img src="images/github.svg" class="inline_icon" alt="GitHub icon" />
+<a href="https://github.com/naglem">naglem</a>
+· <img src="images/twitter.svg" class="inline_icon" alt="Twitter icon" />
+<a href="https://twitter.com/MikeNagle84">MikeNagle84</a><br>
+<small>
+Internal Medicine Research Unit, Pfizer Worldwide Research, Development, and Medical
+</small></p></li>
+<li><p><strong>Blair D. Sullivan</strong><br>
+<img src="images/orcid.svg" class="inline_icon" alt="ORCID icon" />
+<a href="https://orcid.org/0000-0001-7720-6208">0000-0001-7720-6208</a>
+· <img src="images/github.svg" class="inline_icon" alt="GitHub icon" />
+<a href="https://github.com/bdsullivan">bdsullivan</a>
+· <img src="images/twitter.svg" class="inline_icon" alt="Twitter icon" />
+<a href="https://twitter.com/BlairDSullivan">BlairDSullivan</a><br>
+<small>
+School of Computing, University of Utah, Salt Lake City, Utah, United States of America
+· Funded by [‘the Gordon and Betty Moore Foundation (GBMF4560)’]
+</small></p></li>
+<li><p><strong>Casey S. Greene</strong><br>
+<img src="images/orcid.svg" class="inline_icon" alt="ORCID icon" />
+<a href="https://orcid.org/0000-0001-8713-9213">0000-0001-8713-9213</a>
+· <img src="images/github.svg" class="inline_icon" alt="GitHub icon" />
+<a href="https://github.com/cgreene">cgreene</a>
+· <img src="images/twitter.svg" class="inline_icon" alt="Twitter icon" />
+<a href="https://twitter.com/greenescientist">greenescientist</a><br>
+<small>
+Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America
+· Funded by [‘Pfizer Worldwide Research, Development, and Medical’, ‘the Gordon and Betty Moore Foundation (GBMF4552)’, ‘the National Institutes of Health (R01 HG010067)’]
+</small></p></li>
 </ul>
-<h2 id="abstract" class="page_break_before">Abstract</h2>
-<p>Important tasks in biomedical discovery such as predicting gene functions, gene-disease associations, and drug repurposing opportunities are often framed as network edge prediction. The number of edges connecting to a node, termed degree, can vary greatly across nodes in real biomedical networks, and the distribution of degrees varies between networks. If degree strongly influences edge prediction, then imbalance or bias in the distribution of degrees could lead to nonspecific or misleading predictions. We introduce a network permutation framework to quantify the effects of node degree on edge prediction. Our framework decomposes performance into the proportions attributable to degree and the network’s specific connections. We discover that performance attributable to factors other than degree is often only a small portion of overall performance. Degree’s predictive performance diminishes when the networks used for training and testing—despite measuring the same biological relationships—were generated using distinct techniques and hence have large differences in degree distribution. We introduce the permutation-derived edge prior as the probability that an edge exists based only on degree. The edge prior shows excellent discrimination and calibration for 20 biomedical networks (16 bipartite, 3 undirected, 1 directed), with AUROCs frequently exceeding 0.85. Researchers seeking to predict new or missing edges in biological networks should use the edge prior as a baseline to identify the fraction of performance that is nonspecific because of degree. We released our methods as an open-source Python package (https://github.com/hetio/xswap/).</p>
+<h2 class="page_break_before" id="abstract">Abstract</h2>
+<p>Important tasks in biomedical discovery such as predicting gene functions, gene-disease associations, and drug repurposing opportunities are often framed as network edge prediction.
+The number of edges connecting to a node, termed degree, can vary greatly across nodes in real biomedical networks, and the distribution of degrees varies between networks.
+If degree strongly influences edge prediction, then imbalance or bias in the distribution of degrees could lead to nonspecific or misleading predictions.
+We introduce a network permutation framework to quantify the effects of node degree on edge prediction.
+Our framework decomposes performance into the proportions attributable to degree and the network’s specific connections.
+We discover that performance attributable to factors other than degree is often only a small portion of overall performance.
+Degree’s predictive performance diminishes when the networks used for training and testing—despite measuring the same biological relationships—were generated using distinct techniques and hence have large differences in degree distribution.
+We introduce the permutation-derived edge prior as the probability that an edge exists based only on degree.
+The edge prior shows excellent discrimination and calibration for 20 biomedical networks (16 bipartite, 3 undirected, 1 directed), with AUROCs frequently exceeding 0.85.
+Researchers seeking to predict new or missing edges in biological networks should use the edge prior as a baseline to identify the fraction of performance that is nonspecific because of degree.
+We released our methods as an open-source Python package (https://github.com/hetio/xswap/).</p>
 <h2 id="introduction">Introduction</h2>
-<p>Networks contain information about relationships between entities (referred to here as “edges” between “nodes”). A node’s degree is the number of edges it has in the network. Networks contain many nodes, whose degrees can be aggregated to form the network’s degree distribution. Because different nodes can have very different degrees, real networks generally have highly variable degree distributions <span class="citation" data-cites="rly3gDig 1mIOnArF GFS9MouO">[<a href="#ref-rly3gDig" role="doc-biblioref">1</a>,<a href="#ref-1mIOnArF" role="doc-biblioref">2</a>,<a href="#ref-GFS9MouO" role="doc-biblioref">3</a>]</span>. This is especially true for networks encoding biomedical knowledge or assays, where natural forces such as preferential attachment inherent to the problem domain combine with observation-based influences such as study methodology to create non-uniform degree distributions (Figure <a href="#fig:hetionet">1</a>).</p>
+<p>Networks contain information about relationships between entities (referred to here as “edges” between “nodes”).
+A node’s degree is the number of edges it has in the network.
+Networks contain many nodes, whose degrees can be aggregated to form the network’s degree distribution.
+Because different nodes can have very different degrees, real networks generally have highly variable degree distributions <span class="citation" data-cites="rly3gDig 1mIOnArF GFS9MouO">[<a href="#ref-rly3gDig" role="doc-biblioref">1</a>,<a href="#ref-1mIOnArF" role="doc-biblioref">2</a>,<a href="#ref-GFS9MouO" role="doc-biblioref">3</a>]</span>.
+This is especially true for networks encoding biomedical knowledge or assays, where natural forces such as preferential attachment inherent to the problem domain combine with observation-based influences such as study methodology to create non-uniform degree distributions (Figure <a href="#fig:hetionet">1</a>).</p>
+<div id="fig:hetionet" class="fignos">
 <figure>
-<img src="https://github.com/greenelab/xswap-analysis/raw/b0db22c82b2e58bf1ef5ae78317167982016e26b/img/hetionet_degrees.png" alt="Figure 1: Biomedical networks are characterized by non-uniform degree distributions. Eight degree distributions are plotted for six edge types Hetionet v1.0 [4]. Hetionet integrates subnetworks for 24 different edge types, the degree distributions of which are analyzed separately. Furthermore, bipartite (e.g. Anatomy→expresses→Gene) and directed (e.g. Gene→regulates→Gene) edge types have both source and target degrees that must be assessed separately. Undirected edge types (e.g Compound–resembles–Compound) have only a single degree distribution. Degree distributions are non-uniform and vary greatly between different networks. The y-axis is log10-scaled to accomodate the common occurrence where most nodes have low degree while a small portion of nodes have high degree. Several distributions have node degree ceilings corresponding to a node being connected to all other possible nodes. Zero-degree nodes are not displayed, since methodological limitations often result in edge data only existing for a subset of nodes." id="fig:hetionet" style="width:100.0%" /><figcaption><span>Figure 1:</span> <strong>Biomedical networks are characterized by non-uniform degree distributions.</strong> Eight degree distributions are plotted for six edge types Hetionet v1.0 <span class="citation" data-cites="O21tn8vf">[<a href="#ref-O21tn8vf" role="doc-biblioref">4</a>]</span>. Hetionet integrates subnetworks for 24 different edge types, the degree distributions of which are analyzed separately. Furthermore, bipartite (e.g. Anatomy→expresses→Gene) and directed (e.g. Gene→regulates→Gene) edge types have both source and target degrees that must be assessed separately. Undirected edge types (e.g Compound–resembles–Compound) have only a single degree distribution. Degree distributions are non-uniform and vary greatly between different networks. The y-axis is log<sub>10</sub>-scaled to accomodate the common occurrence where most nodes have low degree while a small portion of nodes have high degree. Several distributions have node degree ceilings corresponding to a node being connected to all other possible nodes. Zero-degree nodes are not displayed, since methodological limitations often result in edge data only existing for a subset of nodes.</figcaption>
+<img src="https://github.com/greenelab/xswap-analysis/raw/b0db22c82b2e58bf1ef5ae78317167982016e26b/img/hetionet_degrees.png" style="width:100.0%" alt="" /><figcaption><span>Figure 1:</span> <strong>Biomedical networks are characterized by non-uniform degree distributions.</strong>
+Eight degree distributions are plotted for six edge types Hetionet v1.0 <span class="citation" data-cites="O21tn8vf">[<a href="#ref-O21tn8vf" role="doc-biblioref">4</a>]</span>.
+Hetionet integrates subnetworks for 24 different edge types, the degree distributions of which are analyzed separately.
+Furthermore, bipartite (e.g. Anatomy→expresses→Gene) and directed (e.g. Gene→regulates→Gene) edge types have both source and target degrees that must be assessed separately.
+Undirected edge types (e.g Compound–resembles–Compound) have only a single degree distribution.
+Degree distributions are non-uniform and vary greatly between different networks.
+The y-axis is log<sub>10</sub>-scaled to accomodate the common occurrence where most nodes have low degree while a small portion of nodes have high degree.
+Several distributions have node degree ceilings corresponding to a node being connected to all other possible nodes.
+Zero-degree nodes are not displayed, since methodological limitations often result in edge data only existing for a subset of nodes.</figcaption>
 </figure>
-<p>Degree is an important metric for differentiating between nodes, and it appears in many common edge prediction features <span class="citation" data-cites="ohIv6zMA">[<a href="#ref-ohIv6zMA" role="doc-biblioref">5</a>]</span>. However, reliance on degree can pose problems for edge prediction. Firstly, bias in networks can distort node degree so that degree differences between two nodes may not be meaningful. Secondly, reliance on degree can lead edge prediction methods to make nonspecific or trivial predictions and fail to identify novel or insightful relationships.</p>
-<p>Most biomedical networks are imperfect representations of the true set of relationships. Real networks often mistakenly include edges that do not exist and exclude edges that do exist. How well a network represents the true relationships it attempts to represent depends on a number of factors, especially the methods used to generate the data in the network <span class="citation" data-cites="bo2VEmIz yJZSr6c6 C4FHCVCz">[<a href="#ref-bo2VEmIz" role="doc-biblioref">6</a>,<a href="#ref-yJZSr6c6" role="doc-biblioref">7</a>,<a href="#ref-C4FHCVCz" role="doc-biblioref">8</a>]</span>. We define “degree bias” as the type of misrepresentation that occurs when the fraction of incorrectly existent/nonexistent relationships depends on node degree. Depending on the type of data being represented, degree biases can arise due to experimental methods, inspection bias, or other factors <span class="citation" data-cites="bo2VEmIz">[<a href="#ref-bo2VEmIz" role="doc-biblioref">6</a>]</span>.</p>
-<p>Inspection bias indicates that entities are not uniformly studied <span class="citation" data-cites="lnDqu0oW">[<a href="#ref-lnDqu0oW" role="doc-biblioref">9</a>]</span>, and it is likely to cause degree bias when networks are constructed using hypothesis-driven findings extracted from the literature, as newly-discovered relationships are not randomly sampled from the set of all true relationships. Though there is a high correlation between the number of publications mentioning a gene and its degree in low-throughput interaction networks, the number of publications mentioning a gene has little correlation with its degree in a systematically-derived protein interaction network <span class="citation" data-cites="LCyCrr7W">[<a href="#ref-LCyCrr7W" role="doc-biblioref">10</a>]</span>. This evidence suggests that many poorly studied genes have similar numbers of interactions as those scientists have preferentially examined and that these edges are missed due to inspection bias. For networks with strong inspection bias, reliance on degree can lead to predictions that have good metrics when assessed by cross validation but little ability to generalize.</p>
-<p>Another reason why a method’s reliance on degree can be unfavorable is that degree imbalance can lead to prediction nonspecificity. Nonspecific predictions are not made on the basis of the specific connectivity information contained in a network. For example, Gillis et al. <span class="citation" data-cites="zB6RQrIj">[<a href="#ref-zB6RQrIj" role="doc-biblioref">11</a>]</span> examined the concept of prediction specificity in the context of gene function prediction and found that many predictions appear to rely primarily on multifunctionality and could be “potentially misleading with respect to causality.” Real networks have a variety of degree distributions (Figure <a href="#fig:hetionet">1</a>), and they commonly exhibit degree imbalance <span class="citation" data-cites="GFS9MouO hbOjmCsZ 1mIOnArF rly3gDig">[<a href="#ref-rly3gDig" role="doc-biblioref">1</a>,<a href="#ref-hbOjmCsZ" role="doc-biblioref">12</a>,<a href="#ref-1mIOnArF" role="doc-biblioref">2</a>,<a href="#ref-GFS9MouO" role="doc-biblioref">3</a>]</span>. Degree imbalance leads high-degree nodes to dominate in the predictions made by degree-associated methods <span class="citation" data-cites="g059lh8v">[<a href="#ref-g059lh8v" role="doc-biblioref">13</a>]</span>, which are effective predictors of connections in some biological networks <span class="citation" data-cites="1736TBtF6">[<a href="#ref-1736TBtF6" role="doc-biblioref">14</a>]</span>. Consequently, degree-based predictions are more likely nonspecific, meaning the same set of predictions performs well for different tasks.</p>
-<p>Depending on the prediction task, edge predictions involving very high degree nodes may be undesired, uninsightful, or nonspecific. Model evaluation is challenging in this context: nonspecific or trivial predictions can dominate performance evaluations and may actually be correct, even if they are not the desired outputs of the predictive model. For example, predicting that the highest degree node in a network shares edges with the remaining nodes to which it is not connected will often lead to many correct predictions, despite this prediction being generic to all other nodes in the network.</p>
-<p>Degree is important in edge prediction, but it can cause undesired effects. Degree-based features should often be included in the interpretation of predictions to disentangle desired from non-desired effects and to effectively evaluate and compare predictive models. We sought to directly measure the effect of node degree on edge prediction methods. We introduce a permutation-based framework and software implementation to find edge existence probabilities due to node degree and to quantify the contribution of degree to edge prediction methods. This method allows edge predictions to be evaluated in the context of degree and its effects on the prediction task. Our results demonstrate that degree-associated methods are very effective for reconstructing a network using a subsampled holdout. However, these methods are ineffective for predicting edges between networks measuring the same biological processes in targeted and systematic ways because such networks have distinct degree distributions. Using multiple different networks, we provide evidence that degree has a strong effect on the probability of edge existence and that our permutation-based edge prior feature best quantifies this probability.</p>
+</div>
+<p>Degree is an important metric for differentiating between nodes, and it appears in many common edge prediction features <span class="citation" data-cites="ohIv6zMA">[<a href="#ref-ohIv6zMA" role="doc-biblioref">5</a>]</span>.
+However, reliance on degree can pose problems for edge prediction.
+Firstly, bias in networks can distort node degree so that degree differences between two nodes may not be meaningful.
+Secondly, reliance on degree can lead edge prediction methods to make nonspecific or trivial predictions and fail to identify novel or insightful relationships.</p>
+<p>Most biomedical networks are imperfect representations of the true set of relationships.
+Real networks often mistakenly include edges that do not exist and exclude edges that do exist.
+How well a network represents the true relationships it attempts to represent depends on a number of factors, especially the methods used to generate the data in the network <span class="citation" data-cites="bo2VEmIz yJZSr6c6 C4FHCVCz">[<a href="#ref-bo2VEmIz" role="doc-biblioref">6</a>,<a href="#ref-yJZSr6c6" role="doc-biblioref">7</a>,<a href="#ref-C4FHCVCz" role="doc-biblioref">8</a>]</span>.
+We define “degree bias” as the type of misrepresentation that occurs when the fraction of incorrectly existent/nonexistent relationships depends on node degree.
+Depending on the type of data being represented, degree biases can arise due to experimental methods, inspection bias, or other factors <span class="citation" data-cites="bo2VEmIz">[<a href="#ref-bo2VEmIz" role="doc-biblioref">6</a>]</span>.</p>
+<p>Inspection bias indicates that entities are not uniformly studied <span class="citation" data-cites="lnDqu0oW">[<a href="#ref-lnDqu0oW" role="doc-biblioref">9</a>]</span>, and it is likely to cause degree bias when networks are constructed using hypothesis-driven findings extracted from the literature, as newly-discovered relationships are not randomly sampled from the set of all true relationships.
+Though there is a high correlation between the number of publications mentioning a gene and its degree in low-throughput interaction networks, the number of publications mentioning a gene has little correlation with its degree in a systematically-derived protein interaction network <span class="citation" data-cites="LCyCrr7W">[<a href="#ref-LCyCrr7W" role="doc-biblioref">10</a>]</span>.
+This evidence suggests that many poorly studied genes have similar numbers of interactions as those scientists have preferentially examined and that these edges are missed due to inspection bias.
+For networks with strong inspection bias, reliance on degree can lead to predictions that have good metrics when assessed by cross validation but little ability to generalize.</p>
+<p>Another reason why a method’s reliance on degree can be unfavorable is that degree imbalance can lead to prediction nonspecificity.
+Nonspecific predictions are not made on the basis of the specific connectivity information contained in a network.
+For example, Gillis et al. <span class="citation" data-cites="zB6RQrIj">[<a href="#ref-zB6RQrIj" role="doc-biblioref">11</a>]</span> examined the concept of prediction specificity in the context of gene function prediction and found that many predictions appear to rely primarily on multifunctionality and could be “potentially misleading with respect to causality.”
+Real networks have a variety of degree distributions (Figure <a href="#fig:hetionet">1</a>), and they commonly exhibit degree imbalance <span class="citation" data-cites="GFS9MouO hbOjmCsZ 1mIOnArF rly3gDig">[<a href="#ref-rly3gDig" role="doc-biblioref">1</a>,<a href="#ref-1mIOnArF" role="doc-biblioref">2</a>,<a href="#ref-GFS9MouO" role="doc-biblioref">3</a>,<a href="#ref-hbOjmCsZ" role="doc-biblioref">12</a>]</span>.
+Degree imbalance leads high-degree nodes to dominate in the predictions made by degree-associated methods <span class="citation" data-cites="g059lh8v">[<a href="#ref-g059lh8v" role="doc-biblioref">13</a>]</span>, which are effective predictors of connections in some biological networks <span class="citation" data-cites="1736TBtF6">[<a href="#ref-1736TBtF6" role="doc-biblioref">14</a>]</span>.
+Consequently, degree-based predictions are more likely nonspecific, meaning the same set of predictions performs well for different tasks.</p>
+<p>Depending on the prediction task, edge predictions involving very high degree nodes may be undesired, uninsightful, or nonspecific.
+Model evaluation is challenging in this context: nonspecific or trivial predictions can dominate performance evaluations and may actually be correct, even if they are not the desired outputs of the predictive model.
+For example, predicting that the highest degree node in a network shares edges with the remaining nodes to which it is not connected will often lead to many correct predictions, despite this prediction being generic to all other nodes in the network.</p>
+<p>Degree is important in edge prediction, but it can cause undesired effects.
+Degree-based features should often be included in the interpretation of predictions to disentangle desired from non-desired effects and to effectively evaluate and compare predictive models.
+We sought to directly measure the effect of node degree on edge prediction methods.
+We introduce a permutation-based framework and software implementation to find edge existence probabilities due to node degree and to quantify the contribution of degree to edge prediction methods.
+This method allows edge predictions to be evaluated in the context of degree and its effects on the prediction task.
+Our results demonstrate that degree-associated methods are very effective for reconstructing a network using a subsampled holdout.
+However, these methods are ineffective for predicting edges between networks measuring the same biological processes in targeted and systematic ways because such networks have distinct degree distributions.
+Using multiple different networks, we provide evidence that degree has a strong effect on the probability of edge existence and that our permutation-based edge prior feature best quantifies this probability.</p>
 <h2 id="methods">Methods</h2>
 <h3 id="network-permutation">Network permutation</h3>
-<p>Network permutation is a way to produce new networks by randomizing the connections of an existing network. Specialized permutation strategies can be devised that randomize some aspects of networks while retaining other features. Comparing between permuted and unpermuted networks gives insight to the effects of the retained network features. For example, an edge prediction method that has superior reconstruction performance on a network compared to its permutations likely relies on information that is eliminated by permutation. Conversely, identical predictive performance on true and permuted networks indicates that a method relies on information that is preserved during permutation.</p>
-<p>Network permutation is a flexible framework for analyzing other methods, because it generates networks with identical formats to the original network. We use network permutation to isolate degree and determine its effects in different contexts. Degree-preserving network permutation obscures true connections and higher-order connectivity information while retaining node degree, and thereby, the network’s degree sequence. Thanks to the flexibility of permutation, our framework can quantify the effect of degree on any network edge prediction method.</p>
+<p>Network permutation is a way to produce new networks by randomizing the connections of an existing network.
+Specialized permutation strategies can be devised that randomize some aspects of networks while retaining other features.
+Comparing between permuted and unpermuted networks gives insight to the effects of the retained network features.
+For example, an edge prediction method that has superior reconstruction performance on a network compared to its permutations likely relies on information that is eliminated by permutation.
+Conversely, identical predictive performance on true and permuted networks indicates that a method relies on information that is preserved during permutation.</p>
+<p>Network permutation is a flexible framework for analyzing other methods, because it generates networks with identical formats to the original network.
+We use network permutation to isolate degree and determine its effects in different contexts.
+Degree-preserving network permutation obscures true connections and higher-order connectivity information while retaining node degree, and thereby, the network’s degree sequence.
+Thanks to the flexibility of permutation, our framework can quantify the effect of degree on any network edge prediction method.</p>
 <h3 id="xswap-algorithm">XSwap algorithm</h3>
-<p>Hanhijärvi, et al. presented XSwap <span class="citation" data-cites="iKOIEzQ9">[<a href="#ref-iKOIEzQ9" role="doc-biblioref">15</a>]</span>, an algorithm for the randomization (“permutation”) of unweighted networks (Figure <a href="#fig:algo">2</a>A). The algorithm picks two existing edges at random, and if the edges constitute a valid swap, exchanges the targets between the edges. This process is repeated many times until the maximum number of steps has been reached. In general, the maximum number of steps should be chosen to be sufficiently large that the fraction of original edges retained in the permuted network is near its asymptotic value for a large number of steps. The asymptotic fraction of original edges retained in permutation depends on network density, and higher density networks require more swap attempts per edge to reach their asymptotic fraction (Figure <a href="#fig:swap-percent">9</a>).</p>
-<p>To allow greater flexibility, we modified the original algorithm by adding two parameters, “<code>allow_loops</code>”, and “<code>allow_antiparallel</code>” that allow a greater variety of network types to be permuted (Figure <a href="#fig:algo">2</a>B and Table <a href="#tbl:xswap">1</a>). Specifically, two chosen edges constitute a valid swap if they preserve degree for all four involved nodes and do not violate the above condition options. The motivation for these generalizations is to make the permutation method applicable both to directed and undirected graphs, as well as to networks with different types of nodes, variously called multipartite, heterogeneous, or multimodal networks.</p>
-<p>When permuting bipartite networks, our method ensures that each node’s class membership and within-class degree is preserved. Similarly, heterogeneous networks should be permuted by considering each edge type as a separate network <span class="citation" data-cites="WkPlH1ds xmFxwmUd">[<a href="#ref-WkPlH1ds" role="doc-biblioref">16</a>,<a href="#ref-xmFxwmUd" role="doc-biblioref">17</a>]</span>. This way, each node retains its within-edge-type degree for all edge types. We provide documentation for parameter choices depending on the type of network being permuted in the GitHub repository (<a href="https://github.com/hetio/xswap" class="uri">https://github.com/hetio/xswap</a>). The original algorithm and our proposed modification are given in Figure <a href="#fig:algo">2</a>.</p>
+<p>Hanhijärvi, et al. presented XSwap <span class="citation" data-cites="iKOIEzQ9">[<a href="#ref-iKOIEzQ9" role="doc-biblioref">15</a>]</span>, an algorithm for the randomization (“permutation”) of unweighted networks (Figure <a href="#fig:algo">2</a>A).
+The algorithm picks two existing edges at random, and if the edges constitute a valid swap, exchanges the targets between the edges.
+This process is repeated many times until the maximum number of steps has been reached.
+In general, the maximum number of steps should be chosen to be sufficiently large that the fraction of original edges retained in the permuted network is near its asymptotic value for a large number of steps.
+The asymptotic fraction of original edges retained in permutation depends on network density, and higher density networks require more swap attempts per edge to reach their asymptotic fraction (Figure <a href="#fig:swap-percent">9</a>).</p>
+<p>To allow greater flexibility, we modified the original algorithm by adding two parameters, “<code>allow_loops</code>”, and “<code>allow_antiparallel</code>” that allow a greater variety of network types to be permuted (Figure <a href="#fig:algo">2</a>B and Table <a href="#tbl:xswap">1</a>).
+Specifically, two chosen edges constitute a valid swap if they preserve degree for all four involved nodes and do not violate the above condition options.
+The motivation for these generalizations is to make the permutation method applicable both to directed and undirected graphs, as well as to networks with different types of nodes, variously called multipartite, heterogeneous, or multimodal networks.</p>
+<p>When permuting bipartite networks, our method ensures that each node’s class membership and within-class degree is preserved.
+Similarly, heterogeneous networks should be permuted by considering each edge type as a separate network <span class="citation" data-cites="WkPlH1ds xmFxwmUd">[<a href="#ref-WkPlH1ds" role="doc-biblioref">16</a>,<a href="#ref-xmFxwmUd" role="doc-biblioref">17</a>]</span>.
+This way, each node retains its within-edge-type degree for all edge types.
+We provide documentation for parameter choices depending on the type of network being permuted in the GitHub repository (<a href="https://github.com/hetio/xswap" class="uri">https://github.com/hetio/xswap</a>).
+The original algorithm and our proposed modification are given in Figure <a href="#fig:algo">2</a>.</p>
+<div id="fig:algo" class="fignos">
 <figure>
-<img src="images/xswap_algorithms_combined_labels.png" alt="Figure 2: XSwap algorithm pseudocode. A. XSwap algorithm presented by Hanhijärvi, et al. [15]. B. Extension of the XSwap algorithm to other types of networks." id="fig:algo" style="width:85.0%" /><figcaption><span>Figure 2:</span> <strong>XSwap algorithm pseudocode.</strong> <strong>A.</strong> XSwap algorithm presented by Hanhijärvi, et al. <span class="citation" data-cites="iKOIEzQ9">[<a href="#ref-iKOIEzQ9" role="doc-biblioref">15</a>]</span>. <strong>B.</strong> Extension of the XSwap algorithm to other types of networks.</figcaption>
+<img src="images/xswap_algorithms_combined_labels.png" style="width:85.0%" alt="" /><figcaption><span>Figure 2:</span> <strong>XSwap algorithm pseudocode.</strong>
+<strong>A.</strong> XSwap algorithm presented by Hanhijärvi, et al. <span class="citation" data-cites="iKOIEzQ9">[<a href="#ref-iKOIEzQ9" role="doc-biblioref">15</a>]</span>.
+<strong>B.</strong> Extension of the XSwap algorithm to other types of networks.</figcaption>
 </figure>
-<a name="tbl:xswap"></a>
+</div>
+<div id="tbl:xswap" class="tablenos">
 <table>
-<caption><span>Table 1:</span> Applications of the modified XSwap algorithm to various network types with appropriate parameter choices. For simple networks, each node’s degree is preserved. For bipartite networks, each node’s number of connections to the other part is preserved, and the partite sets (node class memberships) are preserved. For directed networks, each nodes’ in- and out-degrees are preserved, though parameter choices depend on the network being permuted. Some directed networks can include antiparallel edges or loops while others do not. </caption>
+<caption><span>Table 1:</span> Applications of the modified XSwap algorithm to various network types with appropriate parameter choices.
+For simple networks, each node’s degree is preserved.
+For bipartite networks, each node’s number of connections to the other part is preserved, and the partite sets (node class memberships) are preserved.
+For directed networks, each nodes’ in- and out-degrees are preserved, though parameter choices depend on the network being permuted.
+Some directed networks can include antiparallel edges or loops while others do not. </caption>
 <thead>
 <tr class="header">
 <th style="text-align: left;">Network type</th>
@@ -99,70 +305,224 @@
 </tr>
 </tbody>
 </table>
+</div>
 <h3 id="edge-prior">Edge prior</h3>
-<p>We introduce the edge prior to quantify the probability that two nodes are connected based only on their degree. The edge prior can be estimated using the fraction of permuted networks in which a given edge exists—the maximum likelihood estimate for the binomial distribution success probability. Based only on permuted networks, the edge prior does not contain any information about the true edges in the (unpermuted) network. The edge prior is a numerical feature that can be computed for every pair of nodes that could potentially share an edge, and we compared its ability to predict edges in three tasks, discussed below.</p>
+<p>We introduce the edge prior to quantify the probability that two nodes are connected based only on their degree.
+The edge prior can be estimated using the fraction of permuted networks in which a given edge exists—the maximum likelihood estimate for the binomial distribution success probability.
+Based only on permuted networks, the edge prior does not contain any information about the true edges in the (unpermuted) network.
+The edge prior is a numerical feature that can be computed for every pair of nodes that could potentially share an edge, and we compared its ability to predict edges in three tasks, discussed below.</p>
 <h3 id="analytical-approximation-of-the-edge-prior">Analytical approximation of the edge prior</h3>
-<p>We also considered whether the probability of an edge existing across permuted networks has a simple closed-form expression. To derive such an expression, we first make the simplifying assumption that the probability of any given edge existing is independent of all other potential edges. We were unable to find a closed-form solution giving the edge prior without assuming independence in this way, which we believe is incorrect for XSwap. Nonetheless, we discovered a good analytical approximation to the edge prior for networks with many nodes and relatively low edge density (Figure <a href="#fig:approx-quality">3</a>).</p>
+<p>We also considered whether the probability of an edge existing across permuted networks has a simple closed-form expression.
+To derive such an expression, we first make the simplifying assumption that the probability of any given edge existing is independent of all other potential edges.
+We were unable to find a closed-form solution giving the edge prior without assuming independence in this way, which we believe is incorrect for XSwap.
+Nonetheless, we discovered a good analytical approximation to the edge prior for networks with many nodes and relatively low edge density (Figure <a href="#fig:approx-quality">3</a>).</p>
+<div id="fig:approx-quality" class="fignos">
 <figure>
-<img src="https://github.com/greenelab/xswap-analysis/raw/b0db22c82b2e58bf1ef5ae78317167982016e26b/img/prior_exact_vs_approx.png" alt="Figure 3: The XSwap-derived edge prior can be analytically approximated. The analytical approximation is plotted against the XSwap-derived edge prior for three edge types from Hetionet. The strong correlation suggests that the approximation will be suitable for applications where computation time is a limiting factor." id="fig:approx-quality" style="width:100.0%" /><figcaption><span>Figure 3:</span> <strong>The XSwap-derived edge prior can be analytically approximated.</strong> The analytical approximation is plotted against the XSwap-derived edge prior for three edge types from Hetionet. The strong correlation suggests that the approximation will be suitable for applications where computation time is a limiting factor.</figcaption>
+<img src="https://github.com/greenelab/xswap-analysis/raw/b0db22c82b2e58bf1ef5ae78317167982016e26b/img/prior_exact_vs_approx.png" style="width:100.0%" alt="" /><figcaption><span>Figure 3:</span> <strong>The XSwap-derived edge prior can be analytically approximated.</strong>
+The analytical approximation is plotted against the XSwap-derived edge prior for three edge types from Hetionet.
+The strong correlation suggests that the approximation will be suitable for applications where computation time is a limiting factor.</figcaption>
 </figure>
-<p>Let <span class="math inline">\(m\)</span> be the total number of edges in the network, and <span class="math inline">\(d(u_i)\)</span>, <span class="math inline">\(d(v_j)\)</span> be the source and target degrees of a node pair, respectively. A good approximation of the edge prior is given by the following:</p>
+</div>
+<p>Let <span class="math inline">\(m\)</span> be the total number of edges in the network, and <span class="math inline">\(d(u_i)\)</span>, <span class="math inline">\(d(v_j)\)</span> be the source and target degrees of a node pair, respectively.
+A good approximation of the edge prior is given by the following:</p>
 <p><span class="math display">\[
   P_{i,j} = \frac{d(u_i) d(v_j)}{\sqrt{(d(u_i) d(v_j))^2 + (m - d(u_i) - d(v_j) + 1)^2}}
 \]</span></p>
 <p>Further discussion of this approximate edge prior and an derivation are available in <a href="#approx-prior-supp">the supplement</a>.</p>
 <h3 id="prediction-tasks">Prediction tasks</h3>
-<p>We performed three prediction tasks to assess the performance of the edge prior. We compared the permutation-based prior with two additional features: our analytical approximation of the edge prior and the product of source and target degree, scaled to the range [0, 1] to allow calibration assessment. We used 20 biomedical networks from the Hetionet heterogeneous network <span class="citation" data-cites="O21tn8vf">[<a href="#ref-O21tn8vf" role="doc-biblioref">4</a>]</span> that had at least 2000 edges for the first two tasks (<a href="#networks">Supplemental table</a>). In the first task, we computed the degree-based prediction features (edge prior, scaled degree product, and analytical prior approximation), and predicted the original edges in the network by rank-ordering node pair edge predictions by the node pairs’ feature values. We used node pairs that lacked an edge in the original network as negative examples and those with an edge as positive examples. To assess the methods’ predictive performances, we computed the area under the receiver operating characteristic (AUROC) curve for all three features. In the second task, we sampled 70% of edges from each of the networks, computed features on the sampled network, then predicted held-out edges. For this task, negative examples were node pairs in which an edge did not exist in either original or sampled network, while positive samples were those node pairs without an edge in the sampled network but with an edge in the original network.</p>
-<p>The third task evaluated the ability of the edge prior to generalize to new degree distributions. We used two domains where networks were available which shared nodes but had different degree distributions. Protein-protein interactions (PPI) and transcription factor-target gene (TF-TG) relationships had networks created both by literature curation of low-throughput, hypothesis-driven research and by high-throughput, systematic, hypothesis-free experimentation. For the PPI networks, we used the STRING network, which incorporates literature-mining to find relationships <span class="citation" data-cites="fkKIuC7X">[<a href="#ref-fkKIuC7X" role="doc-biblioref">18</a>]</span> and a combination of the high-throughput, proteome-scale interaction networks from Rual et al. <span class="citation" data-cites="lnDqu0oW">[<a href="#ref-lnDqu0oW" role="doc-biblioref">9</a>]</span> and Rolland et al. <span class="citation" data-cites="LCyCrr7W">[<a href="#ref-LCyCrr7W" role="doc-biblioref">10</a>]</span>. We used a transcription factor-target gene (TF-TG) literature-derived network from Han et al. <span class="citation" data-cites="z5ieI0Qg">[<a href="#ref-z5ieI0Qg" role="doc-biblioref">19</a>]</span> and a high-throughput network from Lachmann et al. <span class="citation" data-cites="13Jzku9hE">[<a href="#ref-13Jzku9hE" role="doc-biblioref">20</a>]</span>. The pairs of networks for PPI and TF-TG data sources are ideal because in one we expect inspection bias and in the other we do not.</p>
-<p>As a further basis of comparison, we added a time-resolved co-authorship network, which we partitioned by time to create two separate networks. We created the co-authorship network of bioRxiv bioinformatics preprints using the Rxivist <span class="citation" data-cites="IYwQbTVz 7668E40A">[<a href="#ref-IYwQbTVz" role="doc-biblioref">21</a>,<a href="#ref-7668E40A" role="doc-biblioref">22</a>]</span> database, which was generated by crawling the bioRxiv server. Unlike the other two networks, co-authorship does not have degree bias, as the network faithfully represents all true co-author relationships. We include this network to offer a comparative prediction task in which the degree distributions between training (posted before 2018) and testing (posted during or after 2018) do not differ (Figure <a href="#fig:degree-bias">4</a>A). The goal of the third prediction task is to determine feature generalizability for network reconstruction between different degree distributions, especially predicting a network without degree bias using features from a degree-biased network. Further information about the networks used can be found in <a href="#networks">the supplement</a>.</p>
+<p>We performed three prediction tasks to assess the performance of the edge prior.
+We compared the permutation-based prior with two additional features: our analytical approximation of the edge prior and the product of source and target degree, scaled to the range [0, 1] to allow calibration assessment.
+We used 20 biomedical networks from the Hetionet heterogeneous network <span class="citation" data-cites="O21tn8vf">[<a href="#ref-O21tn8vf" role="doc-biblioref">4</a>]</span> that had at least 2000 edges for the first two tasks (<a href="#networks">Supplemental table</a>).
+In the first task, we computed the degree-based prediction features (edge prior, scaled degree product, and analytical prior approximation), and predicted the original edges in the network by rank-ordering node pair edge predictions by the node pairs’ feature values.
+We used node pairs that lacked an edge in the original network as negative examples and those with an edge as positive examples.
+To assess the methods’ predictive performances, we computed the area under the receiver operating characteristic (AUROC) curve for all three features.
+In the second task, we sampled 70% of edges from each of the networks, computed features on the sampled network, then predicted held-out edges.
+For this task, negative examples were node pairs in which an edge did not exist in either original or sampled network, while positive samples were those node pairs without an edge in the sampled network but with an edge in the original network.</p>
+<p>The third task evaluated the ability of the edge prior to generalize to new degree distributions.
+We used two domains where networks were available which shared nodes but had different degree distributions.
+Protein-protein interactions (PPI) and transcription factor-target gene (TF-TG) relationships had networks created both by literature curation of low-throughput, hypothesis-driven research and by high-throughput, systematic, hypothesis-free experimentation.
+For the PPI networks, we used the STRING network, which incorporates literature-mining to find relationships <span class="citation" data-cites="fkKIuC7X">[<a href="#ref-fkKIuC7X" role="doc-biblioref">18</a>]</span> and a combination of the high-throughput, proteome-scale interaction networks from Rual et al. <span class="citation" data-cites="lnDqu0oW">[<a href="#ref-lnDqu0oW" role="doc-biblioref">9</a>]</span> and Rolland et al. <span class="citation" data-cites="LCyCrr7W">[<a href="#ref-LCyCrr7W" role="doc-biblioref">10</a>]</span>.
+We used a transcription factor-target gene (TF-TG) literature-derived network from Han et al. <span class="citation" data-cites="z5ieI0Qg">[<a href="#ref-z5ieI0Qg" role="doc-biblioref">19</a>]</span> and a high-throughput network from Lachmann et al. <span class="citation" data-cites="13Jzku9hE">[<a href="#ref-13Jzku9hE" role="doc-biblioref">20</a>]</span>.
+The pairs of networks for PPI and TF-TG data sources are ideal because in one we expect inspection bias and in the other we do not.</p>
+<p>As a further basis of comparison, we added a time-resolved co-authorship network, which we partitioned by time to create two separate networks.
+We created the co-authorship network of bioRxiv bioinformatics preprints using the Rxivist <span class="citation" data-cites="IYwQbTVz 7668E40A">[<a href="#ref-IYwQbTVz" role="doc-biblioref">21</a>,<a href="#ref-7668E40A" role="doc-biblioref">22</a>]</span> database, which was generated by crawling the bioRxiv server.
+Unlike the other two networks, co-authorship does not have degree bias, as the network faithfully represents all true co-author relationships.
+We include this network to offer a comparative prediction task in which the degree distributions between training (posted before 2018) and testing (posted during or after 2018) do not differ (Figure <a href="#fig:degree-bias">4</a>A).
+The goal of the third prediction task is to determine feature generalizability for network reconstruction between different degree distributions, especially predicting a network without degree bias using features from a degree-biased network.
+Further information about the networks used can be found in <a href="#networks">the supplement</a>.</p>
 <h3 id="degree-grouping">Degree-grouping</h3>
-<p>Our method for degree-preserving permutation produces randomized networks that share few of their edges with the original network. The feature values for two node pairs with the same source and target degree are drawn from the same distribution in permuted networks, so nodes with equal degree can be grouped when summarizing features. We used this to augment each node pair’s feature values in permuted networks, which allowed these pairs to have more permuted feature values than permuted networks. For a given node pair, degree grouping treats other node pairs with the same degrees as additional permutations. Degree grouping greatly increased the effective number of permutations for nodes with frequently observed degrees <span class="citation" data-cites="DwbABa00">[<a href="#ref-DwbABa00" role="doc-biblioref">23</a>]</span>. We used degree grouping throughout our analyses.</p>
+<p>Our method for degree-preserving permutation produces randomized networks that share few of their edges with the original network.
+The feature values for two node pairs with the same source and target degree are drawn from the same distribution in permuted networks, so nodes with equal degree can be grouped when summarizing features.
+We used this to augment each node pair’s feature values in permuted networks, which allowed these pairs to have more permuted feature values than permuted networks.
+For a given node pair, degree grouping treats other node pairs with the same degrees as additional permutations.
+Degree grouping greatly increased the effective number of permutations for nodes with frequently observed degrees <span class="citation" data-cites="DwbABa00">[<a href="#ref-DwbABa00" role="doc-biblioref">23</a>]</span>.
+We used degree grouping throughout our analyses.</p>
 <h3 id="implementation-and-source-code">Implementation and source code</h3>
-<p>We implemented our modified version of the XSwap algorithm as an open-source Python package. The package contains submodules for permuting networks, computing the edge prior, and converting networks between adjacency matrix and edge list formats. Additionally, we include the analytical approximation of the edge prior and functionality to assign unique identifiers to nodes. The Python package is <a href="https://pypi.org/project/xswap/">available</a> on the Python Packaging Index under the name “xswap”. The full source code for our method of degree-preserving network permutation has also been made freely available under the BSD 2-Clause License (<a href="https://github.com/hetio/xswap" class="uri">https://github.com/hetio/xswap</a>).</p>
-<p>The edge swap mechanism—implemented in C++ for greater speed—uses a bitset to avoid producing edges which violate the conditions for a swap to be considered valid. While the full bitset implementation is faster for smaller networks, our package uses a compressed bitset <span class="citation" data-cites="jNEBDktj">[<a href="#ref-jNEBDktj" role="doc-biblioref">24</a>]</span> when a network would occupy memory above a user-adjustable threshold. In addition to the validity conditions already described, our package allows specific edges to be excluded from permutation, and every network permutation returns both a permuted network and summary information about the numbers of swaps attempted, performed, and the reasons why invalid swaps were rejected.</p>
-<p>In addition to the Python package, all code to generate the analyses and figures is available at <a href="https://github.com/greenelab/xswap-analysis" class="uri">https://github.com/greenelab/xswap-analysis</a>. The manuscript was written using the Manubot software <span class="citation" data-cites="YuJbg3zO">[<a href="#ref-YuJbg3zO" role="doc-biblioref">25</a>]</span>, which allows anyone to provide feedback or modifications via the public repository at <a href="https://github.com/greenelab/xswap-manuscript" class="uri">https://github.com/greenelab/xswap-manuscript</a>.</p>
+<p>We implemented our modified version of the XSwap algorithm as an open-source Python package.
+The package contains submodules for permuting networks, computing the edge prior, and converting networks between adjacency matrix and edge list formats.
+Additionally, we include the analytical approximation of the edge prior and functionality to assign unique identifiers to nodes.
+The Python package is <a href="https://pypi.org/project/xswap/">available</a> on the Python Packaging Index under the name “xswap”.
+The full source code for our method of degree-preserving network permutation has also been made freely available under the BSD 2-Clause License (<a href="https://github.com/hetio/xswap" class="uri">https://github.com/hetio/xswap</a>).</p>
+<p>The edge swap mechanism—implemented in C++ for greater speed—uses a bitset to avoid producing edges which violate the conditions for a swap to be considered valid.
+While the full bitset implementation is faster for smaller networks, our package uses a compressed bitset <span class="citation" data-cites="jNEBDktj">[<a href="#ref-jNEBDktj" role="doc-biblioref">24</a>]</span> when a network would occupy memory above a user-adjustable threshold.
+In addition to the validity conditions already described, our package allows specific edges to be excluded from permutation, and every network permutation returns both a permuted network and summary information about the numbers of swaps attempted, performed, and the reasons why invalid swaps were rejected.</p>
+<p>In addition to the Python package, all code to generate the analyses and figures is available at <a href="https://github.com/greenelab/xswap-analysis" class="uri">https://github.com/greenelab/xswap-analysis</a>.
+The manuscript was written using the Manubot software <span class="citation" data-cites="YuJbg3zO">[<a href="#ref-YuJbg3zO" role="doc-biblioref">25</a>]</span>, which allows anyone to provide feedback or modifications via the public repository at <a href="https://github.com/greenelab/xswap-manuscript" class="uri">https://github.com/greenelab/xswap-manuscript</a>.</p>
 <h2 id="results">Results</h2>
 <h3 id="node-degree-bias-is-prevalent">Node degree bias is prevalent</h3>
-<p>We found examples of node degree bias in the PPI and TF-TG networks we investigated. Figure <a href="#fig:degree-bias">4</a> shows node degree in separate networks for the same type of data. For the PPI networks, the literature-derived network has a larger mean degree and a longer tail than the systematic network, while in the TF-TG networks this relationship is reversed. Because the TF-TG network contained far more transcription factors than target genes (144 and 1406, respectively), the distributions of target degrees were far more compact than those of source degrees. Unlike the PPI and TF-TG networks, the co-authorship networks were split by date of first co-authorship, and they did not exhibit a great difference in their degree distributions. All three types of networks (PPI, TF-TG, and co-authorship) exhibit degree imbalance to varying extents. These results indicate that, depending on the methods by which the represented data were generated, networks of the same type of data may have overall degree distributions that differ greatly (Figure <a href="#fig:degree-bias">4</a>A), and they may even assign very different degree to the same nodes (Figure <a href="#fig:degree-bias">4</a>B).</p>
-<p>A prediction task that uses only one type of network is challenging because degree distributions vary greatly within a single domain. Predicting systematic edges using a literature-curated network is particularly challenging, because the degree distribution of systematic edges may be skewed toward higher or lower degree relative to the literature network.</p>
+<p>We found examples of node degree bias in the PPI and TF-TG networks we investigated.
+Figure <a href="#fig:degree-bias">4</a> shows node degree in separate networks for the same type of data.
+For the PPI networks, the literature-derived network has a larger mean degree and a longer tail than the systematic network, while in the TF-TG networks this relationship is reversed.
+Because the TF-TG network contained far more transcription factors than target genes (144 and 1406, respectively), the distributions of target degrees were far more compact than those of source degrees.
+Unlike the PPI and TF-TG networks, the co-authorship networks were split by date of first co-authorship, and they did not exhibit a great difference in their degree distributions.
+All three types of networks (PPI, TF-TG, and co-authorship) exhibit degree imbalance to varying extents.
+These results indicate that, depending on the methods by which the represented data were generated, networks of the same type of data may have overall degree distributions that differ greatly (Figure <a href="#fig:degree-bias">4</a>A), and they may even assign very different degree to the same nodes (Figure <a href="#fig:degree-bias">4</a>B).</p>
+<p>A prediction task that uses only one type of network is challenging because degree distributions vary greatly within a single domain.
+Predicting systematic edges using a literature-curated network is particularly challenging, because the degree distribution of systematic edges may be skewed toward higher or lower degree relative to the literature network.</p>
+<div id="fig:degree-bias" class="fignos">
 <figure>
-<img src="https://github.com/greenelab/xswap-analysis/raw/d7181e64a5c90f9720ab453334892aba164651e7/img/degree_bias.png" alt="Figure 4: A. Degree distributions of networks with and without degree bias can be very different. Data on PPI and TF-TG were split between literature-derived and systematically-derived networks. In both cases, the networks exhibit large differences in degree distribution. Co-authorship relationship networks split by date of first co-authorship roughly share their degree distributions. B. Systematically-derived networks are not uniformly sampled from literature-derived networks or vice versa. Uniform random sampling produces linearly-correlated node degree, while non-random sampling produces non-correlated degree. 70% of literature edges were sampled with uniform probability for the “Subsampled holdout” network." id="fig:degree-bias" style="width:100.0%" /><figcaption><span>Figure 4:</span> <strong>A.</strong> Degree distributions of networks with and without degree bias can be very different. Data on PPI and TF-TG were split between literature-derived and systematically-derived networks. In both cases, the networks exhibit large differences in degree distribution. Co-authorship relationship networks split by date of first co-authorship roughly share their degree distributions. <strong>B.</strong> Systematically-derived networks are not uniformly sampled from literature-derived networks or vice versa. Uniform random sampling produces linearly-correlated node degree, while non-random sampling produces non-correlated degree. 70% of literature edges were sampled with uniform probability for the “Subsampled holdout” network.</figcaption>
+<img src="https://github.com/greenelab/xswap-analysis/raw/d7181e64a5c90f9720ab453334892aba164651e7/img/degree_bias.png" style="width:100.0%" alt="" /><figcaption><span>Figure 4:</span> <strong>A.</strong> Degree distributions of networks with and without degree bias can be very different.
+Data on PPI and TF-TG were split between literature-derived and systematically-derived networks.
+In both cases, the networks exhibit large differences in degree distribution.
+Co-authorship relationship networks split by date of first co-authorship roughly share their degree distributions.
+<strong>B.</strong> Systematically-derived networks are not uniformly sampled from literature-derived networks or vice versa.
+Uniform random sampling produces linearly-correlated node degree, while non-random sampling produces non-correlated degree.
+70% of literature edges were sampled with uniform probability for the “Subsampled holdout” network.</figcaption>
 </figure>
+</div>
 <h3 id="the-edge-prior-encapsulates-degree">The edge prior encapsulates degree</h3>
-<p>In the first prediction task, we computed three features—the XSwap edge prior, an analytical approximation to the edge prior, and the (scaled) product of source and target node degree—on networks from Hetionet. We then evaluated the extent to which these features could reconstruct the 20 networks (<a href="#networks">Supplemental table</a>). The XSwap-derived edge prior reconstructed many of the networks with a high level of performance, as measured by the AUROC. Of the 20 individual networks we extracted from Hetionet, 17 had an edge prior self-reconstruction AUROC &gt;= 0.95, with the highest reconstruction AUROC at 0.9971 (network was the Compound–downregulates–Gene edge type). Meanwhile, the lowest self-reconstruction performance (AUROC = 0.7697) occurred in the network having the fewest node pairs (network was the Disease–localizes–Anatomy edge type).</p>
+<p>In the first prediction task, we computed three features—the XSwap edge prior, an analytical approximation to the edge prior, and the (scaled) product of source and target node degree—on networks from Hetionet.
+We then evaluated the extent to which these features could reconstruct the 20 networks (<a href="#networks">Supplemental table</a>).
+The XSwap-derived edge prior reconstructed many of the networks with a high level of performance, as measured by the AUROC.
+Of the 20 individual networks we extracted from Hetionet, 17 had an edge prior self-reconstruction AUROC &gt;= 0.95, with the highest reconstruction AUROC at 0.9971 (network was the Compound–downregulates–Gene edge type).
+Meanwhile, the lowest self-reconstruction performance (AUROC = 0.7697) occurred in the network having the fewest node pairs (network was the Disease–localizes–Anatomy edge type).</p>
+<div id="fig:discrimination" class="fignos">
 <figure>
-<img src="https://github.com/greenelab/xswap-analysis/raw/c763473ee83c6157f2430bf9a64b19dc564b7dbc/img/auroc.png" alt="Figure 5: AUROC of network reconstruction by prediction task. The edge prior shows strong performance for network reconstruction when computed on the original (Task 1) and sampled (Task 2) networks. The performance reduction from computing features on sampled networks is real but far smaller compared to a new degree distribution." id="fig:discrimination" style="width:60.0%" /><figcaption><span>Figure 5:</span> <strong>AUROC of network reconstruction by prediction task.</strong> The edge prior shows strong performance for network reconstruction when computed on the original (Task 1) and sampled (Task 2) networks. The performance reduction from computing features on sampled networks is real but far smaller compared to a new degree distribution.</figcaption>
+<img src="https://github.com/greenelab/xswap-analysis/raw/c763473ee83c6157f2430bf9a64b19dc564b7dbc/img/auroc.png" style="width:60.0%" alt="" /><figcaption><span>Figure 5:</span> <strong>AUROC of network reconstruction by prediction task.</strong>
+The edge prior shows strong performance for network reconstruction when computed on the original (Task 1) and sampled (Task 2) networks.
+The performance reduction from computing features on sampled networks is real but far smaller compared to a new degree distribution.</figcaption>
 </figure>
-<p>The three features that we compared were highly rank correlated (over 0.984 for all 20 metaedges). The three features also had very similar AUROC reconstruction performance values for the first, second, and third prediction tasks (max difference &lt; 0.027) because AUROC is rank-based. The edge prior was slightly better than the approximations in 12 of 20 networks. However, while the AUROC results were similar, the features were very different in their levels of calibration—the ability of the model to correctly estimate edge existence probabilities. The edge prior was very well calibrated for all networks in the first and second tasks, and it provided the best calibration of the three features for each of the prediction tasks (Figure <a href="#fig:calibration">6</a>A). As the edge prior was not based on the networks’ true edges, these results indicated that degree sequence alone was highly informative and that permutation was the only approach that provided a well-calibrated model.</p>
+</div>
+<p>The three features that we compared were highly rank correlated (over 0.984 for all 20 metaedges).
+The three features also had very similar AUROC reconstruction performance values for the first, second, and third prediction tasks (max difference &lt; 0.027) because AUROC is rank-based.
+The edge prior was slightly better than the approximations in 12 of 20 networks.
+However, while the AUROC results were similar, the features were very different in their levels of calibration—the ability of the model to correctly estimate edge existence probabilities.
+The edge prior was very well calibrated for all networks in the first and second tasks, and it provided the best calibration of the three features for each of the prediction tasks (Figure <a href="#fig:calibration">6</a>A).
+As the edge prior was not based on the networks’ true edges, these results indicated that degree sequence alone was highly informative and that permutation was the only approach that provided a well-calibrated model.</p>
+<div id="fig:calibration" class="fignos">
 <figure>
-<img src="https://github.com/zietzm/xswap-analysis/raw/c763473ee83c6157f2430bf9a64b19dc564b7dbc/img/fig4.calibration.png" alt="Figure 6: The edge prior accurately assigns the probability of edge existence. A. Calibration curves for full network reconstruction of 20 networks from Hetionet. For every unique feature value on the horizontal axis, the fraction of node pairs with that feature value having an edge in the network is shown on the vertical axis. The permutation-based edge prior’s calibration was superior to the other two strategies based on degree. B. Calibration curves for sampled network reconstruction. The edge prior shows superior calibration in the 20 Hetionet networks. C. Individual Hetionet edge type calibration estimated by the two-component decomposition of the Brier score, in which lower scores indicate better calibration. The edge prior has excellent calibration in unsampled and sampled networks, and each considered method is sensitive to shifts in the degree distribution." id="fig:calibration" style="width:100.0%" /><figcaption><span>Figure 6:</span> <strong>The edge prior accurately assigns the probability of edge existence.</strong> <strong>A.</strong> Calibration curves for full network reconstruction of 20 networks from Hetionet. For every unique feature value on the horizontal axis, the fraction of node pairs with that feature value having an edge in the network is shown on the vertical axis. The permutation-based edge prior’s calibration was superior to the other two strategies based on degree. <strong>B.</strong> Calibration curves for sampled network reconstruction. The edge prior shows superior calibration in the 20 Hetionet networks. <strong>C.</strong> Individual Hetionet edge type calibration estimated by the two-component decomposition of the Brier score, in which lower scores indicate better calibration. The edge prior has excellent calibration in unsampled and sampled networks, and each considered method is sensitive to shifts in the degree distribution.</figcaption>
+<img src="https://github.com/zietzm/xswap-analysis/raw/c763473ee83c6157f2430bf9a64b19dc564b7dbc/img/fig4.calibration.png" style="width:100.0%" alt="" /><figcaption><span>Figure 6:</span> <strong>The edge prior accurately assigns the probability of edge existence.</strong>
+<strong>A.</strong> Calibration curves for full network reconstruction of 20 networks from Hetionet.
+For every unique feature value on the horizontal axis, the fraction of node pairs with that feature value having an edge in the network is shown on the vertical axis.
+The permutation-based edge prior’s calibration was superior to the other two strategies based on degree.
+<strong>B.</strong> Calibration curves for sampled network reconstruction.
+The edge prior shows superior calibration in the 20 Hetionet networks.
+<strong>C.</strong> Individual Hetionet edge type calibration estimated by the two-component decomposition of the Brier score, in which lower scores indicate better calibration.
+The edge prior has excellent calibration in unsampled and sampled networks, and each considered method is sensitive to shifts in the degree distribution.</figcaption>
 </figure>
-<p>The second prediction task mirrored the first task, but it involved reconstructing networks based on subsampled networks with only 70% of the original edges. Because edges were sampled uniformly without replacement, the subsampled networks share similar degree distributions to the original networks (see Figure <a href="#fig:degree-bias">4</a>B). Unlike in the first task, edges that were present in the sampled network were not tested and therefore are not included in the performance metrics. The results of the second prediction task further demonstrate a high level of performance for degree-sequence-based node pair features (Figure <a href="#fig:discrimination">5</a>). The edge prior was able to reconstruct the unsampled network with an AUROC of greater than 0.9 in 14 of 20 networks. As was observed in the first task, node pair features computed in the second prediction task were highly rank-correlated, meaning the AUROC values for different features were similar. While performance was slightly lower in the second task than the first, many networks were still well-reconstructed. The edge prior was the best calibrated feature for both tasks.</p>
-<p>In the third prediction task, we computed the three edge prediction features for paired networks representing data from PPI, TF-TG, and bioRxiv bioinformatics pre-print co-authorship. The goal of the task was to compare predictive performance across different degree distributions for the same type of data. We find that the task of predicting systematically-derived edges using a network with degree bias is significantly more challenging than network reconstruction, and we find consistently lower performance compared to the other tasks (Figure <a href="#fig:discrimination">5</a>). The edge prior was not able to predict the separate PPI network better than by random guessing (AUROC of roughly 0.5). Only slightly better was its performance in predicting the separate TF-TG network, at an AUROC of 0.59. We find superior performance in predicting the co-authorship relationships (AUROC 0.75), which was expected as the network being predicted shared roughly the same degree distribution as the network on which the edge prior was computed. The results of the third prediction task show that a difference in degree distribution between the network on which features are computed and the network to be predicted can make prediction significantly more challenging.</p>
-<p>The edge prior can be considered a baseline edge predictor that accurately captures degree’s contribution to the probability of an edge existing. The edge prior’s low performance in the third task indicates that degree is less helpful for edge prediction tasks in which training and testing networks do not share their degree distributions. Many biomedical prediction tasks can be framed as edge prediction tasks between different degree distributions. In drug repurposing, for example, existing compound-disease treatment relationships are unlikely to be randomly sampled from all true treatment relationships. However, all treatment relationships between existing compounds and diseases are desirable outputs in prediction. Edge predictions can be based on both underlying biological properties and network degree distributions. However, predictions based on biological properties may be more consistent and generalizable than those based on degree. Degree’s influence on edge prediction accuracy measures can reveal the relative contributions of these two factors.</p>
+</div>
+<p>The second prediction task mirrored the first task, but it involved reconstructing networks based on subsampled networks with only 70% of the original edges.
+Because edges were sampled uniformly without replacement, the subsampled networks share similar degree distributions to the original networks (see Figure <a href="#fig:degree-bias">4</a>B).
+Unlike in the first task, edges that were present in the sampled network were not tested and therefore are not included in the performance metrics.
+The results of the second prediction task further demonstrate a high level of performance for degree-sequence-based node pair features (Figure <a href="#fig:discrimination">5</a>).
+The edge prior was able to reconstruct the unsampled network with an AUROC of greater than 0.9 in 14 of 20 networks.
+As was observed in the first task, node pair features computed in the second prediction task were highly rank-correlated, meaning the AUROC values for different features were similar.
+While performance was slightly lower in the second task than the first, many networks were still well-reconstructed.
+The edge prior was the best calibrated feature for both tasks.</p>
+<p>In the third prediction task, we computed the three edge prediction features for paired networks representing data from PPI, TF-TG, and bioRxiv bioinformatics pre-print co-authorship.
+The goal of the task was to compare predictive performance across different degree distributions for the same type of data.
+We find that the task of predicting systematically-derived edges using a network with degree bias is significantly more challenging than network reconstruction, and we find consistently lower performance compared to the other tasks (Figure <a href="#fig:discrimination">5</a>).
+The edge prior was not able to predict the separate PPI network better than by random guessing (AUROC of roughly 0.5).
+Only slightly better was its performance in predicting the separate TF-TG network, at an AUROC of 0.59.
+We find superior performance in predicting the co-authorship relationships (AUROC 0.75), which was expected as the network being predicted shared roughly the same degree distribution as the network on which the edge prior was computed.
+The results of the third prediction task show that a difference in degree distribution between the network on which features are computed and the network to be predicted can make prediction significantly more challenging.</p>
+<p>The edge prior can be considered a baseline edge predictor that accurately captures degree’s contribution to the probability of an edge existing.
+The edge prior’s low performance in the third task indicates that degree is less helpful for edge prediction tasks in which training and testing networks do not share their degree distributions.
+Many biomedical prediction tasks can be framed as edge prediction tasks between different degree distributions.
+In drug repurposing, for example, existing compound-disease treatment relationships are unlikely to be randomly sampled from all true treatment relationships.
+However, all treatment relationships between existing compounds and diseases are desirable outputs in prediction.
+Edge predictions can be based on both underlying biological properties and network degree distributions.
+However, predictions based on biological properties may be more consistent and generalizable than those based on degree.
+Degree’s influence on edge prediction accuracy measures can reveal the relative contributions of these two factors.</p>
 <h3 id="degree-can-underly-a-large-fraction-of-performance">Degree can underly a large fraction of performance</h3>
-<p>We conducted a further edge prediction task as an example application of the edge prior and our permutation framework. To begin, we chose the STRING PPI network for the comparison and computed five edge prediction features (Supplemental table <a href="#tbl:edge-prediction">2</a>). The goal of the task was to reconstruct the network on which the features were computed. All five features were correlated with degree (Figure <a href="#fig:feature-degree">7</a>), which we quantified for a node pair using the product of source and target degrees. We expected features based on degree to show strong performance for a network reconstruction task without holdout, as found in the first prediction task.</p>
+<p>We conducted a further edge prediction task as an example application of the edge prior and our permutation framework.
+To begin, we chose the STRING PPI network for the comparison and computed five edge prediction features (Supplemental table <a href="#tbl:edge-prediction">2</a>).
+The goal of the task was to reconstruct the network on which the features were computed.
+All five features were correlated with degree (Figure <a href="#fig:feature-degree">7</a>), which we quantified for a node pair using the product of source and target degrees.
+We expected features based on degree to show strong performance for a network reconstruction task without holdout, as found in the first prediction task.</p>
+<div id="fig:feature-degree" class="fignos">
 <figure>
-<img src="https://github.com/greenelab/xswap-analysis/raw/f8dce1983243fd4056108c7c8bdcba895f6dfbaf/img/feature-degree.png" alt="Figure 7: Common edge-prediction metrics correlate with node degree. Five common edge-prediction features (Supplemental table 2) are correlated with node degree on the STRING PPI network [18]. All five features show a positive relationship with degree, though the magnitude of this correlation is highly variable. The preferential attachment index is understandably perfectly correlated because it is equal to the product of source and target degree." id="fig:feature-degree" style="width:100.0%" /><figcaption><span>Figure 7:</span> <strong>Common edge-prediction metrics correlate with node degree.</strong> Five common edge-prediction features (Supplemental table <a href="#tbl:edge-prediction">2</a>) are correlated with node degree on the STRING PPI network <span class="citation" data-cites="fkKIuC7X">[<a href="#ref-fkKIuC7X" role="doc-biblioref">18</a>]</span>. All five features show a positive relationship with degree, though the magnitude of this correlation is highly variable. The preferential attachment index is understandably perfectly correlated because it is equal to the product of source and target degree.</figcaption>
+<img src="https://github.com/greenelab/xswap-analysis/raw/f8dce1983243fd4056108c7c8bdcba895f6dfbaf/img/feature-degree.png" style="width:100.0%" alt="" /><figcaption><span>Figure 7:</span> <strong>Common edge-prediction metrics correlate with node degree.</strong>
+Five common edge-prediction features (Supplemental table <a href="#tbl:edge-prediction">2</a>) are correlated with node degree on the STRING PPI network <span class="citation" data-cites="fkKIuC7X">[<a href="#ref-fkKIuC7X" role="doc-biblioref">18</a>]</span>.
+All five features show a positive relationship with degree, though the magnitude of this correlation is highly variable.
+The preferential attachment index is understandably perfectly correlated because it is equal to the product of source and target degree.</figcaption>
 </figure>
-<p>We used two permutation-derived null values to evaluate reconstruction and contextualize performance. First, the performance of the edge prior was compared to determine the performance attributable to the degree sequence of the PPI network. The first comparison gave insight into the ability of the PPI network to be reconstructed by degree. Second, the five edge prediction features were computed on 100 permuted networks and used to reconstruct the unpermuted network. Each permuted network corresponded to AUROC values quantifying the performances of features computed on it. The second comparison gave insight into the performance of each feature if the feature was only capturing degree.</p>
+</div>
+<p>We used two permutation-derived null values to evaluate reconstruction and contextualize performance.
+First, the performance of the edge prior was compared to determine the performance attributable to the degree sequence of the PPI network.
+The first comparison gave insight into the ability of the PPI network to be reconstructed by degree.
+Second, the five edge prediction features were computed on 100 permuted networks and used to reconstruct the unpermuted network.
+Each permuted network corresponded to AUROC values quantifying the performances of features computed on it.
+The second comparison gave insight into the performance of each feature if the feature was only capturing degree.</p>
+<div id="fig:feature-auroc" class="fignos">
 <figure>
-<img src="https://github.com/greenelab/xswap-analysis/raw/4d9137f43a16fbe6c6a02865adceaa9a3195fe2d/img/feature-auroc.png" alt="Figure 8: Identifying the fraction of a metric’s performance resulting from degree alone. Network reconstruction performances by five edge prediction features. Dotted red line indicates performance of the edge prior. Each feature was computed on the unpermuted and 100 permutations of the STRING PPI network." id="fig:feature-auroc" style="width:85.0%" /><figcaption><span>Figure 8:</span> <strong>Identifying the fraction of a metric’s performance resulting from degree alone.</strong> Network reconstruction performances by five edge prediction features. Dotted red line indicates performance of the edge prior. Each feature was computed on the unpermuted and 100 permutations of the STRING PPI network.</figcaption>
+<img src="https://github.com/greenelab/xswap-analysis/raw/4d9137f43a16fbe6c6a02865adceaa9a3195fe2d/img/feature-auroc.png" style="width:85.0%" alt="" /><figcaption><span>Figure 8:</span> <strong>Identifying the fraction of a metric’s performance resulting from degree alone.</strong>
+Network reconstruction performances by five edge prediction features.
+Dotted red line indicates performance of the edge prior.
+Each feature was computed on the unpermuted and 100 permutations of the STRING PPI network.</figcaption>
 </figure>
-<p>The edge prior encapsulates nonspecific predictions due to degree, and it reconstructed the PPI network with an AUROC of 0.797 (dotted red line in Figure <a href="#fig:feature-auroc">8</a>). In the second comparison, edge prediction features computed on permuted networks had performance equal or lower to their performances on the unpermuted networks. This indicated that four out of five edge prediction features discern more than node degree for the prediction task. The preferential attachment index is the product of source and target degree, and its performance did not differ from the edge prior or the feature’s performance when computed on permuted networks. The four remaining features had higher reconstruction performance than the edge prior or feature values computed on permuted networks.</p>
-<p>This comparison quantified the performance of degree toward the prediction task and assessed degree’s effect on five edge prediction features. The edge prior provided the baseline level of performance attributable to degree alone. Comparing the performances on permuted networks to the performance of the edge prior reveals the extent to which a feature measures degree. Features whose performances on permuted networks were below that of the edge prior only imperfectly measured degree (eg: Jaccard index), whereas features whose performances equaled the edge prior completely captured degree (eg: preferential attachment index).</p>
-<p>Features can also capture information beyond degree, and our method can quantify this performance. For example, the superior performance on unpermuted networks relative to permuted networks indicated that RWR, resource allocation, Jaccard, and Adamic/Adar indices captured more than degree in this prediction task. These results aligned with the definitions of each feature and validated that our permutation framework accurately assessed reliance on degree.</p>
+</div>
+<p>The edge prior encapsulates nonspecific predictions due to degree, and it reconstructed the PPI network with an AUROC of 0.797 (dotted red line in Figure <a href="#fig:feature-auroc">8</a>).
+In the second comparison, edge prediction features computed on permuted networks had performance equal or lower to their performances on the unpermuted networks.
+This indicated that four out of five edge prediction features discern more than node degree for the prediction task.
+The preferential attachment index is the product of source and target degree, and its performance did not differ from the edge prior or the feature’s performance when computed on permuted networks.
+The four remaining features had higher reconstruction performance than the edge prior or feature values computed on permuted networks.</p>
+<p>This comparison quantified the performance of degree toward the prediction task and assessed degree’s effect on five edge prediction features.
+The edge prior provided the baseline level of performance attributable to degree alone.
+Comparing the performances on permuted networks to the performance of the edge prior reveals the extent to which a feature measures degree.
+Features whose performances on permuted networks were below that of the edge prior only imperfectly measured degree (eg: Jaccard index), whereas features whose performances equaled the edge prior completely captured degree (eg: preferential attachment index).</p>
+<p>Features can also capture information beyond degree, and our method can quantify this performance.
+For example, the superior performance on unpermuted networks relative to permuted networks indicated that RWR, resource allocation, Jaccard, and Adamic/Adar indices captured more than degree in this prediction task.
+These results aligned with the definitions of each feature and validated that our permutation framework accurately assessed reliance on degree.</p>
 <h2 id="discussion">Discussion</h2>
-<p>We focus on edge prediction in biomedical networks. Our overall goal is to predict new edges with specificity, so that predictions reflect particular connectivity rather than generic node characteristics. Our permutation framework measures the predictive performance attributable to degree to provide a baseline expectation for edge pairs. We expect that non-specificity due to degree is not a unique property of biomedical networks. For example, if node A connects to nearly all other nodes in a network, predicting that all remaining nodes share an edge with node A will likely result in many correct—though nonspecific—predictions, regardless of the type of data contained in the network. Node degree should be accounted for to make correct predictions while being able to distinguish specific from nonspecific predictions. Prediction without reliance on node degree is challenging because many effective methods for edge prediction are correlated with degree (Figure <a href="#fig:feature-degree">7</a>).</p>
-<p>The effects of node degree are obvious when edge prediction features are functions of degree. For example, the resource allocation index is the sum of inverse degree of common neighbors between source and target nodes (in the symmetric case), while preferential attachment is the product of source and target degree <span class="citation" data-cites="1F96bsjSm suzIn5oo">[<a href="#ref-1F96bsjSm" role="doc-biblioref">26</a>,<a href="#ref-suzIn5oo" role="doc-biblioref">27</a>]</span>. However, because many other edge prediction methods are not explicitly degree-based, it is important to have a general method for comparing the effects of node degree on edge prediction methods.</p>
-<p>We developed a permutation framework to quantify the edge probability due to degree. We term this probability the “edge prior”, and we have identified two applications. First, a probability associated with every node pair can be treated as a classification score. Ordering these scores provides an assessment of performance based solely on degree, which can be used as a baseline for other classifiers. Second, node pair probabilities can be used to adjust edge prediction features depending on the task. If degree is a desired feature, then the edge prior can be treated like a Bayesian prior probability. Alternatively, if degree is not a desired feature, then the edge prior can be used to calibrate features and thus potentially enhance predictive specificity.</p>
-<p>Figure <a href="#fig:feature-auroc">8</a> illustrates the utility of the edge prior and permutation framework for two purposes. First, it contextualizes feature performances relative to the baseline of nonspecific, degree-based predictions, quantified by the edge prior. Degree has varying utility for different edge prediction tasks. The edge prior’s performance on a task quantifies the utility of degree toward the task. This comparison is useful because specific predictions (based on more than degree alone) are more valuable for some applications than nonspecific ones and because degree can be an expression of bias in many real-world networks.</p>
-<p>Second, Figure <a href="#fig:feature-auroc">8</a> compares five edge prediction features computed on and unpermuted networks. This comparison identified the fraction of each feature’s performance attributable to degree. Some features, such as the preferential attachment index, perfectly and exclusively measure degree. The Adamic/Adar index also almost completely captures degree because its performances from permuted networks are nearly at the performance of the edge prior. However, the Adamic/Adar index had much higher performance when computed on the unpermuted network, indicating that it also extracts higher-order information. This analysis, enabled by network permutation, measured the extent to which features rely on degree for a specific prediction task by assessing performance beyond the degree-based, nonspecific baseline.</p>
+<p>We focus on edge prediction in biomedical networks.
+Our overall goal is to predict new edges with specificity, so that predictions reflect particular connectivity rather than generic node characteristics.
+Our permutation framework measures the predictive performance attributable to degree to provide a baseline expectation for edge pairs.
+We expect that non-specificity due to degree is not a unique property of biomedical networks.
+For example, if node A connects to nearly all other nodes in a network, predicting that all remaining nodes share an edge with node A will likely result in many correct—though nonspecific—predictions, regardless of the type of data contained in the network.
+Node degree should be accounted for to make correct predictions while being able to distinguish specific from nonspecific predictions.
+Prediction without reliance on node degree is challenging because many effective methods for edge prediction are correlated with degree (Figure <a href="#fig:feature-degree">7</a>).</p>
+<p>The effects of node degree are obvious when edge prediction features are functions of degree.
+For example, the resource allocation index is the sum of inverse degree of common neighbors between source and target nodes (in the symmetric case), while preferential attachment is the product of source and target degree <span class="citation" data-cites="1F96bsjSm suzIn5oo">[<a href="#ref-1F96bsjSm" role="doc-biblioref">26</a>,<a href="#ref-suzIn5oo" role="doc-biblioref">27</a>]</span>.
+However, because many other edge prediction methods are not explicitly degree-based, it is important to have a general method for comparing the effects of node degree on edge prediction methods.</p>
+<p>We developed a permutation framework to quantify the edge probability due to degree.
+We term this probability the “edge prior”, and we have identified two applications.
+First, a probability associated with every node pair can be treated as a classification score.
+Ordering these scores provides an assessment of performance based solely on degree, which can be used as a baseline for other classifiers.
+Second, node pair probabilities can be used to adjust edge prediction features depending on the task.
+If degree is a desired feature, then the edge prior can be treated like a Bayesian prior probability.
+Alternatively, if degree is not a desired feature, then the edge prior can be used to calibrate features and thus potentially enhance predictive specificity.</p>
+<p>Figure <a href="#fig:feature-auroc">8</a> illustrates the utility of the edge prior and permutation framework for two purposes.
+First, it contextualizes feature performances relative to the baseline of nonspecific, degree-based predictions, quantified by the edge prior.
+Degree has varying utility for different edge prediction tasks.
+The edge prior’s performance on a task quantifies the utility of degree toward the task.
+This comparison is useful because specific predictions (based on more than degree alone) are more valuable for some applications than nonspecific ones and because degree can be an expression of bias in many real-world networks.</p>
+<p>Second, Figure <a href="#fig:feature-auroc">8</a> compares five edge prediction features computed on and unpermuted networks.
+This comparison identified the fraction of each feature’s performance attributable to degree.
+Some features, such as the preferential attachment index, perfectly and exclusively measure degree.
+The Adamic/Adar index also almost completely captures degree because its performances from permuted networks are nearly at the performance of the edge prior.
+However, the Adamic/Adar index had much higher performance when computed on the unpermuted network, indicating that it also extracts higher-order information.
+This analysis, enabled by network permutation, measured the extent to which features rely on degree for a specific prediction task by assessing performance beyond the degree-based, nonspecific baseline.</p>
 <h2 id="conclusion">Conclusion</h2>
-<p>We developed a network permutation framework and open source software implementation that quantifies the probability of edge existence due to degree and can assess the fraction of feature performance attributable to degree. We demonstrated the superiority of the edge prior over other degree-based features for quantifying the effect of degree on the probability of edge existence. The XSwap methods and software provide a context for evaluating edge prediction methods and specific predictions for reliance on degree and, therefore, nonspecificity. Network edge prediction is a common task in biological and biomedical research, and it can be greatly influenced by degree. Degree should be considered directly in prediction approaches to avoid making nonspecific or trivial predictions due to degree imbalance or bias. A careful accounting of degree’s effects enables contextualized model evaluation and can help to quantify nonspecificity in biomedical network edge prediction.</p>
-<h2 id="references" class="page_break_before">References</h2>
+<p>We developed a network permutation framework and open source software implementation that quantifies the probability of edge existence due to degree and can assess the fraction of feature performance attributable to degree.
+We demonstrated the superiority of the edge prior over other degree-based features for quantifying the effect of degree on the probability of edge existence.
+The XSwap methods and software provide a context for evaluating edge prediction methods and specific predictions for reliance on degree and, therefore, nonspecificity.
+Network edge prediction is a common task in biological and biomedical research, and it can be greatly influenced by degree.
+Degree should be considered directly in prediction approaches to avoid making nonspecific or trivial predictions due to degree imbalance or bias.
+A careful accounting of degree’s effects enables contextualized model evaluation and can help to quantify nonspecificity in biomedical network edge prediction.</p>
+<h2 class="page_break_before" id="references">References</h2>
 <!-- Explicitly insert bibliography here -->
-<div id="refs" role="doc-bibliography">
+<div id="refs" class="references hanging-indent" role="doc-bibliography">
 <div id="ref-rly3gDig">
 <p>1. <strong>Emergence of Scaling in Random Networks</strong><br />
 Albert-László Barabási, Réka Albert<br />
@@ -208,7 +568,7 @@ DOI: <a href="https://doi.org/10.3389/fgene.2015.00260">10.3389/fgene.2015.00260
 <div id="ref-C4FHCVCz">
 <p>8. <strong>Effect of sampling on topology predictions of protein-protein interaction networks</strong><br />
 Jing-Dong J Han, Denis Dupuy, Nicolas Bertin, Michael E Cusick, Marc Vidal<br />
-<em>Nature Biotechnology</em> (2005-07) <a href="https://doi.org/dj5cm8">https://doi.org/dj5cm8</a><br />
+<em>Nature Biotechnology</em> (2005-07-07) <a href="https://doi.org/dj5cm8">https://doi.org/dj5cm8</a><br />
 DOI: <a href="https://doi.org/10.1038/nbt1116">10.1038/nbt1116</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/16003372">16003372</a></p>
 </div>
 <div id="ref-lnDqu0oW">
@@ -232,13 +592,13 @@ DOI: <a href="https://doi.org/10.1371/journal.pone.0017258">10.1371/journal.pone
 <div id="ref-hbOjmCsZ">
 <p>12. <strong>The Degree Distribution of Networks: Statistical Model Selection</strong><br />
 William P. Kelly, Piers J. Ingram, Michael P. H. Stumpf<br />
-<em>Bacterial Molecular Networks</em> (2011-10-28) <a href="https://doi.org/ddx5rx">https://doi.org/ddx5rx</a><br />
+<em>Methods in Molecular Biology</em> (2012) <a href="https://doi.org/ddx5rx">https://doi.org/ddx5rx</a><br />
 DOI: <a href="https://doi.org/10.1007/978-1-61779-361-5_13">10.1007/978-1-61779-361-5_13</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/22144157">22144157</a></p>
 </div>
 <div id="ref-g059lh8v">
 <p>13. <strong>Addressing false discoveries in network inference</strong><br />
 Tobias Petri, Stefan Altmann, Ludwig Geistlinger, Ralf Zimmer, Robert Küffner<br />
-<em>Bioinformatics</em> (2015-04-24) <a href="https://doi.org/f7rwgt">https://doi.org/f7rwgt</a><br />
+<em>Bioinformatics</em> (2015-09-01) <a href="https://doi.org/f7rwgt">https://doi.org/f7rwgt</a><br />
 DOI: <a href="https://doi.org/10.1093/bioinformatics/btv215">10.1093/bioinformatics/btv215</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/25910697">25910697</a></p>
 </div>
 <div id="ref-1736TBtF6">
@@ -250,7 +610,7 @@ DOI: <a href="https://doi.org/10.1186/1752-0509-2-11">10.1186/1752-0509-2-11</a>
 <div id="ref-iKOIEzQ9">
 <p>15. <strong>Randomization Techniques for Graphs</strong><br />
 Sami Hanhijärvi, Gemma C. Garriga, Kai Puolamäki<br />
-<em>Proceedings of the 2009 SIAM International Conference on Data Mining</em> (2009-04-30) <a href="https://doi.org/f3mn58">https://doi.org/f3mn58</a><br />
+<em>Society for Industrial &amp; Applied Mathematics (SIAM)</em> (2009-04-30) <a href="https://doi.org/f3mn58">https://doi.org/f3mn58</a><br />
 DOI: <a href="https://doi.org/10.1137/1.9781611972795.67">10.1137/1.9781611972795.67</a></p>
 </div>
 <div id="ref-WkPlH1ds">
@@ -268,42 +628,42 @@ DOI: <a href="https://doi.org/10.15363/thinklab.d136">10.15363/thinklab.d136</a>
 <div id="ref-fkKIuC7X">
 <p>18. <strong>STRING v11: protein–protein association networks with increased coverage, supporting functional discovery in genome-wide experimental datasets</strong><br />
 Damian Szklarczyk, Annika L Gable, David Lyon, Alexander Junge, Stefan Wyder, Jaime Huerta-Cepas, Milan Simonovic, Nadezhda T Doncheva, John H Morris, Peer Bork, … Christian von Mering<br />
-<em>Nucleic Acids Research</em> (2018-11-22) <a href="https://doi.org/gfz2jr">https://doi.org/gfz2jr</a><br />
+<em>Nucleic Acids Research</em> (2019-01-08) <a href="https://doi.org/gfz2jr">https://doi.org/gfz2jr</a><br />
 DOI: <a href="https://doi.org/10.1093/nar/gky1131">10.1093/nar/gky1131</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/30476243">30476243</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6323986">PMC6323986</a></p>
 </div>
 <div id="ref-z5ieI0Qg">
 <p>19. <strong>TRRUST v2: an expanded reference database of human and mouse transcriptional regulatory interactions</strong><br />
 Heonjong Han, Jae-Won Cho, Sangyoung Lee, Ayoung Yun, Hyojin Kim, Dasom Bae, Sunmo Yang, Chan Yeong Kim, Muyoung Lee, Eunbeen Kim, … Insuk Lee<br />
-<em>Nucleic Acids Research</em> (2017-10-26) <a href="https://doi.org/gcwpcz">https://doi.org/gcwpcz</a><br />
+<em>Nucleic Acids Research</em> (2018-01-04) <a href="https://doi.org/gcwpcz">https://doi.org/gcwpcz</a><br />
 DOI: <a href="https://doi.org/10.1093/nar/gkx1013">10.1093/nar/gkx1013</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/29087512">29087512</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5753191">PMC5753191</a></p>
 </div>
 <div id="ref-13Jzku9hE">
 <p>20. <strong>ChEA: transcription factor regulation inferred from integrating genome-wide ChIP-X experiments</strong><br />
 Alexander Lachmann, Huilei Xu, Jayanth Krishnan, Seth I. Berger, Amin R. Mazloom, Avi Ma’ayan<br />
-<em>Bioinformatics</em> (2010-08-13) <a href="https://doi.org/d2h98v">https://doi.org/d2h98v</a><br />
+<em>Bioinformatics</em> (2010-10-01) <a href="https://doi.org/d2h98v">https://doi.org/d2h98v</a><br />
 DOI: <a href="https://doi.org/10.1093/bioinformatics/btq466">10.1093/bioinformatics/btq466</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/20709693">20709693</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2944209">PMC2944209</a></p>
 </div>
 <div id="ref-IYwQbTVz">
 <p>21. <strong>Tracking the popularity and outcomes of all bioRxiv preprints</strong><br />
 Richard J. Abdill, Ran Blekhman<br />
-<em>Cold Spring Harbor Laboratory</em> (2019-01-13) <a href="https://doi.org/gftzwz">https://doi.org/gftzwz</a><br />
+<em>bioRxiv</em> (2019-04-02) <a href="https://doi.org/gftzwz">https://doi.org/gftzwz</a><br />
 DOI: <a href="https://doi.org/10.1101/515643">10.1101/515643</a></p>
 </div>
 <div id="ref-7668E40A">
 <p>22. <strong>Complete Rxivist dataset of scraped bioRxiv data</strong><br />
 Richard J. Abdill, Ran Blekhman<br />
 <em>Zenodo</em> (2019-03-21) <a href="https://doi.org/gfz3fm">https://doi.org/gfz3fm</a><br />
-DOI: <a href="https://doi.org/10.5281/ZENODO.2566421">10.5281/zenodo.2566421</a></p>
+DOI: <a href="https://doi.org/10.5281/zenodo.2566421">10.5281/zenodo.2566421</a></p>
 </div>
 <div id="ref-DwbABa00">
-<p>23. <strong>Degree-grouped permtuations by zietzm · Pull Request #96 · greenelab/hetmech</strong><br />
+<p>23. <strong>Degree-grouped permutations by zietzm · Pull Request #96 · greenelab/hetmech</strong><br />
 GitHub<br />
 <a href="https://github.com/greenelab/hetmech/pull/96">https://github.com/greenelab/hetmech/pull/96</a></p>
 </div>
 <div id="ref-jNEBDktj">
 <p>24. <strong>Roaring Bitmaps: Implementation of an Optimized Software Library</strong><br />
 Daniel Lemire, Owen Kaser, Nathan Kurz, Luca Deri, Chris O’Hara, François Saint-Jacques, Gregory Ssi-Yan-Kai<br />
-<em>arXiv</em> (2017-09-22) <a href="https://arxiv.org/abs/1709.07821v3">https://arxiv.org/abs/1709.07821v3</a><br />
+<em>arXiv</em> (2018-03-08) <a href="https://arxiv.org/abs/1709.07821">https://arxiv.org/abs/1709.07821</a><br />
 DOI: <a href="https://doi.org/10.1002/spe.2560">10.1002/spe.2560</a></p>
 </div>
 <div id="ref-YuJbg3zO">
@@ -315,19 +675,19 @@ DOI: <a href="https://doi.org/10.1371/journal.pcbi.1007128">10.1371/journal.pcbi
 <div id="ref-1F96bsjSm">
 <p>26. <strong>Predicting missing links via local information</strong><br />
 Tao Zhou, Linyuan Lü, Yi-Cheng Zhang<br />
-<em>The European Physical Journal B</em> (2009-10) <a href="https://doi.org/dd55vr">https://doi.org/dd55vr</a><br />
+<em>The European Physical Journal B</em> (2009-10-10) <a href="https://doi.org/dd55vr">https://doi.org/dd55vr</a><br />
 DOI: <a href="https://doi.org/10.1140/epjb/e2009-00335-8">10.1140/epjb/e2009-00335-8</a></p>
 </div>
 <div id="ref-suzIn5oo">
 <p>27. <strong>Link prediction approach to collaborative filtering</strong><br />
 Zan Huang, Xin Li, Hsinchun Chen<br />
-<em>Proceedings of the 5th ACM/IEEE-CS joint conference on Digital libraries - JCDL ’05</em> (2005) <a href="https://doi.org/fn39g8">https://doi.org/fn39g8</a><br />
+<em>Association for Computing Machinery (ACM)</em> (2005) <a href="https://doi.org/fn39g8">https://doi.org/fn39g8</a><br />
 DOI: <a href="https://doi.org/10.1145/1065385.1065415">10.1145/1065385.1065415</a></p>
 </div>
 <div id="ref-EfWvuSjX">
 <p>28. <strong>The link-prediction problem for social networks</strong><br />
 David Liben-Nowell, Jon Kleinberg<br />
-<em>Journal of the American Society for Information Science and Technology</em> (2007) <a href="https://doi.org/c56765">https://doi.org/c56765</a><br />
+<em>Journal of the American Society for Information Science and Technology</em> (2007-05) <a href="https://doi.org/c56765">https://doi.org/c56765</a><br />
 DOI: <a href="https://doi.org/10.1002/asi.20591">10.1002/asi.20591</a></p>
 </div>
 <div id="ref-9dBDcARP">
@@ -339,7 +699,7 @@ DOI: <a href="https://doi.org/10.1016/s0378-8733(03)00009-1">10.1016/s0378-8733(
 <div id="ref-HSmvOV9E">
 <p>30. <strong>Automatic multimedia cross-modal correlation discovery</strong><br />
 Jia-Yu Pan, Hyung-Jeong Yang, Christos Faloutsos, Pinar Duygulu<br />
-<em>Proceedings of the 2004 ACM SIGKDD international conference on Knowledge discovery and data mining - KDD ’04</em> (2004) <a href="https://doi.org/bmhgw4">https://doi.org/bmhgw4</a><br />
+<em>Association for Computing Machinery (ACM)</em> (2004) <a href="https://doi.org/bmhgw4">https://doi.org/bmhgw4</a><br />
 DOI: <a href="https://doi.org/10.1145/1014052.1014135">10.1145/1014052.1014135</a></p>
 </div>
 <div id="ref-1E6tdJtDz">
@@ -355,20 +715,38 @@ Dario Garcia Gasulla<br />
 </div>
 <h2 id="supplemental-information">Supplemental information</h2>
 <h3 id="performance-of-the-xswap-algorithm">Performance of the XSwap algorithm</h3>
-<p>The performance of the XSwap algorithm depends on a number of network properties. We define network density to be the number of edges divided by the number of potential edges. Increasing network density lowers the asymptotic fraction of edges changed, as greater density prevents the algorithm from removing certain edges. Scale-free random graphs (via Barabási–Albert) can have a lower fraction of their edges swapped, asymptotically, as compared to basic random graphs (via Erdős–Rényi).</p>
+<p>The performance of the XSwap algorithm depends on a number of network properties.
+We define network density to be the number of edges divided by the number of potential edges.
+Increasing network density lowers the asymptotic fraction of edges changed, as greater density prevents the algorithm from removing certain edges.
+Scale-free random graphs (via Barabási–Albert) can have a lower fraction of their edges swapped, asymptotically, as compared to basic random graphs (via Erdős–Rényi).</p>
+<div id="fig:swap-percent" class="fignos">
 <figure>
-<img src="https://github.com/greenelab/xswap-analysis/raw/47f67f85b1a5df2714d564c274515f1fdeb882ba/img/6_xswap_percent_swapped_iterations/lines_continuous.png" alt="Figure 9: Higher density networks have lower asymptotic fractions of edges swapped and take more attempts to reach these values. The Barabási–Albert model produces scale-free random graphs, while Erdős–Rényi generates random graphs where all edges are equally likely." id="fig:swap-percent" style="width:100.0%" /><figcaption><span>Figure 9:</span> Higher density networks have lower asymptotic fractions of edges swapped and take more attempts to reach these values. The Barabási–Albert model produces scale-free random graphs, while Erdős–Rényi generates random graphs where all edges are equally likely.</figcaption>
+<img src="https://github.com/greenelab/xswap-analysis/raw/47f67f85b1a5df2714d564c274515f1fdeb882ba/img/6_xswap_percent_swapped_iterations/lines_continuous.png" style="width:100.0%" alt="" /><figcaption><span>Figure 9:</span> Higher density networks have lower asymptotic fractions of edges swapped and take more attempts to reach these values.
+The Barabási–Albert model produces scale-free random graphs, while Erdős–Rényi generates random graphs where all edges are equally likely.</figcaption>
 </figure>
+</div>
 <h3 id="approx-prior-supp">Approximate edge prior</h3>
-<p>To approximate the edge prior, we began by making two simplifications. First, we assumed independence between node pairs. This assumption does not actually hold for the XSwap algorithm, though it is a reasonable simplification for large, sparse networks. Second, we assumed that the XSwap process is stationary. This assumption also does not actually hold, but it was made because it significantly simplifies the problem. A single node pair has two possible states, “edge” and “no edge”. These states are not transient, and they are not periodic so long as more than one possible swap exists in the network. In almost all cases, then, our simplified model of the algorithm gives the state of a node pair as an ergodic process, independent of other node pairs.</p>
-<p>Let <span class="math inline">\(A_{i,j}\)</span> represent the existence of edge <span class="math inline">\((i, j)\)</span> For a given node pair, <span class="math inline">\((i, j)\)</span>, then, let <span class="math inline">\(q_{i,j}\)</span> represent the transition probability from the “no edge” state to the “edge” state in one successful iteration of the XSwap algorithm. Let <span class="math inline">\(r_{i,j}\)</span> represent the probability of the opposite transition (“edge” to “no edge”) in one successful iteration. With “no edge” represented as <span class="math inline">\([1, 0]^T\)</span> and “edge” represented as <span class="math inline">\([0, 1]^T\)</span>, the transition matrix, <span class="math inline">\(P\)</span>, is given by the following:</p>
+<p>To approximate the edge prior, we began by making two simplifications.
+First, we assumed independence between node pairs.
+This assumption does not actually hold for the XSwap algorithm, though it is a reasonable simplification for large, sparse networks.
+Second, we assumed that the XSwap process is stationary.
+This assumption also does not actually hold, but it was made because it significantly simplifies the problem.
+A single node pair has two possible states, “edge” and “no edge”.
+These states are not transient, and they are not periodic so long as more than one possible swap exists in the network.
+In almost all cases, then, our simplified model of the algorithm gives the state of a node pair as an ergodic process, independent of other node pairs.</p>
+<p>Let <span class="math inline">\(A_{i,j}\)</span> represent the existence of edge <span class="math inline">\((i, j)\)</span>
+For a given node pair, <span class="math inline">\((i, j)\)</span>, then, let <span class="math inline">\(q_{i,j}\)</span> represent the transition probability from the “no edge” state to the “edge” state in one successful iteration of the XSwap algorithm.
+Let <span class="math inline">\(r_{i,j}\)</span> represent the probability of the opposite transition (“edge” to “no edge”) in one successful iteration.
+With “no edge” represented as <span class="math inline">\([1, 0]^T\)</span> and “edge” represented as <span class="math inline">\([0, 1]^T\)</span>, the transition matrix, <span class="math inline">\(P\)</span>, is given by the following:</p>
 <p><span class="math display">\[\begin{align*}
     P^T &amp;= \begin{bmatrix}
        1-q &amp; r \\
        q &amp; 1-r
      \end{bmatrix}
 \end{align*}\]</span></p>
-<p>The stationary distribution of this system should correspond to the distribution when the number of swaps goes to infinity. It can be found by computing the eigenvectors of the system, as we know that the stationary distribution vector, <span class="math inline">\(\mathbf{v}\)</span> satisfies <span class="math inline">\(P^T \mathbf{v} = \mathbf{v}\)</span>. The eigenvector <span class="math inline">\(\mathbf{v}\)</span>, normalized to sum to 1 as a probability vector, is given by</p>
+<p>The stationary distribution of this system should correspond to the distribution when the number of swaps goes to infinity.
+It can be found by computing the eigenvectors of the system, as we know that the stationary distribution vector, <span class="math inline">\(\mathbf{v}\)</span> satisfies <span class="math inline">\(P^T \mathbf{v} = \mathbf{v}\)</span>.
+The eigenvector <span class="math inline">\(\mathbf{v}\)</span>, normalized to sum to 1 as a probability vector, is given by</p>
 <p><span class="math display">\[\begin{align*}
     \mathbf{v} = \frac{1}{r + q} \begin{bmatrix}
         r \\
@@ -377,17 +755,21 @@ Dario Garcia Gasulla<br />
 \end{align*}\]</span></p>
 <p>The asymptotic edge probability is therefore</p>
 <p><span class="math display">\[\frac{q}{r + q}.\]</span></p>
-<p>Since node pairs are being treated as independent, the probability of an edge being created in one successful iteration, given that the edge does not currently exist, is the ratio of the number of edge choices involving nodes <span class="math inline">\(i\)</span> and <span class="math inline">\(j\)</span> to the total number of possible swaps, <span class="math inline">\(S\)</span>. Let <span class="math inline">\(d(u_i)\)</span> represent the degree of source node <span class="math inline">\(i\)</span> and <span class="math inline">\(d(v_j)\)</span> represent the degree of target node <span class="math inline">\(j\)</span>.</p>
+<p>Since node pairs are being treated as independent, the probability of an edge being created in one successful iteration, given that the edge does not currently exist, is the ratio of the number of edge choices involving nodes <span class="math inline">\(i\)</span> and <span class="math inline">\(j\)</span> to the total number of possible swaps, <span class="math inline">\(S\)</span>.
+Let <span class="math inline">\(d(u_i)\)</span> represent the degree of source node <span class="math inline">\(i\)</span> and <span class="math inline">\(d(v_j)\)</span> represent the degree of target node <span class="math inline">\(j\)</span>.</p>
 <p><span class="math display">\[q_{i,j} = \frac{d(u_i)d(v_j)}{S}\]</span></p>
-<p>Similarly, the probability of an edge being eliminated in one iteration is the ratio of the number of edge choices involving <span class="math inline">\((i,j)\)</span> and any other valid edge to the total number of possible swaps. Let <span class="math inline">\(m\)</span> be the total number of edges in the network.</p>
+<p>Similarly, the probability of an edge being eliminated in one iteration is the ratio of the number of edge choices involving <span class="math inline">\((i,j)\)</span> and any other valid edge to the total number of possible swaps.
+Let <span class="math inline">\(m\)</span> be the total number of edges in the network.</p>
 <p><span class="math display">\[r_{i,j} = \frac{m - d(u_i) - d(v_j) + 1}{S}\]</span></p>
 <p>The approximate edge prior is, therefore,</p>
 <p><span class="math display">\[\frac{d(u_i)d(v_j)}{m - d(u_i) - d(v_j) + 1 + d(u_i)d(v_j)}.\]</span></p>
-<p>Unfortunately, we found that the above edge prior approximation is a poor approximation in many cases. We found that the following modified form (introduced in Methods) affords a superior approximation:</p>
+<p>Unfortunately, we found that the above edge prior approximation is a poor approximation in many cases.
+We found that the following modified form (introduced in Methods) affords a superior approximation:</p>
 <p><span class="math display">\[\begin{equation}
     P_{i,j} = \frac{d(u_i) d(v_j)}{\sqrt{(d(u_i) d(v_j))^2 + (m - d(u_i) - d(v_j) + 1)^2}}
 \end{equation}\]</span></p>
-<p>Interestingly, this expression can be derived by normalizing the eigenvector <span class="math inline">\(\mathbf{v}\)</span> to be a unit vector in the 2-norm instead of the 1-norm; that is, we use the value <span class="math inline">\(q / \sqrt{r^2 + q^2}\)</span> instead of <span class="math inline">\(q/(r+q)\)</span>. Because the modified form of the approximation offers a much superior fit to the data, we chose to include only the modified version in the Python package released, and we used the modified form throughout our analysis.</p>
+<p>Interestingly, this expression can be derived by normalizing the eigenvector <span class="math inline">\(\mathbf{v}\)</span> to be a unit vector in the 2-norm instead of the 1-norm; that is, we use the value <span class="math inline">\(q / \sqrt{r^2 + q^2}\)</span> instead of <span class="math inline">\(q/(r+q)\)</span>.
+Because the modified form of the approximation offers a much superior fit to the data, we chose to include only the modified version in the Python package released, and we used the modified form throughout our analysis.</p>
 <h3 id="networks">Networks used for comparison</h3>
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;border-width:1px;border-style:solid;border-color:#ccc;}
@@ -746,8 +1128,12 @@ Source: 144, Target: 1417
 </tr>
 </table>
 <h3 id="edge-prediction-features">Edge prediction features</h3>
-<p>In the table that follows, let <span class="math inline">\(k(u)\)</span> denote the set of neighbors of node <span class="math inline">\(u\)</span>. Let <span class="math inline">\(\mathbf{A}\)</span> represent the normalized Laplacian adjacency matrix, and let <span class="math inline">\(y_u\)</span> be a vector with all ones except for a one in the <span class="math inline">\(u\)</span>-th position. <span class="math inline">\(x\)</span> For a directed graph, let <span class="math inline">\(A(u)\)</span> denote the set of nodes that node <span class="math inline">\(u\)</span> points to and <span class="math inline">\(D(u)\)</span> the set of nodes that point to <span class="math inline">\(u\)</span>. All definitions that follow are the score between nodes <span class="math inline">\(u\)</span> and <span class="math inline">\(v\)</span>.</p>
-<a name="tbl:edge-prediction"></a>
+<p>In the table that follows, let <span class="math inline">\(k(u)\)</span> denote the set of neighbors of node <span class="math inline">\(u\)</span>.
+Let <span class="math inline">\(\mathbf{A}\)</span> represent the normalized Laplacian adjacency matrix, and let <span class="math inline">\(y_u\)</span> be a vector with all ones except for a one in the <span class="math inline">\(u\)</span>-th position.
+<span class="math inline">\(x\)</span>
+For a directed graph, let <span class="math inline">\(A(u)\)</span> denote the set of nodes that node <span class="math inline">\(u\)</span> points to and <span class="math inline">\(D(u)\)</span> the set of nodes that point to <span class="math inline">\(u\)</span>.
+All definitions that follow are the score between nodes <span class="math inline">\(u\)</span> and <span class="math inline">\(v\)</span>.</p>
+<div id="tbl:edge-prediction" class="tablenos">
 <table style="width:100%;">
 <caption><span>Table 2:</span> Edge prediction features. </caption>
 <colgroup>
@@ -795,6 +1181,7 @@ Source: 144, Target: 1417
 </tr>
 </tbody>
 </table>
+</div>
 <!-- default theme -->
 
 <style>
@@ -899,6 +1286,7 @@ Source: 144, Target: 1417
     /* links */
     a {
         color: #2196f3;
+        overflow-wrap: break-word;
     }
 
     /* normal links (not empty, not button link, not syntax highlighting link) */
@@ -1024,7 +1412,7 @@ Source: 144, Target: 1417
         border: solid 1px #bdbdbd;
         padding: 10px;
         /* squash table if too wide for page by forcing line breaks */
-        word-break: break-all;
+        overflow-wrap: break-word;
         word-break: break-word;
     }
 
@@ -1415,6 +1803,43 @@ Source: 144, Target: 1417
     }
 
     /* -------------------------------------------------- */
+    /* tablenos */
+    /* -------------------------------------------------- */
+
+    /* tablenos wrapper */
+    .tablenos {
+        /* show scrollbar on tables if necessary to prevent overflow */
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .tablenos > table {
+        /* move margins from table to table_wrapper to allow margin collapsing */
+        margin: 0;
+    }
+
+    @media only screen {
+        /* tablenos wrapper */
+        .tablenos {
+            /* show scrollbar on tables if necessary to prevent overflow */
+            overflow-x: auto !important;
+        }
+
+        .tablenos th,
+        .tablenos td {
+            overflow-wrap: unset !important;
+            word-break: unset !important;
+        }
+
+        /* table in wrapper */
+        .tablenos table,
+        .tablenos table * {
+            /* don't break table words */
+            overflow-wrap: normal !important;
+        }
+    }
+
+    /* -------------------------------------------------- */
     /* mathjax */
     /* -------------------------------------------------- */
 
@@ -1443,34 +1868,8 @@ Source: 144, Target: 1417
 
     /* equation */
     span[id^="eq:"] > span.math.display > span {
-        /* nudge to make room for equation auto-number */
-        margin-right: 40px !important;
-    }
-
-    /* -------------------------------------------------- */
-    /* table scroll plugin */
-    /* -------------------------------------------------- */
-
-    @media only screen {
-        /* table wrapper */
-        .table_wrapper {
-            /* show scrollbar on tables if necessary to prevent overflow */
-            overflow: auto;
-            width: 100%;
-            margin: 20px 0;
-        }
-
-        /* table within table wrapper */
-        .table_wrapper table,
-        .table_wrapper table * {
-            /* don't break table words */
-            word-break: normal !important;
-        }
-
-        .table_wrapper > table {
-            /* move margins from table to table_wrapper to allow margin collapsing */
-            margin: 0;
-        }
+        /* nudge to make room for equation auto-number and anchor */
+        margin-right: 60px !important;
     }
 
     /* -------------------------------------------------- */
@@ -1573,7 +1972,7 @@ Source: 144, Target: 1417
             border: solid 1px #bdbdbd;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
             background: #ffffff;
-            word-break: break-word;
+            overflow-wrap: break-word;
         }
 
         /* tooltip copy of paragraphs and figures */
@@ -1999,74 +2398,6 @@ Source: 144, Target: 1417
         }
     }
 </style>
-<!-- table scroll plugin -->
-
-<script>
-    (function() {
-        // /////////////////////////
-        // DESCRIPTION
-        // /////////////////////////
-
-        // This Manubot plugin allows tables that are too wide to fit within
-        // the page to have a scrollbar instead of being squashed to fit.
-
-        // /////////////////////////
-        // OPTIONS
-        // /////////////////////////
-
-        // plugin name prefix for url parameters
-        const pluginName = 'tableScroll';
-
-        // default plugin options
-        const options = {
-            // whether plugin is on or not
-            enabled: 'true'
-        };
-
-        // change options above, or override with url parameter, eg:
-        // 'manuscript.html?pluginName-enabled=false'
-
-        // /////////////////////////
-        // SCRIPT
-        // /////////////////////////
-
-        // start script
-        function start() {
-            // wrap each table in a container
-            const tables = document.querySelectorAll('table');
-            for (const table of tables)
-                wrapElement(table).classList.add('table_wrapper');
-            // table_wrapper CSS class in theme file provides scroll
-            // functionality
-        }
-
-        // wrap element in div and return div
-        function wrapElement(element) {
-            const parent = element.parentNode;
-            const wrapper = document.createElement('div');
-            parent.replaceChild(wrapper, element);
-            wrapper.appendChild(element);
-            return wrapper;
-        }
-
-        // load options from url parameters
-        function loadOptions() {
-            const url = window.location.search;
-            const params = new URLSearchParams(url);
-            for (const optionName of Object.keys(options)) {
-                const paramName = pluginName + '-' + optionName;
-                const param = params.get(paramName);
-                if (param !== '' && param !== null)
-                    options[optionName] = param;
-            }
-        }
-        loadOptions();
-
-        // start script when document is finished loading
-        if (options.enabled === 'true')
-            window.addEventListener('load', start);
-    })();
-</script>
 <!-- anchors plugin -->
 
 <script>
@@ -2092,7 +2423,7 @@ Source: 144, Target: 1417
         const options = {
             // which types of elements to add anchors next to, in
             // "document.querySelector" format
-            typesQuery: 'h1, h2, h3, figure, table',
+            typesQuery: 'h1, h2, h3, [id^="fig:"], [id^="tbl:"], [id^="eq:"]',
             // whether plugin is on or not
             enabled: 'true'
         };
@@ -2119,11 +2450,13 @@ Source: 144, Target: 1417
         function onScroll() {
             // if url has hash and user has scrolled out of view of hash
             // target, remove hash from url
+            const tolerance = 100;
             const target = getHashTarget();
             if (target) {
                 if (
-                    target.getBoundingClientRect().top > window.innerHeight ||
-                    target.getBoundingClientRect().bottom < 0
+                    target.getBoundingClientRect().top >
+                        window.innerHeight + tolerance ||
+                    target.getBoundingClientRect().bottom < 0 - tolerance
                 )
                     history.pushState(null, null, ' ');
             }
@@ -2131,24 +2464,20 @@ Source: 144, Target: 1417
 
         // add anchor to element
         function addAnchor(element) {
-            let withId; // element with unique id
             let addTo; // element to add anchor button to
 
             // if figure or table, modify withId and addTo to get expected
             // elements
-            if (element.tagName.toLowerCase() === 'figure') {
-                withId = element.querySelector('img');
+            if (element.id.indexOf('fig:') === 0) {
                 addTo = element.querySelector('figcaption');
-            } else if (element.tagName.toLowerCase() === 'table') {
-                withId =
-                    element.previousElementSibling ||
-                    element.parentNode.previousElementSibling;
+            } else if (element.id.indexOf('tbl:') === 0) {
                 addTo = element.querySelector('caption');
+            } else if (element.id.indexOf('eq:') === 0) {
+                addTo = element.querySelector('.eqnos-number');
             }
 
-            withId = withId || element;
             addTo = addTo || element;
-            const id = withId.id || withId.name || null;
+            const id = element.id || null;
 
             // do not add anchor if element doesn't have assigned id.
             // id is generated by pandoc and is assumed to be unique and
@@ -2170,17 +2499,15 @@ Source: 144, Target: 1417
         function getHashTarget() {
             const hash = window.location.hash;
             const id = hash.slice(1);
-            let target = document.querySelector(
-                '[id="' + id + '"], [name="' + id + '"]'
-            );
+            let target = document.querySelector('[id="' + id + '"]');
             if (!target)
                 return;
 
             // if figure or table, modify target to get expected element
-            if (hash.indexOf('#fig:') === 0)
-                target = target.parentNode;
-            if (hash.indexOf('#tbl:') === 0)
-                target = target.nextElementSibling;
+            if (id.indexOf('fig:') === 0)
+                target = target.querySelector('figure');
+            if (id.indexOf('tbl:') === 0)
+                target = target.querySelector('table');
 
             return target;
         }
@@ -2316,17 +2643,15 @@ Source: 144, Target: 1417
         function getHashTarget(link) {
             const hash = link ? link.hash : window.location.hash;
             const id = hash.slice(1);
-            let target = document.querySelector(
-                '[id="' + id + '"], [name="' + id + '"]'
-            );
+            let target = document.querySelector('[id="' + id + '"]');
             if (!target)
                 return;
 
             // if figure or table, modify target to get expected element
-            if (hash.indexOf('#fig:') === 0)
-                target = target.parentNode;
-            if (hash.indexOf('#tbl:') === 0)
-                target = target.nextElementSibling;
+            if (id.indexOf('fig:') === 0)
+                target = target.querySelector('figure');
+            if (id.indexOf('tbl:') === 0)
+                target = target.querySelector('table');
 
             return target;
         }
@@ -2889,19 +3214,15 @@ Source: 144, Target: 1417
         function getSource(link) {
             const hash = link ? link.hash : window.location.hash;
             const id = hash.slice(1);
-            let target = document.querySelector(
-                '[id="' + id + '"], [name="' + id + '"]'
-            );
+            let target = document.querySelector('[id="' + id + '"]');
             if (!target)
                 return;
 
-            // if figure or table, modify target to get expected element
-            if (hash.indexOf('#ref-') === 0)
+            // if ref or figure, modify target to get expected element
+            if (id.indexOf('ref-') === 0)
                 target = target.querySelector('p');
-            else if (hash.indexOf('#fig:') === 0)
-                target = target.parentNode;
-            else if (hash.indexOf('#tbl:') === 0)
-                return;
+            else if (id.indexOf('fig:') === 0)
+                target = target.querySelector('figure');
 
             return target;
         }
@@ -3211,11 +3532,11 @@ Source: 144, Target: 1417
 
         // add button next to each figure
         function makeFigureButtons() {
-            const figures = document.querySelectorAll('img[id^="fig:"]');
+            const figures = document.querySelectorAll('[id^="fig:"]');
             for (const figure of figures) {
                 // get figure id and element to add button to
                 const id = figure.id;
-                const container = figure.nextElementSibling;
+                const container = figure.querySelector('figcaption') || figure;
                 const first = getFirstOccurrence(id);
 
                 // if can't find link to figure, ignore
@@ -3239,13 +3560,11 @@ Source: 144, Target: 1417
 
         // add button next to each figure
         function makeTableButtons() {
-            const tables = document.querySelectorAll('a[name^="tbl:"]');
+            const tables = document.querySelectorAll('[id^="tbl:"]');
             for (const table of tables) {
                 // get ref id and element to add button to
-                const id = table.name;
-                const container = table.nextElementSibling.querySelector(
-                    'caption'
-                );
+                const id = table.id;
+                const container = table.querySelector('caption') || table;
                 const first = getFirstOccurrence(id);
 
                 // if can't find link to table, ignore
@@ -3469,17 +3788,9 @@ Source: 144, Target: 1417
         function getHashTarget(link) {
             const hash = link ? link.hash : window.location.hash;
             const id = hash.slice(1);
-            let target = document.querySelector(
-                '[id="' + id + '"], [name="' + id + '"]'
-            );
+            let target = document.querySelector('[id="' + id + '"]');
             if (!target)
                 return;
-
-            // if figure or table, modify target to get expected element
-            if (hash.indexOf('#fig:') === 0)
-                target = target.parentNode;
-            else if (hash.indexOf('#tbl:') === 0)
-                target = target.nextElementSibling.querySelector('caption');
 
             return target;
         }
@@ -4509,6 +4820,136 @@ Source: 144, Target: 1417
         ></path>
     </svg>
 </template>
+<!-- attributes plugin -->
+
+<script>
+    (function() {
+        // /////////////////////////
+        // DESCRIPTION
+        // /////////////////////////
+
+        // This Manubot plugin allows arbitrary HTML attributes to be attached
+        // to (almost) any element. Place an HTML comment inside or next to the
+        // desired element in the format <!-- $attribute="value" -->
+
+        // /////////////////////////
+        // OPTIONS
+        // /////////////////////////
+
+        // plugin name prefix for url parameters
+        const pluginName = 'attributes';
+
+        // default plugin options
+        const options = {
+            // whether plugin is on or not
+            enabled: 'true'
+        };
+
+        // change options above, or override with url parameter, eg:
+        // 'manuscript.html?pluginName-enabled=false'
+
+        // /////////////////////////
+        // SCRIPT
+        // /////////////////////////
+
+        // start script
+        function start() {
+            // get list of comments in document
+            const comments = findComments();
+
+            for(const comment of comments)
+                if (comment.parentElement)
+                    addAttributes(
+                        comment.parentElement,
+                        comment.nodeValue.trim()
+                    );
+        }
+
+        // add html attributes to specified element based on string of 
+        // html attributes and values
+        function addAttributes(element, text) {
+            // regex's for finding attribute/value pairs in the format of
+            // attribute="value" or attribute='value
+            const regex2 = /\$([a-zA-Z\-]+)?=\"(.+?)\"/;
+            const regex1 = /\$([a-zA-Z\-]+)?=\'(.+?)\'/;
+
+            // loop through attribute/value pairs
+            let match;
+            while(match = text.match(regex2) || text.match(regex1)) {
+                // get attribute and value from regex capture groups
+                let attribute = match[1];
+                let value = match[2];
+
+                // remove from string
+                text = text.substring(match.index + match[0].length);
+
+                if (!attribute || !value)
+                    break;
+
+                // set attribute of parent element
+                try {
+                    element.setAttribute(attribute, value);
+                } catch(error) {
+                    console.log(error);
+                }
+
+                // special case for colspan
+                if (attribute === 'colspan')
+                    removeTableCells(element, value);
+            }
+        }
+
+        // get list of comment elements in document
+        function findComments() {
+            const comments = [];
+
+            // iterate over comment nodes in document
+            function acceptNode(node) {
+                return NodeFilter.FILTER_ACCEPT;
+            }
+            const iterator = document.createNodeIterator(
+                document.body,
+                NodeFilter.SHOW_COMMENT,
+                acceptNode
+            );
+            let node;
+            while(node = iterator.nextNode())
+                comments.push(node);
+
+            return comments;
+        }
+
+        // remove certain number of cells after specified cell
+        function removeTableCells(cell, number) {
+            number = parseInt(number);
+            if (!number)
+                return;
+
+            // remove elements
+            for(; number > 1; number--) {
+                if (cell.nextElementSibling)
+                    cell.nextElementSibling.remove();
+            }
+        }
+
+        // load options from url parameters
+        function loadOptions() {
+            const url = window.location.search;
+            const params = new URLSearchParams(url);
+            for (const optionName of Object.keys(options)) {
+                const paramName = pluginName + '-' + optionName;
+                const param = params.get(paramName);
+                if (param !== '' && param !== null)
+                    options[optionName] = param;
+            }
+        }
+        loadOptions();
+
+        // start script when document is finished loading
+        if (options.enabled === 'true')
+            window.addEventListener('load', start);
+    })();
+</script>
 <!-- math plugin configuration -->
 
 <script type="text/x-mathjax-config">
