@@ -1,0 +1,34 @@
+- type: thesis
+  standard_citation: raw:inference
+  title: Link prediction in large directed graphs
+  URL: https://upcommons.upc.edu/handle/2117/95691
+  publisher: Universitat Politècnica de Catalunya
+  issued:
+    date-parts:
+    - - 2015
+      - 4
+      - 23
+  author:
+  - given: Dario
+    family: Garcia Gasulla
+- type: article
+  standard_citation: raw:laplacian
+  URL: https://dl.acm.org/doi/10.5555/2981345.2981386  # https://dl.acm.org/doi/10.5555/2981345.2981386
+  publisher: NIPS 2003
+  title: Learning with local and global consistency
+  issued:
+    date-parts:
+    - - 2003
+      - 12
+      - 9
+  author:
+  - given: Dengyong
+    family: Zhou
+  - given: Olivier
+    family: Bousquet
+  - given: Thomas Navin
+    family: Lal
+  - given: Jason
+    family: Weston
+  - given: Bernhard
+    family: Scholkopf
