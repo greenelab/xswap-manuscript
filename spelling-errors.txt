@@ -4,7 +4,7 @@ AeG
 AlD
 algo
 antiparallel
-AUROC
+auroc
 AUROCs
 Barabási
 bioinformatics
@@ -70,7 +70,7 @@ TF
 TG
 Translational
 underly
-Undirected
+undirected
 uninsightful
 unpermuted
 unsampled
