@@ -24,12 +24,16 @@ header-includes: |-
   Suggest improvements at https://github.com/manubot/manubot/blob/main/manubot/process/header-includes-template.html
   -->
   <meta name="dc.format" content="text/html" />
+  <meta property="og:type" content="article" />
   <meta name="dc.title" content="The probability of edge existence due to node degree: a baseline for network-based predictions" />
   <meta name="citation_title" content="The probability of edge existence due to node degree: a baseline for network-based predictions" />
   <meta property="og:title" content="The probability of edge existence due to node degree: a baseline for network-based predictions" />
   <meta property="twitter:title" content="The probability of edge existence due to node degree: a baseline for network-based predictions" />
   <meta name="dc.date" content="2022-11-12" />
   <meta name="citation_publication_date" content="2022-11-12" />
+  <meta property="article:published_time" content="2022-11-12" />
+  <meta name="dc.modified" content="2022-11-12T19:40:59+00:00" />
+  <meta property="article:modified_time" content="2022-11-12T19:40:59+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -65,13 +69,13 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/xswap-manuscript/" />
   <meta name="citation_pdf_url" content="https://greenelab.github.io/xswap-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/xswap-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/xswap-manuscript/v/61327db4b006dc55a51ffb256ea923cc04472764/" />
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/xswap-manuscript/v/61327db4b006dc55a51ffb256ea923cc04472764/" />
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/xswap-manuscript/v/61327db4b006dc55a51ffb256ea923cc04472764/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/xswap-manuscript/v/4bd52e4aea3b5aecfcb3c071e7d6ff3bd91c9d29/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/xswap-manuscript/v/4bd52e4aea3b5aecfcb3c071e7d6ff3bd91c9d29/" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/xswap-manuscript/v/4bd52e4aea3b5aecfcb3c071e7d6ff3bd91c9d29/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
-  <meta property="og:image" content="https://github.com/greenelab/xswap-manuscript/raw/61327db4b006dc55a51ffb256ea923cc04472764/thumbnail.png" />
-  <meta property="twitter:image" content="https://github.com/greenelab/xswap-manuscript/raw/61327db4b006dc55a51ffb256ea923cc04472764/thumbnail.png" />
+  <meta property="og:image" content="https://github.com/greenelab/xswap-manuscript/raw/4bd52e4aea3b5aecfcb3c071e7d6ff3bd91c9d29/thumbnail.png" />
+  <meta property="twitter:image" content="https://github.com/greenelab/xswap-manuscript/raw/4bd52e4aea3b5aecfcb3c071e7d6ff3bd91c9d29/thumbnail.png" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
   <link rel="mask-icon" href="https://manubot.org/safari-pinned-tab.svg" color="#ad1457" />
   <meta name="theme-color" content="#ad1457" />
@@ -91,82 +95,101 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/xswap-manuscript/v/61327db4b006dc55a51ffb256ea923cc04472764/))
+([permalink](https://greenelab.github.io/xswap-manuscript/v/4bd52e4aea3b5aecfcb3c071e7d6ff3bd91c9d29/))
 was automatically generated
-from [greenelab/xswap-manuscript@61327db](https://github.com/greenelab/xswap-manuscript/tree/61327db4b006dc55a51ffb256ea923cc04472764)
+from [greenelab/xswap-manuscript@4bd52e4](https://github.com/greenelab/xswap-manuscript/tree/4bd52e4aea3b5aecfcb3c071e7d6ff3bd91c9d29)
 on November 12, 2022.
 </em></small>
+
+
 
 ## Authors
 
 
 
-+ **Michael Zietz**<br>
-    ![ORCID icon](images/orcid.svg){.inline_icon}
++ **Michael Zietz**
+  <br>
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
     [0000-0003-0539-630X](https://orcid.org/0000-0003-0539-630X)
-    · ![GitHub icon](images/github.svg){.inline_icon}
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
     [zietzm](https://github.com/zietzm)
-    · ![Twitter icon](images/twitter.svg){.inline_icon}
-    [ZietzMichael](https://twitter.com/ZietzMichael)<br>
+    · ![Twitter icon](images/twitter.svg){.inline_icon width=16 height=16}
+    [ZietzMichael](https://twitter.com/ZietzMichael)
+    <br>
   <small>
      Department of Physics & Astronomy, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America; Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America
      · Funded by Roy and Diana Vagelos Scholars Program in the Molecular Life Sciences; the Gordon and Betty Moore Foundation (GBMF4552)
   </small>
 
-+ **Daniel S. Himmelstein**<br>
-    ![ORCID icon](images/orcid.svg){.inline_icon}
++ **Daniel S. Himmelstein**
+  <br>
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
     [0000-0002-3012-7446](https://orcid.org/0000-0002-3012-7446)
-    · ![GitHub icon](images/github.svg){.inline_icon}
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
     [dhimmel](https://github.com/dhimmel)
-    · ![Twitter icon](images/twitter.svg){.inline_icon}
-    [dhimmel](https://twitter.com/dhimmel)<br>
+    · ![Twitter icon](images/twitter.svg){.inline_icon width=16 height=16}
+    [dhimmel](https://twitter.com/dhimmel)
+    <br>
   <small>
      Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America
      · Funded by Pfizer Worldwide Research, Development, and Medical; the Gordon and Betty Moore Foundation (GBMF4552)
   </small>
 
-+ **Kyle Kloster**<br>
-    ![ORCID icon](images/orcid.svg){.inline_icon}
++ **Kyle Kloster**
+  <br>
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
     [0000-0001-5678-7197](https://orcid.org/0000-0001-5678-7197)
-    · ![GitHub icon](images/github.svg){.inline_icon}
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
     [kkloste](https://github.com/kkloste)
-    · ![Twitter icon](images/twitter.svg){.inline_icon}
-    [kylekloster](https://twitter.com/kylekloster)<br>
+    · ![Twitter icon](images/twitter.svg){.inline_icon width=16 height=16}
+    [kylekloster](https://twitter.com/kylekloster)
+    <br>
   <small>
      Department of Computer Science, North Carolina State University, Raleigh, North Carolina, United States of America
      · Funded by the Gordon and Betty Moore Foundation (GBMF4560)
   </small>
 
-+ **Christopher Williams**<br>
-    · ![GitHub icon](images/github.svg){.inline_icon}
-    [chrsunwil](https://github.com/chrsunwil)<br>
++ **Christopher Williams**
+  <br>
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
+    [chrsunwil](https://github.com/chrsunwil)
+    <br>
   <small>
      Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America
   </small>
 
-+ **Michael W. Nagle**<br>
-    ![ORCID icon](images/orcid.svg){.inline_icon}
++ **Michael W. Nagle**
+  <br>
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
     [0000-0002-4677-7582](https://orcid.org/0000-0002-4677-7582)
-    · ![GitHub icon](images/github.svg){.inline_icon}
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
     [naglem](https://github.com/naglem)
-    · ![Twitter icon](images/twitter.svg){.inline_icon}
-    [MikeNagle84](https://twitter.com/MikeNagle84)<br>
+    · ![Twitter icon](images/twitter.svg){.inline_icon width=16 height=16}
+    [MikeNagle84](https://twitter.com/MikeNagle84)
+    <br>
   <small>
      Internal Medicine Research Unit, Pfizer Worldwide Research, Development, and Medical
   </small>
 
-+ **Casey S. Greene**<br>
-    ![ORCID icon](images/orcid.svg){.inline_icon}
++ **Casey S. Greene**
+  <br>
+    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
     [0000-0001-8713-9213](https://orcid.org/0000-0001-8713-9213)
-    · ![GitHub icon](images/github.svg){.inline_icon}
+    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
     [cgreene](https://github.com/cgreene)
-    · ![Twitter icon](images/twitter.svg){.inline_icon}
-    [greenescientist](https://twitter.com/greenescientist)<br>
+    · ![Twitter icon](images/twitter.svg){.inline_icon width=16 height=16}
+    [greenescientist](https://twitter.com/greenescientist)
+    <br>
   <small>
      Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America
      · Funded by Pfizer Worldwide Research, Development, and Medical; the Gordon and Betty Moore Foundation (GBMF4552); the National Institutes of Health (R01 HG010067)
   </small>
 
+
+::: {#correspondence}
+✉ — Correspondence possible via [GitHub Issues](https://github.com/greenelab/xswap-manuscript/issues)
+
+:::
 
 
 ## Abstract {.page_break_before}
