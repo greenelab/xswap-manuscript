@@ -37,7 +37,7 @@ GpPW
 greenescientist
 GuG
 Hanhijärvi
-hetionet
+Hetionet
 Himmelstein
 Jaccard
 kkloste
@@ -70,12 +70,12 @@ TF
 TG
 Translational
 underly
-undirected
+Undirected
 uninsightful
 unpermuted
 unsampled
 Vagelos
-XSwap
+xswap
 Zietz
 zietzm
 ZietzMichael
