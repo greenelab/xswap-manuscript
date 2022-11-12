@@ -4,14 +4,12 @@ AeG
 AlD
 algo
 antiparallel
-AUROC
+auroc
 AUROCs
 Barabási
-bdsullivan
 bioinformatics
 bioRxiv
 bitset
-BlairDSullivan
 BPpG
 CbG
 CCpG
@@ -67,7 +65,7 @@ RWR
 Rxivist
 Spearman
 subnetworks
-Subsampled
+subsampled
 TF
 TG
 Translational

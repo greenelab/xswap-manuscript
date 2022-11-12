@@ -17,7 +17,6 @@ author-meta:
 - Kyle Kloster
 - Christopher Williams
 - Michael W. Nagle
-- Blair D. Sullivan
 - Casey S. Greene
 header-includes: |-
   <!--
@@ -56,10 +55,6 @@ header-includes: |-
   <meta name="citation_author_institution" content="Internal Medicine Research Unit, Pfizer Worldwide Research, Development, and Medical" />
   <meta name="citation_author_orcid" content="0000-0002-4677-7582" />
   <meta name="twitter:creator" content="@MikeNagle84" />
-  <meta name="citation_author" content="Blair D. Sullivan" />
-  <meta name="citation_author_institution" content="School of Computing, University of Utah, Salt Lake City, Utah, United States of America" />
-  <meta name="citation_author_orcid" content="0000-0001-7720-6208" />
-  <meta name="twitter:creator" content="@BlairDSullivan" />
   <meta name="citation_author" content="Casey S. Greene" />
   <meta name="citation_author_institution" content="Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America" />
   <meta name="citation_author_orcid" content="0000-0001-8713-9213" />
@@ -70,13 +65,13 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/xswap-manuscript/" />
   <meta name="citation_pdf_url" content="https://greenelab.github.io/xswap-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/xswap-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/xswap-manuscript/v/f5e1eeca492628c1ab58bd33838479768f9108a6/" />
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/xswap-manuscript/v/f5e1eeca492628c1ab58bd33838479768f9108a6/" />
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/xswap-manuscript/v/f5e1eeca492628c1ab58bd33838479768f9108a6/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/xswap-manuscript/v/61327db4b006dc55a51ffb256ea923cc04472764/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/xswap-manuscript/v/61327db4b006dc55a51ffb256ea923cc04472764/" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/xswap-manuscript/v/61327db4b006dc55a51ffb256ea923cc04472764/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
-  <meta property="og:image" content="https://github.com/greenelab/xswap-manuscript/raw/f5e1eeca492628c1ab58bd33838479768f9108a6/thumbnail.png" />
-  <meta property="twitter:image" content="https://github.com/greenelab/xswap-manuscript/raw/f5e1eeca492628c1ab58bd33838479768f9108a6/thumbnail.png" />
+  <meta property="og:image" content="https://github.com/greenelab/xswap-manuscript/raw/61327db4b006dc55a51ffb256ea923cc04472764/thumbnail.png" />
+  <meta property="twitter:image" content="https://github.com/greenelab/xswap-manuscript/raw/61327db4b006dc55a51ffb256ea923cc04472764/thumbnail.png" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
   <link rel="mask-icon" href="https://manubot.org/safari-pinned-tab.svg" color="#ad1457" />
   <meta name="theme-color" content="#ad1457" />
@@ -96,9 +91,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/xswap-manuscript/v/f5e1eeca492628c1ab58bd33838479768f9108a6/))
+([permalink](https://greenelab.github.io/xswap-manuscript/v/61327db4b006dc55a51ffb256ea923cc04472764/))
 was automatically generated
-from [greenelab/xswap-manuscript@f5e1eec](https://github.com/greenelab/xswap-manuscript/tree/f5e1eeca492628c1ab58bd33838479768f9108a6)
+from [greenelab/xswap-manuscript@61327db](https://github.com/greenelab/xswap-manuscript/tree/61327db4b006dc55a51ffb256ea923cc04472764)
 on November 12, 2022.
 </em></small>
 
@@ -158,18 +153,6 @@ on November 12, 2022.
     [MikeNagle84](https://twitter.com/MikeNagle84)<br>
   <small>
      Internal Medicine Research Unit, Pfizer Worldwide Research, Development, and Medical
-  </small>
-
-+ **Blair D. Sullivan**<br>
-    ![ORCID icon](images/orcid.svg){.inline_icon}
-    [0000-0001-7720-6208](https://orcid.org/0000-0001-7720-6208)
-    · ![GitHub icon](images/github.svg){.inline_icon}
-    [bdsullivan](https://github.com/bdsullivan)
-    · ![Twitter icon](images/twitter.svg){.inline_icon}
-    [BlairDSullivan](https://twitter.com/BlairDSullivan)<br>
-  <small>
-     School of Computing, University of Utah, Salt Lake City, Utah, United States of America
-     · Funded by the Gordon and Betty Moore Foundation (GBMF4560)
   </small>
 
 + **Casey S. Greene**<br>
@@ -544,6 +527,10 @@ Network edge prediction is a common task in biological and biomedical research, 
 Degree should be considered directly in prediction approaches to avoid making nonspecific or trivial predictions due to degree imbalance or bias.
 A careful accounting of degree's effects enables contextualized model evaluation and can help to quantify nonspecificity in biomedical network edge prediction.
 
+
+## Acknowledgments
+
+The authors thank [Blair Sullivan](https://orcid.org/0000-0001-7720-6208) for [her feedback](https://github.com/greenelab/xswap-manuscript/issues/54) on a draft of the manuscript.
 
 ## References {.page_break_before}
 
