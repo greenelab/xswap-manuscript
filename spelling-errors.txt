@@ -65,7 +65,7 @@ RWR
 Rxivist
 Spearman
 subnetworks
-Subsampled
+subsampled
 TF
 TG
 Translational
@@ -75,7 +75,7 @@ uninsightful
 unpermuted
 unsampled
 Vagelos
-xswap
+XSwap
 Zietz
 zietzm
 ZietzMichael
