@@ -10,7 +10,7 @@ keywords:
 - python
 - manubot
 lang: en-US
-date-meta: '2022-11-15'
+date-meta: '2022-12-21'
 author-meta:
 - Michael Zietz
 - Daniel S. Himmelstein
@@ -29,11 +29,11 @@ header-includes: |-
   <meta name="citation_title" content="The probability of edge existence due to node degree: a baseline for network-based predictions" />
   <meta property="og:title" content="The probability of edge existence due to node degree: a baseline for network-based predictions" />
   <meta property="twitter:title" content="The probability of edge existence due to node degree: a baseline for network-based predictions" />
-  <meta name="dc.date" content="2022-11-15" />
-  <meta name="citation_publication_date" content="2022-11-15" />
-  <meta property="article:published_time" content="2022-11-15" />
-  <meta name="dc.modified" content="2022-11-15T02:16:53+00:00" />
-  <meta property="article:modified_time" content="2022-11-15T02:16:53+00:00" />
+  <meta name="dc.date" content="2022-12-21" />
+  <meta name="citation_publication_date" content="2022-12-21" />
+  <meta property="article:published_time" content="2022-12-21" />
+  <meta name="dc.modified" content="2022-12-21T15:39:15+00:00" />
+  <meta property="article:modified_time" content="2022-12-21T15:39:15+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -70,13 +70,13 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/xswap-manuscript/" />
   <meta name="citation_pdf_url" content="https://greenelab.github.io/xswap-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/xswap-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/xswap-manuscript/v/a7f048580ed14cee841dc666a3b619fe3ee3688e/" />
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/xswap-manuscript/v/a7f048580ed14cee841dc666a3b619fe3ee3688e/" />
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/xswap-manuscript/v/a7f048580ed14cee841dc666a3b619fe3ee3688e/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/xswap-manuscript/v/d5a43cbd69253dc63b11bed48ea94db46f074aa7/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/xswap-manuscript/v/d5a43cbd69253dc63b11bed48ea94db46f074aa7/" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/xswap-manuscript/v/d5a43cbd69253dc63b11bed48ea94db46f074aa7/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
-  <meta property="og:image" content="https://github.com/greenelab/xswap-manuscript/raw/a7f048580ed14cee841dc666a3b619fe3ee3688e/thumbnail.png" />
-  <meta property="twitter:image" content="https://github.com/greenelab/xswap-manuscript/raw/a7f048580ed14cee841dc666a3b619fe3ee3688e/thumbnail.png" />
+  <meta property="og:image" content="https://github.com/greenelab/xswap-manuscript/raw/d5a43cbd69253dc63b11bed48ea94db46f074aa7/thumbnail.png" />
+  <meta property="twitter:image" content="https://github.com/greenelab/xswap-manuscript/raw/d5a43cbd69253dc63b11bed48ea94db46f074aa7/thumbnail.png" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
   <link rel="mask-icon" href="https://manubot.org/safari-pinned-tab.svg" color="#ad1457" />
   <meta name="theme-color" content="#ad1457" />
@@ -97,10 +97,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/xswap-manuscript/v/a7f048580ed14cee841dc666a3b619fe3ee3688e/))
+([permalink](https://greenelab.github.io/xswap-manuscript/v/d5a43cbd69253dc63b11bed48ea94db46f074aa7/))
 was automatically generated
-from [greenelab/xswap-manuscript@a7f0485](https://github.com/greenelab/xswap-manuscript/tree/a7f048580ed14cee841dc666a3b619fe3ee3688e)
-on November 15, 2022.
+from [greenelab/xswap-manuscript@d5a43cb](https://github.com/greenelab/xswap-manuscript/tree/d5a43cbd69253dc63b11bed48ea94db46f074aa7)
+on December 21, 2022.
 </em></small>
 
 
@@ -208,7 +208,7 @@ Degree's predictive performance diminishes when the networks used for training a
 We introduce the permutation-derived edge prior as the probability that an edge exists based only on degree.
 The edge prior shows excellent discrimination and calibration for 20 biomedical networks (16 bipartite, 3 undirected, 1 directed), with AUROCs frequently exceeding 0.85.
 Researchers seeking to predict new or missing edges in biological networks should use the edge prior as a baseline to identify the fraction of performance that is nonspecific because of degree.
-We released our methods as an open-source Python package (https://github.com/hetio/xswap/).
+We released our methods as an open-source Python package (<https://github.com/hetio/xswap/>).
 
 
 ## Introduction
@@ -243,13 +243,13 @@ We define "degree bias" as the type of misrepresentation that occurs when the fr
 Depending on the type of data being represented, degree biases can arise due to experimental methods, inspection bias, or other factors [@doi:10.1016/j.jprot.2014.01.020].
 
 Inspection bias indicates that entities are not uniformly studied [@doi:10.1038/nature04209], and it is likely to cause degree bias when networks are constructed using hypothesis-driven findings extracted from the literature, as newly-discovered relationships are not randomly sampled from the set of all true relationships.
-Though there is a high correlation between the number of publications mentioning a gene and its degree in low-throughput interaction networks, the number of publications mentioning a gene has little correlation with its degree in a systematically-derived protein interaction network [Figure 6A in @doi:10.1016/j.cell.2014.10.050].
-This evidence suggests that many poorly studied genes have similar numbers of interactions as those scientists have preferentially examined and that these edges are missed due to inspection bias.
+Though there is a high correlation between the number of publications mentioning a gene and its degree in low-throughput interaction networks, the number of publications mentioning a gene has little correlation with its degree in a systematically-derived protein interaction network [@doi:10.1016/j.cell.2014.10.050, Figure 6A].
+This suggests that many poorly connected genes in non-systematic protein interaction networks are due to inspection bias, i.e. a lack of study, rather than a lack of biological function.
 For networks with a large inspection bias, reliance on degree can lead to predictions that have good metrics when assessed by cross validation but little ability to generalize.
 
 Another reason why a reliance on degree can be unfavorable is that degree imbalance can lead to prediction nonspecificity.
 Nonspecific predictions are not made on the basis of the specific connectivity information contained in a network.
-For example, Gillis et al. [@doi:10.1371/journal.pone.0017258] examined the concept of prediction specificity in the context of gene function prediction and found that many predictions appear to rely primarily on multifunctionality and could be "potentially misleading with respect to causality."
+For example, Gillis et al. examined the concept of prediction specificity in the context of gene function prediction and found that many predictions appear to rely primarily on multifunctionality and could be "potentially misleading with respect to causality" [@doi:10.1371/journal.pone.0017258].
 Degree imbalance leads high-degree nodes to dominate in the predictions made by degree-associated methods [@doi:10.1093/bioinformatics/btv215], which are effective predictors of connections in some biological networks [@doi:10.1186/1752-0509-2-11].
 Consequently, degree-based predictions are more likely nonspecific, meaning the same set of predictions performs well for different tasks.
 
@@ -279,7 +279,7 @@ Conversely, identical predictive performance on true and permuted networks indic
 
 Network permutation is a flexible framework for analyzing other methods, because it generates complete networks that can be analyzed independently.
 We use network permutation to isolate degree and determine its effects in different contexts.
-Degree-preserving network permutation obscures true connections and higher-order connectivity information (eg. community structure), while retaining node degree, and thereby, the network's degree sequence.
+Degree-preserving network permutation obscures true connections and higher-order connectivity information (e.g., community structure), while retaining node degree, and, thereby, the network's degree sequence.
 Thanks to the flexibility of permutation, our framework can quantify the effect of degree on any network edge prediction method.
 
 ### XSwap algorithm
@@ -362,9 +362,9 @@ Further information about the networks used can be found in [the supplement](#ne
 
 Our method for degree-preserving permutation produces randomized networks that share few of their edges with the original network.
 The predictor values for two node pairs with the same source and target degree are drawn from the same distribution in permuted networks, so nodes with equal degree can be grouped when summarizing predictors.
-For a given node pair, degree grouping treats other node pairs with the same degrees as additional permutations.
+For a given node pair, degree grouping treats other node pairs with the same degrees as additional permutations [@connectivity-search].
 We used this strategy to augment the number of predictor values for each node pair in permuted networks, allowing node pairs to have more permuted predictor values than permuted networks.
-Degree grouping greatly increased the effective number of permutations for nodes with frequently observed degrees [@url:https://github.com/greenelab/hetmech/pull/96].
+Degree grouping [greatly increased](https://github.com/greenelab/hetmech/pull/96) the effective number of permutations for nodes with frequently observed degrees.
 We used degree grouping throughout our analyses.
 
 ### Implementation and source code
@@ -380,7 +380,7 @@ While the full bitset implementation is faster for smaller networks, our package
 In addition to the validity conditions already described, our package allows specific edges to be excluded from permutation, and every network permutation returns both a permuted network and summary information about the numbers of swaps attempted, performed, and the reasons why invalid swaps were rejected.
 
 In addition to the Python package, all code to generate the analyses and figures is available at <https://github.com/greenelab/xswap-analysis>.
-The manuscript was written using the Manubot software [@doi:10.1371/journal.pcbi.1007128 ], which allows anyone to provide feedback or modifications via the public repository at <https://github.com/greenelab/xswap-manuscript>.
+The manuscript was written using the Manubot software [@doi:10.1371/journal.pcbi.1007128], which allows anyone to provide feedback or modifications via the public repository at <https://github.com/greenelab/xswap-manuscript>.
 
 ## Results
 
@@ -421,7 +421,7 @@ Meanwhile, the lowest self-reconstruction performance (AUROC = 0.7697) occurred 
   However, when computed on a completely different network (having a different degree distribution) of the same type of data, the edge prior's performance is greatly reduced (Task 3, "separate", 3 different networks).
   The performance reduction from computing predictors on sampled networks is real but far smaller compared to a new degree distribution.
   This indicates that while degree can be effective for network reconstruction, it is far less effective in predicting edges from a different degree distribution.
-  ](https://github.com/greenelab/xswap-analysis/raw/c763473ee83c6157f2430bf9a64b19dc564b7dbc/img/auroc.png){#fig:discrimination width="60%"}
+](https://github.com/greenelab/xswap-analysis/raw/c763473ee83c6157f2430bf9a64b19dc564b7dbc/img/auroc.png){#fig:discrimination width="60%"}
 
 The three predictors that we compared were highly correlated (Spearman rank correlation over 0.984 for all 20 networks).
 The three predictors also had very similar AUROC reconstruction performance values for the first, second, and third prediction tasks (max difference < 0.027) because AUROC is rank-based.
@@ -495,7 +495,7 @@ The second comparison gave insight into the performance of each feature if the f
   Network reconstruction performances by five edge prediction features.
   Dotted red line indicates performance of the edge prior.
   Each feature was computed on both the unpermuted and 100 permutations of the STRING PPI network.
-  ](https://github.com/greenelab/xswap-analysis/raw/4d9137f43a16fbe6c6a02865adceaa9a3195fe2d/img/feature-auroc.png){#fig:feature-auroc width="85%"}
+](https://github.com/greenelab/xswap-analysis/raw/4d9137f43a16fbe6c6a02865adceaa9a3195fe2d/img/feature-auroc.png){#fig:feature-auroc width="85%"}
 
 The edge prior encapsulates nonspecific predictions due to degree, and it reconstructed the PPI network with an AUROC of 0.797 (dotted red line in Figure {@fig:feature-auroc}).
 In the second comparison, edge prediction features computed on permuted networks had performance equal or lower to their performances on the unpermuted networks.
@@ -560,6 +560,8 @@ A careful accounting of degree's effects enables contextualized model evaluation
 The authors thank [Blair Sullivan](https://orcid.org/0000-0001-7720-6208) for [her feedback](https://github.com/greenelab/xswap-manuscript/issues/54) on a draft of the manuscript.
 
 ## References {.page_break_before}
+
+[@connectivity-search]: https://greenelab.github.io/connectivity-search-manuscript/
 
 <!-- Explicitly insert bibliography here -->
 <div id="refs"></div>

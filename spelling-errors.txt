@@ -4,7 +4,7 @@ AeG
 AlD
 algo
 antiparallel
-auroc
+AUROC
 AUROCs
 Barabási
 bioinformatics
