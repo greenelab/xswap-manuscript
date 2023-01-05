@@ -10,7 +10,7 @@ keywords:
 - python
 - manubot
 lang: en-US
-date-meta: '2022-12-21'
+date-meta: '2023-01-05'
 author-meta:
 - Michael Zietz
 - Daniel S. Himmelstein
@@ -29,11 +29,11 @@ header-includes: |-
   <meta name="citation_title" content="The probability of edge existence due to node degree: a baseline for network-based predictions" />
   <meta property="og:title" content="The probability of edge existence due to node degree: a baseline for network-based predictions" />
   <meta property="twitter:title" content="The probability of edge existence due to node degree: a baseline for network-based predictions" />
-  <meta name="dc.date" content="2022-12-21" />
-  <meta name="citation_publication_date" content="2022-12-21" />
-  <meta property="article:published_time" content="2022-12-21" />
-  <meta name="dc.modified" content="2022-12-21T15:39:15+00:00" />
-  <meta property="article:modified_time" content="2022-12-21T15:39:15+00:00" />
+  <meta name="dc.date" content="2023-01-05" />
+  <meta name="citation_publication_date" content="2023-01-05" />
+  <meta property="article:published_time" content="2023-01-05" />
+  <meta name="dc.modified" content="2023-01-05T23:24:43+00:00" />
+  <meta property="article:modified_time" content="2023-01-05T23:24:43+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -70,13 +70,13 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/xswap-manuscript/" />
   <meta name="citation_pdf_url" content="https://greenelab.github.io/xswap-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/xswap-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/xswap-manuscript/v/d5a43cbd69253dc63b11bed48ea94db46f074aa7/" />
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/xswap-manuscript/v/d5a43cbd69253dc63b11bed48ea94db46f074aa7/" />
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/xswap-manuscript/v/d5a43cbd69253dc63b11bed48ea94db46f074aa7/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/xswap-manuscript/v/e3c7dbc328a656aa2793fc5ede79daaf25441bae/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/xswap-manuscript/v/e3c7dbc328a656aa2793fc5ede79daaf25441bae/" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/xswap-manuscript/v/e3c7dbc328a656aa2793fc5ede79daaf25441bae/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
-  <meta property="og:image" content="https://github.com/greenelab/xswap-manuscript/raw/d5a43cbd69253dc63b11bed48ea94db46f074aa7/thumbnail.png" />
-  <meta property="twitter:image" content="https://github.com/greenelab/xswap-manuscript/raw/d5a43cbd69253dc63b11bed48ea94db46f074aa7/thumbnail.png" />
+  <meta property="og:image" content="https://github.com/greenelab/xswap-manuscript/raw/e3c7dbc328a656aa2793fc5ede79daaf25441bae/thumbnail.png" />
+  <meta property="twitter:image" content="https://github.com/greenelab/xswap-manuscript/raw/e3c7dbc328a656aa2793fc5ede79daaf25441bae/thumbnail.png" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
   <link rel="mask-icon" href="https://manubot.org/safari-pinned-tab.svg" color="#ad1457" />
   <meta name="theme-color" content="#ad1457" />
@@ -97,10 +97,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/xswap-manuscript/v/d5a43cbd69253dc63b11bed48ea94db46f074aa7/))
+([permalink](https://greenelab.github.io/xswap-manuscript/v/e3c7dbc328a656aa2793fc5ede79daaf25441bae/))
 was automatically generated
-from [greenelab/xswap-manuscript@d5a43cb](https://github.com/greenelab/xswap-manuscript/tree/d5a43cbd69253dc63b11bed48ea94db46f074aa7)
-on December 21, 2022.
+from [greenelab/xswap-manuscript@e3c7dbc](https://github.com/greenelab/xswap-manuscript/tree/e3c7dbc328a656aa2793fc5ede79daaf25441bae)
+on January 5, 2023.
 </em></small>
 
 
@@ -553,6 +553,10 @@ The XSwap methods and software provide a context for evaluating edge prediction 
 Network edge prediction is a common task in biological and biomedical research, and it can be greatly influenced by degree.
 Degree should be considered directly in prediction approaches to avoid making nonspecific or trivial predictions due to degree imbalance or bias.
 A careful accounting of degree's effects enables contextualized model evaluation and can help to quantify nonspecificity in biomedical network edge prediction.
+
+## Competing Interests
+
+This work was supported, in part, by Pfizer Worldwide Research, Development, and Medical.
 
 
 ## Acknowledgments

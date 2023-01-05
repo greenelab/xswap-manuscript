@@ -75,7 +75,7 @@ uninsightful
 unpermuted
 unsampled
 Vagelos
-XSwap
+xswap
 Zietz
 zietzm
 ZietzMichael
