@@ -17,6 +17,7 @@ CcSE
 CdG
 cgreene
 chrsunwil
+citable
 CrC
 CuG
 curation
