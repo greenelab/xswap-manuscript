@@ -10,7 +10,7 @@ keywords:
 - python
 - manubot
 lang: en-US
-date-meta: '2023-01-09'
+date-meta: '2023-01-31'
 author-meta:
 - Michael Zietz
 - Daniel S. Himmelstein
@@ -29,11 +29,11 @@ header-includes: |-
   <meta name="citation_title" content="The probability of edge existence due to node degree: a baseline for network-based predictions" />
   <meta property="og:title" content="The probability of edge existence due to node degree: a baseline for network-based predictions" />
   <meta property="twitter:title" content="The probability of edge existence due to node degree: a baseline for network-based predictions" />
-  <meta name="dc.date" content="2023-01-09" />
-  <meta name="citation_publication_date" content="2023-01-09" />
-  <meta property="article:published_time" content="2023-01-09" />
-  <meta name="dc.modified" content="2023-01-09T20:43:52+00:00" />
-  <meta property="article:modified_time" content="2023-01-09T20:43:52+00:00" />
+  <meta name="dc.date" content="2023-01-31" />
+  <meta name="citation_publication_date" content="2023-01-31" />
+  <meta property="article:published_time" content="2023-01-31" />
+  <meta name="dc.modified" content="2023-01-31T12:11:51+00:00" />
+  <meta property="article:modified_time" content="2023-01-31T12:11:51+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -70,13 +70,13 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/xswap-manuscript/" />
   <meta name="citation_pdf_url" content="https://greenelab.github.io/xswap-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/xswap-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/xswap-manuscript/v/523d4aa41ea10f2705b5df564604ba96bae7dde6/" />
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/xswap-manuscript/v/523d4aa41ea10f2705b5df564604ba96bae7dde6/" />
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/xswap-manuscript/v/523d4aa41ea10f2705b5df564604ba96bae7dde6/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/xswap-manuscript/v/63b1969b3a5c75283c3dbb89eff4600abcc1c496/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/xswap-manuscript/v/63b1969b3a5c75283c3dbb89eff4600abcc1c496/" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/xswap-manuscript/v/63b1969b3a5c75283c3dbb89eff4600abcc1c496/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
-  <meta property="og:image" content="https://github.com/greenelab/xswap-manuscript/raw/523d4aa41ea10f2705b5df564604ba96bae7dde6/thumbnail.png" />
-  <meta property="twitter:image" content="https://github.com/greenelab/xswap-manuscript/raw/523d4aa41ea10f2705b5df564604ba96bae7dde6/thumbnail.png" />
+  <meta property="og:image" content="https://github.com/greenelab/xswap-manuscript/raw/63b1969b3a5c75283c3dbb89eff4600abcc1c496/thumbnail.png" />
+  <meta property="twitter:image" content="https://github.com/greenelab/xswap-manuscript/raw/63b1969b3a5c75283c3dbb89eff4600abcc1c496/thumbnail.png" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
   <link rel="mask-icon" href="https://manubot.org/safari-pinned-tab.svg" color="#ad1457" />
   <meta name="theme-color" content="#ad1457" />
@@ -97,10 +97,10 @@ _A DOI-citable version of this manuscript is available at <https://doi.org/10.11
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/xswap-manuscript/v/523d4aa41ea10f2705b5df564604ba96bae7dde6/))
+([permalink](https://greenelab.github.io/xswap-manuscript/v/63b1969b3a5c75283c3dbb89eff4600abcc1c496/))
 was automatically generated
-from [greenelab/xswap-manuscript@523d4aa](https://github.com/greenelab/xswap-manuscript/tree/523d4aa41ea10f2705b5df564604ba96bae7dde6)
-on January 9, 2023.
+from [greenelab/xswap-manuscript@63b1969](https://github.com/greenelab/xswap-manuscript/tree/63b1969b3a5c75283c3dbb89eff4600abcc1c496)
+on January 31, 2023.
 </em></small>
 
 
@@ -231,6 +231,13 @@ Several distributions have nodes that reach the maximum degree, corresponding to
 Zero-degree nodes are not displayed, since methodological limitations often result in edge data only existing for a subset of nodes.
 ](https://github.com/greenelab/xswap-analysis/raw/b0db22c82b2e58bf1ef5ae78317167982016e26b/img/hetionet_degrees.png){#fig:hetionet width="100%"}
 
+<!-- 
+fig:hetionet is created by
+https://github.com/greenelab/xswap-analysis/blob/b0db22c82b2e58bf1ef5ae78317167982016e26b/nb/3.fig1.hetionet_degree_dist/2.plot_hetionet_degree_distributions.ipynb
+
+Data materialized in data/task1/hetionet_degrees.tsv (ignored)
+-->
+
 Degree is an important metric for differentiating between nodes, and it appears in many common edge prediction features [@doi:10.1155/2015/172879].
 However, reliance on degree can pose problems for edge prediction.
 First, bias in networks can distort node degree so that a difference in degree between two nodes in a given network may not reflect a true difference in number of relationships.
@@ -331,6 +338,11 @@ $$
   The strong correlation suggests that the approximation will be suitable for applications where computation time is a limiting factor.
 ](https://github.com/greenelab/xswap-analysis/raw/b0db22c82b2e58bf1ef5ae78317167982016e26b/img/prior_exact_vs_approx.png){#fig:approx-quality width="100%"}
 
+<!--
+fig:approx-quality created by
+https://github.com/greenelab/xswap-analysis/blob/b0db22c82b2e58bf1ef5ae78317167982016e26b/nb/8.fig6.prior_exact_vs_approx/plot_prior_exact_vs_approx.ipynb
+-->
+
 Further discussion of this approximate edge prior and an derivation are available in [the supplement](#approx-prior-supp).
 
 ### Prediction tasks {#tasks}
@@ -406,6 +418,11 @@ These results indicate that, depending on the methods by which the represented d
   70% of literature edges were sampled with uniform probability for the "Subsampled holdout" network.
 ](https://github.com/greenelab/xswap-analysis/raw/d7181e64a5c90f9720ab453334892aba164651e7/img/degree_bias.png){#fig:degree-bias width="100%"}
 
+<!--
+fig:degree-bias is created by
+https://github.com/greenelab/xswap-analysis/blob/b0db22c82b2e58bf1ef5ae78317167982016e26b/nb/4.fig2.degree_bias/plot_degree.ipynb
+-->
+
 ### The edge prior encapsulates degree
 
 In the first prediction task, we computed three predictors---the XSwap edge prior, an analytical approximation to the edge prior, and the (scaled) product of source and target node degree---on networks from Hetionet.
@@ -422,6 +439,11 @@ Meanwhile, the lowest self-reconstruction performance (AUROC = 0.7697) occurred 
   The performance reduction from computing predictors on sampled networks is real but far smaller compared to a new degree distribution.
   This indicates that while degree can be effective for network reconstruction, it is far less effective in predicting edges from a different degree distribution.
 ](https://github.com/greenelab/xswap-analysis/raw/c763473ee83c6157f2430bf9a64b19dc564b7dbc/img/auroc.png){#fig:discrimination width="60%"}
+
+<!--
+fig:discrimination is created by
+https://github.com/greenelab/xswap-analysis/blob/b0db22c82b2e58bf1ef5ae78317167982016e26b/nb/5.fig3.auroc/plot_auroc.ipynb
+-->
 
 The three predictors that we compared were highly correlated (Spearman rank correlation over 0.984 for all 20 networks).
 The three predictors also had very similar AUROC reconstruction performance values for the first, second, and third prediction tasks (max difference < 0.027) because AUROC is rank-based.
@@ -440,6 +462,11 @@ As the edge prior was not based on the networks' true edges, these results indic
   **C.** Individual Hetionet edge type calibration estimated by the two-component decomposition of the Brier score, in which lower scores indicate better calibration.
   The edge prior has excellent calibration in unsampled and sampled networks, and each considered method is sensitive to shifts in the degree distribution.
 ](https://github.com/zietzm/xswap-analysis/raw/c763473ee83c6157f2430bf9a64b19dc564b7dbc/img/fig4.calibration.png){#fig:calibration width="100%"}
+
+<!--
+fig:calibration is created by
+https://github.com/greenelab/xswap-analysis/blob/b0db22c82b2e58bf1ef5ae78317167982016e26b/nb/6.fig4.calibration/plot_calibration.ipynb
+-->
 
 The second prediction task mirrored the first task, but it involved reconstructing networks based on subsampled networks with only 70% of the original edges.
 Because edges were sampled uniformly without replacement, the subsampled networks share similar degree distributions to the original networks (see Figure {@fig:degree-bias}B).
@@ -483,6 +510,11 @@ We expected features based on degree to show strong performance for a network re
   Each panel indicates the Pearson correlation ("r") between feature and degree in the lower right corner.
 ](https://github.com/greenelab/xswap-analysis/raw/f8dce1983243fd4056108c7c8bdcba895f6dfbaf/img/feature-degree.png){#fig:feature-degree width="100%"}
 
+<!--
+fig:feature-degree is created by 
+https://github.com/greenelab/xswap-analysis/blob/b0db22c82b2e58bf1ef5ae78317167982016e26b/nb/7.fig5.feature_degree/2.plot_correlation.ipynb
+-->
+
 We used two permutation-derived null values to evaluate reconstruction and contextualize performance.
 First, the performance of the edge prior was compared to determine the performance attributable to the degree sequence of the PPI network.
 The first comparison gave insight into the ability of the PPI network to be reconstructed by degree.
@@ -496,6 +528,11 @@ The second comparison gave insight into the performance of each feature if the f
   Dotted red line indicates performance of the edge prior.
   Each feature was computed on both the unpermuted and 100 permutations of the STRING PPI network.
 ](https://github.com/greenelab/xswap-analysis/raw/4d9137f43a16fbe6c6a02865adceaa9a3195fe2d/img/feature-auroc.png){#fig:feature-auroc width="85%"}
+
+<!--
+fig:feature-auroc is created by
+https://github.com/greenelab/xswap-analysis/blob/b0db22c82b2e58bf1ef5ae78317167982016e26b/nb/7.fig5.feature_degree/3.plot_perm_auroc_comparison.ipynb
+-->
 
 The edge prior encapsulates nonspecific predictions due to degree, and it reconstructed the PPI network with an AUROC of 0.797 (dotted red line in Figure {@fig:feature-auroc}).
 In the second comparison, edge prediction features computed on permuted networks had performance equal or lower to their performances on the unpermuted networks.
@@ -594,9 +631,17 @@ We define network density to be the number of edges divided by the number of pot
 Increasing network density lowers the asymptotic fraction of edges changed, as greater density prevents the algorithm from removing certain edges.
 Random graphs generated with a preferential attachment mechanism (via Barabási–Albert) can have a lower fraction of their edges swapped, asymptotically, as compared to uniform random graphs (via Erdős–Rényi).
 
-![Higher density networks have lower asymptotic fractions of edges swapped and take more attempts to reach these values.
+![
+  **Higher density networks have lower asymptotic fractions of edges swapped and take more attempts to reach these values.**
   The Barabási–Albert model produces scale-free random graphs, while Erdős–Rényi generates random graphs where all edges are equally likely.
-  ](https://github.com/greenelab/xswap-analysis/raw/47f67f85b1a5df2714d564c274515f1fdeb882ba/img/6_xswap_percent_swapped_iterations/lines_continuous.png){#fig:swap-percent width="100%"}
+](https://github.com/greenelab/xswap-analysis/raw/47f67f85b1a5df2714d564c274515f1fdeb882ba/img/6_xswap_percent_swapped_iterations/lines_continuous.png){#fig:swap-percent width="100%"}
+
+<!--
+fig:swap-percent is created by
+https://github.com/greenelab/xswap-analysis/blob/b0db22c82b2e58bf1ef5ae78317167982016e26b/nb/supplement/plot_swap_percent.ipynb
+Data for the plot is materialized at
+https://github.com/greenelab/xswap-analysis/blob/b0db22c82b2e58bf1ef5ae78317167982016e26b/data/percent_swapped.csv
+-->
 
 ### Approximate edge prior {#approx-prior-supp}
 
