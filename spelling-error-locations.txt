@@ -112,7 +112,6 @@ content/02.body.md:219:Hetionet
 content/02.body.md:220:AUROC
 content/02.body.md:224:unsampled
 content/02.body.md:225:unsampled
-content/02.body.md:229:auroc
 content/02.body.md:229:xswap
 content/02.body.md:233:auroc
 content/02.body.md:233:xswap
