@@ -10,7 +10,7 @@ keywords:
 - python
 - manubot
 lang: en-US
-date-meta: '2023-01-31'
+date-meta: '2023-02-09'
 author-meta:
 - Michael Zietz
 - Daniel S. Himmelstein
@@ -29,11 +29,11 @@ header-includes: |-
   <meta name="citation_title" content="The probability of edge existence due to node degree: a baseline for network-based predictions" />
   <meta property="og:title" content="The probability of edge existence due to node degree: a baseline for network-based predictions" />
   <meta property="twitter:title" content="The probability of edge existence due to node degree: a baseline for network-based predictions" />
-  <meta name="dc.date" content="2023-01-31" />
-  <meta name="citation_publication_date" content="2023-01-31" />
-  <meta property="article:published_time" content="2023-01-31" />
-  <meta name="dc.modified" content="2023-01-31T12:11:51+00:00" />
-  <meta property="article:modified_time" content="2023-01-31T12:11:51+00:00" />
+  <meta name="dc.date" content="2023-02-09" />
+  <meta name="citation_publication_date" content="2023-02-09" />
+  <meta property="article:published_time" content="2023-02-09" />
+  <meta name="dc.modified" content="2023-02-09T11:52:47+00:00" />
+  <meta property="article:modified_time" content="2023-02-09T11:52:47+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -70,13 +70,13 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/xswap-manuscript/" />
   <meta name="citation_pdf_url" content="https://greenelab.github.io/xswap-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/xswap-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/xswap-manuscript/v/63b1969b3a5c75283c3dbb89eff4600abcc1c496/" />
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/xswap-manuscript/v/63b1969b3a5c75283c3dbb89eff4600abcc1c496/" />
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/xswap-manuscript/v/63b1969b3a5c75283c3dbb89eff4600abcc1c496/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/xswap-manuscript/v/56c13999c4d1184a247dec65bdae5a906e08f5d3/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/xswap-manuscript/v/56c13999c4d1184a247dec65bdae5a906e08f5d3/" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/xswap-manuscript/v/56c13999c4d1184a247dec65bdae5a906e08f5d3/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
-  <meta property="og:image" content="https://github.com/greenelab/xswap-manuscript/raw/63b1969b3a5c75283c3dbb89eff4600abcc1c496/thumbnail.png" />
-  <meta property="twitter:image" content="https://github.com/greenelab/xswap-manuscript/raw/63b1969b3a5c75283c3dbb89eff4600abcc1c496/thumbnail.png" />
+  <meta property="og:image" content="https://github.com/greenelab/xswap-manuscript/raw/56c13999c4d1184a247dec65bdae5a906e08f5d3/thumbnail.png" />
+  <meta property="twitter:image" content="https://github.com/greenelab/xswap-manuscript/raw/56c13999c4d1184a247dec65bdae5a906e08f5d3/thumbnail.png" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
   <link rel="mask-icon" href="https://manubot.org/safari-pinned-tab.svg" color="#ad1457" />
   <meta name="theme-color" content="#ad1457" />
@@ -97,10 +97,10 @@ _A DOI-citable version of this manuscript is available at <https://doi.org/10.11
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/xswap-manuscript/v/63b1969b3a5c75283c3dbb89eff4600abcc1c496/))
+([permalink](https://greenelab.github.io/xswap-manuscript/v/56c13999c4d1184a247dec65bdae5a906e08f5d3/))
 was automatically generated
-from [greenelab/xswap-manuscript@63b1969](https://github.com/greenelab/xswap-manuscript/tree/63b1969b3a5c75283c3dbb89eff4600abcc1c496)
-on January 31, 2023.
+from [greenelab/xswap-manuscript@56c1399](https://github.com/greenelab/xswap-manuscript/tree/56c13999c4d1184a247dec65bdae5a906e08f5d3)
+on February 9, 2023.
 </em></small>
 
 
@@ -392,6 +392,7 @@ While the full bitset implementation is faster for smaller networks, our package
 In addition to the validity conditions already described, our package allows specific edges to be excluded from permutation, and every network permutation returns both a permuted network and summary information about the numbers of swaps attempted, performed, and the reasons why invalid swaps were rejected.
 
 In addition to the Python package, all code to generate the analyses and figures is available at <https://github.com/greenelab/xswap-analysis>.
+This repository has been deposited to Zenodo along with large data files ignored by Git [@10.5281/zenodo.7623565].
 The manuscript was written using the Manubot software [@doi:10.1371/journal.pcbi.1007128], which allows anyone to provide feedback or modifications via the public repository at <https://github.com/greenelab/xswap-manuscript>.
 
 ## Results

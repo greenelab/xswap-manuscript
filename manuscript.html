@@ -10,7 +10,7 @@
   <meta name="author" content="Christopher Williams" />
   <meta name="author" content="Michael W. Nagle" />
   <meta name="author" content="Casey S. Greene" />
-  <meta name="dcterms.date" content="2023-01-31" />
+  <meta name="dcterms.date" content="2023-02-09" />
   <meta name="keywords" content="xswap, permutation, network, hetnets, degree, bioinformatics, python, manubot" />
   <title>The probability of edge existence due to node degree: a baseline for network-based predictions</title>
   <style>
@@ -50,11 +50,11 @@
   <meta name="citation_title" content="The probability of edge existence due to node degree: a baseline for network-based predictions" />
   <meta property="og:title" content="The probability of edge existence due to node degree: a baseline for network-based predictions" />
   <meta property="twitter:title" content="The probability of edge existence due to node degree: a baseline for network-based predictions" />
-  <meta name="dc.date" content="2023-01-31" />
-  <meta name="citation_publication_date" content="2023-01-31" />
-  <meta property="article:published_time" content="2023-01-31" />
-  <meta name="dc.modified" content="2023-01-31T12:11:51+00:00" />
-  <meta property="article:modified_time" content="2023-01-31T12:11:51+00:00" />
+  <meta name="dc.date" content="2023-02-09" />
+  <meta name="citation_publication_date" content="2023-02-09" />
+  <meta property="article:published_time" content="2023-02-09" />
+  <meta name="dc.modified" content="2023-02-09T11:52:47+00:00" />
+  <meta property="article:modified_time" content="2023-02-09T11:52:47+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -91,13 +91,13 @@
   <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/xswap-manuscript/" />
   <meta name="citation_pdf_url" content="https://greenelab.github.io/xswap-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/xswap-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/xswap-manuscript/v/63b1969b3a5c75283c3dbb89eff4600abcc1c496/" />
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/xswap-manuscript/v/63b1969b3a5c75283c3dbb89eff4600abcc1c496/" />
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/xswap-manuscript/v/63b1969b3a5c75283c3dbb89eff4600abcc1c496/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/xswap-manuscript/v/56c13999c4d1184a247dec65bdae5a906e08f5d3/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/xswap-manuscript/v/56c13999c4d1184a247dec65bdae5a906e08f5d3/" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/xswap-manuscript/v/56c13999c4d1184a247dec65bdae5a906e08f5d3/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
-  <meta property="og:image" content="https://github.com/greenelab/xswap-manuscript/raw/63b1969b3a5c75283c3dbb89eff4600abcc1c496/thumbnail.png" />
-  <meta property="twitter:image" content="https://github.com/greenelab/xswap-manuscript/raw/63b1969b3a5c75283c3dbb89eff4600abcc1c496/thumbnail.png" />
+  <meta property="og:image" content="https://github.com/greenelab/xswap-manuscript/raw/56c13999c4d1184a247dec65bdae5a906e08f5d3/thumbnail.png" />
+  <meta property="twitter:image" content="https://github.com/greenelab/xswap-manuscript/raw/56c13999c4d1184a247dec65bdae5a906e08f5d3/thumbnail.png" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
   <link rel="mask-icon" href="https://manubot.org/safari-pinned-tab.svg" color="#ad1457" />
   <meta name="theme-color" content="#ad1457" />
@@ -113,10 +113,10 @@
 <p><em>A DOI-citable version of this manuscript is available at <a href="https://doi.org/10.1101/2023.01.05.522939" class="uri">https://doi.org/10.1101/2023.01.05.522939</a></em>.</p>
 <p><small><em>
 This manuscript
-(<a href="https://greenelab.github.io/xswap-manuscript/v/63b1969b3a5c75283c3dbb89eff4600abcc1c496/">permalink</a>)
+(<a href="https://greenelab.github.io/xswap-manuscript/v/56c13999c4d1184a247dec65bdae5a906e08f5d3/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/greenelab/xswap-manuscript/tree/63b1969b3a5c75283c3dbb89eff4600abcc1c496">greenelab/xswap-manuscript@63b1969</a>
-on January 31, 2023.
+from <a href="https://github.com/greenelab/xswap-manuscript/tree/56c13999c4d1184a247dec65bdae5a906e08f5d3">greenelab/xswap-manuscript@56c1399</a>
+on February 9, 2023.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
@@ -364,7 +364,8 @@ The full source code is freely available under the BSD 2-Clause License (<a href
 While the full bitset implementation is faster for smaller networks, our package uses a compressed bitset <span class="citation" data-cites="jNEBDktj">[<a href="#ref-jNEBDktj" role="doc-biblioref">24</a>]</span> when a network would occupy memory above a user-adjustable threshold.
 In addition to the validity conditions already described, our package allows specific edges to be excluded from permutation, and every network permutation returns both a permuted network and summary information about the numbers of swaps attempted, performed, and the reasons why invalid swaps were rejected.</p>
 <p>In addition to the Python package, all code to generate the analyses and figures is available at <a href="https://github.com/greenelab/xswap-analysis" class="uri">https://github.com/greenelab/xswap-analysis</a>.
-The manuscript was written using the Manubot software <span class="citation" data-cites="YuJbg3zO">[<a href="#ref-YuJbg3zO" role="doc-biblioref">25</a>]</span>, which allows anyone to provide feedback or modifications via the public repository at <a href="https://github.com/greenelab/xswap-manuscript" class="uri">https://github.com/greenelab/xswap-manuscript</a>.</p>
+This repository has been deposited to Zenodo along with large data files ignored by Git <span class="citation" data-cites="QUz6BIl8">[<a href="#ref-QUz6BIl8" role="doc-biblioref">25</a>]</span>.
+The manuscript was written using the Manubot software <span class="citation" data-cites="YuJbg3zO">[<a href="#ref-YuJbg3zO" role="doc-biblioref">26</a>]</span>, which allows anyone to provide feedback or modifications via the public repository at <a href="https://github.com/greenelab/xswap-manuscript" class="uri">https://github.com/greenelab/xswap-manuscript</a>.</p>
 <h2 id="results">Results</h2>
 <h3 id="node-degree-bias-is-prevalent">Node degree bias is prevalent</h3>
 <p>We found examples of node degree bias in the PPI and TF-TG networks we investigated.
@@ -518,7 +519,7 @@ For example, if node A connects to nearly all other nodes in a network, predicti
 Node degree should be accounted for to make correct predictions while being able to distinguish specific from nonspecific predictions.
 Prediction without reliance on node degree is challenging because many effective methods for edge prediction are correlated with degree (Figure <a href="#fig:feature-degree">7</a>).</p>
 <p>The effects of node degree are obvious when edge prediction features are functions of degree.
-For example, the resource allocation index is the sum of inverse degree of common neighbors between source and target nodes (in the symmetric case), while preferential attachment is the product of source and target degree <span class="citation" data-cites="1F96bsjSm suzIn5oo">[<a href="#ref-1F96bsjSm" role="doc-biblioref">26</a>,<a href="#ref-suzIn5oo" role="doc-biblioref">27</a>]</span>.
+For example, the resource allocation index is the sum of inverse degree of common neighbors between source and target nodes (in the symmetric case), while preferential attachment is the product of source and target degree <span class="citation" data-cites="1F96bsjSm suzIn5oo">[<a href="#ref-1F96bsjSm" role="doc-biblioref">27</a>,<a href="#ref-suzIn5oo" role="doc-biblioref">28</a>]</span>.
 However, because many other edge prediction methods are not explicitly degree-based, it is important to have a general method for comparing the effects of node degree on edge prediction methods.</p>
 <p>We developed a permutation framework to quantify the edge probability due to degree.
 We term this probability the “edge prior”, and we have identified two applications.
@@ -619,34 +620,37 @@ A careful accounting of degree’s effects enables contextualized model evaluati
 <div class="csl-left-margin">22. </div><div class="csl-right-inline"><strong>Complete Rxivist dataset of scraped bioRxiv data</strong> <div class="csl-block">Richard J Abdill, Ran Blekhman</div> <em>Zenodo</em> (2019-03-21) <a href="https://doi.org/gfz3fm">https://doi.org/gfz3fm</a> <div class="csl-block">DOI: <a href="https://doi.org/10.5281/zenodo.2566421">10.5281/zenodo.2566421</a></div></div>
 </div>
 <div id="ref-5HDIoesA" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">23. </div><div class="csl-right-inline"><strong>Hetnet connectivity search provides rapid insights into how two biomedical entities are related</strong> <div class="csl-block">Daniel S Himmelstein, Michael Zietz, Vincent Rubinetti, Kyle Kloster, Benjamin J Heil, Faisal Alquaddoomi, Dongbo Hu, David N Nicholson, Yun Hao, Blair D Sullivan, … Casey S Greene</div> <em>Manubot</em> (2023-01-09) <a href="https://greenelab.github.io/connectivity-search-manuscript/">https://greenelab.github.io/connectivity-search-manuscript/</a></div>
+<div class="csl-left-margin">23. </div><div class="csl-right-inline"><strong>Hetnet connectivity search provides rapid insights into how two biomedical entities are related</strong> <div class="csl-block">Daniel S Himmelstein, Michael Zietz, Vincent Rubinetti, Kyle Kloster, Benjamin J Heil, Faisal Alquaddoomi, Dongbo Hu, David N Nicholson, Yun Hao, Blair D Sullivan, … Casey S Greene</div> <em>Manubot</em> (2023-01-31) <a href="https://greenelab.github.io/connectivity-search-manuscript/">https://greenelab.github.io/connectivity-search-manuscript/</a></div>
 </div>
 <div id="ref-jNEBDktj" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">24. </div><div class="csl-right-inline"><strong>Roaring Bitmaps: Implementation of an Optimized Software Library</strong> <div class="csl-block">Daniel Lemire, Owen Kaser, Nathan Kurz, Luca Deri, Chris O'Hara, François Saint-Jacques, Gregory Ssi-Yan-Kai</div> <em>arXiv</em> (2022-02-08) <a href="https://arxiv.org/abs/1709.07821">https://arxiv.org/abs/1709.07821</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1002/spe.2560">10.1002/spe.2560</a></div></div>
 </div>
+<div id="ref-QUz6BIl8" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">25. </div><div class="csl-right-inline"><strong>XSwap Analysis v1.0</strong> <div class="csl-block">Michael Zietz</div> <em>Zenodo</em> (2023-02-09) <a href="https://doi.org/grrffk">https://doi.org/grrffk</a> <div class="csl-block">DOI: <a href="https://doi.org/10.5281/zenodo.7623565">10.5281/zenodo.7623565</a></div></div>
+</div>
 <div id="ref-YuJbg3zO" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">25. </div><div class="csl-right-inline"><strong>Open collaborative writing with Manubot</strong> <div class="csl-block">Daniel S Himmelstein, Vincent Rubinetti, David R Slochower, Dongbo Hu, Venkat S Malladi, Casey S Greene, Anthony Gitter</div> <em>PLOS Computational Biology</em> (2019-06-24) <a href="https://doi.org/c7np">https://doi.org/c7np</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1371/journal.pcbi.1007128">10.1371/journal.pcbi.1007128</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31233491">31233491</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6611653">PMC6611653</a></div></div>
+<div class="csl-left-margin">26. </div><div class="csl-right-inline"><strong>Open collaborative writing with Manubot</strong> <div class="csl-block">Daniel S Himmelstein, Vincent Rubinetti, David R Slochower, Dongbo Hu, Venkat S Malladi, Casey S Greene, Anthony Gitter</div> <em>PLOS Computational Biology</em> (2019-06-24) <a href="https://doi.org/c7np">https://doi.org/c7np</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1371/journal.pcbi.1007128">10.1371/journal.pcbi.1007128</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31233491">31233491</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6611653">PMC6611653</a></div></div>
 </div>
 <div id="ref-1F96bsjSm" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">26. </div><div class="csl-right-inline"><strong>Predicting missing links via local information</strong> <div class="csl-block">Tao Zhou, Linyuan Lü, Yi-Cheng Zhang</div> <em>The European Physical Journal B</em> (2009-10) <a href="https://doi.org/dd55vr">https://doi.org/dd55vr</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1140/epjb/e2009-00335-8">10.1140/epjb/e2009-00335-8</a></div></div>
+<div class="csl-left-margin">27. </div><div class="csl-right-inline"><strong>Predicting missing links via local information</strong> <div class="csl-block">Tao Zhou, Linyuan Lü, Yi-Cheng Zhang</div> <em>The European Physical Journal B</em> (2009-10) <a href="https://doi.org/dd55vr">https://doi.org/dd55vr</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1140/epjb/e2009-00335-8">10.1140/epjb/e2009-00335-8</a></div></div>
 </div>
 <div id="ref-suzIn5oo" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">27. </div><div class="csl-right-inline"><strong>Link prediction approach to collaborative filtering</strong> <div class="csl-block">Zan Huang, Xin Li, Hsinchun Chen</div> <em>Proceedings of the 5th ACM/IEEE-CS joint conference on Digital libraries - JCDL '05</em> (2005) <a href="https://doi.org/fn39g8">https://doi.org/fn39g8</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1145/1065385.1065415">10.1145/1065385.1065415</a></div></div>
+<div class="csl-left-margin">28. </div><div class="csl-right-inline"><strong>Link prediction approach to collaborative filtering</strong> <div class="csl-block">Zan Huang, Xin Li, Hsinchun Chen</div> <em>Proceedings of the 5th ACM/IEEE-CS joint conference on Digital libraries - JCDL '05</em> (2005) <a href="https://doi.org/fn39g8">https://doi.org/fn39g8</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1145/1065385.1065415">10.1145/1065385.1065415</a></div></div>
 </div>
 <div id="ref-EfWvuSjX" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">28. </div><div class="csl-right-inline"><strong>The link-prediction problem for social networks</strong> <div class="csl-block">David Liben-Nowell, Jon Kleinberg</div> <em>Journal of the American Society for Information Science and Technology</em> (2007) <a href="https://doi.org/c56765">https://doi.org/c56765</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1002/asi.20591">10.1002/asi.20591</a></div></div>
+<div class="csl-left-margin">29. </div><div class="csl-right-inline"><strong>The link-prediction problem for social networks</strong> <div class="csl-block">David Liben-Nowell, Jon Kleinberg</div> <em>Journal of the American Society for Information Science and Technology</em> (2007) <a href="https://doi.org/c56765">https://doi.org/c56765</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1002/asi.20591">10.1002/asi.20591</a></div></div>
 </div>
 <div id="ref-9dBDcARP" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">29. </div><div class="csl-right-inline"><strong>Friends and neighbors on the Web</strong> <div class="csl-block">Lada A Adamic, Eytan Adar</div> <em>Social Networks</em> (2003-07) <a href="https://doi.org/br5zd3">https://doi.org/br5zd3</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1016/s0378-8733(03)00009-1">10.1016/s0378-8733(03)00009-1</a></div></div>
+<div class="csl-left-margin">30. </div><div class="csl-right-inline"><strong>Friends and neighbors on the Web</strong> <div class="csl-block">Lada A Adamic, Eytan Adar</div> <em>Social Networks</em> (2003-07) <a href="https://doi.org/br5zd3">https://doi.org/br5zd3</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1016/s0378-8733(03)00009-1">10.1016/s0378-8733(03)00009-1</a></div></div>
 </div>
 <div id="ref-HSmvOV9E" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">30. </div><div class="csl-right-inline"><strong>Automatic multimedia cross-modal correlation discovery</strong> <div class="csl-block">Jia-Yu Pan, Hyung-Jeong Yang, Christos Faloutsos, Pinar Duygulu</div> <em>Proceedings of the 2004 ACM SIGKDD international conference on Knowledge discovery and data mining - KDD '04</em> (2004) <a href="https://doi.org/bmhgw4">https://doi.org/bmhgw4</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1145/1014052.1014135">10.1145/1014052.1014135</a></div></div>
+<div class="csl-left-margin">31. </div><div class="csl-right-inline"><strong>Automatic multimedia cross-modal correlation discovery</strong> <div class="csl-block">Jia-Yu Pan, Hyung-Jeong Yang, Christos Faloutsos, Pinar Duygulu</div> <em>Proceedings of the 2004 ACM SIGKDD international conference on Knowledge discovery and data mining - KDD '04</em> (2004) <a href="https://doi.org/bmhgw4">https://doi.org/bmhgw4</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1145/1014052.1014135">10.1145/1014052.1014135</a></div></div>
 </div>
 <div id="ref-1E6tdJtDz" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">31. </div><div class="csl-right-inline"><strong>Learning with local and global consistency</strong> <div class="csl-block">Dengyong Zhou, Olivier Bousquet, Thomas Navin Lal, Jason Weston, Bernhard Scholkopf</div> <em>NIPS 2003</em> (2003-12-09) <a href="https://dl.acm.org/doi/10.5555/2981345.2981386">https://dl.acm.org/doi/10.5555/2981345.2981386</a></div>
+<div class="csl-left-margin">32. </div><div class="csl-right-inline"><strong>Learning with local and global consistency</strong> <div class="csl-block">Dengyong Zhou, Olivier Bousquet, Thomas Navin Lal, Jason Weston, Bernhard Scholkopf</div> <em>NIPS 2003</em> (2003-12-09) <a href="https://dl.acm.org/doi/10.5555/2981345.2981386">https://dl.acm.org/doi/10.5555/2981345.2981386</a></div>
 </div>
 <div id="ref-1EgqwD4S1" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">32. </div><div class="csl-right-inline"><strong>Link prediction in large directed graphs</strong> <div class="csl-block">Dario Garcia Gasulla</div> <em>Universitat Politècnica de Catalunya</em> (2015-04-23) <a href="https://upcommons.upc.edu/handle/2117/95691">https://upcommons.upc.edu/handle/2117/95691</a></div>
+<div class="csl-left-margin">33. </div><div class="csl-right-inline"><strong>Link prediction in large directed graphs</strong> <div class="csl-block">Dario Garcia Gasulla</div> <em>Universitat Politècnica de Catalunya</em> (2015-04-23) <a href="https://upcommons.upc.edu/handle/2117/95691">https://upcommons.upc.edu/handle/2117/95691</a></div>
 </div>
 </div>
 <h2 id="supplemental-information">Supplemental information</h2>
@@ -1144,32 +1148,32 @@ All definitions that follow are the score between nodes <span class="math inline
 <tr class="odd">
 <td>Jaccard index</td>
 <td><span class="math inline">\(\frac{|k(u) \cap k(v)|}{|k(u) \cup k(v)|}\)</span></td>
-<td><span class="citation" data-cites="EfWvuSjX">[<a href="#ref-EfWvuSjX" role="doc-biblioref">28</a>]</span></td>
+<td><span class="citation" data-cites="EfWvuSjX">[<a href="#ref-EfWvuSjX" role="doc-biblioref">29</a>]</span></td>
 </tr>
 <tr class="even">
 <td>Preferential attachment score</td>
 <td><span class="math inline">\(|k(u)||k(v)|\)</span></td>
-<td><span class="citation" data-cites="EfWvuSjX">[<a href="#ref-EfWvuSjX" role="doc-biblioref">28</a>]</span></td>
+<td><span class="citation" data-cites="EfWvuSjX">[<a href="#ref-EfWvuSjX" role="doc-biblioref">29</a>]</span></td>
 </tr>
 <tr class="odd">
 <td>Resource allocation index</td>
 <td><span class="math inline">\(\sum_{w \in k(u) \cap k(v)} \frac{1}{|k(w)|}\)</span></td>
-<td><span class="citation" data-cites="1F96bsjSm">[<a href="#ref-1F96bsjSm" role="doc-biblioref">26</a>]</span></td>
+<td><span class="citation" data-cites="1F96bsjSm">[<a href="#ref-1F96bsjSm" role="doc-biblioref">27</a>]</span></td>
 </tr>
 <tr class="even">
 <td>Adamic/Adar index</td>
 <td><span class="math inline">\(\sum_{w \in k(u) \cap k(v)} \frac{1}{log|k(w)|}\)</span></td>
-<td><span class="citation" data-cites="9dBDcARP">[<a href="#ref-9dBDcARP" role="doc-biblioref">29</a>]</span></td>
+<td><span class="citation" data-cites="9dBDcARP">[<a href="#ref-9dBDcARP" role="doc-biblioref">30</a>]</span></td>
 </tr>
 <tr class="odd">
 <td>Random walk with restart score</td>
 <td><span class="math inline">\(c \bigg[ \bigg( \mathbb{I} - (1-c) \mathbf{A}\bigg)^{-1} \mathbf{y}_u \bigg]_v\)</span></td>
-<td><span class="citation" data-cites="HSmvOV9E 1E6tdJtDz">[<a href="#ref-HSmvOV9E" role="doc-biblioref">30</a>,<a href="#ref-1E6tdJtDz" role="doc-biblioref">31</a>]</span></td>
+<td><span class="citation" data-cites="HSmvOV9E 1E6tdJtDz">[<a href="#ref-HSmvOV9E" role="doc-biblioref">31</a>,<a href="#ref-1E6tdJtDz" role="doc-biblioref">32</a>]</span></td>
 </tr>
 <tr class="even">
 <td>Inference score</td>
 <td><span class="math inline">\(\frac{|A(u) \cap D(v)|}{|A(u)|} + \frac{|D(u) \cap D(v)|}{|D(u)|}\)</span></td>
-<td><span class="citation" data-cites="1EgqwD4S1">[<a href="#ref-1EgqwD4S1" role="doc-biblioref">32</a>]</span></td>
+<td><span class="citation" data-cites="1EgqwD4S1">[<a href="#ref-1EgqwD4S1" role="doc-biblioref">33</a>]</span></td>
 </tr>
 </tbody>
 </table>
