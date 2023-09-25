@@ -3,9 +3,9 @@ AdG
 AeG
 AlD
 algo
+algodigram
 antiparallel
-auroc
-AUROCs
+AUROC
 Barabási
 bioinformatics
 bioRxiv
@@ -71,7 +71,7 @@ TF
 TG
 Translational
 underly
-undirected
+Undirected
 uninsightful
 unpermuted
 unsampled

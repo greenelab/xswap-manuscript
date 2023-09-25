@@ -10,7 +10,7 @@ keywords:
 - python
 - manubot
 lang: en-US
-date-meta: '2023-09-21'
+date-meta: '2023-09-25'
 author-meta:
 - Michael Zietz
 - Daniel S. Himmelstein
@@ -29,11 +29,11 @@ header-includes: |
   <meta name="citation_title" content="The probability of edge existence due to node degree: a baseline for network-based predictions" />
   <meta property="og:title" content="The probability of edge existence due to node degree: a baseline for network-based predictions" />
   <meta property="twitter:title" content="The probability of edge existence due to node degree: a baseline for network-based predictions" />
-  <meta name="dc.date" content="2023-09-21" />
-  <meta name="citation_publication_date" content="2023-09-21" />
-  <meta property="article:published_time" content="2023-09-21" />
-  <meta name="dc.modified" content="2023-09-21T20:07:19+00:00" />
-  <meta property="article:modified_time" content="2023-09-21T20:07:19+00:00" />
+  <meta name="dc.date" content="2023-09-25" />
+  <meta name="citation_publication_date" content="2023-09-25" />
+  <meta property="article:published_time" content="2023-09-25" />
+  <meta name="dc.modified" content="2023-09-25T00:06:58+00:00" />
+  <meta property="article:modified_time" content="2023-09-25T00:06:58+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -70,13 +70,13 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/xswap-manuscript/" />
   <meta name="citation_pdf_url" content="https://greenelab.github.io/xswap-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/xswap-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/xswap-manuscript/v/ecab55d0f8dc048edb5ab6f7cee6d57f48217b43/" />
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/xswap-manuscript/v/ecab55d0f8dc048edb5ab6f7cee6d57f48217b43/" />
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/xswap-manuscript/v/ecab55d0f8dc048edb5ab6f7cee6d57f48217b43/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/xswap-manuscript/v/e6641403417f89d8f1a717569668d83c0301a3f7/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/xswap-manuscript/v/e6641403417f89d8f1a717569668d83c0301a3f7/" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/xswap-manuscript/v/e6641403417f89d8f1a717569668d83c0301a3f7/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
-  <meta property="og:image" content="https://github.com/greenelab/xswap-manuscript/raw/ecab55d0f8dc048edb5ab6f7cee6d57f48217b43/thumbnail.png" />
-  <meta property="twitter:image" content="https://github.com/greenelab/xswap-manuscript/raw/ecab55d0f8dc048edb5ab6f7cee6d57f48217b43/thumbnail.png" />
+  <meta property="og:image" content="https://github.com/greenelab/xswap-manuscript/raw/e6641403417f89d8f1a717569668d83c0301a3f7/thumbnail.png" />
+  <meta property="twitter:image" content="https://github.com/greenelab/xswap-manuscript/raw/e6641403417f89d8f1a717569668d83c0301a3f7/thumbnail.png" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
   <link rel="mask-icon" href="https://manubot.org/safari-pinned-tab.svg" color="#ad1457" />
   <meta name="theme-color" content="#ad1457" />
@@ -97,10 +97,10 @@ _A DOI-citable version of this manuscript is available at <https://doi.org/10.11
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/xswap-manuscript/v/ecab55d0f8dc048edb5ab6f7cee6d57f48217b43/))
+([permalink](https://greenelab.github.io/xswap-manuscript/v/e6641403417f89d8f1a717569668d83c0301a3f7/))
 was automatically generated
-from [greenelab/xswap-manuscript@ecab55d](https://github.com/greenelab/xswap-manuscript/tree/ecab55d0f8dc048edb5ab6f7cee6d57f48217b43)
-on September 21, 2023.
+from [greenelab/xswap-manuscript@e664140](https://github.com/greenelab/xswap-manuscript/tree/e6641403417f89d8f1a717569668d83c0301a3f7)
+on September 25, 2023.
 </em></small>
 
 
@@ -202,12 +202,9 @@ Important tasks in biomedical discovery such as predicting gene functions, gene-
 The number of edges connecting to a node, termed degree, can vary greatly across nodes in real biomedical networks, and the distribution of degrees varies between networks.
 If degree strongly influences edge prediction, then imbalance or bias in the distribution of degrees could lead to nonspecific or misleading predictions.
 We introduce a network permutation framework to quantify the effects of node degree on edge prediction.
-Our framework decomposes performance into the proportions attributable to degree and the network's specific connections.
+Our framework decomposes performance into the proportions attributable to degree and the network's specific connections using network permutation to generate features that depend only on degree.
 We discover that performance attributable to factors other than degree is often only a small portion of overall performance.
-Degree's predictive performance diminishes when the networks used for training and testing---despite measuring the same biological relationships---were generated using distinct techniques and hence have large differences in degree distribution.
-We introduce the permutation-derived edge prior as the probability that an edge exists based only on degree.
-The edge prior shows excellent discrimination and calibration for 20 biomedical networks (16 bipartite, 3 undirected, 1 directed), with AUROCs frequently exceeding 0.85.
-Researchers seeking to predict new or missing edges in biological networks should use the edge prior as a baseline to identify the fraction of performance that is nonspecific because of degree.
+Researchers seeking to predict new or missing edges in biological networks should use our permutation approach to obtain a baseline for performance that may be nonspecific because of degree.
 We released our methods as an open-source Python package (<https://github.com/hetio/xswap/>).
 
 
@@ -268,7 +265,7 @@ For example, predicting that the highest degree node in a network shares edges w
 Degree is important in edge prediction, but it can cause undesired effects.
 Degree-based features should often be included in the interpretation of predictions to disentangle desired from non-desired effects and to effectively evaluate and compare predictive models.
 We sought to directly measure the effect of node degree on edge prediction methods.
-We introduce a permutation-based framework and software implementation to find edge existence probabilities due to node degree and to quantify the contribution of degree to edge prediction methods.
+To do so, we developed a network permutation approach that allows any edge prediction method to be compared to an empirical baseline distribution.
 This method allows edge predictions to be evaluated in the context of degree and its effects on the prediction task.
 Our results demonstrate that degree-associated methods are very effective for reconstructing a network using a subsampled holdout.
 However, these methods are ineffective for predicting edges between networks measuring the same biological processes in targeted and systematic ways because such networks have distinct degree distributions.
@@ -305,7 +302,7 @@ When permuting bipartite networks, our method ensures that each node's class mem
 Similarly, heterogeneous networks should be permuted by considering each edge type as a separate network [@doi:10.1371/journal.pcbi.1004259; @doi:10.15363/thinklab.d136].
 This way, each node retains its within-edge-type degree for all edge types.
 We provide documentation for parameter choices depending on the type of network being permuted in the GitHub repository (<https://github.com/hetio/xswap>).
-The original algorithm and our proposed modification are given in Figure {@fig:algo}.
+The original algorithm and our proposed modification are given in Figures {@fig:algo} and {@fig:algodigram}.
 
 ![
   **XSwap algorithm pseudocode.**
@@ -313,18 +310,24 @@ The original algorithm and our proposed modification are given in Figure {@fig:a
   **B.** Extension of the XSwap algorithm to other types of networks.
 ](images/algorithms_label.png){#fig:algo width="65%"}
 
+![
+  **Modified XSwap algorithm graphical explanation.**
+](images/XSwap.svg){#fig:algodiagram width="65%"}
+
 ### Edge prior
 
 We introduce the edge prior to quantify the probability that two nodes are connected based only on their degree.
-The edge prior can be estimated using the fraction of permuted networks in which a given edge exists---the maximum likelihood estimate for the binomial distribution success probability.
+The edge prior can be estimated using the fraction of permuted networks in which a given edge exists.
+In short, for a given node pair (a, b), given $N$ permutations of the network, and given that $m$ of these permutation contain (a, b), the prior for (a, b) is $m \mathbin{/} N$, which is also the maximum likelihood estimate for the binomial distribution success probability.
 Based only on permuted networks, the edge prior does not contain any information about the true edges in the (unpermuted) network.
 The edge prior is a numerical value that can be computed for every pair of nodes that could potentially share an edge; we compared its ability to predict edges in three tasks, discussed in [prediction tasks](#tasks).
 
 ### Analytical approximation of the edge prior
 
 Because network permutation can be computationally intensive, we also considered whether the probability of an edge existing across permuted networks has a simple closed-form expression.
-We were unable to find a closed-form solution giving the edge prior without assuming that the probability of any given edge existing is independent of all other potential edges, which we believe is not valid for XSwap.
+We were unable to find a closed-form solution giving the edge prior without assuming that the probability of any given edge existing is independent of all other potential edges, which, in general, is not valid.
 Nonetheless, we discovered a good analytical approximation to the edge prior that is particularly good for networks with many nodes and fewer edges (Figure {@fig:approx-quality}).
+Further discussion of this approximate edge prior and an derivation are available in [the supplement](#approx-prior-supp).
 Let $m$ be the total number of edges in the network, and $u_i$, $v_j$ be the source and target degrees of a node pair, respectively.
 An approximation of the edge prior is
 
@@ -343,16 +346,18 @@ fig:approx-quality created by
 https://github.com/greenelab/xswap-analysis/blob/4f06bdaf1f034af9136e25c03f9891a145b9bf91/nb/8.fig6.prior_exact_vs_approx/plot_prior_exact_vs_approx.ipynb
 -->
 
-Further discussion of this approximate edge prior and an derivation are available in [the supplement](#approx-prior-supp).
+
 
 ### Prediction tasks {#tasks}
 
 We performed three prediction tasks to assess the performance of the edge prior.
 We compared the permutation-based prior with two additional predictors: our analytical approximation of the edge prior and the product of source and target degree, scaled to the range [0, 1] so that we could assess its calibration as well as its discrimination.
 We used 20 biomedical networks from the Hetionet heterogeneous network [@doi:10.7554/eLife.26726] that had at least 2000 edges for the first two tasks ([Supplemental table](#networks)).
+
 In the first task, we computed the degree-based predictors (edge prior, scaled degree product, and analytical prior approximation), and predicted the original edges in the network by rank-ordering node pair edge predictions by the node pairs' predictor values.
 We used node pairs that lacked an edge in the original network as negative examples and those with an edge as positive examples.
 To assess the methods' predictive performances, we computed the area under the receiver operating characteristic (AUROC) curve for all three predictors.
+
 In the second task, we sampled 70% of edges from each of the networks, computed predictors on the sampled network, then predicted held-out edges.
 For this task, negative examples were node pairs in which an edge did not exist in either original or sampled network, while positive samples were those node pairs without an edge in the sampled network but with an edge in the original network.
 
@@ -373,7 +378,7 @@ Further information about the networks used can be found in [the supplement](#ne
 ### Degree-grouping
 
 Our method for degree-preserving permutation produces randomized networks that share few of their edges with the original network.
-The predictor values for two node pairs with the same source and target degree are drawn from the same distribution in permuted networks, so nodes with equal degree can be grouped when summarizing predictors.
+As permutation preserves only node degree, node pairs with equal degree are equivalent in permutations.
 For a given node pair, degree grouping treats other node pairs with the same degrees as additional permutations [@connectivity-search].
 We used this strategy to augment the number of predictor values for each node pair in permuted networks, allowing node pairs to have more permuted predictor values than permuted networks.
 Degree grouping [greatly increased](https://github.com/greenelab/hetmech/pull/96) the effective number of permutations for nodes with frequently observed degrees.
@@ -426,6 +431,7 @@ https://github.com/greenelab/xswap-analysis/blob/4f06bdaf1f034af9136e25c03f9891a
 
 ### The edge prior encapsulates degree
 
+We evaluated degree as an edge prediction feature using the edge prior.
 In the first prediction task, we computed three predictors---the XSwap edge prior, an analytical approximation to the edge prior, and the (scaled) product of source and target node degree---on networks from Hetionet.
 We then evaluated the extent to which these predictors---treated as predictions themselves---could reconstruct the 20 networks ([Supplemental table](#networks)).
 The XSwap-derived edge prior reconstructed many of the networks with a high level of performance, as measured by the AUROC.
@@ -497,7 +503,7 @@ Degree's influence on edge prediction accuracy measures can reveal the relative 
 
 ### Degree can underly a large fraction of performance
 
-We conducted a further edge prediction task as an example application of the edge prior and our permutation framework.
+We evaluated the extent to which edge prediction performance is due to degree.
 To begin, we chose the STRING PPI network for the comparison and computed five edge prediction features (Supplemental table {@tbl:edge-prediction}).
 The goal of the task was to reconstruct the network on which the features were computed.
 All five features were correlated with degree (Figure {@fig:feature-degree}), which we quantified for a node pair using the product of source and target degrees.
