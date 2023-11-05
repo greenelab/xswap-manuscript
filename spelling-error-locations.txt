@@ -32,7 +32,7 @@ content/02.body.md:88:multipartite
 content/02.body.md:88:undirected
 content/02.body.md:94:xswap
 content/02.body.md:95:algo
-content/02.body.md:95:algodigram
+content/02.body.md:95:algodiagram
 content/02.body.md:98:pseudocode
 content/02.body.md:98:XSwap
 content/02.body.md:99:Hanhijärvi
@@ -40,6 +40,7 @@ content/02.body.md:99:XSwap
 content/02.body.md:100:XSwap
 content/02.body.md:101:algo
 content/02.body.md:104:XSwap
+content/02.body.md:105:algodiagram
 content/02.body.md:105:XSwap
 content/02.body.md:112:unpermuted
 content/02.body.md:129:XSwap

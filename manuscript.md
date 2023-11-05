@@ -10,7 +10,7 @@ keywords:
 - python
 - manubot
 lang: en-US
-date-meta: '2023-09-25'
+date-meta: '2023-11-05'
 author-meta:
 - Michael Zietz
 - Daniel S. Himmelstein
@@ -29,11 +29,11 @@ header-includes: |
   <meta name="citation_title" content="The probability of edge existence due to node degree: a baseline for network-based predictions" />
   <meta property="og:title" content="The probability of edge existence due to node degree: a baseline for network-based predictions" />
   <meta property="twitter:title" content="The probability of edge existence due to node degree: a baseline for network-based predictions" />
-  <meta name="dc.date" content="2023-09-25" />
-  <meta name="citation_publication_date" content="2023-09-25" />
-  <meta property="article:published_time" content="2023-09-25" />
-  <meta name="dc.modified" content="2023-09-25T00:06:58+00:00" />
-  <meta property="article:modified_time" content="2023-09-25T00:06:58+00:00" />
+  <meta name="dc.date" content="2023-11-05" />
+  <meta name="citation_publication_date" content="2023-11-05" />
+  <meta property="article:published_time" content="2023-11-05" />
+  <meta name="dc.modified" content="2023-11-05T12:09:07+00:00" />
+  <meta property="article:modified_time" content="2023-11-05T12:09:07+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -70,13 +70,13 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/xswap-manuscript/" />
   <meta name="citation_pdf_url" content="https://greenelab.github.io/xswap-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/xswap-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/xswap-manuscript/v/e6641403417f89d8f1a717569668d83c0301a3f7/" />
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/xswap-manuscript/v/e6641403417f89d8f1a717569668d83c0301a3f7/" />
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/xswap-manuscript/v/e6641403417f89d8f1a717569668d83c0301a3f7/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/xswap-manuscript/v/cfb3859c972152f1db4b956ebf6cf7f9366d0ff4/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/xswap-manuscript/v/cfb3859c972152f1db4b956ebf6cf7f9366d0ff4/" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/xswap-manuscript/v/cfb3859c972152f1db4b956ebf6cf7f9366d0ff4/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
-  <meta property="og:image" content="https://github.com/greenelab/xswap-manuscript/raw/e6641403417f89d8f1a717569668d83c0301a3f7/thumbnail.png" />
-  <meta property="twitter:image" content="https://github.com/greenelab/xswap-manuscript/raw/e6641403417f89d8f1a717569668d83c0301a3f7/thumbnail.png" />
+  <meta property="og:image" content="https://github.com/greenelab/xswap-manuscript/raw/cfb3859c972152f1db4b956ebf6cf7f9366d0ff4/thumbnail.png" />
+  <meta property="twitter:image" content="https://github.com/greenelab/xswap-manuscript/raw/cfb3859c972152f1db4b956ebf6cf7f9366d0ff4/thumbnail.png" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
   <link rel="mask-icon" href="https://manubot.org/safari-pinned-tab.svg" color="#ad1457" />
   <meta name="theme-color" content="#ad1457" />
@@ -97,10 +97,10 @@ _A DOI-citable version of this manuscript is available at <https://doi.org/10.11
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/xswap-manuscript/v/e6641403417f89d8f1a717569668d83c0301a3f7/))
+([permalink](https://greenelab.github.io/xswap-manuscript/v/cfb3859c972152f1db4b956ebf6cf7f9366d0ff4/))
 was automatically generated
-from [greenelab/xswap-manuscript@e664140](https://github.com/greenelab/xswap-manuscript/tree/e6641403417f89d8f1a717569668d83c0301a3f7)
-on September 25, 2023.
+from [greenelab/xswap-manuscript@cfb3859](https://github.com/greenelab/xswap-manuscript/tree/cfb3859c972152f1db4b956ebf6cf7f9366d0ff4)
+on November 5, 2023.
 </em></small>
 
 
@@ -302,7 +302,7 @@ When permuting bipartite networks, our method ensures that each node's class mem
 Similarly, heterogeneous networks should be permuted by considering each edge type as a separate network [@doi:10.1371/journal.pcbi.1004259; @doi:10.15363/thinklab.d136].
 This way, each node retains its within-edge-type degree for all edge types.
 We provide documentation for parameter choices depending on the type of network being permuted in the GitHub repository (<https://github.com/hetio/xswap>).
-The original algorithm and our proposed modification are given in Figures {@fig:algo} and {@fig:algodigram}.
+The original algorithm and our proposed modification are given in Figures {@fig:algo} and {@fig:algodiagram}.
 
 ![
   **XSwap algorithm pseudocode.**
