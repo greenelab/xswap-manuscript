@@ -10,7 +10,7 @@ keywords:
 - python
 - manubot
 lang: en-US
-date-meta: '2023-11-06'
+date-meta: '2023-12-20'
 author-meta:
 - Michael Zietz
 - Daniel S. Himmelstein
@@ -29,11 +29,11 @@ header-includes: |
   <meta name="citation_title" content="The probability of edge existence due to node degree: a baseline for network-based predictions" />
   <meta property="og:title" content="The probability of edge existence due to node degree: a baseline for network-based predictions" />
   <meta property="twitter:title" content="The probability of edge existence due to node degree: a baseline for network-based predictions" />
-  <meta name="dc.date" content="2023-11-06" />
-  <meta name="citation_publication_date" content="2023-11-06" />
-  <meta property="article:published_time" content="2023-11-06" />
-  <meta name="dc.modified" content="2023-11-06T18:33:42+00:00" />
-  <meta property="article:modified_time" content="2023-11-06T18:33:42+00:00" />
+  <meta name="dc.date" content="2023-12-20" />
+  <meta name="citation_publication_date" content="2023-12-20" />
+  <meta property="article:published_time" content="2023-12-20" />
+  <meta name="dc.modified" content="2023-12-20T02:05:04+00:00" />
+  <meta property="article:modified_time" content="2023-12-20T02:05:04+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -70,13 +70,13 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/xswap-manuscript/" />
   <meta name="citation_pdf_url" content="https://greenelab.github.io/xswap-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/xswap-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/xswap-manuscript/v/5701a6208695a6293883ee2c6e65c2d1eda809e3/" />
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/xswap-manuscript/v/5701a6208695a6293883ee2c6e65c2d1eda809e3/" />
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/xswap-manuscript/v/5701a6208695a6293883ee2c6e65c2d1eda809e3/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/xswap-manuscript/v/b0f7bd3b5e84fe85f0474ddec2dafe6888ac3178/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/xswap-manuscript/v/b0f7bd3b5e84fe85f0474ddec2dafe6888ac3178/" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/xswap-manuscript/v/b0f7bd3b5e84fe85f0474ddec2dafe6888ac3178/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
-  <meta property="og:image" content="https://github.com/greenelab/xswap-manuscript/raw/5701a6208695a6293883ee2c6e65c2d1eda809e3/thumbnail.png" />
-  <meta property="twitter:image" content="https://github.com/greenelab/xswap-manuscript/raw/5701a6208695a6293883ee2c6e65c2d1eda809e3/thumbnail.png" />
+  <meta property="og:image" content="https://github.com/greenelab/xswap-manuscript/raw/b0f7bd3b5e84fe85f0474ddec2dafe6888ac3178/thumbnail.png" />
+  <meta property="twitter:image" content="https://github.com/greenelab/xswap-manuscript/raw/b0f7bd3b5e84fe85f0474ddec2dafe6888ac3178/thumbnail.png" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
   <link rel="mask-icon" href="https://manubot.org/safari-pinned-tab.svg" color="#ad1457" />
   <meta name="theme-color" content="#ad1457" />
@@ -97,10 +97,10 @@ _A DOI-citable version of this manuscript is available at <https://doi.org/10.11
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/xswap-manuscript/v/5701a6208695a6293883ee2c6e65c2d1eda809e3/))
+([permalink](https://greenelab.github.io/xswap-manuscript/v/b0f7bd3b5e84fe85f0474ddec2dafe6888ac3178/))
 was automatically generated
-from [greenelab/xswap-manuscript@5701a62](https://github.com/greenelab/xswap-manuscript/tree/5701a6208695a6293883ee2c6e65c2d1eda809e3)
-on November 6, 2023.
+from [greenelab/xswap-manuscript@b0f7bd3](https://github.com/greenelab/xswap-manuscript/tree/b0f7bd3b5e84fe85f0474ddec2dafe6888ac3178)
+on December 20, 2023.
 </em></small>
 
 
@@ -614,6 +614,17 @@ This work was supported, in part, by Pfizer Worldwide Research, Development, and
 ## Acknowledgments
 
 The authors thank [Blair Sullivan](https://orcid.org/0000-0001-7720-6208) for [her feedback](https://github.com/greenelab/xswap-manuscript/issues/54) on a draft of the manuscript.
+
+## Availability of Supporting Source Code and Requirements
+
+Project name: XSwap \
+Project homepage: <https://github.com/greenelab/xswap-manuscript> \
+Operating system(s): MacOS, Linux, Windows \
+Programming language: Python, C, C++ \
+Other requirements: None \
+License: BSD 2-Clause \
+RRID: SCR_024802 \
+biotools ID: xswap
 
 ## References {.page_break_before}
 

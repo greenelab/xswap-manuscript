@@ -9,6 +9,7 @@ AUROC
 Barabási
 bioinformatics
 bioRxiv
+biotools
 bitset
 BPpG
 CbG
@@ -50,6 +51,7 @@ kkloste
 Kloster
 kylekloster
 Lachmann
+MacOS
 MCIS
 metric’s
 MikeNagle
@@ -67,9 +69,11 @@ proteome
 pseudocode
 Rényi
 repurposing
+RRID
 Rual
 RWR
 Rxivist
+SCR
 Spearman
 subnetworks
 Subsampled
