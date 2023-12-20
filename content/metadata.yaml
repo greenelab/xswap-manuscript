@@ -34,7 +34,8 @@ authors:
       - Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, PA 19104, USA
       - Related Sciences, Denver, CO 80202, USA
     funders:
-      - Pfizer Worldwide Research, Development, and Medical; the Gordon and Betty Moore Foundation (GBMF4552)
+      - Pfizer Worldwide Research, Development, and Medical
+      - the Gordon and Betty Moore Foundation (GBMF4552)
   - github: kkloste
     name: Kyle Kloster
     initials: KAK
