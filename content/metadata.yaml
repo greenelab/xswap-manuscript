@@ -24,6 +24,17 @@ authors:
     funders:
       - Roy and Diana Vagelos Scholars Program in the Molecular Life Sciences
       - the Gordon and Betty Moore Foundation (GBMF4552)
+    roles:
+      - Conceptualization
+      - Data curation
+      - Formal analysis
+      - Investigation
+      - Methodology
+      - Project administration
+      - Software
+      - Visualization
+      - Writing – original draft
+      - Writing – review & editing
   - github: dhimmel
     name: Daniel S. Himmelstein
     initials: DSH
@@ -36,6 +47,18 @@ authors:
     funders:
       - Pfizer Worldwide Research, Development, and Medical
       - the Gordon and Betty Moore Foundation (GBMF4552)
+    roles:
+      - Conceptualization
+      - Data curation
+      - Formal analysis
+      - Investigation
+      - Methodology
+      - Project administration
+      - Resources
+      - Software
+      - Supervision
+      - Visualization
+      - Writing – review & editing
   - github: kkloste
     name: Kyle Kloster
     initials: KAK
@@ -46,6 +69,9 @@ authors:
       - Carbon, Inc., Redwood City, CA 94063, USA
       - Department of Computer Science, North Carolina State University, Raleigh, NC 27606, USA
     funders: the Gordon and Betty Moore Foundation (GBMF4560)
+    roles:
+      - Conceptualization
+      - Methodology
   - github: chrsunwil
     name: Christopher Williams
     initials: CW
@@ -53,6 +79,9 @@ authors:
     email: chrwill@sas.upenn.edu
     affiliations:
       - Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, PA 19104, USA
+    roles:
+      - Methodology
+      - Software
   - github: naglem
     name: Michael W. Nagle
     initials: MWN
@@ -63,6 +92,9 @@ authors:
       - Internal Medicine Research Unit, Pfizer Worldwide Research, Development, and Medical, Cambridge, MA 02139, USA
       - Integrative Biology, Internal Medicine Research Unit, Worldwide Research, Development, and Medicine, Pfizer Inc., Cambridge, MA 02139, USA
       - Human Biology Integration Foundation, Deep Human Biology Learning, Eisai Inc., Cambridge, MA 02140, USA
+    roles:
+      - Investigation
+      - Resources
   - github: cgreene
     name: Casey S. Greene
     initials: CSG
@@ -78,3 +110,12 @@ authors:
       - Pfizer Worldwide Research, Development, and Medical
       - the Gordon and Betty Moore Foundation (GBMF4552)
       - the National Institutes of Health (R01 HG010067)
+    roles:
+      - Conceptualization
+      - Funding acquisition
+      - Investigation
+      - Methodology
+      - Project administration
+      - Resources
+      - Supervision
+      - Writing – review & editing
