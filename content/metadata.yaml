@@ -11,65 +11,68 @@ keywords:
   - manubot
 lang: en-US
 authors:
-  -
-    github: zietzm
+  - github: zietzm
     name: Michael Zietz
     initials: MZ
     orcid: 0000-0003-0539-630X
     twitter: ZietzMichael
     email: michael.zietz@gmail.com
     affiliations:
-      - Department of Physics & Astronomy, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America
-      - Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America
+      - Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, PA 19104, USA
+      - Department of Physics & Astronomy, University of Pennsylvania, Philadelphia, PA 19104, USA
+      - Department of Biomedical Informatics, Columbia University, New York, NY 10032, USA
     funders:
       - Roy and Diana Vagelos Scholars Program in the Molecular Life Sciences
       - the Gordon and Betty Moore Foundation (GBMF4552)
-  -
-    github: dhimmel
+  - github: dhimmel
     name: Daniel S. Himmelstein
     initials: DSH
     orcid: 0000-0002-3012-7446
     twitter: dhimmel
     email: daniel.himmelstein@gmail.com
     affiliations:
-      - Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America
-    funders: Pfizer Worldwide Research, Development, and Medical; the Gordon and Betty Moore Foundation (GBMF4552)
-  -
-    github: kkloste
+      - Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, PA 19104, USA
+      - Related Sciences, Denver, CO 80202, USA
+    funders:
+      - Pfizer Worldwide Research, Development, and Medical; the Gordon and Betty Moore Foundation (GBMF4552)
+  - github: kkloste
     name: Kyle Kloster
     initials: KAK
     orcid: 0000-0001-5678-7197
     twitter: kylekloster
     email: kyle.kloster@gmail.com
     affiliations:
-      - Department of Computer Science, North Carolina State University, Raleigh, North Carolina, United States of America
+      - Carbon, Inc., Redwood City, CA 94063, USA
+      - Department of Computer Science, North Carolina State University, Raleigh, NC 27606, USA
     funders: the Gordon and Betty Moore Foundation (GBMF4560)
-  -
-    github: chrsunwil
+  - github: chrsunwil
     name: Christopher Williams
     initials: CW
     orcid: 0000-0002-5613-3051
     email: chrwill@sas.upenn.edu
     affiliations:
-      - Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America
-  -
-    github: naglem
+      - Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, PA 19104, USA
+  - github: naglem
     name: Michael W. Nagle
     initials: MWN
     orcid: 0000-0002-4677-7582
     twitter: MikeNagle84
     email: michael.nagle@pfizer.com
     affiliations:
-      - Internal Medicine Research Unit, Pfizer Worldwide Research, Development, and Medical
-  -
-    github: cgreene
+      - Internal Medicine Research Unit, Pfizer Worldwide Research, Development, and Medical, Cambridge, MA 02139, USA
+      - Integrative Biology, Internal Medicine Research Unit, Worldwide Research, Development, and Medicine, Pfizer Inc., Cambridge, MA 02139, USA
+      - Human Biology Integration Foundation, Deep Human Biology Learning, Eisai Inc., Cambridge, MA 02140, USA
+  - github: cgreene
     name: Casey S. Greene
     initials: CSG
     orcid: 0000-0001-8713-9213
     twitter: greenescientist
-    email: greenescientist@gmail.com
+    email: casey.s.greene@cuanschutz.edu
+    corresponding: true
     affiliations:
-      - Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America
+      - Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, PA 19104, USA
+      - Department of Biochemistry and Molecular Genetics, University of Colorado School of Medicine, Aurora, CO 80045, USA
+      - Center for Health AI, University of Colorado School of Medicine, Aurora, CO 80045, USA
     funders:
       - Pfizer Worldwide Research, Development, and Medical
       - the Gordon and Betty Moore Foundation (GBMF4552)
