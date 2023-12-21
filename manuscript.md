@@ -10,7 +10,7 @@ keywords:
 - python
 - manubot
 lang: en-US
-date-meta: '2023-12-20'
+date-meta: '2023-12-21'
 author-meta:
 - Michael Zietz
 - Daniel S. Himmelstein
@@ -29,11 +29,11 @@ header-includes: |
   <meta name="citation_title" content="The probability of edge existence due to node degree: a baseline for network-based predictions" />
   <meta property="og:title" content="The probability of edge existence due to node degree: a baseline for network-based predictions" />
   <meta property="twitter:title" content="The probability of edge existence due to node degree: a baseline for network-based predictions" />
-  <meta name="dc.date" content="2023-12-20" />
-  <meta name="citation_publication_date" content="2023-12-20" />
-  <meta property="article:published_time" content="2023-12-20" />
-  <meta name="dc.modified" content="2023-12-20T02:05:04+00:00" />
-  <meta property="article:modified_time" content="2023-12-20T02:05:04+00:00" />
+  <meta name="dc.date" content="2023-12-21" />
+  <meta name="citation_publication_date" content="2023-12-21" />
+  <meta property="article:published_time" content="2023-12-21" />
+  <meta name="dc.modified" content="2023-12-21T13:37:39+00:00" />
+  <meta property="article:modified_time" content="2023-12-21T13:37:39+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -41,27 +41,34 @@ header-includes: |
   <meta name="citation_journal_title" content="Manubot" />
   <meta name="citation_technical_report_institution" content="Manubot" />
   <meta name="citation_author" content="Michael Zietz" />
-  <meta name="citation_author_institution" content="Department of Physics &amp; Astronomy, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America" />
-  <meta name="citation_author_institution" content="Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America" />
+  <meta name="citation_author_institution" content="Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, PA 19104, USA" />
+  <meta name="citation_author_institution" content="Department of Physics &amp; Astronomy, University of Pennsylvania, Philadelphia, PA 19104, USA" />
+  <meta name="citation_author_institution" content="Department of Biomedical Informatics, Columbia University, New York, NY 10032, USA" />
   <meta name="citation_author_orcid" content="0000-0003-0539-630X" />
   <meta name="twitter:creator" content="@ZietzMichael" />
   <meta name="citation_author" content="Daniel S. Himmelstein" />
-  <meta name="citation_author_institution" content="Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America" />
+  <meta name="citation_author_institution" content="Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, PA 19104, USA" />
+  <meta name="citation_author_institution" content="Related Sciences, Denver, CO 80202, USA" />
   <meta name="citation_author_orcid" content="0000-0002-3012-7446" />
   <meta name="twitter:creator" content="@dhimmel" />
   <meta name="citation_author" content="Kyle Kloster" />
-  <meta name="citation_author_institution" content="Department of Computer Science, North Carolina State University, Raleigh, North Carolina, United States of America" />
+  <meta name="citation_author_institution" content="Carbon, Inc., Redwood City, CA 94063, USA" />
+  <meta name="citation_author_institution" content="Department of Computer Science, North Carolina State University, Raleigh, NC 27606, USA" />
   <meta name="citation_author_orcid" content="0000-0001-5678-7197" />
   <meta name="twitter:creator" content="@kylekloster" />
   <meta name="citation_author" content="Christopher Williams" />
-  <meta name="citation_author_institution" content="Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America" />
+  <meta name="citation_author_institution" content="Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, PA 19104, USA" />
   <meta name="citation_author_orcid" content="0000-0002-5613-3051" />
   <meta name="citation_author" content="Michael W. Nagle" />
-  <meta name="citation_author_institution" content="Internal Medicine Research Unit, Pfizer Worldwide Research, Development, and Medical" />
+  <meta name="citation_author_institution" content="Internal Medicine Research Unit, Pfizer Worldwide Research, Development, and Medical, Cambridge, MA 02139, USA" />
+  <meta name="citation_author_institution" content="Integrative Biology, Internal Medicine Research Unit, Worldwide Research, Development, and Medicine, Pfizer Inc., Cambridge, MA 02139, USA" />
+  <meta name="citation_author_institution" content="Human Biology Integration Foundation, Deep Human Biology Learning, Eisai Inc., Cambridge, MA 02140, USA" />
   <meta name="citation_author_orcid" content="0000-0002-4677-7582" />
   <meta name="twitter:creator" content="@MikeNagle84" />
   <meta name="citation_author" content="Casey S. Greene" />
-  <meta name="citation_author_institution" content="Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America" />
+  <meta name="citation_author_institution" content="Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, PA 19104, USA" />
+  <meta name="citation_author_institution" content="Department of Biochemistry and Molecular Genetics, University of Colorado School of Medicine, Aurora, CO 80045, USA" />
+  <meta name="citation_author_institution" content="Center for Health AI, University of Colorado School of Medicine, Aurora, CO 80045, USA" />
   <meta name="citation_author_orcid" content="0000-0001-8713-9213" />
   <meta name="twitter:creator" content="@greenescientist" />
   <link rel="canonical" href="https://greenelab.github.io/xswap-manuscript/" />
@@ -70,13 +77,13 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/xswap-manuscript/" />
   <meta name="citation_pdf_url" content="https://greenelab.github.io/xswap-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/xswap-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/xswap-manuscript/v/b0f7bd3b5e84fe85f0474ddec2dafe6888ac3178/" />
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/xswap-manuscript/v/b0f7bd3b5e84fe85f0474ddec2dafe6888ac3178/" />
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/xswap-manuscript/v/b0f7bd3b5e84fe85f0474ddec2dafe6888ac3178/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/xswap-manuscript/v/ad40823592a4f0c9b264d6e94db0cacc005c2707/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/xswap-manuscript/v/ad40823592a4f0c9b264d6e94db0cacc005c2707/" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/xswap-manuscript/v/ad40823592a4f0c9b264d6e94db0cacc005c2707/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
-  <meta property="og:image" content="https://github.com/greenelab/xswap-manuscript/raw/b0f7bd3b5e84fe85f0474ddec2dafe6888ac3178/thumbnail.png" />
-  <meta property="twitter:image" content="https://github.com/greenelab/xswap-manuscript/raw/b0f7bd3b5e84fe85f0474ddec2dafe6888ac3178/thumbnail.png" />
+  <meta property="og:image" content="https://github.com/greenelab/xswap-manuscript/raw/ad40823592a4f0c9b264d6e94db0cacc005c2707/thumbnail.png" />
+  <meta property="twitter:image" content="https://github.com/greenelab/xswap-manuscript/raw/ad40823592a4f0c9b264d6e94db0cacc005c2707/thumbnail.png" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
   <link rel="mask-icon" href="https://manubot.org/safari-pinned-tab.svg" color="#ad1457" />
   <meta name="theme-color" content="#ad1457" />
@@ -97,16 +104,17 @@ _A DOI-citable version of this manuscript is available at <https://doi.org/10.11
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/xswap-manuscript/v/b0f7bd3b5e84fe85f0474ddec2dafe6888ac3178/))
+([permalink](https://greenelab.github.io/xswap-manuscript/v/ad40823592a4f0c9b264d6e94db0cacc005c2707/))
 was automatically generated
-from [greenelab/xswap-manuscript@b0f7bd3](https://github.com/greenelab/xswap-manuscript/tree/b0f7bd3b5e84fe85f0474ddec2dafe6888ac3178)
-on December 20, 2023.
+from [greenelab/xswap-manuscript@ad40823](https://github.com/greenelab/xswap-manuscript/tree/ad40823592a4f0c9b264d6e94db0cacc005c2707)
+on December 21, 2023.
 </em></small>
 
 
 
 ## Authors
 
+<!--
 
 
 + **Michael Zietz**
@@ -119,7 +127,7 @@ on December 20, 2023.
     [ZietzMichael](https://twitter.com/ZietzMichael)
     <br>
   <small>
-     Department of Physics & Astronomy, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America; Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America
+     Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, PA 19104, USA; Department of Physics & Astronomy, University of Pennsylvania, Philadelphia, PA 19104, USA; Department of Biomedical Informatics, Columbia University, New York, NY 10032, USA
      · Funded by Roy and Diana Vagelos Scholars Program in the Molecular Life Sciences; the Gordon and Betty Moore Foundation (GBMF4552)
   </small>
 
@@ -133,7 +141,7 @@ on December 20, 2023.
     [dhimmel](https://twitter.com/dhimmel)
     <br>
   <small>
-     Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America
+     Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, PA 19104, USA; Related Sciences, Denver, CO 80202, USA
      · Funded by Pfizer Worldwide Research, Development, and Medical; the Gordon and Betty Moore Foundation (GBMF4552)
   </small>
 
@@ -147,7 +155,7 @@ on December 20, 2023.
     [kylekloster](https://twitter.com/kylekloster)
     <br>
   <small>
-     Department of Computer Science, North Carolina State University, Raleigh, North Carolina, United States of America
+     Carbon, Inc., Redwood City, CA 94063, USA; Department of Computer Science, North Carolina State University, Raleigh, NC 27606, USA
      · Funded by the Gordon and Betty Moore Foundation (GBMF4560)
   </small>
 
@@ -159,7 +167,7 @@ on December 20, 2023.
     [chrsunwil](https://github.com/chrsunwil)
     <br>
   <small>
-     Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America
+     Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, PA 19104, USA
   </small>
 
 + **Michael W. Nagle**
@@ -172,11 +180,11 @@ on December 20, 2023.
     [MikeNagle84](https://twitter.com/MikeNagle84)
     <br>
   <small>
-     Internal Medicine Research Unit, Pfizer Worldwide Research, Development, and Medical
+     Internal Medicine Research Unit, Pfizer Worldwide Research, Development, and Medical, Cambridge, MA 02139, USA; Integrative Biology, Internal Medicine Research Unit, Worldwide Research, Development, and Medicine, Pfizer Inc., Cambridge, MA 02139, USA; Human Biology Integration Foundation, Deep Human Biology Learning, Eisai Inc., Cambridge, MA 02140, USA
   </small>
 
 + **Casey S. Greene**
-  <br>
+  ^[✉](#correspondence)^<br>
     ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
     [0000-0001-8713-9213](https://orcid.org/0000-0001-8713-9213)
     · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
@@ -185,13 +193,40 @@ on December 20, 2023.
     [greenescientist](https://twitter.com/greenescientist)
     <br>
   <small>
-     Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, Pennsylvania, United States of America
+     Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, PA 19104, USA; Department of Biochemistry and Molecular Genetics, University of Colorado School of Medicine, Aurora, CO 80045, USA; Center for Health AI, University of Colorado School of Medicine, Aurora, CO 80045, USA
      · Funded by Pfizer Worldwide Research, Development, and Medical; the Gordon and Betty Moore Foundation (GBMF4552); the National Institutes of Health (R01 HG010067)
   </small>
+
+-->
+
+
+
+Michael Zietz^1,2,3^,
+Daniel S. Himmelstein^1,4^,
+Kyle Kloster^5,6^,
+Christopher Williams^1^,
+Michael W. Nagle^7,8,9^,
+Casey S. Greene^1,10,11[✉](#corresponding)^
+
+
+1. Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, PA 19104, USA
+2. Department of Physics & Astronomy, University of Pennsylvania, Philadelphia, PA 19104, USA
+3. Department of Biomedical Informatics, Columbia University, New York, NY 10032, USA
+4. Related Sciences, Denver, CO 80202, USA
+5. Carbon, Inc., Redwood City, CA 94063, USA
+6. Department of Computer Science, North Carolina State University, Raleigh, NC 27606, USA
+7. Internal Medicine Research Unit, Pfizer Worldwide Research, Development, and Medical, Cambridge, MA 02139, USA
+8. Integrative Biology, Internal Medicine Research Unit, Worldwide Research, Development, and Medicine, Pfizer Inc., Cambridge, MA 02139, USA
+9. Human Biology Integration Foundation, Deep Human Biology Learning, Eisai Inc., Cambridge, MA 02140, USA
+10. Department of Biochemistry and Molecular Genetics, University of Colorado School of Medicine, Aurora, CO 80045, USA
+11. Center for Health AI, University of Colorado School of Medicine, Aurora, CO 80045, USA
 
 
 ::: {#correspondence}
 ✉ — Correspondence possible via [GitHub Issues](https://github.com/greenelab/xswap-manuscript/issues)
+or email to
+Casey S. Greene \<casey.s.greene@cuanschutz.edu\>.
+
 
 :::
 
@@ -606,14 +641,6 @@ Network edge prediction is a common task in biological and biomedical research, 
 Degree should be considered directly in prediction approaches to avoid making nonspecific or trivial predictions due to degree imbalance or bias.
 A careful accounting of degree's effects enables contextualized model evaluation and can help to quantify nonspecificity in biomedical network edge prediction.
 
-## Competing Interests
-
-This work was supported, in part, by Pfizer Worldwide Research, Development, and Medical.
-
-
-## Acknowledgments
-
-The authors thank [Blair Sullivan](https://orcid.org/0000-0001-7720-6208) for [her feedback](https://github.com/greenelab/xswap-manuscript/issues/54) on a draft of the manuscript.
 
 ## Availability of Supporting Source Code and Requirements
 
@@ -625,6 +652,56 @@ Other requirements: None \
 License: BSD 2-Clause \
 RRID: SCR_024802 \
 biotools ID: xswap
+
+## Declarations
+
+### List of abbreviations
+
+AUROC
+~ area under the receiver operating characteristic curve
+
+PPI
+~ protein-protein interaction
+
+TF-TG
+~ transcription factor-target gene
+
+RWR
+~ random walk with restart
+
+### Competing interests
+
+This work was supported, in part, by Pfizer Worldwide Research, Development, and Medical.
+
+### Funding
+
+
+MZ was funded by Roy and Diana Vagelos Scholars Program in the Molecular Life Sciences.
+MZ, DSH, and CSG were funded by the Gordon and Betty Moore Foundation (GBMF4552).
+DSH and CSG were funded by Pfizer Worldwide Research, Development, and Medical.
+KAK was funded by the Gordon and Betty Moore Foundation (GBMF4560).
+CSG was funded by the National Institutes of Health (R01 HG010067).
+The funders had no role in the study design, data analysis and interpretation, or writing of the manuscript.
+
+### Authors' contributions
+
+Author contributions are noted here according to [CRediT](https://credit.niso.org/) (Contributor Roles Taxonomy).
+Conceptualization by MZ, DSH, KAK, and CSG.
+Data curation by MZ and DSH.
+Formal analysis by MZ and DSH.
+Investigation by MZ, DSH, MWN, and CSG.
+Methodology by MZ, DSH, KAK, CW, and CSG.
+Project administration by MZ, DSH, and CSG.
+Software by MZ, DSH, and CW.
+Visualization by MZ and DSH.
+Writing – original draft by MZ.Writing – review & editing by MZ, DSH, and CSG.
+Resources by DSH, MWN, and CSG.
+Supervision by DSH and CSG.
+Funding acquisition by CSG.
+
+### Acknowledgments
+
+The authors thank [Blair Sullivan](https://orcid.org/0000-0001-7720-6208) for [her feedback](https://github.com/greenelab/xswap-manuscript/issues/54) on a draft of the manuscript.
 
 ## References {.page_break_before}
 
