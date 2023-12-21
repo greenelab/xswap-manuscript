@@ -1,14 +1,16 @@
 ---
 title: "The probability of edge existence due to node degree: a baseline for network-based predictions"
 keywords:
-  - xswap
+  - networks
+  - heterogeneous
+  - knowledge graphs
+  - node degree
+  - edge prediction
+  - edge prior
   - permutation
-  - network
-  - hetnets
-  - degree
+  - xswap
   - bioinformatics
   - python
-  - manubot
 lang: en-US
 authors:
   - github: zietzm
