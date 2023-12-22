@@ -1,16 +1,18 @@
 ---
 title: 'The probability of edge existence due to node degree: a baseline for network-based predictions'
 keywords:
-- xswap
+- networks
+- heterogeneous
+- knowledge graphs
+- node degree
+- edge prediction
+- edge prior
 - permutation
-- network
-- hetnets
-- degree
+- xswap
 - bioinformatics
 - python
-- manubot
 lang: en-US
-date-meta: '2023-12-21'
+date-meta: '2023-12-22'
 author-meta:
 - Michael Zietz
 - Daniel S. Himmelstein
@@ -29,11 +31,11 @@ header-includes: |
   <meta name="citation_title" content="The probability of edge existence due to node degree: a baseline for network-based predictions" />
   <meta property="og:title" content="The probability of edge existence due to node degree: a baseline for network-based predictions" />
   <meta property="twitter:title" content="The probability of edge existence due to node degree: a baseline for network-based predictions" />
-  <meta name="dc.date" content="2023-12-21" />
-  <meta name="citation_publication_date" content="2023-12-21" />
-  <meta property="article:published_time" content="2023-12-21" />
-  <meta name="dc.modified" content="2023-12-21T13:37:39+00:00" />
-  <meta property="article:modified_time" content="2023-12-21T13:37:39+00:00" />
+  <meta name="dc.date" content="2023-12-22" />
+  <meta name="citation_publication_date" content="2023-12-22" />
+  <meta property="article:published_time" content="2023-12-22" />
+  <meta name="dc.modified" content="2023-12-22T22:21:26+00:00" />
+  <meta property="article:modified_time" content="2023-12-22T22:21:26+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -77,19 +79,19 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/xswap-manuscript/" />
   <meta name="citation_pdf_url" content="https://greenelab.github.io/xswap-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/xswap-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/xswap-manuscript/v/ad40823592a4f0c9b264d6e94db0cacc005c2707/" />
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/xswap-manuscript/v/ad40823592a4f0c9b264d6e94db0cacc005c2707/" />
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/xswap-manuscript/v/ad40823592a4f0c9b264d6e94db0cacc005c2707/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/xswap-manuscript/v/5f221146e87027c8bdaab577f90bb4b6afbf5292/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/xswap-manuscript/v/5f221146e87027c8bdaab577f90bb4b6afbf5292/" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/xswap-manuscript/v/5f221146e87027c8bdaab577f90bb4b6afbf5292/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
-  <meta property="og:image" content="https://github.com/greenelab/xswap-manuscript/raw/ad40823592a4f0c9b264d6e94db0cacc005c2707/thumbnail.png" />
-  <meta property="twitter:image" content="https://github.com/greenelab/xswap-manuscript/raw/ad40823592a4f0c9b264d6e94db0cacc005c2707/thumbnail.png" />
+  <meta property="og:image" content="https://github.com/greenelab/xswap-manuscript/raw/5f221146e87027c8bdaab577f90bb4b6afbf5292/thumbnail.png" />
+  <meta property="twitter:image" content="https://github.com/greenelab/xswap-manuscript/raw/5f221146e87027c8bdaab577f90bb4b6afbf5292/thumbnail.png" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
   <link rel="mask-icon" href="https://manubot.org/safari-pinned-tab.svg" color="#ad1457" />
   <meta name="theme-color" content="#ad1457" />
   <!-- end Manubot generated metadata -->
 bibliography:
-- content/manual-references-2022-12-12.yaml
+- content/manual-references-2023-12-21.yaml
 - content/manual-references.yaml
 manubot-output-bibliography: output/references.json
 manubot-output-citekeys: output/citations.tsv
@@ -104,10 +106,10 @@ _A DOI-citable version of this manuscript is available at <https://doi.org/10.11
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/xswap-manuscript/v/ad40823592a4f0c9b264d6e94db0cacc005c2707/))
+([permalink](https://greenelab.github.io/xswap-manuscript/v/5f221146e87027c8bdaab577f90bb4b6afbf5292/))
 was automatically generated
-from [greenelab/xswap-manuscript@ad40823](https://github.com/greenelab/xswap-manuscript/tree/ad40823592a4f0c9b264d6e94db0cacc005c2707)
-on December 21, 2023.
+from [greenelab/xswap-manuscript@5f22114](https://github.com/greenelab/xswap-manuscript/tree/5f221146e87027c8bdaab577f90bb4b6afbf5292)
+on December 22, 2023.
 </em></small>
 
 
@@ -242,6 +244,22 @@ We discover that performance attributable to factors other than degree is often 
 Researchers seeking to predict new or missing edges in biological networks should use our permutation approach to obtain a baseline for performance that may be nonspecific because of degree.
 We released our methods as an open-source Python package (<https://github.com/hetio/xswap/>).
 
+## Keywords
+
+<!-- keywords for GigaScience: Include three to ten keywords representing the main content of the article. -->
+
+- networks
+- heterogeneous
+- knowledge graphs
+- node degree
+- edge prediction
+- edge prior
+- permutation
+- xswap
+- bioinformatics
+- python
+
+
 
 ## Introduction
 
@@ -369,10 +387,12 @@ The edge prior is a numerical value that can be computed for every pair of nodes
 
 Because network permutation can be computationally intensive, we also considered whether the probability of an edge existing across permuted networks has a simple closed-form expression.
 We were unable to find a closed-form solution giving the edge prior without assuming that the probability of any given edge existing is independent of all other potential edges, which, in general, is not valid.
-Nonetheless, we discovered a good analytical approximation to the edge prior that is particularly good for networks with many nodes and fewer edges (Figure {@fig:approx-quality}).
-Further discussion of this approximate edge prior and an derivation are available in [the supplement](#approx-prior-supp).
+Nonetheless, we discovered a good analytical approximation to the edge prior, offering much improvement over a past attempt [@10.15363/thinklab.d201].
+The new approximation is particularly good for networks with many nodes and fewer edges (Figure {@fig:approx-quality}).
+Further discussion of this approximate edge prior and its derivation is available in [the supplement](#approx-prior-supp).
+
 Let $m$ be the total number of edges in the network, and $u_i$, $v_j$ be the source and target degrees of a node pair, respectively.
-An approximation of the edge prior is
+Our approximation of the edge prior is
 
 $$
   P_{i,j} = \frac{u_i v_j}{\sqrt{(u_i v_j)^2 + (m - u_i - v_j + 1)^2}}.
@@ -388,8 +408,6 @@ $$
 fig:approx-quality created by
 https://github.com/greenelab/xswap-analysis/blob/4f06bdaf1f034af9136e25c03f9891a145b9bf91/nb/8.fig6.prior_exact_vs_approx/plot_prior_exact_vs_approx.ipynb
 -->
-
-
 
 ### Prediction tasks {#tasks}
 
@@ -442,8 +460,9 @@ In addition to the validity conditions already described, our package allows spe
 In addition to the Python package, all code to generate the analyses and figures is available at <https://github.com/greenelab/xswap-analysis>.
 This repository has been deposited to Zenodo along with large data files ignored by Git [@10.5281/zenodo.7623565].
 The manuscript was written using the Manubot software [@doi:10.1371/journal.pcbi.1007128], which allows anyone to provide feedback or modifications via the public repository at <https://github.com/greenelab/xswap-manuscript>.
+An archival copy of project repositories is available in _GigaDB_ [@10.5524/102479].
 
-## Results
+## Findings
 
 ### Node degree bias is prevalent
 

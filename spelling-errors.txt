@@ -38,12 +38,13 @@ GBMF
 GcG
 generalizability
 generalizable
+GigaDB
 Gillis
 GpMF
 GpPW
 GuG
 Hanhijärvi
-Hetionet
+hetionet
 Himmelstein
 IndeCut
 Jaccard
