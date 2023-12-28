@@ -1,16 +1,21 @@
 - type: thesis
-  standard_citation: raw:inference
+  standard_citation: doi:10.5821/dissertation-2117-95691
+  DOI: 10.5821/dissertation-2117-95691
+  id: yCdaxPuq
   title: Link prediction in large directed graphs
-  URL: https://upcommons.upc.edu/handle/2117/95691
   publisher: Universitat Politècnica de Catalunya
-  issued:
-    date-parts:
-    - - 2015
-      - 4
-      - 23
   author:
   - given: Dario
     family: Garcia Gasulla
+  editor:
+  - given: Claudio Ulises
+    family: Cortés García
+  issued:
+    date-parts:
+    - - 2003
+      - 12
+      - 9
+  URL: https://doi.org/gtbgzd  
 - type: article
   standard_citation: raw:laplacian
   URL: https://dl.acm.org/doi/10.5555/2981345.2981386  # https://dl.acm.org/doi/10.5555/2981345.2981386
