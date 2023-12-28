@@ -1568,6 +1568,7 @@
     family: Weston
   - given: Bernhard
     family: Scholkopf
+  page: 321-328
   note: |-
     Loaded from an external bibliography file by Manubot.
     source_bibliography: manual-references.yaml
