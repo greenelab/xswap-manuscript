@@ -12,7 +12,7 @@ keywords:
 - bioinformatics
 - python
 lang: en-US
-date-meta: '2023-12-22'
+date-meta: '2023-12-28'
 author-meta:
 - Michael Zietz
 - Daniel S. Himmelstein
@@ -31,11 +31,11 @@ header-includes: |
   <meta name="citation_title" content="The probability of edge existence due to node degree: a baseline for network-based predictions" />
   <meta property="og:title" content="The probability of edge existence due to node degree: a baseline for network-based predictions" />
   <meta property="twitter:title" content="The probability of edge existence due to node degree: a baseline for network-based predictions" />
-  <meta name="dc.date" content="2023-12-22" />
-  <meta name="citation_publication_date" content="2023-12-22" />
-  <meta property="article:published_time" content="2023-12-22" />
-  <meta name="dc.modified" content="2023-12-22T22:21:26+00:00" />
-  <meta property="article:modified_time" content="2023-12-22T22:21:26+00:00" />
+  <meta name="dc.date" content="2023-12-28" />
+  <meta name="citation_publication_date" content="2023-12-28" />
+  <meta property="article:published_time" content="2023-12-28" />
+  <meta name="dc.modified" content="2023-12-28T15:56:58+00:00" />
+  <meta property="article:modified_time" content="2023-12-28T15:56:58+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -79,13 +79,13 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/xswap-manuscript/" />
   <meta name="citation_pdf_url" content="https://greenelab.github.io/xswap-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/xswap-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/xswap-manuscript/v/5f221146e87027c8bdaab577f90bb4b6afbf5292/" />
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/xswap-manuscript/v/5f221146e87027c8bdaab577f90bb4b6afbf5292/" />
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/xswap-manuscript/v/5f221146e87027c8bdaab577f90bb4b6afbf5292/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/xswap-manuscript/v/55ccf900e5d69b9defd93e7b4341ae2cf3612720/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/xswap-manuscript/v/55ccf900e5d69b9defd93e7b4341ae2cf3612720/" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/xswap-manuscript/v/55ccf900e5d69b9defd93e7b4341ae2cf3612720/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
-  <meta property="og:image" content="https://github.com/greenelab/xswap-manuscript/raw/5f221146e87027c8bdaab577f90bb4b6afbf5292/thumbnail.png" />
-  <meta property="twitter:image" content="https://github.com/greenelab/xswap-manuscript/raw/5f221146e87027c8bdaab577f90bb4b6afbf5292/thumbnail.png" />
+  <meta property="og:image" content="https://github.com/greenelab/xswap-manuscript/raw/55ccf900e5d69b9defd93e7b4341ae2cf3612720/thumbnail.png" />
+  <meta property="twitter:image" content="https://github.com/greenelab/xswap-manuscript/raw/55ccf900e5d69b9defd93e7b4341ae2cf3612720/thumbnail.png" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
   <link rel="mask-icon" href="https://manubot.org/safari-pinned-tab.svg" color="#ad1457" />
   <meta name="theme-color" content="#ad1457" />
@@ -106,10 +106,10 @@ _A DOI-citable version of this manuscript is available at <https://doi.org/10.11
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/xswap-manuscript/v/5f221146e87027c8bdaab577f90bb4b6afbf5292/))
+([permalink](https://greenelab.github.io/xswap-manuscript/v/55ccf900e5d69b9defd93e7b4341ae2cf3612720/))
 was automatically generated
-from [greenelab/xswap-manuscript@5f22114](https://github.com/greenelab/xswap-manuscript/tree/5f221146e87027c8bdaab577f90bb4b6afbf5292)
-on December 22, 2023.
+from [greenelab/xswap-manuscript@55ccf90](https://github.com/greenelab/xswap-manuscript/tree/55ccf900e5d69b9defd93e7b4341ae2cf3612720)
+on December 28, 2023.
 </em></small>
 
 
@@ -1011,7 +1011,7 @@ All definitions that follow are the score between nodes $u$ and $v$.
 | Resource allocation index | $\sum_{w \in k(u) \cap k(v)} \frac{1}{|k(w)|}$ | [@doi:10.1140/epjb/e2009-00335-8] |
 | Adamic/Adar index | $\sum_{w \in k(u) \cap k(v)} \frac{1}{log|k(w)|}$ | [@doi:10/br5zd3] |
 | Random walk with restart score | $c \bigg[ \bigg( \mathbb{I} - (1-c) \mathbf{A}\bigg)^{-1} \mathbf{y}_u \bigg]_v$ | [@doi:10.1145/1014052.1014135;@raw:laplacian] |
-| Inference score | $\frac{|A(u) \cap D(v)|}{|A(u)|} + \frac{|D(u) \cap D(v)|}{|D(u)|}$ | [@raw:inference] |
+| Inference score | $\frac{|A(u) \cap D(v)|}{|A(u)|} + \frac{|D(u) \cap D(v)|}{|D(u)|}$ | [@doi:10.5821/dissertation-2117-95691] |
 
 Table: Edge prediction features. {#tbl:edge-prediction}
 

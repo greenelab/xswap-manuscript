@@ -5,7 +5,7 @@ AlD
 algo
 algodiagram
 antiparallel
-AUROC
+auroc
 Barabási
 bioinformatics
 bioRxiv
@@ -44,7 +44,7 @@ GpMF
 GpPW
 GuG
 Hanhijärvi
-hetionet
+Hetionet
 Himmelstein
 IndeCut
 Jaccard
@@ -76,7 +76,7 @@ Rxivist
 SCR
 Spearman
 subnetworks
-Subsampled
+subsampled
 TF
 TG
 Translational
