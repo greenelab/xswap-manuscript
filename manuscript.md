@@ -12,7 +12,7 @@ keywords:
 - bioinformatics
 - python
 lang: en-US
-date-meta: '2023-12-28'
+date-meta: '2023-12-29'
 author-meta:
 - Michael Zietz
 - Daniel S. Himmelstein
@@ -31,11 +31,11 @@ header-includes: |
   <meta name="citation_title" content="The probability of edge existence due to node degree: a baseline for network-based predictions" />
   <meta property="og:title" content="The probability of edge existence due to node degree: a baseline for network-based predictions" />
   <meta property="twitter:title" content="The probability of edge existence due to node degree: a baseline for network-based predictions" />
-  <meta name="dc.date" content="2023-12-28" />
-  <meta name="citation_publication_date" content="2023-12-28" />
-  <meta property="article:published_time" content="2023-12-28" />
-  <meta name="dc.modified" content="2023-12-28T15:56:58+00:00" />
-  <meta property="article:modified_time" content="2023-12-28T15:56:58+00:00" />
+  <meta name="dc.date" content="2023-12-29" />
+  <meta name="citation_publication_date" content="2023-12-29" />
+  <meta property="article:published_time" content="2023-12-29" />
+  <meta name="dc.modified" content="2023-12-29T16:50:16+00:00" />
+  <meta property="article:modified_time" content="2023-12-29T16:50:16+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -109,7 +109,7 @@ This manuscript
 ([permalink](https://greenelab.github.io/xswap-manuscript/v/55ccf900e5d69b9defd93e7b4341ae2cf3612720/))
 was automatically generated
 from [greenelab/xswap-manuscript@55ccf90](https://github.com/greenelab/xswap-manuscript/tree/55ccf900e5d69b9defd93e7b4341ae2cf3612720)
-on December 28, 2023.
+on December 29, 2023.
 </em></small>
 
 
