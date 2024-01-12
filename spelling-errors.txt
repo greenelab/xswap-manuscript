@@ -5,7 +5,7 @@ AlD
 algo
 algodiagram
 antiparallel
-auroc
+AUROC
 Barabási
 bioinformatics
 bioRxiv
@@ -17,6 +17,7 @@ CCpG
 CcSE
 CdG
 citable
+coauthorship
 CoMoFinder
 CrC
 CSG
@@ -28,7 +29,6 @@ Diaconis
 directedness
 downregulates
 DSH
-eg
 Eisai
 Erdős
 ergodic
@@ -61,9 +61,12 @@ MWN
 MZ
 Nagle
 nonspecificity
+nonsystematic
 partite
+Pavlidis
 PPI
-pre
+PPIs
+preprint
 preprints
 proteome
 pseudocode
@@ -80,13 +83,12 @@ subsampled
 TF
 TG
 Translational
-underly
-undirected
+Undirected
 uninsightful
 unpermuted
 unsampled
 Vagelos
 WaRSwap
-xswap
+XSwap
 Zenodo
 Zietz
