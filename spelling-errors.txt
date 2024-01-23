@@ -44,7 +44,7 @@ GpMF
 GpPW
 GuG
 Hanhijärvi
-Hetionet
+hetionet
 Himmelstein
 IndeCut
 Jaccard
@@ -79,7 +79,7 @@ Rxivist
 SCR
 Spearman
 subnetworks
-subsampled
+Subsampled
 TF
 TG
 Translational
@@ -89,6 +89,6 @@ unpermuted
 unsampled
 Vagelos
 WaRSwap
-XSwap
+xswap
 Zenodo
 Zietz
