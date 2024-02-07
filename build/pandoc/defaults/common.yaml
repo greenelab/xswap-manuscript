@@ -9,6 +9,6 @@ filters:
 - citeproc
 wrap: preserve
 metadata:
-  csl: build/assets/gigascience.csl
-  # csl: build/assets/style.csl
+  # csl: build/assets/gigascience.csl
+  csl: build/assets/style.csl
   link-citations: true
