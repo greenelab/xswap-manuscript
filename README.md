@@ -6,8 +6,13 @@
 [![PDF Manuscript](https://img.shields.io/badge/manuscript-PDF-blue.svg)](https://greenelab.github.io/xswap-manuscript/manuscript.pdf)
 [![GitHub Actions Status](https://github.com/greenelab/xswap-manuscript/workflows/Manubot/badge.svg)](https://github.com/greenelab/xswap-manuscript/actions)
 
-This repository contains the manuscript for the XSwap project.
-The working title for this manuscript is **The probability of edge existence due to node degree: a baseline for network-based predictions**.
+This repository contains the manuscript source for the XSwap project.
+This manuscript is now published at:
+
+> **The probability of edge existence due to node degree: a baseline for network-based predictions**  
+> Michael Zietz, Daniel Himmelstein, Kyle Kloster, Christopher Williams, Michael Nagle, Casey Greene  
+> _GigaScience_ (2024-02-07) <https://doi.org/gtcbks>  
+> DOI: [10.1093/gigascience/giae001](https://doi.org/10.1093/gigascience/giae001)
 
 ## Manuscript description
 
