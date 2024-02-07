@@ -10,7 +10,7 @@
   <meta name="author" content="Christopher Williams" />
   <meta name="author" content="Michael W. Nagle" />
   <meta name="author" content="Casey S. Greene" />
-  <meta name="dcterms.date" content="2024-01-23" />
+  <meta name="dcterms.date" content="2024-02-07" />
   <meta name="keywords" content="networks, heterogeneous, knowledge graphs, node degree, edge prediction, edge prior, permutation, xswap, bioinformatics, python" />
   <title>The probability of edge existence due to node degree: a baseline for network-based predictions</title>
   <style>
@@ -55,11 +55,11 @@
   <meta name="citation_title" content="The probability of edge existence due to node degree: a baseline for network-based predictions" />
   <meta property="og:title" content="The probability of edge existence due to node degree: a baseline for network-based predictions" />
   <meta property="twitter:title" content="The probability of edge existence due to node degree: a baseline for network-based predictions" />
-  <meta name="dc.date" content="2024-01-23" />
-  <meta name="citation_publication_date" content="2024-01-23" />
-  <meta property="article:published_time" content="2024-01-23" />
-  <meta name="dc.modified" content="2024-01-23T01:00:27+00:00" />
-  <meta property="article:modified_time" content="2024-01-23T01:00:27+00:00" />
+  <meta name="dc.date" content="2024-02-07" />
+  <meta name="citation_publication_date" content="2024-02-07" />
+  <meta property="article:published_time" content="2024-02-07" />
+  <meta name="dc.modified" content="2024-02-07T14:51:30+00:00" />
+  <meta property="article:modified_time" content="2024-02-07T14:51:30+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -103,13 +103,13 @@
   <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/xswap-manuscript/" />
   <meta name="citation_pdf_url" content="https://greenelab.github.io/xswap-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/xswap-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/xswap-manuscript/v/e7e7dad740e742ce5cf71033fceaf09c16ad0a59/" />
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/xswap-manuscript/v/e7e7dad740e742ce5cf71033fceaf09c16ad0a59/" />
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/xswap-manuscript/v/e7e7dad740e742ce5cf71033fceaf09c16ad0a59/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/xswap-manuscript/v/70d170fc0049ced9e9d825c7c04f55b6e0032d57/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/xswap-manuscript/v/70d170fc0049ced9e9d825c7c04f55b6e0032d57/" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/xswap-manuscript/v/70d170fc0049ced9e9d825c7c04f55b6e0032d57/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
-  <meta property="og:image" content="https://github.com/greenelab/xswap-manuscript/raw/e7e7dad740e742ce5cf71033fceaf09c16ad0a59/thumbnail.png" />
-  <meta property="twitter:image" content="https://github.com/greenelab/xswap-manuscript/raw/e7e7dad740e742ce5cf71033fceaf09c16ad0a59/thumbnail.png" />
+  <meta property="og:image" content="https://github.com/greenelab/xswap-manuscript/raw/70d170fc0049ced9e9d825c7c04f55b6e0032d57/thumbnail.png" />
+  <meta property="twitter:image" content="https://github.com/greenelab/xswap-manuscript/raw/70d170fc0049ced9e9d825c7c04f55b6e0032d57/thumbnail.png" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
   <link rel="mask-icon" href="https://manubot.org/safari-pinned-tab.svg" color="#ad1457" />
   <meta name="theme-color" content="#ad1457" />
@@ -122,118 +122,119 @@
 <header id="title-block-header">
 <h1 class="title">The probability of edge existence due to node degree: a baseline for network-based predictions</h1>
 </header>
-<p><em>A DOI-citable version of this manuscript is available at <a href="https://doi.org/10.1101/2023.01.05.522939" class="uri">https://doi.org/10.1101/2023.01.05.522939</a></em>.</p>
+<p><span class="banner lightpurple"><i class="fas fa-scroll fa-lg"></i> <strong>Now Published</strong><br>
+This study is published in <em>GigaScience</em> at <a href="https://doi.org/10.1093/gigascience/giae001" class="uri">https://doi.org/10.1093/gigascience/giae001</a>,
+which is the preferred location for citations, although this Manubot version offers the best viewing experience.
+A <em>bioRxiv</em> preprint also exists at <a href="https://doi.org/10.1101/2023.01.05.522939" class="uri">https://doi.org/10.1101/2023.01.05.522939</a>.</span></p>
+<!-- include the Font Awesome library, per: https://fontawesome.com/start -->
+<p><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"></p>
 <p><small><em>
 This manuscript
-(<a href="https://greenelab.github.io/xswap-manuscript/v/e7e7dad740e742ce5cf71033fceaf09c16ad0a59/">permalink</a>)
+(<a href="https://greenelab.github.io/xswap-manuscript/v/70d170fc0049ced9e9d825c7c04f55b6e0032d57/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/greenelab/xswap-manuscript/tree/e7e7dad740e742ce5cf71033fceaf09c16ad0a59">greenelab/xswap-manuscript@e7e7dad</a>
-on January 23, 2024.
+from <a href="https://github.com/greenelab/xswap-manuscript/tree/70d170fc0049ced9e9d825c7c04f55b6e0032d57">greenelab/xswap-manuscript@70d170f</a>
+on February 7, 2024.
 </em></small></p>
 <h2 id="authors">Authors</h2>
+<ul>
+<li><p><strong>Michael Zietz</strong>
+<br>
+<img src="images/orcid.svg" class="inline_icon" width="16" height="16" alt="ORCID icon" />
+<a href="https://orcid.org/0000-0003-0539-630X">0000-0003-0539-630X</a>
+· <img src="images/github.svg" class="inline_icon" width="16" height="16" alt="GitHub icon" />
+<a href="https://github.com/zietzm">zietzm</a>
+· <img src="images/twitter.svg" class="inline_icon" width="16" height="16" alt="Twitter icon" />
+<a href="https://twitter.com/ZietzMichael">ZietzMichael</a>
+<br>
+<small>
+Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, PA 19104, USA; Department of Physics &amp; Astronomy, University of Pennsylvania, Philadelphia, PA 19104, USA; Department of Biomedical Informatics, Columbia University, New York, NY 10032, USA
+· Funded by Roy and Diana Vagelos Scholars Program in the Molecular Life Sciences; the Gordon and Betty Moore Foundation (GBMF4552)
+</small></p></li>
+<li><p><strong>Daniel S. Himmelstein</strong>
+<br>
+<img src="images/orcid.svg" class="inline_icon" width="16" height="16" alt="ORCID icon" />
+<a href="https://orcid.org/0000-0002-3012-7446">0000-0002-3012-7446</a>
+· <img src="images/github.svg" class="inline_icon" width="16" height="16" alt="GitHub icon" />
+<a href="https://github.com/dhimmel">dhimmel</a>
+· <img src="images/twitter.svg" class="inline_icon" width="16" height="16" alt="Twitter icon" />
+<a href="https://twitter.com/dhimmel">dhimmel</a>
+<br>
+<small>
+Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, PA 19104, USA; Related Sciences, Denver, CO 80202, USA
+· Funded by Pfizer Worldwide Research, Development, and Medical; the Gordon and Betty Moore Foundation (GBMF4552)
+</small></p></li>
+<li><p><strong>Kyle Kloster</strong>
+<br>
+<img src="images/orcid.svg" class="inline_icon" width="16" height="16" alt="ORCID icon" />
+<a href="https://orcid.org/0000-0001-5678-7197">0000-0001-5678-7197</a>
+· <img src="images/github.svg" class="inline_icon" width="16" height="16" alt="GitHub icon" />
+<a href="https://github.com/kkloste">kkloste</a>
+· <img src="images/twitter.svg" class="inline_icon" width="16" height="16" alt="Twitter icon" />
+<a href="https://twitter.com/kylekloster">kylekloster</a>
+<br>
+<small>
+Carbon, Inc., Redwood City, CA 94063, USA; Department of Computer Science, North Carolina State University, Raleigh, NC 27606, USA
+· Funded by the Gordon and Betty Moore Foundation (GBMF4560)
+</small></p></li>
+<li><p><strong>Christopher Williams</strong>
+<br>
+<img src="images/orcid.svg" class="inline_icon" width="16" height="16" alt="ORCID icon" />
+<a href="https://orcid.org/0000-0002-5613-3051">0000-0002-5613-3051</a>
+· <img src="images/github.svg" class="inline_icon" width="16" height="16" alt="GitHub icon" />
+<a href="https://github.com/chrsunwil">chrsunwil</a>
+<br>
+<small>
+Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, PA 19104, USA
+</small></p></li>
+<li><p><strong>Michael W. Nagle</strong>
+<br>
+<img src="images/orcid.svg" class="inline_icon" width="16" height="16" alt="ORCID icon" />
+<a href="https://orcid.org/0000-0002-4677-7582">0000-0002-4677-7582</a>
+· <img src="images/github.svg" class="inline_icon" width="16" height="16" alt="GitHub icon" />
+<a href="https://github.com/naglem">naglem</a>
+· <img src="images/twitter.svg" class="inline_icon" width="16" height="16" alt="Twitter icon" />
+<a href="https://twitter.com/MikeNagle84">MikeNagle84</a>
+<br>
+<small>
+Internal Medicine Research Unit, Pfizer Worldwide Research, Development, and Medical, Cambridge, MA 02139, USA; Integrative Biology, Internal Medicine Research Unit, Worldwide Research, Development, and Medicine, Pfizer Inc., Cambridge, MA 02139, USA; Human Biology Integration Foundation, Deep Human Biology Learning, Eisai Inc., Cambridge, MA 02140, USA
+</small></p></li>
+<li><p><strong>Casey S. Greene</strong>
+<sup><a href="#correspondence">✉</a></sup><br>
+<img src="images/orcid.svg" class="inline_icon" width="16" height="16" alt="ORCID icon" />
+<a href="https://orcid.org/0000-0001-8713-9213">0000-0001-8713-9213</a>
+· <img src="images/github.svg" class="inline_icon" width="16" height="16" alt="GitHub icon" />
+<a href="https://github.com/cgreene">cgreene</a>
+· <img src="images/twitter.svg" class="inline_icon" width="16" height="16" alt="Twitter icon" />
+<a href="https://twitter.com/greenescientist">greenescientist</a>
+<br>
+<small>
+Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, PA 19104, USA; Department of Biochemistry and Molecular Genetics, University of Colorado School of Medicine, Aurora, CO 80045, USA; Center for Health AI, University of Colorado School of Medicine, Aurora, CO 80045, USA
+· Funded by Pfizer Worldwide Research, Development, and Medical; the Gordon and Betty Moore Foundation (GBMF4552); the National Institutes of Health (R01 HG010067)
+</small></p></li>
+</ul>
 <!--
 
 
-+ **Michael Zietz**
-  <br>
-    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
-    [0000-0003-0539-630X](https://orcid.org/0000-0003-0539-630X)
-    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
-    [zietzm](https://github.com/zietzm)
-    · ![Twitter icon](images/twitter.svg){.inline_icon width=16 height=16}
-    [ZietzMichael](https://twitter.com/ZietzMichael)
-    <br>
-  <small>
-     Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, PA 19104, USA; Department of Physics & Astronomy, University of Pennsylvania, Philadelphia, PA 19104, USA; Department of Biomedical Informatics, Columbia University, New York, NY 10032, USA
-     · Funded by Roy and Diana Vagelos Scholars Program in the Molecular Life Sciences; the Gordon and Betty Moore Foundation (GBMF4552)
-  </small>
+Michael Zietz^1,2,3^,
+Daniel S. Himmelstein^1,4^,
+Kyle Kloster^5,6^,
+Christopher Williams^1^,
+Michael W. Nagle^7,8,9^,
+Casey S. Greene^1,10,11[✉](#corresponding)^
 
-+ **Daniel S. Himmelstein**
-  <br>
-    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
-    [0000-0002-3012-7446](https://orcid.org/0000-0002-3012-7446)
-    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
-    [dhimmel](https://github.com/dhimmel)
-    · ![Twitter icon](images/twitter.svg){.inline_icon width=16 height=16}
-    [dhimmel](https://twitter.com/dhimmel)
-    <br>
-  <small>
-     Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, PA 19104, USA; Related Sciences, Denver, CO 80202, USA
-     · Funded by Pfizer Worldwide Research, Development, and Medical; the Gordon and Betty Moore Foundation (GBMF4552)
-  </small>
 
-+ **Kyle Kloster**
-  <br>
-    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
-    [0000-0001-5678-7197](https://orcid.org/0000-0001-5678-7197)
-    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
-    [kkloste](https://github.com/kkloste)
-    · ![Twitter icon](images/twitter.svg){.inline_icon width=16 height=16}
-    [kylekloster](https://twitter.com/kylekloster)
-    <br>
-  <small>
-     Carbon, Inc., Redwood City, CA 94063, USA; Department of Computer Science, North Carolina State University, Raleigh, NC 27606, USA
-     · Funded by the Gordon and Betty Moore Foundation (GBMF4560)
-  </small>
-
-+ **Christopher Williams**
-  <br>
-    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
-    [0000-0002-5613-3051](https://orcid.org/0000-0002-5613-3051)
-    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
-    [chrsunwil](https://github.com/chrsunwil)
-    <br>
-  <small>
-     Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, PA 19104, USA
-  </small>
-
-+ **Michael W. Nagle**
-  <br>
-    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
-    [0000-0002-4677-7582](https://orcid.org/0000-0002-4677-7582)
-    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
-    [naglem](https://github.com/naglem)
-    · ![Twitter icon](images/twitter.svg){.inline_icon width=16 height=16}
-    [MikeNagle84](https://twitter.com/MikeNagle84)
-    <br>
-  <small>
-     Internal Medicine Research Unit, Pfizer Worldwide Research, Development, and Medical, Cambridge, MA 02139, USA; Integrative Biology, Internal Medicine Research Unit, Worldwide Research, Development, and Medicine, Pfizer Inc., Cambridge, MA 02139, USA; Human Biology Integration Foundation, Deep Human Biology Learning, Eisai Inc., Cambridge, MA 02140, USA
-  </small>
-
-+ **Casey S. Greene**
-  ^[✉](#correspondence)^<br>
-    ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
-    [0000-0001-8713-9213](https://orcid.org/0000-0001-8713-9213)
-    · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
-    [cgreene](https://github.com/cgreene)
-    · ![Twitter icon](images/twitter.svg){.inline_icon width=16 height=16}
-    [greenescientist](https://twitter.com/greenescientist)
-    <br>
-  <small>
-     Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, PA 19104, USA; Department of Biochemistry and Molecular Genetics, University of Colorado School of Medicine, Aurora, CO 80045, USA; Center for Health AI, University of Colorado School of Medicine, Aurora, CO 80045, USA
-     · Funded by Pfizer Worldwide Research, Development, and Medical; the Gordon and Betty Moore Foundation (GBMF4552); the National Institutes of Health (R01 HG010067)
-  </small>
-
+1. Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, PA 19104, USA
+2. Department of Physics & Astronomy, University of Pennsylvania, Philadelphia, PA 19104, USA
+3. Department of Biomedical Informatics, Columbia University, New York, NY 10032, USA
+4. Related Sciences, Denver, CO 80202, USA
+5. Carbon, Inc., Redwood City, CA 94063, USA
+6. Department of Computer Science, North Carolina State University, Raleigh, NC 27606, USA
+7. Internal Medicine Research Unit, Pfizer Worldwide Research, Development, and Medical, Cambridge, MA 02139, USA
+8. Integrative Biology, Internal Medicine Research Unit, Worldwide Research, Development, and Medicine, Pfizer Inc., Cambridge, MA 02139, USA
+9. Human Biology Integration Foundation, Deep Human Biology Learning, Eisai Inc., Cambridge, MA 02140, USA
+10. Department of Biochemistry and Molecular Genetics, University of Colorado School of Medicine, Aurora, CO 80045, USA
+11. Center for Health AI, University of Colorado School of Medicine, Aurora, CO 80045, USA
 -->
-<p>Michael Zietz<sup>1,2,3</sup>,
-Daniel S. Himmelstein<sup>1,4</sup>,
-Kyle Kloster<sup>5,6</sup>,
-Christopher Williams<sup>1</sup>,
-Michael W. Nagle<sup>7,8,9</sup>,
-Casey S. Greene<sup>1,10,11<a href="#corresponding">✉</a></sup></p>
-<ol type="1">
-<li>Department of Systems Pharmacology and Translational Therapeutics, University of Pennsylvania, Philadelphia, PA 19104, USA</li>
-<li>Department of Physics &amp; Astronomy, University of Pennsylvania, Philadelphia, PA 19104, USA</li>
-<li>Department of Biomedical Informatics, Columbia University, New York, NY 10032, USA</li>
-<li>Related Sciences, Denver, CO 80202, USA</li>
-<li>Carbon, Inc., Redwood City, CA 94063, USA</li>
-<li>Department of Computer Science, North Carolina State University, Raleigh, NC 27606, USA</li>
-<li>Internal Medicine Research Unit, Pfizer Worldwide Research, Development, and Medical, Cambridge, MA 02139, USA</li>
-<li>Integrative Biology, Internal Medicine Research Unit, Worldwide Research, Development, and Medicine, Pfizer Inc., Cambridge, MA 02139, USA</li>
-<li>Human Biology Integration Foundation, Deep Human Biology Learning, Eisai Inc., Cambridge, MA 02140, USA</li>
-<li>Department of Biochemistry and Molecular Genetics, University of Colorado School of Medicine, Aurora, CO 80045, USA</li>
-<li>Center for Health AI, University of Colorado School of Medicine, Aurora, CO 80045, USA</li>
-</ol>
 <div id="correspondence">
 <p>✉ — Correspondence possible via <a href="https://github.com/greenelab/xswap-manuscript/issues">GitHub Issues</a>
 or email to
@@ -266,7 +267,7 @@ We released our methods as an open-source Python package (<a href="https://githu
 <p>Networks contain information about relationships between entities (referred to here as “edges” between “nodes”).
 A node’s degree is the number of edges it has in the network.
 Networks contain many nodes, whose degrees can be aggregated to form the network’s degree distribution.
-Because different nodes can have very different degrees, real networks have a variety of degree distributions (Figure <a href="#fig:hetionet">1</a>), and they commonly exhibit degree imbalance <span class="citation" data-cites="GFS9MouO hbOjmCsZ 1mIOnArF rly3gDig">[<a href="#ref-GFS9MouO" role="doc-biblioref">1</a>–<a href="#ref-rly3gDig" role="doc-biblioref">4</a>]</span>.
+Because different nodes can have very different degrees, real networks have a variety of degree distributions (Figure <a href="#fig:hetionet">1</a>), and they commonly exhibit degree imbalance <span class="citation" data-cites="GFS9MouO hbOjmCsZ 1mIOnArF rly3gDig">[<a href="#ref-GFS9MouO" role="doc-biblioref">1</a>,<a href="#ref-hbOjmCsZ" role="doc-biblioref">2</a>,<a href="#ref-1mIOnArF" role="doc-biblioref">3</a>,<a href="#ref-rly3gDig" role="doc-biblioref">4</a>]</span>.
 This is especially true for networks encoding biomedical knowledge or assays, where natural forces such as preferential attachment inherent to the problem domain combine with observation-based influences such as study methodology to create nonuniform degree distributions (Figure <a href="#fig:hetionet">1</a>).</p>
 <div id="fig:hetionet" class="fignos">
 <figure>
@@ -294,7 +295,7 @@ First, bias in networks can distort node degree so that a difference in degree b
 Second, edge prediction methods that rely heavily on degree may be nonspecific—predicting trivial rather than insightful new relationships.</p>
 <p>Most biomedical networks are imperfect representations of the true set of relationships.
 Real networks often mistakenly include edges that do not exist and exclude edges that do exist.
-How well a network represents the true relationships it attempts to represent depends on a number of factors, especially the methods used to generate the data in the network <span class="citation" data-cites="bo2VEmIz yJZSr6c6 C4FHCVCz">[<a href="#ref-bo2VEmIz" role="doc-biblioref">7</a>–<a href="#ref-C4FHCVCz" role="doc-biblioref">9</a>]</span>.
+How well a network represents the true relationships it attempts to represent depends on a number of factors, especially the methods used to generate the data in the network <span class="citation" data-cites="bo2VEmIz yJZSr6c6 C4FHCVCz">[<a href="#ref-bo2VEmIz" role="doc-biblioref">7</a>,<a href="#ref-yJZSr6c6" role="doc-biblioref">8</a>,<a href="#ref-C4FHCVCz" role="doc-biblioref">9</a>]</span>.
 We define “degree bias” as the type of misrepresentation that occurs when the fraction of incorrectly existent/nonexistent relationships depends on a node’s degree.
 Depending on the type of data being represented, degree biases can arise due to experimental methods, inspection bias, or other factors <span class="citation" data-cites="bo2VEmIz">[<a href="#ref-bo2VEmIz" role="doc-biblioref">7</a>]</span>.</p>
 <p>Inspection bias indicates that entities are not uniformly studied <span class="citation" data-cites="lnDqu0oW">[<a href="#ref-lnDqu0oW" role="doc-biblioref">10</a>]</span>, and it is likely to cause degree bias when networks are constructed using hypothesis-driven findings extracted from the literature, as newly discovered relationships are not randomly sampled from the set of all true relationships.
@@ -338,11 +339,11 @@ and WaRSwap (Weighted and Reverse Swap Sampling) <span class="citation" data-cit
 IndeCut proposed a method to characterize these strategies by their ability to uniformly sample from the solution space of all possible degree-preserving permutations <span class="citation" data-cites="TFMmV4Z2">[<a href="#ref-TFMmV4Z2" role="doc-biblioref">20</a>]</span>.</p>
 <h3 id="xswap-algorithm">XSwap algorithm</h3>
 <p>Hanhijärvi et al. presented XSwap <span class="citation" data-cites="iKOIEzQ9">[<a href="#ref-iKOIEzQ9" role="doc-biblioref">15</a>]</span>, an algorithm for the randomization (“permutation”) of unweighted networks (Figure <a href="#fig:algo">2</a>A).
-The algorithm picks two existing edges at random ({ab, cd}) and—if the edges constitute a valid swap—exchanges the targets between the edges ({ad, cb}; Supplemental Table <a href="#tbl:xswap">1</a>).
+The algorithm picks two existing edges at random ({ab, cd}) and—if the edges constitute a valid swap—exchanges the targets between the edges ({ad, cb}; Table <a href="#tbl:xswap">S1</a>).
 This process is repeated a user-specified number of times.
 In general, the number of exchanges should be chosen to be sufficiently large that the fraction of original edges retained in the permuted network is near its asymptotic value as the number of exchanges increases to infinity.
-The asymptotic fraction of original edges retained in permutation depends on network density, and higher density networks require more swap attempts per edge to reach their asymptotic fraction (Figure <a href="#fig:swap-percent">10</a>).</p>
-<p>We modified the original XSwap algorithm by adding two parameters, <code>allow_loops</code> (a-a) and <code>allow_antiparallel</code> (a-b and b-a), that allow a greater variety of network types to be permuted (Figure <a href="#fig:algo">2</a>B and Supplemental Table <a href="#tbl:xswap">1</a>).
+The asymptotic fraction of original edges retained in permutation depends on network density, and higher density networks require more swap attempts per edge to reach their asymptotic fraction (Figure <a href="#fig:swap-percent">S1</a>).</p>
+<p>We modified the original XSwap algorithm by adding two parameters, <code>allow_loops</code> (a-a) and <code>allow_antiparallel</code> (a-b and b-a), that allow a greater variety of network types to be permuted (Figure <a href="#fig:algo">2</a>B and Table <a href="#tbl:xswap">S1</a>).
 The motivation for these generalizations is to make the permutation method applicable to both directed and undirected graphs, as well as to networks with different types of nodes, variously called multipartite, heterogeneous, or multimodal networks.
 Specifically, in the modified algorithm, two chosen edges constitute a valid swap if they preserve degree for all four involved nodes and do not violate the user-specified parameters.</p>
 <p>When permuting bipartite networks, our method ensures that each node’s class membership and within-class degree is preserved.
@@ -396,7 +397,7 @@ https://github.com/greenelab/xswap-analysis/blob/4f06bdaf1f034af9136e25c03f9891a
 <h3 id="tasks">Prediction tasks</h3>
 <p>We performed three prediction tasks to assess the performance of the edge prior.
 We compared the permutation-based prior with two additional predictors: our analytical approximation of the edge prior and the product of source and target degree, scaled to the range [0, 1] so that we could assess its calibration as well as its discrimination.
-We used 20 biomedical networks from the Hetionet heterogeneous network <span class="citation" data-cites="O21tn8vf">[<a href="#ref-O21tn8vf" role="doc-biblioref">5</a>]</span> that had at least 2000 edges for the first two tasks (<a href="#networks">Supplemental table</a>).</p>
+We used 20 biomedical networks from the Hetionet heterogeneous network <span class="citation" data-cites="O21tn8vf">[<a href="#ref-O21tn8vf" role="doc-biblioref">5</a>]</span> that had at least 2000 edges for the first two tasks (Table <a href="#tbl:networks">S2</a>).</p>
 <p>In the first task, we computed the degree-based predictors (edge prior, scaled degree product, and analytical prior approximation) and predicted the original edges in the network by rank-ordering node pair edge predictions by the node pairs’ predictor values.
 We used node pairs that lacked an edge in the original network as negative examples and those with an edge as positive examples.
 To assess the methods’ predictive performances, we computed the area under the receiver operating characteristic (AUROC) curve for all three predictors.</p>
@@ -464,35 +465,20 @@ https://github.com/greenelab/xswap-analysis/blob/4f06bdaf1f034af9136e25c03f9891a
 <h3 id="the-edge-prior-encapsulates-degree">The edge prior encapsulates degree</h3>
 <p>We evaluated degree as an edge prediction feature using the edge prior.
 In the first prediction task, we computed three predictors—the XSwap edge prior, an analytical approximation to the edge prior, and the (scaled) product of source and target node degree—on networks from Hetionet.
-We then evaluated the extent to which these predictors—treated as predictions themselves—could reconstruct the 20 networks (<a href="#networks">Supplemental table</a>).
+We then evaluated the extent to which these predictors—treated as predictions themselves—could reconstruct the 20 networks (Table <a href="#tbl:networks">S2</a>).
 The XSwap-derived edge prior reconstructed many of the networks with a high level of performance, as measured by the AUROC.
 Of the 20 individual networks we extracted from Hetionet, 17 had an edge prior self-reconstruction AUROC &gt;= 0.95, with the highest reconstruction AUROC at 0.9971 (network was the Compound–downregulates–Gene edge type).
 Meanwhile, the lowest self-reconstruction performance (AUROC = 0.7697) occurred in the network having the fewest node pairs (network was the Disease–localizes–Anatomy edge type).</p>
-<div id="fig:discrimination" class="fignos">
-<figure>
-<img src="https://github.com/greenelab/xswap-analysis/raw/4f06bdaf1f034af9136e25c03f9891a145b9bf91/img/auroc_dists.png" style="width:60.0%" alt="Figure 6: Degree can predict edges within a given network but does not generalize to networks with different degree distributions The edge prior is able to reconstruct the networks on which it was computed (task 1, “unsampled”, 20 different networks) with high performance. When computed on a sampled network, the edge prior can reconstruct the unsampled network with slightly lower performance (task 2, “sampled”, 20 different networks). However, when computed on a completely different network (having a different degree distribution) of the same type of data, the edge prior’s performance is greatly reduced (task 3, “separate”, 3 different networks). The performance reduction from computing predictors on sampled networks is real but far smaller compared to a new degree distribution. This indicates that while degree can be effective for network reconstruction, it is far less effective in predicting edges from a different degree distribution." />
-<figcaption aria-hidden="true"><span>Figure 6:</span> <strong>Degree can predict edges within a given network but does not generalize to networks with different degree distributions</strong>
-The edge prior is able to reconstruct the networks on which it was computed (task 1, “unsampled”, 20 different networks) with high performance.
-When computed on a sampled network, the edge prior can reconstruct the unsampled network with slightly lower performance (task 2, “sampled”, 20 different networks).
-However, when computed on a completely different network (having a different degree distribution) of the same type of data, the edge prior’s performance is greatly reduced (task 3, “separate”, 3 different networks).
-The performance reduction from computing predictors on sampled networks is real but far smaller compared to a new degree distribution.
-This indicates that while degree can be effective for network reconstruction, it is far less effective in predicting edges from a different degree distribution.</figcaption>
-</figure>
-</div>
-<!--
-fig:discrimination is created by
-https://github.com/greenelab/xswap-analysis/blob/4f06bdaf1f034af9136e25c03f9891a145b9bf91/nb/5.fig3.auroc/plot_auroc.ipynb
--->
 <p>The three predictors that we compared were highly correlated (Spearman rank correlation over 0.984 for all 20 networks).
 The three predictors also had very similar AUROC reconstruction performance values for the first, second, and third prediction tasks (max difference &lt; 0.027) because AUROC is rank based.
 The edge prior was slightly better than the approximations in 12 of 20 networks.
 However, while the AUROC results were similar, the predictors were very different in their levels of calibration—the ability of the model to correctly estimate edge existence probabilities.
-The edge prior was very well calibrated for all networks in the first and second tasks, and it provided the best calibration of the three predictors for each of the prediction tasks (Figure <a href="#fig:calibration">7</a>A).
+The edge prior was very well calibrated for all networks in the first and second tasks, and it provided the best calibration of the three predictors for each of the prediction tasks (Figure <a href="#fig:calibration">6</a>A).
 As the edge prior was not based on the networks’ true edges, these results indicated that degree sequence alone was highly informative and that permutation was the only approach in our comparison that provided a well-calibrated model.</p>
 <div id="fig:calibration" class="fignos">
 <figure>
-<img src="https://github.com/zietzm/xswap-analysis/raw/4f06bdaf1f034af9136e25c03f9891a145b9bf91/img/calibration.png" style="width:100.0%" alt="Figure 7: The edge prior accurately assigns the probability of edge existence. A. Calibration curves for full network reconstruction of 20 networks from Hetionet. For every unique predictor value on the horizontal axis, the fraction of node pairs with that predictor value having an edge in the network is shown on the vertical axis. The permutation-based edge prior’s calibration was superior to the other two strategies based on degree. B. Calibration curves for sampled network reconstruction. The edge prior shows superior calibration in the 20 Hetionet networks. C. Individual Hetionet edge type calibration estimated by the two-component decomposition of the Brier score, in which lower scores indicate better calibration. The edge prior has excellent calibration in unsampled and sampled networks, and each considered method is sensitive to shifts in the degree distribution." />
-<figcaption aria-hidden="true"><span>Figure 7:</span> <strong>The edge prior accurately assigns the probability of edge existence.</strong>
+<img src="https://github.com/zietzm/xswap-analysis/raw/4f06bdaf1f034af9136e25c03f9891a145b9bf91/img/calibration.png" style="width:100.0%" alt="Figure 6: The edge prior accurately assigns the probability of edge existence. A. Calibration curves for full network reconstruction of 20 networks from Hetionet. For every unique predictor value on the horizontal axis, the fraction of node pairs with that predictor value having an edge in the network is shown on the vertical axis. The permutation-based edge prior’s calibration was superior to the other two strategies based on degree. B. Calibration curves for sampled network reconstruction. The edge prior shows superior calibration in the 20 Hetionet networks. C. Individual Hetionet edge type calibration estimated by the two-component decomposition of the Brier score, in which lower scores indicate better calibration. The edge prior has excellent calibration in unsampled and sampled networks, and each considered method is sensitive to shifts in the degree distribution." />
+<figcaption aria-hidden="true"><span>Figure 6:</span> <strong>The edge prior accurately assigns the probability of edge existence.</strong>
 <strong>A.</strong> Calibration curves for full network reconstruction of 20 networks from Hetionet.
 For every unique predictor value on the horizontal axis, the fraction of node pairs with that predictor value having an edge in the network is shown on the vertical axis.
 The permutation-based edge prior’s calibration was superior to the other two strategies based on degree.
@@ -509,14 +495,29 @@ https://github.com/greenelab/xswap-analysis/blob/4f06bdaf1f034af9136e25c03f9891a
 <p>The second prediction task mirrored the first task, but it involved reconstructing networks based on subsampled networks with only 70% of the original edges.
 Because edges were sampled uniformly without replacement, the subsampled networks share similar degree distributions to the original networks (see Figure <a href="#fig:degree-bias">5</a>B).
 Unlike in the first task, edges that were present in the sampled network were not tested and therefore are not included in the performance metrics.
-The results of the second prediction task further demonstrate a high level of performance for degree-sequence-based node pair predictors (Figure <a href="#fig:discrimination">6</a>).
+The results of the second prediction task further demonstrate a high level of performance for degree-sequence-based node pair predictors (Figure <a href="#fig:discrimination">7</a>).
 The edge prior was able to reconstruct the unsampled network with an AUROC of greater than 0.9 in 14 of 20 networks.
 As was observed in the first task, node pair predictors computed in the second task were highly rank-correlated, meaning the AUROC values for different predictors were similar.
 While performance was slightly lower in the second task than the first, many networks were still well reconstructed.
 The edge prior was the best calibrated predictor for both tasks.</p>
+<div id="fig:discrimination" class="fignos">
+<figure>
+<img src="https://github.com/greenelab/xswap-analysis/raw/4f06bdaf1f034af9136e25c03f9891a145b9bf91/img/auroc_dists.png" style="width:60.0%" alt="Figure 7: Degree can predict edges within a given network but does not generalize to networks with different degree distributions. The edge prior is able to reconstruct the networks on which it was computed (task 1, “unsampled”, 20 different networks) with high performance. When computed on a sampled network, the edge prior can reconstruct the unsampled network with slightly lower performance (task 2, “sampled”, 20 different networks). However, when computed on a completely different network (having a different degree distribution) of the same type of data, the edge prior’s performance is greatly reduced (task 3, “separate”, 3 different networks). The performance reduction from computing predictors on sampled networks is real but far smaller compared to a new degree distribution. This indicates that while degree can be effective for network reconstruction, it is far less effective in predicting edges from a different degree distribution." />
+<figcaption aria-hidden="true"><span>Figure 7:</span> <strong>Degree can predict edges within a given network but does not generalize to networks with different degree distributions.</strong>
+The edge prior is able to reconstruct the networks on which it was computed (task 1, “unsampled”, 20 different networks) with high performance.
+When computed on a sampled network, the edge prior can reconstruct the unsampled network with slightly lower performance (task 2, “sampled”, 20 different networks).
+However, when computed on a completely different network (having a different degree distribution) of the same type of data, the edge prior’s performance is greatly reduced (task 3, “separate”, 3 different networks).
+The performance reduction from computing predictors on sampled networks is real but far smaller compared to a new degree distribution.
+This indicates that while degree can be effective for network reconstruction, it is far less effective in predicting edges from a different degree distribution.</figcaption>
+</figure>
+</div>
+<!--
+fig:discrimination is created by
+https://github.com/greenelab/xswap-analysis/blob/4f06bdaf1f034af9136e25c03f9891a145b9bf91/nb/5.fig3.auroc/plot_auroc.ipynb
+-->
 <p>In the third prediction task, we computed the three edge predictors for paired networks representing data from PPI, TF-TG, and bioRxiv bioinformatics preprint coauthorship.
 The goal of the task was to compare predictive performance across different degree distributions for the same type of data.
-We find that the task of predicting systematically derived edges using a network with degree bias is significantly more challenging than network reconstruction, and we find consistently lower performance compared to the other tasks (Figure <a href="#fig:discrimination">6</a>).
+We find that the task of predicting systematically derived edges using a network with degree bias is significantly more challenging than network reconstruction, and we find consistently lower performance compared to the other tasks (Figure <a href="#fig:discrimination">7</a>).
 The edge prior was not able to predict the separate PPI network better than by random guessing (AUROC of roughly 0.5).
 Only slightly better was its performance in predicting the separate TF-TG network, at an AUROC of 0.59.
 We find superior performance in predicting the coauthorship relationships (AUROC 0.75), which was expected as the network being predicted shared roughly the same degree distribution as the network on which the edge prior was computed.
@@ -531,15 +532,15 @@ However, predictions based on biological properties may be more consistent and g
 Degree’s influence on edge prediction accuracy measures can reveal the relative contributions of these two factors.</p>
 <h3 id="degree-can-underlie-a-large-fraction-of-performance">Degree can underlie a large fraction of performance</h3>
 <p>We evaluated the extent to which edge prediction performance is due to degree.
-To begin, we chose the STRING PPI network for the comparison and computed five edge prediction features (Supplemental table <a href="#tbl:edge-prediction">2</a>).
+To begin, we chose the STRING PPI network for the comparison and computed five edge prediction features (Table <a href="#tbl:edge-prediction">S3</a>).
 The goal of the task was to reconstruct the network on which the features were computed.
 All five features were correlated with degree (Figure <a href="#fig:feature-degree">8</a>), which we quantified for a node pair using the product of source and target degrees.
 We expected features based on degree to show strong performance for a network reconstruction task without holdout, as found in the first prediction task.</p>
 <div id="fig:feature-degree" class="fignos">
 <figure>
-<img src="https://github.com/greenelab/xswap-analysis/raw/4f06bdaf1f034af9136e25c03f9891a145b9bf91/img/feature-degree.png" style="width:100.0%" alt="Figure 8: Common edge prediction metrics correlate with node degree. Five common edge prediction features (Supplemental table 2) are correlated with node degree on the STRING PPI network [24]. All five features show a positive relationship with degree, although the magnitude of this correlation is highly variable. The preferential attachment index is understandably perfectly correlated because it is equal to the product of source and target degree. Each panel indicates the Pearson correlation (“r”) between feature and degree in the lower right corner." />
+<img src="https://github.com/greenelab/xswap-analysis/raw/4f06bdaf1f034af9136e25c03f9891a145b9bf91/img/feature-degree.png" style="width:100.0%" alt="Figure 8: Common edge prediction metrics correlate with node degree. Five common edge prediction features (Table S3) are correlated with node degree on the STRING PPI network [24]. All five features show a positive relationship with degree, although the magnitude of this correlation is highly variable. The preferential attachment index is understandably perfectly correlated because it is equal to the product of source and target degree. Each panel indicates the Pearson correlation (“r”) between feature and degree in the lower right corner." />
 <figcaption aria-hidden="true"><span>Figure 8:</span> <strong>Common edge prediction metrics correlate with node degree.</strong>
-Five common edge prediction features (Supplemental table <a href="#tbl:edge-prediction">2</a>) are correlated with node degree on the STRING PPI network <span class="citation" data-cites="fkKIuC7X">[<a href="#ref-fkKIuC7X" role="doc-biblioref">24</a>]</span>.
+Five common edge prediction features (Table <a href="#tbl:edge-prediction">S3</a>) are correlated with node degree on the STRING PPI network <span class="citation" data-cites="fkKIuC7X">[<a href="#ref-fkKIuC7X" role="doc-biblioref">24</a>]</span>.
 All five features show a positive relationship with degree, although the magnitude of this correlation is highly variable.
 The preferential attachment index is understandably perfectly correlated because it is equal to the product of source and target degree.
 Each panel indicates the Pearson correlation (“r”) between feature and degree in the lower right corner.</figcaption>
@@ -673,131 +674,131 @@ Funding acquisition by CSG.</p>
 <!-- Explicitly insert bibliography here -->
 <div id="refs" class="references csl-bib-body" role="doc-bibliography">
 <div id="ref-GFS9MouO" class="csl-entry" role="doc-biblioentry">
-1. Williams RJ. Biology, Methodology or Chance? The Degree Distributions of Bipartite Ecological Networks. <em>PLoS ONE</em>. 2011; 6:e17645. doi: <a href="https://doi.org/10.1371/journal.pone.0017645">10.1371/journal.pone.0017645</a>.
+<div class="csl-left-margin">1. </div><div class="csl-right-inline"><strong>Biology, Methodology or Chance? The Degree Distributions of Bipartite Ecological Networks</strong> <div class="csl-block">Richard J Williams</div> <em>PLoS ONE</em> (2011-03-03) <a href="https://doi.org/fmtk6x">https://doi.org/fmtk6x</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1371/journal.pone.0017645">10.1371/journal.pone.0017645</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/21390231">21390231</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3048397">PMC3048397</a></div></div>
 </div>
 <div id="ref-hbOjmCsZ" class="csl-entry" role="doc-biblioentry">
-2. Kelly WP, Ingram PJ, Stumpf MPH. The Degree Distribution of Networks: Statistical Model Selection. <em>Bacterial Molecular Networks</em>. 2011; :245–62. doi: <a href="https://doi.org/10.1007/978-1-61779-361-5_13">10.1007/978-1-61779-361-5_13</a>.
+<div class="csl-left-margin">2. </div><div class="csl-right-inline"><strong>The Degree Distribution of Networks: Statistical Model Selection</strong> <div class="csl-block">William P Kelly, Piers J Ingram, Michael PH Stumpf</div> <em>Bacterial Molecular Networks</em> (2011-10-28) <a href="https://doi.org/ddx5rx">https://doi.org/ddx5rx</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1007/978-1-61779-361-5_13">10.1007/978-1-61779-361-5_13</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/22144157">22144157</a></div></div>
 </div>
 <div id="ref-1mIOnArF" class="csl-entry" role="doc-biblioentry">
-3. Broido AD, Clauset A. Scale-free networks are rare. <em>Nat Commun</em>. 2019; 10. doi: <a href="https://doi.org/10.1038/s41467-019-08746-5">10.1038/s41467-019-08746-5</a>.
+<div class="csl-left-margin">3. </div><div class="csl-right-inline"><strong>Scale-free networks are rare</strong> <div class="csl-block">Anna D Broido, Aaron Clauset</div> <em>Nature Communications</em> (2019-03-04) <a href="https://doi.org/gfztz9">https://doi.org/gfztz9</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/s41467-019-08746-5">10.1038/s41467-019-08746-5</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/30833554">30833554</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6399239">PMC6399239</a></div></div>
 </div>
 <div id="ref-rly3gDig" class="csl-entry" role="doc-biblioentry">
-4. Barabási A-L, Albert R. Emergence of Scaling in Random Networks. <em>Science</em>. 1999; 286:509–12. doi: <a href="https://doi.org/10.1126/science.286.5439.509">10.1126/science.286.5439.509</a>.
+<div class="csl-left-margin">4. </div><div class="csl-right-inline"><strong>Emergence of Scaling in Random Networks</strong> <div class="csl-block">Albert-László Barabási, Réka Albert</div> <em>Science</em> (1999-10-15) <a href="https://doi.org/ccsmnz">https://doi.org/ccsmnz</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1126/science.286.5439.509">10.1126/science.286.5439.509</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/10521342">10521342</a></div></div>
 </div>
 <div id="ref-O21tn8vf" class="csl-entry" role="doc-biblioentry">
-5. Himmelstein DS, Lizee A, Hessler C, Brueggeman L, Chen SL, Hadley D, et al. Systematic integration of biomedical knowledge prioritizes drugs for repurposing. <em>eLife</em>. 2017; 6. doi: <a href="https://doi.org/10.7554/elife.26726">10.7554/elife.26726</a>.
+<div class="csl-left-margin">5. </div><div class="csl-right-inline"><strong>Systematic integration of biomedical knowledge prioritizes drugs for repurposing</strong> <div class="csl-block">Daniel Scott Himmelstein, Antoine Lizee, Christine Hessler, Leo Brueggeman, Sabrina L Chen, Dexter Hadley, Ari Green, Pouya Khankhanian, Sergio E Baranzini</div> <em>eLife</em> (2017-09-22) <a href="https://doi.org/cdfk">https://doi.org/cdfk</a> <div class="csl-block">DOI: <a href="https://doi.org/10.7554/elife.26726">10.7554/elife.26726</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/28936969">28936969</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5640425">PMC5640425</a></div></div>
 </div>
 <div id="ref-ohIv6zMA" class="csl-entry" role="doc-biblioentry">
-6. Gao F, Musial K, Cooper C, Tsoka S. Link Prediction Methods and Their Accuracy for Different Social Networks and Network Metrics. <em>Scientific Programming</em>. 2015; 2015:1–13. doi: <a href="https://doi.org/10.1155/2015/172879">10.1155/2015/172879</a>.
+<div class="csl-left-margin">6. </div><div class="csl-right-inline"><strong>Link Prediction Methods and Their Accuracy for Different Social Networks and Network Metrics</strong> <div class="csl-block">Fei Gao, Katarzyna Musial, Colin Cooper, Sophia Tsoka</div> <em>Scientific Programming</em> (2015) <a href="https://doi.org/f7hvd9">https://doi.org/f7hvd9</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1155/2015/172879">10.1155/2015/172879</a></div></div>
 </div>
 <div id="ref-bo2VEmIz" class="csl-entry" role="doc-biblioentry">
-7. Gillis J, Ballouz S, Pavlidis P. Bias tradeoffs in the creation and analysis of protein–protein interaction networks. <em>Journal of Proteomics</em>. 2014; 100:44–54. doi: <a href="https://doi.org/10.1016/j.jprot.2014.01.020">10.1016/j.jprot.2014.01.020</a>.
+<div class="csl-left-margin">7. </div><div class="csl-right-inline"><strong>Bias tradeoffs in the creation and analysis of protein–protein interaction networks</strong> <div class="csl-block">Jesse Gillis, Sara Ballouz, Paul Pavlidis</div> <em>Journal of Proteomics</em> (2014-04) <a href="https://doi.org/f3mn5f">https://doi.org/f3mn5f</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1016/j.jprot.2014.01.020">10.1016/j.jprot.2014.01.020</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/24480284">24480284</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3972268">PMC3972268</a></div></div>
 </div>
 <div id="ref-yJZSr6c6" class="csl-entry" role="doc-biblioentry">
-8. Schaefer MH, Serrano L, Andrade-Navarro MA. Correcting for the study bias associated with protein–protein interaction measurements reveals differences between protein degree distributions from different cancer types. <em>Front Genet</em>. 2015; 6. doi: <a href="https://doi.org/10.3389/fgene.2015.00260">10.3389/fgene.2015.00260</a>.
+<div class="csl-left-margin">8. </div><div class="csl-right-inline"><strong>Correcting for the study bias associated with protein–protein interaction measurements reveals differences between protein degree distributions from different cancer types</strong> <div class="csl-block">Martin H Schaefer, Luis Serrano, Miguel A Andrade-Navarro</div> <em>Frontiers in Genetics</em> (2015-08-04) <a href="https://doi.org/gf5t46">https://doi.org/gf5t46</a> <div class="csl-block">DOI: <a href="https://doi.org/10.3389/fgene.2015.00260">10.3389/fgene.2015.00260</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/26300911">26300911</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4523822">PMC4523822</a></div></div>
 </div>
 <div id="ref-C4FHCVCz" class="csl-entry" role="doc-biblioentry">
-9. Han J-DJ, Dupuy D, Bertin N, Cusick ME, Vidal M. Effect of sampling on topology predictions of protein-protein interaction networks. <em>Nat Biotechnol</em>. 2005; 23:839–44. doi: <a href="https://doi.org/10.1038/nbt1116">10.1038/nbt1116</a>.
+<div class="csl-left-margin">9. </div><div class="csl-right-inline"><strong>Effect of sampling on topology predictions of protein-protein interaction networks</strong> <div class="csl-block">Jing-Dong J Han, Denis Dupuy, Nicolas Bertin, Michael E Cusick, Marc Vidal</div> <em>Nature Biotechnology</em> (2005-07) <a href="https://doi.org/dj5cm8">https://doi.org/dj5cm8</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/nbt1116">10.1038/nbt1116</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/16003372">16003372</a></div></div>
 </div>
 <div id="ref-lnDqu0oW" class="csl-entry" role="doc-biblioentry">
-10. Rual J-F, Venkatesan K, Hao T, Hirozane-Kishikawa T, Dricot A, Li N, et al. Towards a proteome-scale map of the human protein–protein interaction network. <em>Nature</em>. 2005; 437:1173–8. doi: <a href="https://doi.org/10.1038/nature04209">10.1038/nature04209</a>.
+<div class="csl-left-margin">10. </div><div class="csl-right-inline"><strong>Towards a proteome-scale map of the human protein–protein interaction network</strong> <div class="csl-block">Jean-François Rual, Kavitha Venkatesan, Tong Hao, Tomoko Hirozane-Kishikawa, Amélie Dricot, Ning Li, Gabriel F Berriz, Francis D Gibbons, Matija Dreze, Nono Ayivi-Guedehoussou, … Marc Vidal</div> <em>Nature</em> (2005-09-28) <a href="https://doi.org/dw6q23">https://doi.org/dw6q23</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/nature04209">10.1038/nature04209</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/16189514">16189514</a></div></div>
 </div>
 <div id="ref-LCyCrr7W" class="csl-entry" role="doc-biblioentry">
-11. Rolland T, Taşan M, Charloteaux B, Pevzner SJ, Zhong Q, Sahni N, et al. A Proteome-Scale Map of the Human Interactome Network. <em>Cell</em>. 2014; 159:1212–26. doi: <a href="https://doi.org/10.1016/j.cell.2014.10.050">10.1016/j.cell.2014.10.050</a>.
+<div class="csl-left-margin">11. </div><div class="csl-right-inline"><strong>A Proteome-Scale Map of the Human Interactome Network</strong> <div class="csl-block">Thomas Rolland, Murat Taşan, Benoit Charloteaux, Samuel J Pevzner, Quan Zhong, Nidhi Sahni, Song Yi, Irma Lemmens, Celia Fontanillo, Roberto Mosca, … Marc Vidal</div> <em>Cell</em> (2014-11) <a href="https://doi.org/f3mn6x">https://doi.org/f3mn6x</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1016/j.cell.2014.10.050">10.1016/j.cell.2014.10.050</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/25416956">25416956</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4266588">PMC4266588</a></div></div>
 </div>
 <div id="ref-zB6RQrIj" class="csl-entry" role="doc-biblioentry">
-12. Gillis J, Pavlidis P. The Impact of Multifunctional Genes on "Guilt by Association" Analysis. <em>PLoS ONE</em>. 2011; 6:e17258. doi: <a href="https://doi.org/10.1371/journal.pone.0017258">10.1371/journal.pone.0017258</a>.
+<div class="csl-left-margin">12. </div><div class="csl-right-inline"><strong>The Impact of Multifunctional Genes on "Guilt by Association" Analysis</strong> <div class="csl-block">Jesse Gillis, Paul Pavlidis</div> <em>PLoS ONE</em> (2011-02-18) <a href="https://doi.org/bs9">https://doi.org/bs9</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1371/journal.pone.0017258">10.1371/journal.pone.0017258</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/21364756">21364756</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3041792">PMC3041792</a></div></div>
 </div>
 <div id="ref-g059lh8v" class="csl-entry" role="doc-biblioentry">
-13. Petri T, Altmann S, Geistlinger L, Zimmer R, Küffner R. Addressing false discoveries in network inference. <em>Bioinformatics</em>. 2015; 31:2836–43. doi: <a href="https://doi.org/10.1093/bioinformatics/btv215">10.1093/bioinformatics/btv215</a>.
+<div class="csl-left-margin">13. </div><div class="csl-right-inline"><strong>Addressing false discoveries in network inference</strong> <div class="csl-block">Tobias Petri, Stefan Altmann, Ludwig Geistlinger, Ralf Zimmer, Robert Küffner</div> <em>Bioinformatics</em> (2015-04-24) <a href="https://doi.org/f7rwgt">https://doi.org/f7rwgt</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1093/bioinformatics/btv215">10.1093/bioinformatics/btv215</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/25910697">25910697</a></div></div>
 </div>
 <div id="ref-1736TBtF6" class="csl-entry" role="doc-biblioentry">
-14. Ivanic J, Wallqvist A, Reifman J. Evidence of probabilistic behaviour in protein interaction networks. <em>BMC Syst Biol</em>. 2008; 2. doi: <a href="https://doi.org/10.1186/1752-0509-2-11">10.1186/1752-0509-2-11</a>.
+<div class="csl-left-margin">14. </div><div class="csl-right-inline"><strong>Evidence of probabilistic behaviour in protein interaction networks</strong> <div class="csl-block">Joseph Ivanic, Anders Wallqvist, Jaques Reifman</div> <em>BMC Systems Biology</em> (2008-01-31) <a href="https://doi.org/dsz4kn">https://doi.org/dsz4kn</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1186/1752-0509-2-11">10.1186/1752-0509-2-11</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/18237403">18237403</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2267158">PMC2267158</a></div></div>
 </div>
 <div id="ref-iKOIEzQ9" class="csl-entry" role="doc-biblioentry">
-15. Hanhijärvi S, Garriga GC, Puolamäki K. Randomization Techniques for Graphs. <em>Proceedings of the 2009 SIAM International Conference on Data Mining</em>. 2009; doi: <a href="https://doi.org/10.1137/1.9781611972795.67">10.1137/1.9781611972795.67</a>.
+<div class="csl-left-margin">15. </div><div class="csl-right-inline"><strong>Randomization Techniques for Graphs</strong> <div class="csl-block">Sami Hanhijärvi, Gemma C Garriga, Kai Puolamäki</div> <em>Proceedings of the 2009 SIAM International Conference on Data Mining</em> (2009-04-30) <a href="https://doi.org/f3mn58">https://doi.org/f3mn58</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1137/1.9781611972795.67">10.1137/1.9781611972795.67</a></div></div>
 </div>
 <div id="ref-uOEal8WK" class="csl-entry" role="doc-biblioentry">
-16. Wernicke S, Rasche F. FANMOD: a tool for fast network motif detection. <em>Bioinformatics</em>. 2006; 22:1152–3. doi: <a href="https://doi.org/10.1093/bioinformatics/btl038">10.1093/bioinformatics/btl038</a>.
+<div class="csl-left-margin">16. </div><div class="csl-right-inline"><strong>FANMOD: a tool for fast network motif detection</strong> <div class="csl-block">Sebastian Wernicke, Florian Rasche</div> <em>Bioinformatics</em> (2006-02-02) <a href="https://doi.org/bhxkk4">https://doi.org/bhxkk4</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1093/bioinformatics/btl038">10.1093/bioinformatics/btl038</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/16455747">16455747</a></div></div>
 </div>
 <div id="ref-3PpbLGzM" class="csl-entry" role="doc-biblioentry">
-17. Liang C, Li Y, Luo J, Zhang Z. A novel motif-discovery algorithm to identify co-regulatory motifs in large transcription factor and microRNA co-regulatory networks in human. <em>Bioinformatics</em>. 2015; 31:2348–55. doi: <a href="https://doi.org/10.1093/bioinformatics/btv159">10.1093/bioinformatics/btv159</a>.
+<div class="csl-left-margin">17. </div><div class="csl-right-inline"><strong>A novel motif-discovery algorithm to identify co-regulatory motifs in large transcription factor and microRNA co-regulatory networks in human</strong> <div class="csl-block">Cheng Liang, Yue Li, Jiawei Luo, Zhaolei Zhang</div> <em>Bioinformatics</em> (2015-03-18) <a href="https://doi.org/f7kjzp">https://doi.org/f7kjzp</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1093/bioinformatics/btv159">10.1093/bioinformatics/btv159</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/25788622">25788622</a></div></div>
 </div>
 <div id="ref-MReKXrBA" class="csl-entry" role="doc-biblioentry">
-18. Fusco D, Bassetti B, Jona P, Cosentino Lagomarsino M. DIA-MCIS: an importance sampling network randomizer for network motif discovery and other topological observables in transcription networks. <em>Bioinformatics</em>. 2007; 23:3388–90. doi: <a href="https://doi.org/10.1093/bioinformatics/btm454">10.1093/bioinformatics/btm454</a>.
+<div class="csl-left-margin">18. </div><div class="csl-right-inline"><strong>DIA-MCIS: an importance sampling network randomizer for network motif discovery and other topological observables in transcription networks</strong> <div class="csl-block">D Fusco, B Bassetti, P Jona, M Cosentino Lagomarsino</div> <em>Bioinformatics</em> (2007-09-27) <a href="https://doi.org/cxksf2">https://doi.org/cxksf2</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1093/bioinformatics/btm454">10.1093/bioinformatics/btm454</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/17901083">17901083</a></div></div>
 </div>
 <div id="ref-sZgRtYru" class="csl-entry" role="doc-biblioentry">
-19. Megraw M, Mukherjee S, Ohler U. Sustained-input switches for transcription factors and microRNAs are central building blocks of eukaryotic gene circuits. <em>Genome Biol</em>. 2013; 14:R85. doi: <a href="https://doi.org/10.1186/gb-2013-14-8-r85">10.1186/gb-2013-14-8-r85</a>.
+<div class="csl-left-margin">19. </div><div class="csl-right-inline"><strong>Sustained-input switches for transcription factors and microRNAs are central building blocks of eukaryotic gene circuits</strong> <div class="csl-block">Molly Megraw, Sayan Mukherjee, Uwe Ohler</div> <em>Genome Biology</em> (2013) <a href="https://doi.org/ghm7hk">https://doi.org/ghm7hk</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1186/gb-2013-14-8-r85">10.1186/gb-2013-14-8-r85</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/23972209">23972209</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4054853">PMC4054853</a></div></div>
 </div>
 <div id="ref-TFMmV4Z2" class="csl-entry" role="doc-biblioentry">
-20. Ansariola M, Megraw M, Koslicki D. IndeCut evaluates performance of network motif discovery algorithms. <em>Bioinformatics</em>. 2017; 34:1514–21. doi: <a href="https://doi.org/10.1093/bioinformatics/btx798">10.1093/bioinformatics/btx798</a>.
+<div class="csl-left-margin">20. </div><div class="csl-right-inline"><strong>IndeCut evaluates performance of network motif discovery algorithms</strong> <div class="csl-block">Mitra Ansariola, Molly Megraw, David Koslicki</div> <em>Bioinformatics</em> (2017-12-11) <a href="https://doi.org/gcp3zk">https://doi.org/gcp3zk</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1093/bioinformatics/btx798">10.1093/bioinformatics/btx798</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/29236975">29236975</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5925789">PMC5925789</a></div></div>
 </div>
 <div id="ref-WkPlH1ds" class="csl-entry" role="doc-biblioentry">
-21. Himmelstein DS, Baranzini SE. Heterogeneous Network Edge Prediction: A Data Integration Approach to Prioritize Disease-Associated Genes. <em>PLoS Comput Biol</em>. 2015; 11:e1004259. doi: <a href="https://doi.org/10.1371/journal.pcbi.1004259">10.1371/journal.pcbi.1004259</a>.
+<div class="csl-left-margin">21. </div><div class="csl-right-inline"><strong>Heterogeneous Network Edge Prediction: A Data Integration Approach to Prioritize Disease-Associated Genes</strong> <div class="csl-block">Daniel S Himmelstein, Sergio E Baranzini</div> <em>PLOS Computational Biology</em> (2015-07-09) <a href="https://doi.org/98q">https://doi.org/98q</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1371/journal.pcbi.1004259">10.1371/journal.pcbi.1004259</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/26158728">26158728</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4497619">PMC4497619</a></div></div>
 </div>
 <div id="ref-xmFxwmUd" class="csl-entry" role="doc-biblioentry">
-22. Himmelstein D. Permuting hetnets and implementing randomized edge swaps in cypher. ThinkLab. 2015; doi: <a href="https://doi.org/10.15363/thinklab.d136">10.15363/thinklab.d136</a>.
+<div class="csl-left-margin">22. </div><div class="csl-right-inline"><strong>Permuting hetnets and implementing randomized edge swaps in cypher</strong> <div class="csl-block">Daniel Himmelstein</div> <em>ThinkLab</em> (2015-12-21) <a href="https://doi.org/f3mqt6">https://doi.org/f3mqt6</a> <div class="csl-block">DOI: <a href="https://doi.org/10.15363/thinklab.d136">10.15363/thinklab.d136</a></div></div>
 </div>
 <div id="ref-19OyKPQ4M" class="csl-entry" role="doc-biblioentry">
-23. Lizee A, Himmelstein D. Network Edge Prediction: Estimating the prior. ThinkLab. 2016; doi: <a href="https://doi.org/10.15363/thinklab.d201">10.15363/thinklab.d201</a>.
+<div class="csl-left-margin">23. </div><div class="csl-right-inline"><strong>Network Edge Prediction: Estimating the prior</strong> <div class="csl-block">Antoine Lizee, Daniel Himmelstein</div> <em>ThinkLab</em> (2016-04-14) <a href="https://doi.org/f3qbmg">https://doi.org/f3qbmg</a> <div class="csl-block">DOI: <a href="https://doi.org/10.15363/thinklab.d201">10.15363/thinklab.d201</a></div></div>
 </div>
 <div id="ref-fkKIuC7X" class="csl-entry" role="doc-biblioentry">
-24. Szklarczyk D, Gable AL, Lyon D, Junge A, Wyder S, Huerta-Cepas J, et al. STRING v11: protein–protein association networks with increased coverage, supporting functional discovery in genome-wide experimental datasets. <em>Nucleic Acids Research</em>. 2018; 47:D607–13. doi: <a href="https://doi.org/10.1093/nar/gky1131">10.1093/nar/gky1131</a>.
+<div class="csl-left-margin">24. </div><div class="csl-right-inline"><strong>STRING v11: protein–protein association networks with increased coverage, supporting functional discovery in genome-wide experimental datasets</strong> <div class="csl-block">Damian Szklarczyk, Annika L Gable, David Lyon, Alexander Junge, Stefan Wyder, Jaime Huerta-Cepas, Milan Simonovic, Nadezhda T Doncheva, John H Morris, Peer Bork, … Christian von Mering</div> <em>Nucleic Acids Research</em> (2018-11-22) <a href="https://doi.org/gfz2jr">https://doi.org/gfz2jr</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1093/nar/gky1131">10.1093/nar/gky1131</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/30476243">30476243</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6323986">PMC6323986</a></div></div>
 </div>
 <div id="ref-z5ieI0Qg" class="csl-entry" role="doc-biblioentry">
-25. Han H, Cho J-W, Lee S, Yun A, Kim H, Bae D, et al. TRRUST v2: an expanded reference database of human and mouse transcriptional regulatory interactions. <em>Nucleic Acids Research</em>. 2017; 46:D380–6. doi: <a href="https://doi.org/10.1093/nar/gkx1013">10.1093/nar/gkx1013</a>.
+<div class="csl-left-margin">25. </div><div class="csl-right-inline"><strong>TRRUST v2: an expanded reference database of human and mouse transcriptional regulatory interactions</strong> <div class="csl-block">Heonjong Han, Jae-Won Cho, Sangyoung Lee, Ayoung Yun, Hyojin Kim, Dasom Bae, Sunmo Yang, Chan Yeong Kim, Muyoung Lee, Eunbeen Kim, … Insuk Lee</div> <em>Nucleic Acids Research</em> (2017-10-26) <a href="https://doi.org/gcwpcz">https://doi.org/gcwpcz</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1093/nar/gkx1013">10.1093/nar/gkx1013</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/29087512">29087512</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5753191">PMC5753191</a></div></div>
 </div>
 <div id="ref-13Jzku9hE" class="csl-entry" role="doc-biblioentry">
-26. Lachmann A, Xu H, Krishnan J, Berger SI, Mazloom AR, Ma'ayan A. ChEA: transcription factor regulation inferred from integrating genome-wide ChIP-X experiments. <em>Bioinformatics</em>. 2010; 26:2438–44. doi: <a href="https://doi.org/10.1093/bioinformatics/btq466">10.1093/bioinformatics/btq466</a>.
+<div class="csl-left-margin">26. </div><div class="csl-right-inline"><strong>ChEA: transcription factor regulation inferred from integrating genome-wide ChIP-X experiments</strong> <div class="csl-block">Alexander Lachmann, Huilei Xu, Jayanth Krishnan, Seth I Berger, Amin R Mazloom, Avi Ma'ayan</div> <em>Bioinformatics</em> (2010-08-13) <a href="https://doi.org/d2h98v">https://doi.org/d2h98v</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1093/bioinformatics/btq466">10.1093/bioinformatics/btq466</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/20709693">20709693</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2944209">PMC2944209</a></div></div>
 </div>
 <div id="ref-iPnRRJya" class="csl-entry" role="doc-biblioentry">
-27. Abdill RJ, Blekhman R. Tracking the popularity and outcomes of all bioRxiv preprints. <em>eLife</em>. 2019; 8. doi: <a href="https://doi.org/10.7554/elife.45133">10.7554/elife.45133</a>.
+<div class="csl-left-margin">27. </div><div class="csl-right-inline"><strong>Tracking the popularity and outcomes of all bioRxiv preprints</strong> <div class="csl-block">Richard J Abdill, Ran Blekhman</div> <em>eLife</em> (2019-04-24) <a href="https://doi.org/gf2str">https://doi.org/gf2str</a> <div class="csl-block">DOI: <a href="https://doi.org/10.7554/elife.45133">10.7554/elife.45133</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31017570">31017570</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6510536">PMC6510536</a></div></div>
 </div>
 <div id="ref-7668E40A" class="csl-entry" role="doc-biblioentry">
-28. Abdill RJ, Blekhman R. Complete Rxivist dataset of scraped bioRxiv data. Zenodo. 2019; doi: <a href="https://doi.org/10.5281/zenodo.2566421">10.5281/zenodo.2566421</a>.
+<div class="csl-left-margin">28. </div><div class="csl-right-inline"><strong>Complete Rxivist dataset of scraped bioRxiv data</strong> <div class="csl-block">Richard J Abdill, Ran Blekhman</div> <em>Zenodo</em> (2019-03-21) <a href="https://doi.org/gfz3fm">https://doi.org/gfz3fm</a> <div class="csl-block">DOI: <a href="https://doi.org/10.5281/zenodo.2566421">10.5281/zenodo.2566421</a></div></div>
 </div>
 <div id="ref-vVd4u4Kx" class="csl-entry" role="doc-biblioentry">
-29. Himmelstein DS, Zietz M, Rubinetti V, Kloster K, Heil BJ, Alquaddoomi F, et al. Hetnet connectivity search provides rapid insights into how biomedical entities are related. <em>GigaScience</em>. 2022; 12. doi: <a href="https://doi.org/10.1093/gigascience/giad047">10.1093/gigascience/giad047</a>.
+<div class="csl-left-margin">29. </div><div class="csl-right-inline"><strong>Hetnet connectivity search provides rapid insights into how biomedical entities are related</strong> <div class="csl-block">Daniel S Himmelstein, Michael Zietz, Vincent Rubinetti, Kyle Kloster, Benjamin J Heil, Faisal Alquaddoomi, Dongbo Hu, David N Nicholson, Yun Hao, Blair D Sullivan, … Casey S Greene</div> <em>GigaScience</em> (2022-12-28) <a href="https://doi.org/gsd85n">https://doi.org/gsd85n</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1093/gigascience/giad047">10.1093/gigascience/giad047</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/37503959">37503959</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10375517">PMC10375517</a></div></div>
 </div>
 <div id="ref-jNEBDktj" class="csl-entry" role="doc-biblioentry">
-30. Lemire D, Kaser O, Kurz N, Deri L, O'Hara C, Saint-Jacques F, et al. Roaring Bitmaps: Implementation of an Optimized Software Library. <em>arXiv</em>. 2022; doi: <a href="https://doi.org/10.1002/spe.2560">10.1002/spe.2560</a>.
+<div class="csl-left-margin">30. </div><div class="csl-right-inline"><strong>Roaring Bitmaps: Implementation of an Optimized Software Library</strong> <div class="csl-block">Daniel Lemire, Owen Kaser, Nathan Kurz, Luca Deri, Chris O'Hara, François Saint-Jacques, Gregory Ssi-Yan-Kai</div> <em>arXiv</em> (2022-02-08) <a href="https://arxiv.org/abs/1709.07821">https://arxiv.org/abs/1709.07821</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1002/spe.2560">10.1002/spe.2560</a></div></div>
 </div>
 <div id="ref-QUz6BIl8" class="csl-entry" role="doc-biblioentry">
-31. Michael Zietz. XSwap Analysis v1.0. Zenodo. 2023; doi: <a href="https://doi.org/10.5281/zenodo.7623565">10.5281/zenodo.7623565</a>.
+<div class="csl-left-margin">31. </div><div class="csl-right-inline"><strong>XSwap Analysis v1.0</strong> <div class="csl-block">Michael Zietz</div> <em>Zenodo</em> (2023-02-09) <a href="https://doi.org/grrffk">https://doi.org/grrffk</a> <div class="csl-block">DOI: <a href="https://doi.org/10.5281/zenodo.7623565">10.5281/zenodo.7623565</a></div></div>
 </div>
 <div id="ref-YuJbg3zO" class="csl-entry" role="doc-biblioentry">
-32. Himmelstein DS, Rubinetti V, Slochower DR, Hu D, Malladi VS, Greene CS, et al. Open collaborative writing with Manubot. <em>PLoS Comput Biol</em>. 2019; 15:e1007128. doi: <a href="https://doi.org/10.1371/journal.pcbi.1007128">10.1371/journal.pcbi.1007128</a>.
+<div class="csl-left-margin">32. </div><div class="csl-right-inline"><strong>Open collaborative writing with Manubot</strong> <div class="csl-block">Daniel S Himmelstein, Vincent Rubinetti, David R Slochower, Dongbo Hu, Venkat S Malladi, Casey S Greene, Anthony Gitter</div> <em>PLOS Computational Biology</em> (2019-06-24) <a href="https://doi.org/c7np">https://doi.org/c7np</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1371/journal.pcbi.1007128">10.1371/journal.pcbi.1007128</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31233491">31233491</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6611653">PMC6611653</a></div></div>
 </div>
 <div id="ref-61xTp8tx" class="csl-entry" role="doc-biblioentry">
-33. Michael Z, Daniel HS, Kyle K, Christopher W, Michael NW, Casey GS. Supporting data for "The probability of edge existence due to node degree: a baseline for network-based predictions". GigaScience Database. 2023; doi: <a href="https://doi.org/10.5524/102479">10.5524/102479</a>.
+<div class="csl-left-margin">33. </div><div class="csl-right-inline"><strong>Supporting data for "The probability of edge existence due to node degree: a baseline for network-based predictions"</strong> <div class="csl-block">Zietz Michael, Himmelstein S Daniel, Kloster Kyle, Williams Christopher, Nagle W Michael, Greene S Casey</div> <em>GigaScience Database</em> (2023-11-28) <a href="https://doi.org/gs9sq5">https://doi.org/gs9sq5</a> <div class="csl-block">DOI: <a href="https://doi.org/10.5524/102479">10.5524/102479</a></div></div>
 </div>
 <div id="ref-1F96bsjSm" class="csl-entry" role="doc-biblioentry">
-34. Zhou T, Lü L, Zhang Y-C. Predicting missing links via local information. <em>Eur Phys J B</em>. 2009; 71:623–30. doi: <a href="https://doi.org/10.1140/epjb/e2009-00335-8">10.1140/epjb/e2009-00335-8</a>.
+<div class="csl-left-margin">34. </div><div class="csl-right-inline"><strong>Predicting missing links via local information</strong> <div class="csl-block">Tao Zhou, Linyuan Lü, Yi-Cheng Zhang</div> <em>The European Physical Journal B</em> (2009-10) <a href="https://doi.org/dd55vr">https://doi.org/dd55vr</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1140/epjb/e2009-00335-8">10.1140/epjb/e2009-00335-8</a></div></div>
 </div>
 <div id="ref-suzIn5oo" class="csl-entry" role="doc-biblioentry">
-35. Huang Z, Li X, Chen H. Link prediction approach to collaborative filtering. <em>Proceedings of the 5th ACM/IEEE-CS joint conference on Digital libraries - JCDL '05</em>. 2005; doi: <a href="https://doi.org/10.1145/1065385.1065415">10.1145/1065385.1065415</a>.
+<div class="csl-left-margin">35. </div><div class="csl-right-inline"><strong>Link prediction approach to collaborative filtering</strong> <div class="csl-block">Zan Huang, Xin Li, Hsinchun Chen</div> <em>Proceedings of the 5th ACM/IEEE-CS joint conference on Digital libraries - JCDL '05</em> (2005) <a href="https://doi.org/fn39g8">https://doi.org/fn39g8</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1145/1065385.1065415">10.1145/1065385.1065415</a></div></div>
 </div>
 <div id="ref-EfWvuSjX" class="csl-entry" role="doc-biblioentry">
-36. Liben-Nowell D, Kleinberg J. The link-prediction problem for social networks. <em>J Am Soc Inf Sci</em>. 2007; 58:1019–31. doi: <a href="https://doi.org/10.1002/asi.20591">10.1002/asi.20591</a>.
+<div class="csl-left-margin">36. </div><div class="csl-right-inline"><strong>The link-prediction problem for social networks</strong> <div class="csl-block">David Liben-Nowell, Jon Kleinberg</div> <em>Journal of the American Society for Information Science and Technology</em> (2007) <a href="https://doi.org/c56765">https://doi.org/c56765</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1002/asi.20591">10.1002/asi.20591</a></div></div>
 </div>
 <div id="ref-9dBDcARP" class="csl-entry" role="doc-biblioentry">
-37. Adamic LA, Adar E. Friends and neighbors on the Web. <em>Social Networks</em>. 2003; 25:211–30. doi: <a href="https://doi.org/10.1016/s0378-8733(03)00009-1">10.1016/s0378-8733(03)00009-1</a>.
+<div class="csl-left-margin">37. </div><div class="csl-right-inline"><strong>Friends and neighbors on the Web</strong> <div class="csl-block">Lada A Adamic, Eytan Adar</div> <em>Social Networks</em> (2003-07) <a href="https://doi.org/br5zd3">https://doi.org/br5zd3</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1016/s0378-8733(03)00009-1">10.1016/s0378-8733(03)00009-1</a></div></div>
 </div>
 <div id="ref-HSmvOV9E" class="csl-entry" role="doc-biblioentry">
-38. Pan J-Y, Yang H-J, Faloutsos C, Duygulu P. Automatic multimedia cross-modal correlation discovery. <em>Proceedings of the 2004 ACM SIGKDD international conference on Knowledge discovery and data mining - KDD '04</em>. 2004; doi: <a href="https://doi.org/10.1145/1014052.1014135">10.1145/1014052.1014135</a>.
+<div class="csl-left-margin">38. </div><div class="csl-right-inline"><strong>Automatic multimedia cross-modal correlation discovery</strong> <div class="csl-block">Jia-Yu Pan, Hyung-Jeong Yang, Christos Faloutsos, Pinar Duygulu</div> <em>Proceedings of the 2004 ACM SIGKDD international conference on Knowledge discovery and data mining - KDD '04</em> (2004) <a href="https://doi.org/bmhgw4">https://doi.org/bmhgw4</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1145/1014052.1014135">10.1145/1014052.1014135</a></div></div>
 </div>
 <div id="ref-1E6tdJtDz" class="csl-entry" role="doc-biblioentry">
-39. Zhou D, Bousquet O, Lal TN, Weston J, Scholkopf B. <a href="https://dl.acm.org/doi/10.5555/2981345.2981386">Learning with local and global consistency</a>. NIPS 2003. 2003; :321–8.
+<div class="csl-left-margin">39. </div><div class="csl-right-inline"><strong>Learning with local and global consistency</strong> <div class="csl-block">Dengyong Zhou, Olivier Bousquet, Thomas Navin Lal, Jason Weston, Bernhard Scholkopf</div> <em>NIPS 2003</em> (2003-12-09) <a href="https://dl.acm.org/doi/10.5555/2981345.2981386">https://dl.acm.org/doi/10.5555/2981345.2981386</a></div>
 </div>
 <div id="ref-yCdaxPuq" class="csl-entry" role="doc-biblioentry">
-40. Garcia Gasulla D. Link prediction in large directed graphs. Universitat Politècnica de Catalunya. 2003; doi: <a href="https://doi.org/10.5821/dissertation-2117-95691">10.5821/dissertation-2117-95691</a>.
+<div class="csl-left-margin">40. </div><div class="csl-right-inline"><strong>Link prediction in large directed graphs</strong> <div class="csl-block">Dario Garcia Gasulla</div> <em>Universitat Politècnica de Catalunya</em> (2003-12-09) <a href="https://doi.org/gtbgzd">https://doi.org/gtbgzd</a> <div class="csl-block">DOI: <a href="https://doi.org/10.5821/dissertation-2117-95691">10.5821/dissertation-2117-95691</a></div></div>
 </div>
 </div>
-<h2 id="supplemental-information">Supplemental information</h2>
+<h2 id="supplementary-information">Supplementary Information</h2>
 <h3 id="xswap-parameter-settings-for-network-types">XSwap parameter settings for network types</h3>
 <div id="tbl:xswap" class="tablenos">
-<table id="tbl:xswap">
-<caption><span>Table 1:</span> Applications of the modified XSwap algorithm to various network types with appropriate parameter choices.
+<table id="tbl:xswap" data-tag="S1">
+<caption><span>Table S1:</span> Applications of the modified XSwap algorithm to various network types with appropriate parameter choices.
 For simple networks, each node’s degree is preserved.
 For bipartite networks, each node’s number of connections to the other part is preserved, and the partite sets (node class memberships) are preserved.
 For directed networks, each nodes’ in- and out-degrees are preserved, though parameter choices depend on the network being permuted.
@@ -850,8 +851,8 @@ Increasing network density lowers the asymptotic fraction of edges changed, as g
 Random graphs generated with a preferential attachment mechanism (via Barabási–Albert) can have a lower fraction of their edges swapped, asymptotically, as compared to uniform random graphs (via Erdős–Rényi).</p>
 <div id="fig:swap-percent" class="fignos">
 <figure>
-<img src="https://github.com/greenelab/xswap-analysis/raw/47f67f85b1a5df2714d564c274515f1fdeb882ba/img/6_xswap_percent_swapped_iterations/lines_continuous.png" style="width:100.0%" alt="Figure 10: Higher density networks have lower asymptotic fractions of edges swapped and take more attempts to reach these values. The Barabási–Albert model produces scale-free random graphs, while Erdős–Rényi generates random graphs where all edges are equally likely." />
-<figcaption aria-hidden="true"><span>Figure 10:</span> <strong>Higher density networks have lower asymptotic fractions of edges swapped and take more attempts to reach these values.</strong>
+<img src="https://github.com/greenelab/xswap-analysis/raw/47f67f85b1a5df2714d564c274515f1fdeb882ba/img/6_xswap_percent_swapped_iterations/lines_continuous.png" style="width:100.0%" data-tag="S1" alt="Figure S1: Higher density networks have lower asymptotic fractions of edges swapped and take more attempts to reach these values. The Barabási–Albert model produces scale-free random graphs, while Erdős–Rényi generates random graphs where all edges are equally likely." />
+<figcaption aria-hidden="true"><span>Figure S1:</span> <strong>Higher density networks have lower asymptotic fractions of edges swapped and take more attempts to reach these values.</strong>
 The Barabási–Albert model produces scale-free random graphs, while Erdős–Rényi generates random graphs where all edges are equally likely.</figcaption>
 </figure>
 </div>
@@ -916,7 +917,12 @@ Because the modified form of the approximation offers a much superior fit to the
 .tg .tg-s268{text-align:left}
 .tg .tg-0lax{text-align:left;vertical-align:top}
 </style>
-<table class="tg">
+<table id="tbl:networks" class="tg" data-tag="S2">
+<caption>
+<b>Table S2:</b>
+Networks used for the comparison.
+Abbreviations are protein-protein interaction (PPI) and transcription-factor-target-gene (TF-TG).
+</caption>
 <tr>
 <th class="tg-s268">
 Data
@@ -1270,8 +1276,8 @@ Let <span class="math inline">\(\mathbf{A}\)</span> represent the normalized Lap
 For a directed graph, let <span class="math inline">\(A(u)\)</span> denote the set of nodes that node <span class="math inline">\(u\)</span> points to and <span class="math inline">\(D(u)\)</span> the set of nodes that point to <span class="math inline">\(u\)</span>.
 All definitions that follow are the score between nodes <span class="math inline">\(u\)</span> and <span class="math inline">\(v\)</span>.</p>
 <div id="tbl:edge-prediction" class="tablenos">
-<table id="tbl:edge-prediction" style="width:100%;">
-<caption><span>Table 2:</span> Edge prediction features. </caption>
+<table id="tbl:edge-prediction" style="width:100%;" data-tag="S3">
+<caption><span>Table S3:</span> Edge prediction features. </caption>
 <colgroup>
 <col style="width: 47%" />
 <col style="width: 41%" />
