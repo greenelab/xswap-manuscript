@@ -12,6 +12,7 @@ keywords:
   - bioinformatics
   - python
 lang: en-US
+date: 2024-02-07
 authors:
   - github: zietzm
     name: Michael Zietz
@@ -121,3 +122,5 @@ authors:
       - Resources
       - Supervision
       - Writing – review & editing
+preprint_citation: doi:10.1101/2023.01.05.522939
+journal_citation: doi:10.1093/gigascience/giae001
