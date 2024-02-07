@@ -12,7 +12,7 @@ keywords:
 - bioinformatics
 - python
 lang: en-US
-date-meta: '2024-01-23'
+date-meta: '2024-02-07'
 author-meta:
 - Michael Zietz
 - Daniel S. Himmelstein
@@ -31,11 +31,11 @@ header-includes: |
   <meta name="citation_title" content="The probability of edge existence due to node degree: a baseline for network-based predictions" />
   <meta property="og:title" content="The probability of edge existence due to node degree: a baseline for network-based predictions" />
   <meta property="twitter:title" content="The probability of edge existence due to node degree: a baseline for network-based predictions" />
-  <meta name="dc.date" content="2024-01-23" />
-  <meta name="citation_publication_date" content="2024-01-23" />
-  <meta property="article:published_time" content="2024-01-23" />
-  <meta name="dc.modified" content="2024-01-23T01:00:27+00:00" />
-  <meta property="article:modified_time" content="2024-01-23T01:00:27+00:00" />
+  <meta name="dc.date" content="2024-02-07" />
+  <meta name="citation_publication_date" content="2024-02-07" />
+  <meta property="article:published_time" content="2024-02-07" />
+  <meta name="dc.modified" content="2024-02-07T14:51:30+00:00" />
+  <meta property="article:modified_time" content="2024-02-07T14:51:30+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -79,13 +79,13 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/xswap-manuscript/" />
   <meta name="citation_pdf_url" content="https://greenelab.github.io/xswap-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/xswap-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/xswap-manuscript/v/e7e7dad740e742ce5cf71033fceaf09c16ad0a59/" />
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/xswap-manuscript/v/e7e7dad740e742ce5cf71033fceaf09c16ad0a59/" />
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/xswap-manuscript/v/e7e7dad740e742ce5cf71033fceaf09c16ad0a59/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/xswap-manuscript/v/70d170fc0049ced9e9d825c7c04f55b6e0032d57/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/xswap-manuscript/v/70d170fc0049ced9e9d825c7c04f55b6e0032d57/" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/xswap-manuscript/v/70d170fc0049ced9e9d825c7c04f55b6e0032d57/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
-  <meta property="og:image" content="https://github.com/greenelab/xswap-manuscript/raw/e7e7dad740e742ce5cf71033fceaf09c16ad0a59/thumbnail.png" />
-  <meta property="twitter:image" content="https://github.com/greenelab/xswap-manuscript/raw/e7e7dad740e742ce5cf71033fceaf09c16ad0a59/thumbnail.png" />
+  <meta property="og:image" content="https://github.com/greenelab/xswap-manuscript/raw/70d170fc0049ced9e9d825c7c04f55b6e0032d57/thumbnail.png" />
+  <meta property="twitter:image" content="https://github.com/greenelab/xswap-manuscript/raw/70d170fc0049ced9e9d825c7c04f55b6e0032d57/thumbnail.png" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
   <link rel="mask-icon" href="https://manubot.org/safari-pinned-tab.svg" color="#ad1457" />
   <meta name="theme-color" content="#ad1457" />
@@ -101,22 +101,29 @@ manubot-clear-requests-cache: false
 
 
 
-_A DOI-citable version of this manuscript is available at <https://doi.org/10.1101/2023.01.05.522939>_.
+[
+<i class="fas fa-scroll fa-lg"></i> **Now Published**<br>
+This study is published in _GigaScience_ at <https://doi.org/10.1093/gigascience/giae001>,
+which is the preferred location for citations, although this Manubot version offers the best viewing experience.
+A _bioRxiv_ preprint also exists at <https://doi.org/10.1101/2023.01.05.522939>.
+]{.banner .lightpurple}
+
+<!-- include the Font Awesome library, per: https://fontawesome.com/start -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
 
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/xswap-manuscript/v/e7e7dad740e742ce5cf71033fceaf09c16ad0a59/))
+([permalink](https://greenelab.github.io/xswap-manuscript/v/70d170fc0049ced9e9d825c7c04f55b6e0032d57/))
 was automatically generated
-from [greenelab/xswap-manuscript@e7e7dad](https://github.com/greenelab/xswap-manuscript/tree/e7e7dad740e742ce5cf71033fceaf09c16ad0a59)
-on January 23, 2024.
+from [greenelab/xswap-manuscript@70d170f](https://github.com/greenelab/xswap-manuscript/tree/70d170fc0049ced9e9d825c7c04f55b6e0032d57)
+on February 7, 2024.
 </em></small>
 
 
 
 ## Authors
 
-<!--
 
 
 + **Michael Zietz**
@@ -199,8 +206,9 @@ on January 23, 2024.
      · Funded by Pfizer Worldwide Research, Development, and Medical; the Gordon and Betty Moore Foundation (GBMF4552); the National Institutes of Health (R01 HG010067)
   </small>
 
--->
 
+
+<!--
 
 
 Michael Zietz^1,2,3^,
@@ -222,6 +230,7 @@ Casey S. Greene^1,10,11[✉](#corresponding)^
 9. Human Biology Integration Foundation, Deep Human Biology Learning, Eisai Inc., Cambridge, MA 02140, USA
 10. Department of Biochemistry and Molecular Genetics, University of Colorado School of Medicine, Aurora, CO 80045, USA
 11. Center for Health AI, University of Colorado School of Medicine, Aurora, CO 80045, USA
+-->
 
 
 ::: {#correspondence}
@@ -350,12 +359,12 @@ IndeCut proposed a method to characterize these strategies by their ability to u
 ### XSwap algorithm
 
 Hanhijärvi et al. presented XSwap [@doi:10.1137/1.9781611972795.67], an algorithm for the randomization ("permutation") of unweighted networks (Figure {@fig:algo}A).
-The algorithm picks two existing edges at random ({ab, cd}) and---if the edges constitute a valid swap---exchanges the targets between the edges ({ad, cb}; Supplemental Table {@tbl:xswap}).
+The algorithm picks two existing edges at random ({ab, cd}) and---if the edges constitute a valid swap---exchanges the targets between the edges ({ad, cb}; Table {@tbl:xswap}).
 This process is repeated a user-specified number of times.
 In general, the number of exchanges should be chosen to be sufficiently large that the fraction of original edges retained in the permuted network is near its asymptotic value as the number of exchanges increases to infinity.
 The asymptotic fraction of original edges retained in permutation depends on network density, and higher density networks require more swap attempts per edge to reach their asymptotic fraction (Figure {@fig:swap-percent}).
 
-We modified the original XSwap algorithm by adding two parameters, `allow_loops` (a-a) and `allow_antiparallel` (a-b and b-a), that allow a greater variety of network types to be permuted (Figure {@fig:algo}B and  Supplemental Table {@tbl:xswap}).
+We modified the original XSwap algorithm by adding two parameters, `allow_loops` (a-a) and `allow_antiparallel` (a-b and b-a), that allow a greater variety of network types to be permuted (Figure {@fig:algo}B and  Table {@tbl:xswap}).
 The motivation for these generalizations is to make the permutation method applicable to both directed and undirected graphs, as well as to networks with different types of nodes, variously called multipartite, heterogeneous, or multimodal networks.
 Specifically, in the modified algorithm, two chosen edges constitute a valid swap if they preserve degree for all four involved nodes and do not violate the user-specified parameters.
 
@@ -413,7 +422,7 @@ https://github.com/greenelab/xswap-analysis/blob/4f06bdaf1f034af9136e25c03f9891a
 
 We performed three prediction tasks to assess the performance of the edge prior.
 We compared the permutation-based prior with two additional predictors: our analytical approximation of the edge prior and the product of source and target degree, scaled to the range [0, 1] so that we could assess its calibration as well as its discrimination.
-We used 20 biomedical networks from the Hetionet heterogeneous network [@doi:10.7554/eLife.26726] that had at least 2000 edges for the first two tasks ([Supplemental table](#networks)).
+We used 20 biomedical networks from the Hetionet heterogeneous network [@doi:10.7554/eLife.26726] that had at least 2000 edges for the first two tasks (Table [S2](#tbl:networks)).
 
 In the first task, we computed the degree-based predictors (edge prior, scaled degree product, and analytical prior approximation) and predicted the original edges in the network by rank-ordering node pair edge predictions by the node pairs' predictor values.
 We used node pairs that lacked an edge in the original network as negative examples and those with an edge as positive examples.
@@ -495,24 +504,10 @@ https://github.com/greenelab/xswap-analysis/blob/4f06bdaf1f034af9136e25c03f9891a
 
 We evaluated degree as an edge prediction feature using the edge prior.
 In the first prediction task, we computed three predictors---the XSwap edge prior, an analytical approximation to the edge prior, and the (scaled) product of source and target node degree---on networks from Hetionet.
-We then evaluated the extent to which these predictors---treated as predictions themselves---could reconstruct the 20 networks ([Supplemental table](#networks)).
+We then evaluated the extent to which these predictors---treated as predictions themselves---could reconstruct the 20 networks (Table [S2](#tbl:networks)).
 The XSwap-derived edge prior reconstructed many of the networks with a high level of performance, as measured by the AUROC.
 Of the 20 individual networks we extracted from Hetionet, 17 had an edge prior self-reconstruction AUROC >= 0.95, with the highest reconstruction AUROC at 0.9971 (network was the Compound–downregulates–Gene edge type).
 Meanwhile, the lowest self-reconstruction performance (AUROC = 0.7697) occurred in the network having the fewest node pairs (network was the Disease–localizes–Anatomy edge type).
-
-![
-  **Degree can predict edges within a given network but does not generalize to networks with different degree distributions**
-  The edge prior is able to reconstruct the networks on which it was computed (task 1, "unsampled", 20 different networks) with high performance.
-  When computed on a sampled network, the edge prior can reconstruct the unsampled network with slightly lower performance (task 2, "sampled", 20 different networks).
-  However, when computed on a completely different network (having a different degree distribution) of the same type of data, the edge prior's performance is greatly reduced (task 3, "separate", 3 different networks).
-  The performance reduction from computing predictors on sampled networks is real but far smaller compared to a new degree distribution.
-  This indicates that while degree can be effective for network reconstruction, it is far less effective in predicting edges from a different degree distribution.
-](https://github.com/greenelab/xswap-analysis/raw/4f06bdaf1f034af9136e25c03f9891a145b9bf91/img/auroc_dists.png){#fig:discrimination width="60%"}
-
-<!--
-fig:discrimination is created by
-https://github.com/greenelab/xswap-analysis/blob/4f06bdaf1f034af9136e25c03f9891a145b9bf91/nb/5.fig3.auroc/plot_auroc.ipynb
--->
 
 The three predictors that we compared were highly correlated (Spearman rank correlation over 0.984 for all 20 networks).
 The three predictors also had very similar AUROC reconstruction performance values for the first, second, and third prediction tasks (max difference < 0.027) because AUROC is rank based.
@@ -546,6 +541,20 @@ As was observed in the first task, node pair predictors computed in the second t
 While performance was slightly lower in the second task than the first, many networks were still well reconstructed.
 The edge prior was the best calibrated predictor for both tasks.
 
+![
+  **Degree can predict edges within a given network but does not generalize to networks with different degree distributions.**
+  The edge prior is able to reconstruct the networks on which it was computed (task 1, "unsampled", 20 different networks) with high performance.
+  When computed on a sampled network, the edge prior can reconstruct the unsampled network with slightly lower performance (task 2, "sampled", 20 different networks).
+  However, when computed on a completely different network (having a different degree distribution) of the same type of data, the edge prior's performance is greatly reduced (task 3, "separate", 3 different networks).
+  The performance reduction from computing predictors on sampled networks is real but far smaller compared to a new degree distribution.
+  This indicates that while degree can be effective for network reconstruction, it is far less effective in predicting edges from a different degree distribution.
+](https://github.com/greenelab/xswap-analysis/raw/4f06bdaf1f034af9136e25c03f9891a145b9bf91/img/auroc_dists.png){#fig:discrimination width="60%"}
+
+<!--
+fig:discrimination is created by
+https://github.com/greenelab/xswap-analysis/blob/4f06bdaf1f034af9136e25c03f9891a145b9bf91/nb/5.fig3.auroc/plot_auroc.ipynb
+-->
+
 In the third prediction task, we computed the three edge predictors for paired networks representing data from PPI, TF-TG, and bioRxiv bioinformatics preprint coauthorship.
 The goal of the task was to compare predictive performance across different degree distributions for the same type of data.
 We find that the task of predicting systematically derived edges using a network with degree bias is significantly more challenging than network reconstruction, and we find consistently lower performance compared to the other tasks (Figure {@fig:discrimination}).
@@ -566,14 +575,14 @@ Degree's influence on edge prediction accuracy measures can reveal the relative 
 ### Degree can underlie a large fraction of performance
 
 We evaluated the extent to which edge prediction performance is due to degree.
-To begin, we chose the STRING PPI network for the comparison and computed five edge prediction features (Supplemental table {@tbl:edge-prediction}).
+To begin, we chose the STRING PPI network for the comparison and computed five edge prediction features (Table {@tbl:edge-prediction}).
 The goal of the task was to reconstruct the network on which the features were computed.
 All five features were correlated with degree (Figure {@fig:feature-degree}), which we quantified for a node pair using the product of source and target degrees.
 We expected features based on degree to show strong performance for a network reconstruction task without holdout, as found in the first prediction task.
 
 ![
   **Common edge prediction metrics correlate with node degree.**
-  Five common edge prediction features (Supplemental table {@tbl:edge-prediction}) are correlated with node degree on the STRING PPI network [@doi:10.1093/nar/gky1131].
+  Five common edge prediction features (Table {@tbl:edge-prediction}) are correlated with node degree on the STRING PPI network [@doi:10.1093/nar/gky1131].
   All five features show a positive relationship with degree, although the magnitude of this correlation is highly variable.
   The preferential attachment index is understandably perfectly correlated because it is equal to the product of source and target degree.
   Each panel indicates the Pearson correlation ("r") between feature and degree in the lower right corner.
@@ -729,7 +738,7 @@ The authors thank [Blair Sullivan](https://orcid.org/0000-0001-7720-6208) for [h
 <!-- Explicitly insert bibliography here -->
 <div id="refs"></div>
 
-## Supplemental information
+## Supplementary Information
 
 ### XSwap parameter settings for network types
 
@@ -744,7 +753,7 @@ Applications of the modified XSwap algorithm to various network types with appro
 For simple networks, each node's degree is preserved.
 For bipartite networks, each node's number of connections to the other part is preserved, and the partite sets (node class memberships) are preserved.
 For directed networks, each nodes' in- and out-degrees are preserved, though parameter choices depend on the network being permuted.
-Some directed networks can include antiparallel edges or loops while others do not. {#tbl:xswap}
+Some directed networks can include antiparallel edges or loops while others do not. {#tbl:xswap tag="S1"}
 
 ### Performance of the XSwap algorithm
 
@@ -756,7 +765,7 @@ Random graphs generated with a preferential attachment mechanism (via Barabási�
 ![
   **Higher density networks have lower asymptotic fractions of edges swapped and take more attempts to reach these values.**
   The Barabási–Albert model produces scale-free random graphs, while Erdős–Rényi generates random graphs where all edges are equally likely.
-](https://github.com/greenelab/xswap-analysis/raw/47f67f85b1a5df2714d564c274515f1fdeb882ba/img/6_xswap_percent_swapped_iterations/lines_continuous.png){#fig:swap-percent width="100%"}
+](https://github.com/greenelab/xswap-analysis/raw/47f67f85b1a5df2714d564c274515f1fdeb882ba/img/6_xswap_percent_swapped_iterations/lines_continuous.png){#fig:swap-percent width="100%" tag="S1"}
 
 <!--
 fig:swap-percent is created by
@@ -838,7 +847,12 @@ Because the modified form of the approximation offers a much superior fit to the
 .tg .tg-s268{text-align:left}
 .tg .tg-0lax{text-align:left;vertical-align:top}
 </style>
-<table class="tg">
+<table id="tbl:networks" class="tg" data-tag="S2">
+  <caption>
+  <b>Table S2:</b>
+  Networks used for the comparison.
+  Abbreviations are protein-protein interaction (PPI) and transcription-factor-target-gene (TF-TG).
+  </caption>
   <tr>
     <th class="tg-s268">Data</th>
     <th class="tg-s268">Network</th>
@@ -1013,5 +1027,6 @@ All definitions that follow are the score between nodes $u$ and $v$.
 | Random walk with restart score | $c \bigg[ \bigg( \mathbb{I} - (1-c) \mathbf{A}\bigg)^{-1} \mathbf{y}_u \bigg]_v$ | [@doi:10.1145/1014052.1014135;@raw:laplacian] |
 | Inference score | $\frac{|A(u) \cap D(v)|}{|A(u)|} + \frac{|D(u) \cap D(v)|}{|D(u)|}$ | [@doi:10.5821/dissertation-2117-95691] |
 
-Table: Edge prediction features. {#tbl:edge-prediction}
+Table: Edge prediction features. {#tbl:edge-prediction tag="S3"}
+
 
