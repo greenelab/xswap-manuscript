@@ -34,8 +34,8 @@ header-includes: |
   <meta name="dc.date" content="2024-02-07" />
   <meta name="citation_publication_date" content="2024-02-07" />
   <meta property="article:published_time" content="2024-02-07" />
-  <meta name="dc.modified" content="2024-02-07T14:51:30+00:00" />
-  <meta property="article:modified_time" content="2024-02-07T14:51:30+00:00" />
+  <meta name="dc.modified" content="2024-02-07T14:58:22+00:00" />
+  <meta property="article:modified_time" content="2024-02-07T14:58:22+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -79,13 +79,13 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/xswap-manuscript/" />
   <meta name="citation_pdf_url" content="https://greenelab.github.io/xswap-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/xswap-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/xswap-manuscript/v/70d170fc0049ced9e9d825c7c04f55b6e0032d57/" />
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/xswap-manuscript/v/70d170fc0049ced9e9d825c7c04f55b6e0032d57/" />
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/xswap-manuscript/v/70d170fc0049ced9e9d825c7c04f55b6e0032d57/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/xswap-manuscript/v/f28dc10dc6dc8ecb74eefe42acf19032d5b5ed4e/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/xswap-manuscript/v/f28dc10dc6dc8ecb74eefe42acf19032d5b5ed4e/" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/xswap-manuscript/v/f28dc10dc6dc8ecb74eefe42acf19032d5b5ed4e/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
-  <meta property="og:image" content="https://github.com/greenelab/xswap-manuscript/raw/70d170fc0049ced9e9d825c7c04f55b6e0032d57/thumbnail.png" />
-  <meta property="twitter:image" content="https://github.com/greenelab/xswap-manuscript/raw/70d170fc0049ced9e9d825c7c04f55b6e0032d57/thumbnail.png" />
+  <meta property="og:image" content="https://github.com/greenelab/xswap-manuscript/raw/f28dc10dc6dc8ecb74eefe42acf19032d5b5ed4e/thumbnail.png" />
+  <meta property="twitter:image" content="https://github.com/greenelab/xswap-manuscript/raw/f28dc10dc6dc8ecb74eefe42acf19032d5b5ed4e/thumbnail.png" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
   <link rel="mask-icon" href="https://manubot.org/safari-pinned-tab.svg" color="#ad1457" />
   <meta name="theme-color" content="#ad1457" />
@@ -114,9 +114,9 @@ A _bioRxiv_ preprint also exists at <https://doi.org/10.1101/2023.01.05.522939>.
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/xswap-manuscript/v/70d170fc0049ced9e9d825c7c04f55b6e0032d57/))
+([permalink](https://greenelab.github.io/xswap-manuscript/v/f28dc10dc6dc8ecb74eefe42acf19032d5b5ed4e/))
 was automatically generated
-from [greenelab/xswap-manuscript@70d170f](https://github.com/greenelab/xswap-manuscript/tree/70d170fc0049ced9e9d825c7c04f55b6e0032d57)
+from [greenelab/xswap-manuscript@f28dc10](https://github.com/greenelab/xswap-manuscript/tree/f28dc10dc6dc8ecb74eefe42acf19032d5b5ed4e)
 on February 7, 2024.
 </em></small>
 
