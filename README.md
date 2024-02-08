@@ -12,7 +12,8 @@ This manuscript is now published at:
 > **The probability of edge existence due to node degree: a baseline for network-based predictions**  
 > Michael Zietz, Daniel Himmelstein, Kyle Kloster, Christopher Williams, Michael Nagle, Casey Greene  
 > _GigaScience_ (2024-02-07) <https://doi.org/gtcbks>  
-> DOI: [10.1093/gigascience/giae001](https://doi.org/10.1093/gigascience/giae001)
+> DOI: [10.1093/gigascience/giae001](https://doi.org/10.1093/gigascience/giae001) · PMID: [38323677](https://www.ncbi.nlm.nih.gov/pubmed/38323677) · PMCID: [PMC10848215](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10848215)
+
 
 ## Manuscript description
 
